@@ -47,7 +47,10 @@
     "pass": true
   },
   "live_check": {
-    "recorded": false
+    "recorded": true,
+    "pass": false,
+    "sha": "e4063ed0368d67097fc4d0c7342209f8526dd673",
+    "timestamp": "2026-10-21T21:07:28.043Z"
   },
   "items": [
     {
