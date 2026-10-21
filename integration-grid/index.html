@@ -1,46 +1,7 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>integration-grid — affectUI comparison</title><style>
-:root { color-scheme: light; }
-* { box-sizing: border-box; }
-body { margin: 0; font: 15px/1.5 ui-sans-serif, -apple-system, "Segoe UI", sans-serif; color: #111; background: #fff; }
-header { position: sticky; top: 0; z-index: 10; display: flex; gap: 16px; align-items: center;
-  padding: 12px 20px; background: #fff; border-bottom: 1px solid #e6e6e6; }
-header b { font-size: 13px; letter-spacing: .06em; text-transform: uppercase; }
-header a { color: #111; text-decoration: none; opacity: .55; font-size: 13px; }
-header a:hover { opacity: 1; }
-.wrap { padding: 24px; }
-.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; }
-.card { display: block; padding: 12px 14px; border: 1px solid #e6e6e6; border-radius: 10px;
-  color: #111; text-decoration: none; font-size: 14px; }
-.card:hover { border-color: #111; }
-.card small { display: block; color: #888; font-size: 11px; margin-top: 2px; }
-input[type=search] { flex: 1; max-width: 380px; padding: 8px 12px; border: 1px solid #ddd;
-  border-radius: 8px; font-size: 14px; outline: none; }
-input[type=search]:focus { border-color: #111; }
-.stage { min-height: 60vh; padding: 32px; border: 1px solid #eee; border-radius: 12px; margin-bottom: 24px; }
-pre { background: #0d0d0d; color: #e8e8e8; padding: 18px; border-radius: 12px; overflow: auto;
-  font: 12px/1.55 ui-monospace, SFMono-Regular, Menlo, monospace; max-height: 70vh; white-space: pre; }
-.toolbar { display: flex; gap: 10px; align-items: center; margin-bottom: 12px; }
-button { padding: 7px 12px; border: 1px solid #111; background: #111; color: #fff; border-radius: 8px;
-  font-size: 13px; cursor: pointer; }
-.pill { font-size: 11px; padding: 2px 8px; border-radius: 99px; background: #f0f0f0; color: #555; }
-.muted { color: #888; font-size: 12px; }
-</style></head>
-<body>
-<header><b>affectUI comparison</b><a href="../index.html">← all</a><span class="pill">integration-grid</span><span class="muted">0 KB source</span></header>
-<div class="wrap">
-  <div class="toolbar" role="group" aria-label="Версия компонента"><button id="original" aria-pressed="true">Оригинал</button><button id="reconstructed" aria-pressed="false">Реконструкция</button><span id="mode">Оригинальный демо-бандл</span></div><iframe id="preview" title="Component preview" src="original-frame.html" style="width:100%;height:740px;border:1px solid #eee;border-radius:12px;background:white"></iframe>
-  <div class="toolbar"><button id="cb">copy source</button><a class="pill" href="source.tsx.txt" target="_blank">open .tsx</a></div>
-  <pre id="src">loading…</pre>
-</div>
-<script>
-const frame=document.getElementById('preview');
-for(const mode of ['original','reconstructed']) document.getElementById(mode).onclick=()=>{frame.src=mode+'-frame.html';for(const x of ['original','reconstructed']){const b=document.getElementById(x);b.setAttribute('aria-pressed',String(x===mode));b.style.opacity=x===mode?'1':'.4';}document.getElementById('mode').textContent=mode==='original'?'Оригинальный демо-бандл':'Сборка восстановленного TSX';};
-document.getElementById('reconstructed').style.opacity='.4';
-</script>
-<script>
-fetch("source.tsx.txt").then(r => r.text()).then(t => { document.getElementById("src").textContent = t;
-  document.getElementById("cb").onclick = () => navigator.clipboard.writeText(t); });
-</script>
-</body></html>
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Integration Grid</title><style>
+*{box-sizing:border-box}body{margin:0;background:#fff;color:#18181b;font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.head{padding:20px 24px 16px;border-bottom:1px solid #eee}h1{font-size:22px;font-weight:600;letter-spacing:-.5px;margin:0 0 14px}.tabs{display:flex;gap:8px;align-items:center}button{font:inherit;padding:7px 14px;border-radius:7px;border:1px solid #dedee2;background:#fff;color:#62626b;cursor:pointer}button[aria-pressed=true]{background:#18181b;border-color:#18181b;color:#fff}.back{margin-left:auto;text-decoration:none;color:#777;font-size:12px}.demo{padding:24px;max-width:1500px;margin:auto}iframe{display:block;width:100%;height:800px;border:0;background:#fff}details{margin:12px 24px 28px;color:#777}summary{cursor:pointer}pre{white-space:pre;overflow:auto;background:#111;color:#eee;padding:18px;border-radius:8px;max-height:65vh;font:12px/1.5 monospace}.sourcebar{display:flex;gap:12px;margin:12px 0}.sourcebar a{color:inherit}@media(max-width:600px){.head{padding:18px 16px 14px}h1{font-size:21px}.demo{padding:20px 12px}iframe{height:calc(100dvh - 180px);min-height:520px}.back{font-size:11px}details{margin:12px}}
+</style></head><body><header class="head"><h1>Integration Grid</h1><div class="tabs"><button id="original" aria-pressed="true">Original demo</button><button id="reconstructed" aria-pressed="false">Inspect replay</button><a class="back" href="../index.html">All components</a></div></header><main class="demo"><iframe id="preview" title="Component preview" src="original-frame.html"></iframe></main><details><summary>Reconstructed TSX source</summary><div class="sourcebar"><button id="copy">Copy source</button><a href="source.tsx.txt">Download source</a></div><pre id="source">Loading…</pre></details><script>
+for(const mode of ['original','reconstructed'])document.getElementById(mode).onclick=()=>{document.getElementById('preview').src=mode+'-frame.html';for(const x of ['original','reconstructed'])document.getElementById(x).setAttribute('aria-pressed',String(x===mode));history.replaceState(null,'','#'+(mode==='original'?'original':'inspect'));};
+if(location.hash==='#inspect')document.getElementById('reconstructed').click();
+fetch('source.tsx.txt').then(r=>r.text()).then(t=>{document.getElementById('source').textContent=t;document.getElementById('copy').onclick=()=>navigator.clipboard.writeText(t);});
+</script></body></html>
