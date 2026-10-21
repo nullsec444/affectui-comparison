@@ -239,7 +239,7 @@ var comments = [{
   id: `1`,
   author: {
     name: `Mara Lindqvist`,
-    avatar: `/avatars/mara.jpg`
+    avatar: `../avatars/mara.jpg`
   },
   createdAt: f(2),
   text: `/edit Rename every \u201Ccustomers\u201D to \u201Cmembers\u201D on the pricing page.`
@@ -247,7 +247,7 @@ var comments = [{
   id: `2`,
   author: {
     name: `Jonas Weber`,
-    avatar: `/avatars/jonas.jpg`
+    avatar: `../avatars/jonas.jpg`
   },
   createdAt: f(5),
   text: `Should we mention the launch discount in the hero too?`
@@ -255,7 +255,7 @@ var comments = [{
   id: `3`,
   author: {
     name: `Lena Hart`,
-    avatar: `/avatars/lena.jpg`
+    avatar: `../avatars/lena.jpg`
   },
   createdAt: f(11),
   text: `The new illustrations look great on mobile.`
@@ -263,7 +263,7 @@ var comments = [{
   id: `4`,
   author: {
     name: `Theo Brandt`,
-    avatar: `/avatars/theo.jpg`
+    avatar: `../avatars/theo.jpg`
   },
   createdAt: f(18),
   text: `/edit Shorten every FAQ answer to two sentences.`
@@ -271,7 +271,7 @@ var comments = [{
   id: `5`,
   author: {
     name: `Sofia Marin`,
-    avatar: `/avatars/sofia.jpg`
+    avatar: `../avatars/sofia.jpg`
   },
   createdAt: f(26),
   text: `Can we ship this before Friday?`
@@ -279,7 +279,7 @@ var comments = [{
 function MComponent() {
   return /* @__PURE__ */ jsx("div", { className: `comments-demo`, children: /* @__PURE__ */ jsx(S1Component, { comments, currentUser: {
     name: `Noah Keller`,
-    avatar: `/avatars/noah.jpg`
+    avatar: `../avatars/noah.jpg`
   }, onClose: () => {
   } }) });
 }

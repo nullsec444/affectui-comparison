@@ -1,0 +1,12 @@
+{
+  "command": "node determinism.cjs && node full-gate.cjs takeover-final-gate.log",
+  "status": "interrupted_for_owner_authorized_immediate_publication",
+  "pass": false,
+  "full_run_completed": false,
+  "summary": {"catalog_distinct":72,"variants":111,"tested":111,"accepted":107,"partial":4,"blocked":0},
+  "structural_errors": [],
+  "commands": [{"command":"node full-gate.cjs takeover-final-gate.log","exit_code":137,"signal":"SIGKILL"}],
+  "log": "takeover-final-gate.log",
+  "owner_authorized": "Publish now without another complete full gate; explicitly disclose incomplete final verification",
+  "note": "Acceptance rows contain the latest recorded scenario for each route across different tested harness revisions. This is not evidence of a completed immutable 111-route run."
+}

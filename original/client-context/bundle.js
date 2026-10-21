@@ -1,6 +1,6 @@
 import {
   ve
-} from "../shared/chunk-DITR7XMD.js";
+} from "../shared/chunk-4USAG7IP.js";
 import {
   init_original_react,
   original_react_default,

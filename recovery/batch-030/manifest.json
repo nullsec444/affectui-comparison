@@ -1,0 +1,519 @@
+{
+  "source": {
+    "path": "[host]",
+    "snapshot_path": "[host]",
+    "sha256": "5c72aefc1bcf909aa94b80db361431466c883cc9cfdb1cea45b8d4e8736c396b",
+    "bytes": 24263,
+    "published_copy": {
+      "path": "./recovery/batch-030/inputs/demo.clean-CtdFgWee.js",
+      "sha256": "5c72aefc1bcf909aa94b80db361431466c883cc9cfdb1cea45b8d4e8736c396b",
+      "bytes": 24263
+    }
+  },
+  "additional_sources": [
+    {
+      "path": "[host]",
+      "snapshot_path": "[host]",
+      "sha256": "797c0165cf9255a609b58c4935ed20fe0f20d1fbdc1adf56475c42ec3bc0e274",
+      "bytes": 11648,
+      "published_copy": {
+        "path": "./recovery/batch-030/inputs/demo.clean-Cwxrnsci.js",
+        "sha256": "797c0165cf9255a609b58c4935ed20fe0f20d1fbdc1adf56475c42ec3bc0e274",
+        "bytes": 11648
+      }
+    },
+    {
+      "path": "[host]",
+      "snapshot_path": "[host]",
+      "sha256": "0d365d843359629488197eec6967dc8efa0503c1ac6dcc33a09476350772b9ca",
+      "bytes": 24135,
+      "published_copy": {
+        "path": "./recovery/batch-030/inputs/demo.clean-CykqoJC9.js",
+        "sha256": "0d365d843359629488197eec6967dc8efa0503c1ac6dcc33a09476350772b9ca",
+        "bytes": 24135
+      }
+    },
+    {
+      "path": "[host]",
+      "snapshot_path": "[host]",
+      "sha256": "d29780d078eb6aa41058d55d408b664e2bfeb0d7cc0c4351a351397e13f58f0a",
+      "bytes": 18221,
+      "published_copy": {
+        "path": "./recovery/batch-030/inputs/demo.clean-D1uXYCFG.js",
+        "sha256": "d29780d078eb6aa41058d55d408b664e2bfeb0d7cc0c4351a351397e13f58f0a",
+        "bytes": 18221
+      }
+    },
+    {
+      "path": "[host]",
+      "snapshot_path": "[host]",
+      "sha256": "9cbdd8cd191b6f89ed06ce178f9532b0370fdffea3e1cded5ff40574307fffab",
+      "bytes": 23125,
+      "published_copy": {
+        "path": "./recovery/batch-030/inputs/demo.clean-D3ZXLUIO.js",
+        "sha256": "9cbdd8cd191b6f89ed06ce178f9532b0370fdffea3e1cded5ff40574307fffab",
+        "bytes": 23125
+      }
+    },
+    {
+      "path": "[host]",
+      "snapshot_path": "[host]",
+      "sha256": "58991a17b0f81bb33e3261fc13af73177c76beb8dacd5dca267de59144b4fbc5",
+      "bytes": 24091,
+      "published_copy": {
+        "path": "./recovery/batch-030/inputs/demo.clean-D4m3L74b.js",
+        "sha256": "58991a17b0f81bb33e3261fc13af73177c76beb8dacd5dca267de59144b4fbc5",
+        "bytes": 24091
+      }
+    },
+    {
+      "path": "[host]",
+      "snapshot_path": "[host]",
+      "sha256": "0d6eef0eac8e63772cb4c27cb90d90b744ca0fbcf102c00b87b065ebe39df26a",
+      "bytes": 36811,
+      "published_copy": {
+        "path": "./recovery/batch-030/inputs/demo.clean-DC3N3Pap.js",
+        "sha256": "0d6eef0eac8e63772cb4c27cb90d90b744ca0fbcf102c00b87b065ebe39df26a",
+        "bytes": 36811
+      }
+    },
+    {
+      "path": "[host]",
+      "snapshot_path": "[host]",
+      "sha256": "25008c8e370ad83133a0b5ecd180da303aa28b8e7a0df4e5e8a7b87d8d0dc98e",
+      "bytes": 37070,
+      "published_copy": {
+        "path": "./recovery/batch-030/inputs/demo.clean-DKsx9U9O.js",
+        "sha256": "25008c8e370ad83133a0b5ecd180da303aa28b8e7a0df4e5e8a7b87d8d0dc98e",
+        "bytes": 37070
+      }
+    },
+    {
+      "path": "[host]",
+      "snapshot_path": "[host]",
+      "sha256": "cb8db0a4d1cbc00efc9631c84d590c094311c27ee8741165be3a0591965861c5",
+      "bytes": 37846,
+      "published_copy": {
+        "path": "./recovery/batch-030/inputs/demo.clean-DNxPbueK.js",
+        "sha256": "cb8db0a4d1cbc00efc9631c84d590c094311c27ee8741165be3a0591965861c5",
+        "bytes": 37846
+      }
+    },
+    {
+      "path": "[host]",
+      "snapshot_path": "[host]",
+      "sha256": "2e7891302f84d978d054b9e11234d313b0409c5ba39b785bb4ea6ccde09713d5",
+      "bytes": 22130,
+      "published_copy": {
+        "path": "./recovery/batch-030/inputs/demo.clean-DQ6MZQcD.js",
+        "sha256": "2e7891302f84d978d054b9e11234d313b0409c5ba39b785bb4ea6ccde09713d5",
+        "bytes": 22130
+      }
+    },
+    {
+      "path": "[host]",
+      "snapshot_path": "[host]",
+      "sha256": "460616b0f2bc4e4b091c61146886bcddb9944a4cf6dbabd56ab515698492225c",
+      "bytes": 28427,
+      "published_copy": {
+        "path": "./recovery/batch-030/inputs/demo.clean-DRfoB4wl.js",
+        "sha256": "460616b0f2bc4e4b091c61146886bcddb9944a4cf6dbabd56ab515698492225c",
+        "bytes": 28427
+      }
+    },
+    {
+      "path": "[host]",
+      "snapshot_path": "[host]",
+      "sha256": "5d87fa15917830e14fc040fd8c8d7e374fd04515eee110850b12acd676a579a3",
+      "bytes": 7757,
+      "published_copy": {
+        "path": "./recovery/batch-030/inputs/demo.clean-DWvTXnKE.js",
+        "sha256": "5d87fa15917830e14fc040fd8c8d7e374fd04515eee110850b12acd676a579a3",
+        "bytes": 7757
+      }
+    }
+  ],
+  "engine": {
+    "id": "wakaru",
+    "version": "1.14.0",
+    "executable": {
+      "path": "./wakaru",
+      "sha256": "664fa06782a61eda7ed15885134b52525fd565dd77607e642062ceb6cd927c38",
+      "bytes": 26793296
+    },
+    "audited_source_revision": "8219bf5016a063d7fb215101a8c45d5959ec733f",
+    "executed_source_revision": null
+  },
+  "options": {
+    "extraction_mode": "structural",
+    "rewrite_level": "standard"
+  },
+  "status": "complete",
+  "detected_formats": [],
+  "reported_safety": "normal",
+  "reported_strategy": "structural",
+  "reported_format": "unknown",
+  "total": 12,
+  "failed": 0,
+  "modules": [
+    {
+      "reported_filename": "demo.clean-CtdFgWee.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/batch-030/modules/demo.clean-CtdFgWee.js",
+        "sha256": "f3f1be63c4b64aac9a7e1fb011fa9200154f294abbabd4f228593db95761c1a1",
+        "bytes": 32613
+      },
+      "source_map": {
+        "path": "./recovery/batch-030/modules/demo.clean-CtdFgWee.js.map",
+        "sha256": "1e0ca21ed1fe3f8b629fd37c2ac47c1ac836039697f1240039fd63e59784023a",
+        "bytes": 18718
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "[host]",
+        "original_sha256": "5c72aefc1bcf909aa94b80db361431466c883cc9cfdb1cea45b8d4e8736c396b",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 24263
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    },
+    {
+      "reported_filename": "demo.clean-Cwxrnsci.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/batch-030/modules/demo.clean-Cwxrnsci.js",
+        "sha256": "75e0ccc0c2ba08667c3a7a92335030b407c20ea669035a0f9235c0ca5498eea9",
+        "bytes": 12531
+      },
+      "source_map": {
+        "path": "./recovery/batch-030/modules/demo.clean-Cwxrnsci.js.map",
+        "sha256": "649c87642c0a413be3a801e66074b1434cd0ca11f5c1a007e9e50016bec7b88c",
+        "bytes": 4257
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "[host]",
+        "original_sha256": "797c0165cf9255a609b58c4935ed20fe0f20d1fbdc1adf56475c42ec3bc0e274",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 11648
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    },
+    {
+      "reported_filename": "demo.clean-CykqoJC9.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/batch-030/modules/demo.clean-CykqoJC9.js",
+        "sha256": "d212f7f807d839519a6112a0f48042c13c52bdade6aa552a882dee260388e374",
+        "bytes": 30614
+      },
+      "source_map": {
+        "path": "./recovery/batch-030/modules/demo.clean-CykqoJC9.js.map",
+        "sha256": "426f5195c35239bf9accffa8cafe4350fd3bcaaf954087cff7b15c19af65fb1e",
+        "bytes": 16208
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "[host]",
+        "original_sha256": "0d365d843359629488197eec6967dc8efa0503c1ac6dcc33a09476350772b9ca",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 24135
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    },
+    {
+      "reported_filename": "demo.clean-D1uXYCFG.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/batch-030/modules/demo.clean-D1uXYCFG.js",
+        "sha256": "65d0e74d8a8f91ea67a7069cb582bcfe09ddaca2e9e7fef182a51a00deed4e31",
+        "bytes": 23289
+      },
+      "source_map": {
+        "path": "./recovery/batch-030/modules/demo.clean-D1uXYCFG.js.map",
+        "sha256": "942c1dac62612cd9d9c6bbad06f8009685294e4a06708653f7a775f0609fdda4",
+        "bytes": 10420
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "[host]",
+        "original_sha256": "d29780d078eb6aa41058d55d408b664e2bfeb0d7cc0c4351a351397e13f58f0a",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 18221
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    },
+    {
+      "reported_filename": "demo.clean-D3ZXLUIO.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/batch-030/modules/demo.clean-D3ZXLUIO.js",
+        "sha256": "90d1da36489cd06dfaf0abb346649dcf60b035a79b055adda1cfc7160549d0ae",
+        "bytes": 27178
+      },
+      "source_map": {
+        "path": "./recovery/batch-030/modules/demo.clean-D3ZXLUIO.js.map",
+        "sha256": "77117dd5677ecc9a6b225156003e34f44eb837f57b9a38c5b3626b1842930fa3",
+        "bytes": 13448
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "[host]",
+        "original_sha256": "9cbdd8cd191b6f89ed06ce178f9532b0370fdffea3e1cded5ff40574307fffab",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 23125
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    },
+    {
+      "reported_filename": "demo.clean-D4m3L74b.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/batch-030/modules/demo.clean-D4m3L74b.js",
+        "sha256": "b7243f963e4315e1b31f3cbfcdd339c36996c4b5e666c1ddfb1868a420b5ef1a",
+        "bytes": 26848
+      },
+      "source_map": {
+        "path": "./recovery/batch-030/modules/demo.clean-D4m3L74b.js.map",
+        "sha256": "41829717513b161870eb91ac5fd06bb616f082a8c132609a98d570533617f219",
+        "bytes": 12522
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "[host]",
+        "original_sha256": "58991a17b0f81bb33e3261fc13af73177c76beb8dacd5dca267de59144b4fbc5",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 24091
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    },
+    {
+      "reported_filename": "demo.clean-DC3N3Pap.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/batch-030/modules/demo.clean-DC3N3Pap.js",
+        "sha256": "75fae714a13b667194189fae21d5450bb3e8f979f6737ec6619334cb4b337372",
+        "bytes": 42257
+      },
+      "source_map": {
+        "path": "./recovery/batch-030/modules/demo.clean-DC3N3Pap.js.map",
+        "sha256": "9b01bc70d00c3aae9d8916a3ffafd542cd0ad21f48b1417be1a217e8f7cc4f22",
+        "bytes": 16673
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "[host]",
+        "original_sha256": "0d6eef0eac8e63772cb4c27cb90d90b744ca0fbcf102c00b87b065ebe39df26a",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 36811
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    },
+    {
+      "reported_filename": "demo.clean-DKsx9U9O.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/batch-030/modules/demo.clean-DKsx9U9O.js",
+        "sha256": "9329985ea43eb128e443c9298d288c01bfaeb4159bd4281792afff34ec9db2ea",
+        "bytes": 42057
+      },
+      "source_map": {
+        "path": "./recovery/batch-030/modules/demo.clean-DKsx9U9O.js.map",
+        "sha256": "afc2cc6d0fe6248296c695cbff1ddd402b8cd2e55c88b4f33f6b56c535dfe285",
+        "bytes": 18796
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "[host]",
+        "original_sha256": "25008c8e370ad83133a0b5ecd180da303aa28b8e7a0df4e5e8a7b87d8d0dc98e",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 37070
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    },
+    {
+      "reported_filename": "demo.clean-DNxPbueK.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/batch-030/modules/demo.clean-DNxPbueK.js",
+        "sha256": "ae5beb4ef3f78b0be9e7ac6226dabd7d28795f4784e41a99e15efc2cd61471c0",
+        "bytes": 44215
+      },
+      "source_map": {
+        "path": "./recovery/batch-030/modules/demo.clean-DNxPbueK.js.map",
+        "sha256": "96290cb3d101ce44a4d4598848709f5c4fca16e1c0bbbe11a9f8cdfe5382a0a1",
+        "bytes": 19530
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "[host]",
+        "original_sha256": "cb8db0a4d1cbc00efc9631c84d590c094311c27ee8741165be3a0591965861c5",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 37846
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    },
+    {
+      "reported_filename": "demo.clean-DQ6MZQcD.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/batch-030/modules/demo.clean-DQ6MZQcD.js",
+        "sha256": "991b325e46c78ac3446147818f2c7939a9ae37cfb4ee01b371ba8f4e90f6ef53",
+        "bytes": 28608
+      },
+      "source_map": {
+        "path": "./recovery/batch-030/modules/demo.clean-DQ6MZQcD.js.map",
+        "sha256": "a41617e15fe29c4f04368fcf2a920916a83db9dd4606255b853c734025aa3b5d",
+        "bytes": 15177
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "[host]",
+        "original_sha256": "2e7891302f84d978d054b9e11234d313b0409c5ba39b785bb4ea6ccde09713d5",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 22130
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    },
+    {
+      "reported_filename": "demo.clean-DRfoB4wl.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/batch-030/modules/demo.clean-DRfoB4wl.js",
+        "sha256": "43ae5c3c923f55dfda4c3e848c123258271db5811968c1ce6dbc69c25d7df5d7",
+        "bytes": 36223
+      },
+      "source_map": {
+        "path": "./recovery/batch-030/modules/demo.clean-DRfoB4wl.js.map",
+        "sha256": "87442be4a368a0a7ff21cb590ad90fe61ef424f7d9718e7c6ed9311e2b77c654",
+        "bytes": 17875
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "[host]",
+        "original_sha256": "460616b0f2bc4e4b091c61146886bcddb9944a4cf6dbabd56ab515698492225c",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 28427
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    },
+    {
+      "reported_filename": "demo.clean-DWvTXnKE.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/batch-030/modules/demo.clean-DWvTXnKE.js",
+        "sha256": "fbf031491a64b376132b51a06c42404517a8a045d677904e740627160c3f4933",
+        "bytes": 9206
+      },
+      "source_map": {
+        "path": "./recovery/batch-030/modules/demo.clean-DWvTXnKE.js.map",
+        "sha256": "628078caa8e1c55b2b2bf60815078948b6162ee1b58005fe2d2855de8b9e7a94",
+        "bytes": 3920
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "[host]",
+        "original_sha256": "5d87fa15917830e14fc040fd8c8d7e374fd04515eee110850b12acd676a579a3",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 7757
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    }
+  ],
+  "warnings": [],
+  "report": {
+    "path": "./recovery/batch-030/reports/stdout.json",
+    "sha256": "2d5b9a7f2eb60bc305c353322f43276f13bdc2d560f857215a290bda93a731b0",
+    "bytes": 1067
+  },
+  "provenance": {
+    "path": "./recovery/batch-030/reports/provenance.json",
+    "sha256": "7f7731288532748af37908d708b70f7eef646458e0a2446ea4e694c61fc5e541",
+    "bytes": 2208
+  },
+  "analysis_input": {
+    "input_path": "./recovery/batch-030/modules",
+    "format": "directory"
+  },
+  "runtime_equivalence": "unknown",
+  "limitations": [
+    "Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.",
+    "Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.",
+    "Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.",
+    "Inspection mode may produce non-executable regions. No input or recovered application code is executed.",
+    "Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB total input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment."
+  ]
+}

@@ -1,0 +1,302 @@
+{
+  "generated_at": "2026-10-21T21:03:43.508Z",
+  "source": "acceptance-results.json",
+  "summary": {
+    "catalog_distinct": 72,
+    "variants": 111,
+    "tested": 111,
+    "reachable_modules": 567,
+    "recovered_modules": 567,
+    "inventory_complete": true,
+    "accepted": 107,
+    "partial": 4,
+    "blocked": 0,
+    "check_totals": {
+      "inventory": 111,
+      "reachable_recovered": 111,
+      "jsx_source": 111,
+      "build": 111,
+      "hosting": 111,
+      "scenario_current": 111,
+      "visual": 110,
+      "dom": 110,
+      "interactions": 107
+    }
+  },
+  "failures_by_check": {
+    "interactions": 4,
+    "visual": 1,
+    "dom": 1
+  },
+  "failures": 6,
+  "routes_with_failures": [
+    "files",
+    "glow-keyboard",
+    "gradient-floor",
+    "integration-settings.clean"
+  ],
+  "rows": [
+    {
+      "route": "files",
+      "check": "interactions",
+      "status": "partial",
+      "first_divergent_step": 34,
+      "action": {
+        "tag": "button",
+        "name": "PDFBrand-GuidelinesPDF · Jonas Weber · Shared",
+        "type": "button",
+        "nth": 0,
+        "role": null,
+        "placeholder": null
+      },
+      "expected": {
+        "applied_both": true,
+        "state_equal": true,
+        "pixels": 0,
+        "noise_pixels": 0
+      },
+      "actual": {
+        "index": 34,
+        "state_equal": true,
+        "applied": {
+          "original": true,
+          "reconstructed": true
+        },
+        "pixels": {
+          "pixels": 1,
+          "total": 3,
+          "max": 1,
+          "dimensions": true
+        },
+        "noise": {
+          "pixels": 1,
+          "total": 3,
+          "max": 1,
+          "dimensions": true
+        },
+        "original_effect": {
+          "dom_changed": true,
+          "pixels": 0,
+          "before_image_sha256": "ab0ef06447a09671b0d195706dd8c998596312c9ad915bd3cccdbdb1cd0acf2b",
+          "after_image_sha256": "ab0ef06447a09671b0d195706dd8c998596312c9ad915bd3cccdbdb1cd0acf2b",
+          "non_effect": false
+        }
+      },
+      "evidence_kinds": [
+        "pixels",
+        "noise"
+      ],
+      "proof": "browser-evidence/files-step-34-noise-original.png",
+      "proof_paths": [
+        "browser-evidence/files-step-34-noise-original.png",
+        "browser-evidence/files-step-34-original.png",
+        "browser-evidence/files-step-34-reconstructed.png",
+        "browser-evidence/files.json"
+      ],
+      "evidence_expected": [
+        "browser-evidence/files-step-34-noise-original.png",
+        "browser-evidence/files-step-34-original.png",
+        "browser-evidence/files-step-34-reconstructed.png",
+        "browser-evidence/files.json"
+      ],
+      "evidence_missing": [],
+      "suspected_module": "demo-CUdsyn6m.js",
+      "suspicion_unverified": true
+    },
+    {
+      "route": "glow-keyboard",
+      "check": "interactions",
+      "status": "partial",
+      "first_divergent_step": 0,
+      "action": {
+        "tag": "input",
+        "name": "Ask AI anything...",
+        "type": "text",
+        "nth": 0,
+        "role": null,
+        "placeholder": "Ask AI anything..."
+      },
+      "expected": {
+        "applied_both": true,
+        "state_equal": true,
+        "pixels": 0,
+        "noise_pixels": 0
+      },
+      "actual": {
+        "index": 0,
+        "state_equal": true,
+        "applied": {
+          "original": true,
+          "reconstructed": true
+        },
+        "pixels": {
+          "pixels": 0,
+          "total": 0,
+          "max": 0,
+          "dimensions": true
+        },
+        "noise": {
+          "pixels": 81787,
+          "total": 129208,
+          "max": 2,
+          "dimensions": true
+        },
+        "original_effect": {
+          "dom_changed": true,
+          "pixels": 495999,
+          "before_image_sha256": "99329a9f95720f3c4811e66a9032143fed3be4b220abea376c11694882c098fe",
+          "after_image_sha256": "7a7e9a32fec5ae97f3173f472d4f5d122bbd053014a9ece02b877e280969802b",
+          "non_effect": false
+        }
+      },
+      "evidence_kinds": [
+        "noise"
+      ],
+      "proof": "browser-evidence/glow-keyboard-step-0-noise-original.png",
+      "proof_paths": [
+        "browser-evidence/glow-keyboard-step-0-noise-original.png",
+        "browser-evidence/glow-keyboard-step-0-original.png",
+        "browser-evidence/glow-keyboard-step-0-reconstructed.png",
+        "browser-evidence/glow-keyboard.json"
+      ],
+      "evidence_expected": [
+        "browser-evidence/glow-keyboard-step-0-noise-original.png",
+        "browser-evidence/glow-keyboard-step-0-original.png",
+        "browser-evidence/glow-keyboard-step-0-reconstructed.png",
+        "browser-evidence/glow-keyboard.json"
+      ],
+      "evidence_missing": [],
+      "suspected_module": "demo-CfD9afHB.js",
+      "suspicion_unverified": true
+    },
+    {
+      "route": "gradient-floor",
+      "check": "visual",
+      "status": "partial",
+      "first_divergent_step": "initial",
+      "action": null,
+      "expected": {
+        "baseline_pixels": 0,
+        "difference_pixels": 0
+      },
+      "actual": {
+        "pass": false
+      },
+      "evidence_kinds": [
+        "page_pixels"
+      ],
+      "proof": "browser-evidence/gradient-floor.json",
+      "proof_paths": [
+        "browser-evidence/gradient-floor.json",
+        "browser-evidence/gradient-floor-original.png",
+        "browser-evidence/gradient-floor-reconstructed.png"
+      ],
+      "evidence_expected": [
+        "browser-evidence/gradient-floor.json",
+        "browser-evidence/gradient-floor-original.png",
+        "browser-evidence/gradient-floor-reconstructed.png"
+      ],
+      "evidence_missing": [],
+      "suspected_module": "demo-B-TgH1P-.js",
+      "suspicion_unverified": true
+    },
+    {
+      "route": "gradient-floor",
+      "check": "dom",
+      "status": "partial",
+      "first_divergent_step": "initial",
+      "action": null,
+      "expected": null,
+      "actual": null,
+      "evidence_kinds": [
+        "page_dom"
+      ],
+      "proof": "browser-evidence/gradient-floor.json",
+      "proof_paths": [
+        "browser-evidence/gradient-floor.json"
+      ],
+      "evidence_expected": [
+        "browser-evidence/gradient-floor.json"
+      ],
+      "evidence_missing": [],
+      "suspected_module": "demo-B-TgH1P-.js",
+      "suspicion_unverified": true
+    },
+    {
+      "route": "gradient-floor",
+      "check": "interactions",
+      "status": "partial",
+      "first_divergent_step": "initial",
+      "action": null,
+      "expected": {
+        "applied_both": true,
+        "state_equal": true,
+        "pixels": 0,
+        "noise_pixels": 0
+      },
+      "actual": {
+        "skipped": null,
+        "errors": [
+          "page.screenshot: Timeout 30000ms exceeded.\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...\n  - fonts loaded\n\n    at ./browser.cjs:65:71"
+        ]
+      },
+      "evidence_kinds": [
+        "no_divergent_step"
+      ],
+      "proof": "browser-evidence/gradient-floor.json",
+      "proof_paths": [
+        "browser-evidence/gradient-floor.json"
+      ],
+      "evidence_expected": [
+        "browser-evidence/gradient-floor.json"
+      ],
+      "evidence_missing": [],
+      "suspected_module": "demo-B-TgH1P-.js",
+      "suspicion_unverified": true
+    },
+    {
+      "route": "integration-settings.clean",
+      "check": "interactions",
+      "status": "partial",
+      "first_divergent_step": 4,
+      "action": {
+        "tag": "button",
+        "name": "Discard",
+        "type": "button",
+        "nth": 0,
+        "role": null,
+        "placeholder": null
+      },
+      "expected": {
+        "applied_both": true,
+        "state_equal": true,
+        "pixels": 0,
+        "noise_pixels": 0
+      },
+      "actual": {
+        "index": 4,
+        "state_equal": true,
+        "applied": {
+          "original": false,
+          "reconstructed": false
+        },
+        "pixels": null,
+        "noise": null,
+        "original_effect": null
+      },
+      "evidence_kinds": [
+        "step_not_equal"
+      ],
+      "proof": "browser-evidence/integration-settings.clean.json",
+      "proof_paths": [
+        "browser-evidence/integration-settings.clean.json"
+      ],
+      "evidence_expected": [
+        "browser-evidence/integration-settings.clean.json"
+      ],
+      "evidence_missing": [],
+      "suspected_module": "demo.clean-CTC16fNW.js",
+      "suspicion_unverified": true
+    }
+  ]
+}

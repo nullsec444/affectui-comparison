@@ -1,0 +1,443 @@
+{
+  "started_at": "2026-10-21T19:39:46.170Z",
+  "source_sha256": {
+    "browser.cjs": "49c84cdfe08d778e96bf9ccd1602bdbde5ad3bc329669590574fc9fb6e226a74",
+    "clock-patch.js": "82cc65956e162474791bbdff4e2d677557a3d09c40797e805ad54d5e8fa301da",
+    "scenario-preconditions.cjs": "7c2e1825df6bb0b865af9c7002c2ad2d3228adfde84083ebbb673aa6ad129f28",
+    "original-metafile.json": "848baefcef386de2bbec02b3e3a2fc049214e8afd7384c0a1c7de2aa1198016c"
+  },
+  "routes": [
+    {
+      "route": "agent-run",
+      "runs": [
+        {
+          "run": 1,
+          "image_sha256": "ad8c926fd407331d3256cfa2c01fc1f63b511a6c36e0ad8a37757e4fc7c81eb6",
+          "state_sha256": "3bfb2da60f337c646027bf82c43bb62068012bcaa4c990a104c87fa4f3d75ee5",
+          "errors": [],
+          "request_failures": []
+        },
+        {
+          "run": 2,
+          "image_sha256": "ad8c926fd407331d3256cfa2c01fc1f63b511a6c36e0ad8a37757e4fc7c81eb6",
+          "state_sha256": "3bfb2da60f337c646027bf82c43bb62068012bcaa4c990a104c87fa4f3d75ee5",
+          "errors": [],
+          "request_failures": []
+        },
+        {
+          "run": 3,
+          "image_sha256": "ad8c926fd407331d3256cfa2c01fc1f63b511a6c36e0ad8a37757e4fc7c81eb6",
+          "state_sha256": "3bfb2da60f337c646027bf82c43bb62068012bcaa4c990a104c87fa4f3d75ee5",
+          "errors": [],
+          "request_failures": []
+        }
+      ],
+      "comparisons": [
+        {
+          "pixels": 0,
+          "total": 0,
+          "max": 0,
+          "dimensions": true
+        },
+        {
+          "pixels": 0,
+          "total": 0,
+          "max": 0,
+          "dimensions": true
+        },
+        {
+          "pixels": 0,
+          "total": 0,
+          "max": 0,
+          "dimensions": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "agent-steering.clean",
+      "runs": [
+        {
+          "run": 1,
+          "image_sha256": "86d71a462b5d67e0f1134b6c65997813244f52e6a822f770caaa4772c2cebe17",
+          "state_sha256": "bb559e2570a7947965969a31378b67aef8b7747d9314af96c61ebe24b8bcb18f",
+          "errors": [],
+          "request_failures": []
+        },
+        {
+          "run": 2,
+          "image_sha256": "86d71a462b5d67e0f1134b6c65997813244f52e6a822f770caaa4772c2cebe17",
+          "state_sha256": "bb559e2570a7947965969a31378b67aef8b7747d9314af96c61ebe24b8bcb18f",
+          "errors": [],
+          "request_failures": []
+        },
+        {
+          "run": 3,
+          "image_sha256": "86d71a462b5d67e0f1134b6c65997813244f52e6a822f770caaa4772c2cebe17",
+          "state_sha256": "bb559e2570a7947965969a31378b67aef8b7747d9314af96c61ebe24b8bcb18f",
+          "errors": [],
+          "request_failures": []
+        }
+      ],
+      "comparisons": [
+        {
+          "pixels": 0,
+          "total": 0,
+          "max": 0,
+          "dimensions": true
+        },
+        {
+          "pixels": 0,
+          "total": 0,
+          "max": 0,
+          "dimensions": true
+        },
+        {
+          "pixels": 0,
+          "total": 0,
+          "max": 0,
+          "dimensions": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "agent-tree",
+      "runs": [
+        {
+          "run": 1,
+          "image_sha256": "463488303b00b65cd62059418cedd3904ab266a00ae6075ce52259abecb2b237",
+          "state_sha256": "12985c6d01ae00b7ae8c1e47a059c54b3b8356025c0e4bcf033541dfe50cc881",
+          "errors": [],
+          "request_failures": []
+        },
+        {
+          "run": 2,
+          "image_sha256": "463488303b00b65cd62059418cedd3904ab266a00ae6075ce52259abecb2b237",
+          "state_sha256": "12985c6d01ae00b7ae8c1e47a059c54b3b8356025c0e4bcf033541dfe50cc881",
+          "errors": [],
+          "request_failures": []
+        },
+        {
+          "run": 3,
+          "image_sha256": "463488303b00b65cd62059418cedd3904ab266a00ae6075ce52259abecb2b237",
+          "state_sha256": "12985c6d01ae00b7ae8c1e47a059c54b3b8356025c0e4bcf033541dfe50cc881",
+          "errors": [],
+          "request_failures": []
+        }
+      ],
+      "comparisons": [
+        {
+          "pixels": 0,
+          "total": 0,
+          "max": 0,
+          "dimensions": true
+        },
+        {
+          "pixels": 0,
+          "total": 0,
+          "max": 0,
+          "dimensions": true
+        },
+        {
+          "pixels": 0,
+          "total": 0,
+          "max": 0,
+          "dimensions": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "agent-tree.clean",
+      "runs": [
+        {
+          "run": 1,
+          "image_sha256": "2662681157a9d36f3aef6664c31f2eeedb0bad77a9d57616225a4a0cb122d211",
+          "state_sha256": "59b4f59dc800170ee4339578ee0a8d1b1f239479c163cd0a7d4e7b6f0c3b3b31",
+          "errors": [],
+          "request_failures": []
+        },
+        {
+          "run": 2,
+          "image_sha256": "2662681157a9d36f3aef6664c31f2eeedb0bad77a9d57616225a4a0cb122d211",
+          "state_sha256": "59b4f59dc800170ee4339578ee0a8d1b1f239479c163cd0a7d4e7b6f0c3b3b31",
+          "errors": [],
+          "request_failures": []
+        },
+        {
+          "run": 3,
+          "image_sha256": "2662681157a9d36f3aef6664c31f2eeedb0bad77a9d57616225a4a0cb122d211",
+          "state_sha256": "59b4f59dc800170ee4339578ee0a8d1b1f239479c163cd0a7d4e7b6f0c3b3b31",
+          "errors": [],
+          "request_failures": []
+        }
+      ],
+      "comparisons": [
+        {
+          "pixels": 0,
+          "total": 0,
+          "max": 0,
+          "dimensions": true
+        },
+        {
+          "pixels": 0,
+          "total": 0,
+          "max": 0,
+          "dimensions": true
+        },
+        {
+          "pixels": 0,
+          "total": 0,
+          "max": 0,
+          "dimensions": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "analytics",
+      "runs": [
+        {
+          "run": 1,
+          "image_sha256": "e9b7c57976d42a77f24cf3b4390c1d76ef323e6beb382f44498e689d0b3ca5ce",
+          "state_sha256": "08acf7038355117016de96b8f309d7b3421eb22ec333bcb91ebb0327857b646a",
+          "errors": [],
+          "request_failures": []
+        },
+        {
+          "run": 2,
+          "image_sha256": "e9b7c57976d42a77f24cf3b4390c1d76ef323e6beb382f44498e689d0b3ca5ce",
+          "state_sha256": "08acf7038355117016de96b8f309d7b3421eb22ec333bcb91ebb0327857b646a",
+          "errors": [],
+          "request_failures": []
+        },
+        {
+          "run": 3,
+          "image_sha256": "e9b7c57976d42a77f24cf3b4390c1d76ef323e6beb382f44498e689d0b3ca5ce",
+          "state_sha256": "08acf7038355117016de96b8f309d7b3421eb22ec333bcb91ebb0327857b646a",
+          "errors": [],
+          "request_failures": []
+        }
+      ],
+      "comparisons": [
+        {
+          "pixels": 0,
+          "total": 0,
+          "max": 0,
+          "dimensions": true
+        },
+        {
+          "pixels": 0,
+          "total": 0,
+          "max": 0,
+          "dimensions": true
+        },
+        {
+          "pixels": 0,
+          "total": 0,
+          "max": 0,
+          "dimensions": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "crm",
+      "runs": [
+        {
+          "run": 1,
+          "image_sha256": "296dce8ead4b18eafa4dac0e41e9393e9629a5a460ae86b7429e959282b04ee0",
+          "state_sha256": "5f660a2128a1554ac462bd488375c71ead0a52c27a77e4b480dc869a8ef4c338",
+          "errors": [],
+          "request_failures": []
+        },
+        {
+          "run": 2,
+          "image_sha256": "296dce8ead4b18eafa4dac0e41e9393e9629a5a460ae86b7429e959282b04ee0",
+          "state_sha256": "5f660a2128a1554ac462bd488375c71ead0a52c27a77e4b480dc869a8ef4c338",
+          "errors": [],
+          "request_failures": []
+        },
+        {
+          "run": 3,
+          "image_sha256": "296dce8ead4b18eafa4dac0e41e9393e9629a5a460ae86b7429e959282b04ee0",
+          "state_sha256": "5f660a2128a1554ac462bd488375c71ead0a52c27a77e4b480dc869a8ef4c338",
+          "errors": [],
+          "request_failures": []
+        }
+      ],
+      "comparisons": [
+        {
+          "pixels": 0,
+          "total": 0,
+          "max": 0,
+          "dimensions": true
+        },
+        {
+          "pixels": 0,
+          "total": 0,
+          "max": 0,
+          "dimensions": true
+        },
+        {
+          "pixels": 0,
+          "total": 0,
+          "max": 0,
+          "dimensions": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "folder",
+      "runs": [
+        {
+          "run": 1,
+          "image_sha256": "8afee141456abebe7f0e099148d0e25448f593eab3e6394ef955487ede1eb921",
+          "state_sha256": "5bbd23effda5960a49f9750a1ffc413c7dda330a4b05740e22b536f53664acce",
+          "errors": [],
+          "request_failures": []
+        },
+        {
+          "run": 2,
+          "image_sha256": "8afee141456abebe7f0e099148d0e25448f593eab3e6394ef955487ede1eb921",
+          "state_sha256": "5bbd23effda5960a49f9750a1ffc413c7dda330a4b05740e22b536f53664acce",
+          "errors": [],
+          "request_failures": []
+        },
+        {
+          "run": 3,
+          "image_sha256": "8afee141456abebe7f0e099148d0e25448f593eab3e6394ef955487ede1eb921",
+          "state_sha256": "5bbd23effda5960a49f9750a1ffc413c7dda330a4b05740e22b536f53664acce",
+          "errors": [],
+          "request_failures": []
+        }
+      ],
+      "comparisons": [
+        {
+          "pixels": 0,
+          "total": 0,
+          "max": 0,
+          "dimensions": true
+        },
+        {
+          "pixels": 0,
+          "total": 0,
+          "max": 0,
+          "dimensions": true
+        },
+        {
+          "pixels": 0,
+          "total": 0,
+          "max": 0,
+          "dimensions": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "metrics-dashboard",
+      "runs": [
+        {
+          "run": 1,
+          "image_sha256": "c512c2d668a733b1ef05ae63862ddc16373af5d569974254afdfa1d1bb790c6b",
+          "state_sha256": "0fc5d1adf9ec8c7643864f51df687ea799605bb9ff42d9f30db05a091e3b0e51",
+          "errors": [],
+          "request_failures": []
+        },
+        {
+          "run": 2,
+          "image_sha256": "c512c2d668a733b1ef05ae63862ddc16373af5d569974254afdfa1d1bb790c6b",
+          "state_sha256": "0fc5d1adf9ec8c7643864f51df687ea799605bb9ff42d9f30db05a091e3b0e51",
+          "errors": [],
+          "request_failures": []
+        },
+        {
+          "run": 3,
+          "image_sha256": "c512c2d668a733b1ef05ae63862ddc16373af5d569974254afdfa1d1bb790c6b",
+          "state_sha256": "0fc5d1adf9ec8c7643864f51df687ea799605bb9ff42d9f30db05a091e3b0e51",
+          "errors": [],
+          "request_failures": []
+        }
+      ],
+      "comparisons": [
+        {
+          "pixels": 0,
+          "total": 0,
+          "max": 0,
+          "dimensions": true
+        },
+        {
+          "pixels": 0,
+          "total": 0,
+          "max": 0,
+          "dimensions": true
+        },
+        {
+          "pixels": 0,
+          "total": 0,
+          "max": 0,
+          "dimensions": true
+        }
+      ],
+      "pass": true
+    },
+    {
+      "route": "project-flow",
+      "runs": [
+        {
+          "run": 1,
+          "image_sha256": "ce5993667e4e53bec5cf2ae357228aa804412612a1b055390e0c2f6e22fe0f28",
+          "state_sha256": "91466d28237c4dc807da175f854aa0958d4acb7872944e27a124e72fddad7756",
+          "errors": [],
+          "request_failures": []
+        },
+        {
+          "run": 2,
+          "image_sha256": "ce5993667e4e53bec5cf2ae357228aa804412612a1b055390e0c2f6e22fe0f28",
+          "state_sha256": "91466d28237c4dc807da175f854aa0958d4acb7872944e27a124e72fddad7756",
+          "errors": [],
+          "request_failures": []
+        },
+        {
+          "run": 3,
+          "image_sha256": "ce5993667e4e53bec5cf2ae357228aa804412612a1b055390e0c2f6e22fe0f28",
+          "state_sha256": "91466d28237c4dc807da175f854aa0958d4acb7872944e27a124e72fddad7756",
+          "errors": [],
+          "request_failures": []
+        }
+      ],
+      "comparisons": [
+        {
+          "pixels": 0,
+          "total": 0,
+          "max": 0,
+          "dimensions": true
+        },
+        {
+          "pixels": 0,
+          "total": 0,
+          "max": 0,
+          "dimensions": true
+        },
+        {
+          "pixels": 0,
+          "total": 0,
+          "max": 0,
+          "dimensions": true
+        }
+      ],
+      "pass": true
+    }
+  ],
+  "completed_at": "2026-10-21T19:40:52.860Z",
+  "final_source_sha256": {
+    "browser.cjs": "49c84cdfe08d778e96bf9ccd1602bdbde5ad3bc329669590574fc9fb6e226a74",
+    "clock-patch.js": "82cc65956e162474791bbdff4e2d677557a3d09c40797e805ad54d5e8fa301da",
+    "scenario-preconditions.cjs": "7c2e1825df6bb0b865af9c7002c2ad2d3228adfde84083ebbb673aa6ad129f28",
+    "original-metafile.json": "848baefcef386de2bbec02b3e3a2fc049214e8afd7384c0a1c7de2aa1198016c"
+  },
+  "inputs_unchanged": true,
+  "pass": true
+}

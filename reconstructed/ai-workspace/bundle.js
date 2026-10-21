@@ -1,6 +1,6 @@
 import {
   MComponent
-} from "../shared/chunk-KXXBUTST.js";
+} from "../shared/chunk-BUP4XQC6.js";
 import "../shared/chunk-MEXH5UGQ.js";
 import {
   init_reconstructed_react,

@@ -290,7 +290,7 @@ var f = `
 :where(.dark, [data-theme="dark"]) .ui-at-tool { background: #f4f4f5; }
 `;
 function p() {
-  return (0, r.jsx)(`div`, { className: `agent-team-demo`, children: (0, r.jsx)(l, { members: [{ role: `Lead Researcher`, avatar: `/avatars/lena.jpg`, tools: [`linkedin`, `hubspot`] }, { role: `Inbound Qualifier`, avatar: `/avatars/theo.jpg`, tools: [`hubspot`, `slack`] }, { role: `Outbound SDR`, avatar: `/avatars/noah.jpg`, tools: [`gmail`, `salesforce`] }] }) });
+  return (0, r.jsx)(`div`, { className: `agent-team-demo`, children: (0, r.jsx)(l, { members: [{ role: `Lead Researcher`, avatar: `../avatars/lena.jpg`, tools: [`linkedin`, `hubspot`] }, { role: `Inbound Qualifier`, avatar: `../avatars/theo.jpg`, tools: [`hubspot`, `slack`] }, { role: `Outbound SDR`, avatar: `../avatars/noah.jpg`, tools: [`gmail`, `salesforce`] }] }) });
 }
 export {
   p as default

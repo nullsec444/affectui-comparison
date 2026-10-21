@@ -1,0 +1,9 @@
+var e={requirements:[`React 19`,`@hugeicons/react`,`@hugeicons/core-free-icons`],whenToUse:[`The base of an AI assistant, internal tool or SaaS dashboard`,`Building your own screens on the same frame as the other affectUI screens`],whenNotToUse:[`Marketing pages – use a block or a plain layout`,`Apps with deep, multi-level navigation trees`],usage:`import { AppShell } from "@/components/ui/app-shell";
+
+export function Layout({ children }: { children: React.ReactNode }) {
+  return (
+    <AppShell active="New chat" workspace="Acme" user={{ name: "Alex Morgan" }} onNavigate={(label) => router.push(routes[label])}>
+      <div className="ui-as-page">{children}</div>
+    </AppShell>
+  );
+}`,props:[{name:`children`,type:`ReactNode`,description:`The page shown next to the sidebar`},{name:`active`,type:`string`,description:`Label of the menu item or project that is open`},{name:`onNavigate`,type:`(label: string) => void`,description:`Called with the label of a menu item or project when it is clicked`},{name:`workspace`,type:`string`,default:`"Acme"`,description:`Workspace name; its first letter becomes the logo`},{name:`user`,type:`{ name: string; avatar?: string }`,default:`{ name: "Alex Morgan" }`,description:`Account at the bottom; without an avatar it shows initials`},{name:`nav`,type:`ShellNavItem[]`,default:`New chat, Folders, Integrations`,description:`Menu items, each { label, icon }`},{name:`projects`,type:`string[]`,description:`Project list under the menu`},{name:`className`,type:`string`,description:`Extra class on the root`}],accessibility:[`Sidebar items, projects and the collapse toggle are real buttons with labels`,`Icons are decorative and hidden from screen readers`],responsive:[`Fills its container – give it the full viewport height in your app`,`Dark mode built in: switches when an ancestor (usually <html>) has the class dark or data-theme="dark"; colors are CSS variables on .ui-as`]};export{e as docs};

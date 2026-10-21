@@ -1,0 +1,10 @@
+var e={requirements:[`React 19`],whenToUse:[`Hero sections, AI features or call-to-action blocks that need a warm, living backdrop`,`Behind a chat input or a prompt, to make it feel like the start of something`],whenNotToUse:[`Behind long body text – the bright floor competes with small type`,`Several floors on one screen – each one runs its own animation`],usage:`import { GradientFloor } from "@/components/ui/gradient-floor";
+
+export function Hero() {
+  return (
+    // Give the floor a height, e.g. with a class
+    <GradientFloor className="hero">
+      <h1>Ideas start to glow</h1>
+    </GradientFloor>
+  );
+}`,examples:[{title:`Own colours, slower`,code:`<GradientFloor colors={["#22d3ee", "#6366f1", "#a855f7"]} speed={6} />`}],props:[{name:`children`,type:`ReactNode`,description:`Content rendered above the floor`},{name:`colors`,type:`[string, string, string]`,default:`["#FF7700", "#FF0055", "#0073FF"]`,description:`Gradient from the crest down`},{name:`speed`,type:`number`,default:`3`,description:`Seconds per morph loop; 0 keeps the shape still`},{name:`className`,type:`string`,description:`Extra class on the root, e.g. for height or rounded corners`}],accessibility:[`The floor layers are hidden from screen readers; only your children are announced`,`Keep text above the bright part of the floor at a readable contrast`],motion:[`Two blurred layers – colour and a white plus-lighter layer – whose peaks and valleys rise and fall against each other`,`Both layers drift sideways on the same beat, the light one a little less`,`Runs only while on screen; with prefers-reduced-motion the floor stays still`],responsive:[`Scales with the width of its container and stays anchored to the bottom edge – give the root a height`,`Set the background with --ui-gf-bg (default #fafafa, dark mode #111113)`],performance:[`The morph runs in one requestAnimationFrame loop and pauses as soon as the floor leaves the screen`],related:[`glow-keyboard`,`grid-background`]};export{e as docs};

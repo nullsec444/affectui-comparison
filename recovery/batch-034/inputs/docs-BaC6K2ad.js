@@ -1,0 +1,11 @@
+var e={requirements:[`React 19`],whenToUse:[`Hero sections and feature headers that need a quiet, technical backdrop`,`Empty states or panels that feel too flat on a plain background`],whenNotToUse:[`Behind dense text or data tables – the lines compete with the content`,`Several moving backgrounds on one screen – keep it to one per view`],usage:`import { GridBackground } from "@/components/ui/grid-background";
+
+export function Hero() {
+  return (
+    <GridBackground size={48} direction="diagonal">
+      <section style={{ display: "grid", placeItems: "center", minHeight: 480 }}>
+        <h1>Build on a steady grid</h1>
+      </section>
+    </GridBackground>
+  );
+}`,props:[{name:`children`,type:`ReactNode`,description:`Content rendered above the grid`},{name:`size`,type:`number`,default:`48`,description:`Cell size in px`},{name:`color`,type:`string`,default:`rgba(0,0,0,.07)`,description:`Line color; dark mode defaults to rgba(255,255,255,.07)`},{name:`speed`,type:`number`,default:`3`,description:`Seconds per cell; 0 keeps the grid still`},{name:`direction`,type:`"up" | "down" | "left" | "right" | "diagonal"`,default:`"diagonal"`,description:`Drift direction; diagonal runs from top right to bottom left`},{name:`reveal`,type:`boolean`,default:`true`,description:`Uncover the grid with a circle growing from the center when it first comes into view`},{name:`fade`,type:`number`,default:`70`,description:`Radius of the edge fade, in % of the distance to the corners`},{name:`className`,type:`string`,description:`Extra class on the container – give it a height or let the content size it`}],accessibility:[`The grid layer is decorative: aria-hidden and pointer-events: none`,`Content sits in its own layer above the grid and stays fully interactive`],motion:[`The lines move by exactly one cell per loop, so the drift is seamless; only transform is animated`,`The reveal grows a circular mask from the center once, when the grid is 20% in view`,`Reduced motion: the grid stays still and appears without the reveal`],responsive:[`Fills its container at any size; the fade follows the container's shape`,`Dark mode built in: switches when an ancestor (usually <html>) has the class dark or data-theme="dark"`]};export{e as docs};

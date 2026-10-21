@@ -1,0 +1,519 @@
+{
+  "source": {
+    "path": "[host]",
+    "snapshot_path": "[host]",
+    "sha256": "59fbcb25fe31d0f5bcf46b5070cae3bfde58f51ea861a861c296d39fcab71173",
+    "bytes": 21102,
+    "published_copy": {
+      "path": "./recovery/batch-006/inputs/component-CA_4LgO0.js",
+      "sha256": "59fbcb25fe31d0f5bcf46b5070cae3bfde58f51ea861a861c296d39fcab71173",
+      "bytes": 21102
+    }
+  },
+  "additional_sources": [
+    {
+      "path": "[host]",
+      "snapshot_path": "[host]",
+      "sha256": "2030ca32677907d4be3f79f382ab824055fe5a49cbbc7dcaf3092d171de49cef",
+      "bytes": 30,
+      "published_copy": {
+        "path": "./recovery/batch-006/inputs/component-CC41BuLe.js",
+        "sha256": "2030ca32677907d4be3f79f382ab824055fe5a49cbbc7dcaf3092d171de49cef",
+        "bytes": 30
+      }
+    },
+    {
+      "path": "[host]",
+      "snapshot_path": "[host]",
+      "sha256": "85c02801542844c011bf4375b6cebdddf45cfc9078343fceb9439943583c257e",
+      "bytes": 27797,
+      "published_copy": {
+        "path": "./recovery/batch-006/inputs/component-CDqIdVLz.js",
+        "sha256": "85c02801542844c011bf4375b6cebdddf45cfc9078343fceb9439943583c257e",
+        "bytes": 27797
+      }
+    },
+    {
+      "path": "[host]",
+      "snapshot_path": "[host]",
+      "sha256": "2030ca32677907d4be3f79f382ab824055fe5a49cbbc7dcaf3092d171de49cef",
+      "bytes": 30,
+      "published_copy": {
+        "path": "./recovery/batch-006/inputs/component-CEv4fZRb.js",
+        "sha256": "2030ca32677907d4be3f79f382ab824055fe5a49cbbc7dcaf3092d171de49cef",
+        "bytes": 30
+      }
+    },
+    {
+      "path": "[host]",
+      "snapshot_path": "[host]",
+      "sha256": "2030ca32677907d4be3f79f382ab824055fe5a49cbbc7dcaf3092d171de49cef",
+      "bytes": 30,
+      "published_copy": {
+        "path": "./recovery/batch-006/inputs/component-CEwHmLzb.js",
+        "sha256": "2030ca32677907d4be3f79f382ab824055fe5a49cbbc7dcaf3092d171de49cef",
+        "bytes": 30
+      }
+    },
+    {
+      "path": "[host]",
+      "snapshot_path": "[host]",
+      "sha256": "9200b75d1a532f1075b74a0776f9f67f28e46fd6bd7ad38952d2a4694e775dd2",
+      "bytes": 19511,
+      "published_copy": {
+        "path": "./recovery/batch-006/inputs/component-CHAr1UD2.js",
+        "sha256": "9200b75d1a532f1075b74a0776f9f67f28e46fd6bd7ad38952d2a4694e775dd2",
+        "bytes": 19511
+      }
+    },
+    {
+      "path": "[host]",
+      "snapshot_path": "[host]",
+      "sha256": "001c15098c1b5910eaddd82fdc65f06a613dcc2b3163583d116291e61b203c74",
+      "bytes": 26221,
+      "published_copy": {
+        "path": "./recovery/batch-006/inputs/component-CIl7yz5m.js",
+        "sha256": "001c15098c1b5910eaddd82fdc65f06a613dcc2b3163583d116291e61b203c74",
+        "bytes": 26221
+      }
+    },
+    {
+      "path": "[host]",
+      "snapshot_path": "[host]",
+      "sha256": "2030ca32677907d4be3f79f382ab824055fe5a49cbbc7dcaf3092d171de49cef",
+      "bytes": 30,
+      "published_copy": {
+        "path": "./recovery/batch-006/inputs/component-CJBnN79-.js",
+        "sha256": "2030ca32677907d4be3f79f382ab824055fe5a49cbbc7dcaf3092d171de49cef",
+        "bytes": 30
+      }
+    },
+    {
+      "path": "[host]",
+      "snapshot_path": "[host]",
+      "sha256": "2030ca32677907d4be3f79f382ab824055fe5a49cbbc7dcaf3092d171de49cef",
+      "bytes": 30,
+      "published_copy": {
+        "path": "./recovery/batch-006/inputs/component-CLZvFUCF.js",
+        "sha256": "2030ca32677907d4be3f79f382ab824055fe5a49cbbc7dcaf3092d171de49cef",
+        "bytes": 30
+      }
+    },
+    {
+      "path": "[host]",
+      "snapshot_path": "[host]",
+      "sha256": "2030ca32677907d4be3f79f382ab824055fe5a49cbbc7dcaf3092d171de49cef",
+      "bytes": 30,
+      "published_copy": {
+        "path": "./recovery/batch-006/inputs/component-COkht5bW.js",
+        "sha256": "2030ca32677907d4be3f79f382ab824055fe5a49cbbc7dcaf3092d171de49cef",
+        "bytes": 30
+      }
+    },
+    {
+      "path": "[host]",
+      "snapshot_path": "[host]",
+      "sha256": "98ac4e78d199a9e9fbde473185275294efcd8077b54b1e1806fe4c42143e4338",
+      "bytes": 11456,
+      "published_copy": {
+        "path": "./recovery/batch-006/inputs/component-CQGDXGUk.js",
+        "sha256": "98ac4e78d199a9e9fbde473185275294efcd8077b54b1e1806fe4c42143e4338",
+        "bytes": 11456
+      }
+    },
+    {
+      "path": "[host]",
+      "snapshot_path": "[host]",
+      "sha256": "2030ca32677907d4be3f79f382ab824055fe5a49cbbc7dcaf3092d171de49cef",
+      "bytes": 30,
+      "published_copy": {
+        "path": "./recovery/batch-006/inputs/component-CS4yLRuV.js",
+        "sha256": "2030ca32677907d4be3f79f382ab824055fe5a49cbbc7dcaf3092d171de49cef",
+        "bytes": 30
+      }
+    }
+  ],
+  "engine": {
+    "id": "wakaru",
+    "version": "1.14.0",
+    "executable": {
+      "path": "./wakaru",
+      "sha256": "664fa06782a61eda7ed15885134b52525fd565dd77607e642062ceb6cd927c38",
+      "bytes": 26793296
+    },
+    "audited_source_revision": "8219bf5016a063d7fb215101a8c45d5959ec733f",
+    "executed_source_revision": null
+  },
+  "options": {
+    "extraction_mode": "structural",
+    "rewrite_level": "standard"
+  },
+  "status": "complete",
+  "detected_formats": [],
+  "reported_safety": "normal",
+  "reported_strategy": "structural",
+  "reported_format": "unknown",
+  "total": 12,
+  "failed": 0,
+  "modules": [
+    {
+      "reported_filename": "component-CA_4LgO0.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/batch-006/modules/component-CA_4LgO0.js",
+        "sha256": "957bb7b9f240cb3fcb40c182968ce032f4a67364a7cf7b1faab4af7fdc38de06",
+        "bytes": 23506
+      },
+      "source_map": {
+        "path": "./recovery/batch-006/modules/component-CA_4LgO0.js.map",
+        "sha256": "835f0513e9cdab9c3590d38abd61e1f813902edcde7d747d447621c5077c66cb",
+        "bytes": 10079
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "[host]",
+        "original_sha256": "59fbcb25fe31d0f5bcf46b5070cae3bfde58f51ea861a861c296d39fcab71173",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 21102
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    },
+    {
+      "reported_filename": "component-CC41BuLe.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/batch-006/modules/component-CC41BuLe.js",
+        "sha256": "096f03469b46e72834e785d5bd7f2c5c6a47dd57606b4b05d2be40fe85f27992",
+        "bytes": 39
+      },
+      "source_map": {
+        "path": "./recovery/batch-006/modules/component-CC41BuLe.js.map",
+        "sha256": "81b852aa39261b0cf69bbaed0b9ee9bdb5b2ab81c01cfc556630bf79996d44c2",
+        "bytes": 159
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "[host]",
+        "original_sha256": "2030ca32677907d4be3f79f382ab824055fe5a49cbbc7dcaf3092d171de49cef",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 30
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    },
+    {
+      "reported_filename": "component-CDqIdVLz.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/batch-006/modules/component-CDqIdVLz.js",
+        "sha256": "f3cac3a7387b9eddefe6c43ac5399b82aac896f838eadd2c8f9e8c2a56a59b01",
+        "bytes": 27806
+      },
+      "source_map": {
+        "path": "./recovery/batch-006/modules/component-CDqIdVLz.js.map",
+        "sha256": "ed4be0e1918495ee082da4e56c320deeffe349dc06f3d7a2e78a33be3b0c95e3",
+        "bytes": 870
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "[host]",
+        "original_sha256": "85c02801542844c011bf4375b6cebdddf45cfc9078343fceb9439943583c257e",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 27797
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    },
+    {
+      "reported_filename": "component-CEv4fZRb.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/batch-006/modules/component-CEv4fZRb.js",
+        "sha256": "096f03469b46e72834e785d5bd7f2c5c6a47dd57606b4b05d2be40fe85f27992",
+        "bytes": 39
+      },
+      "source_map": {
+        "path": "./recovery/batch-006/modules/component-CEv4fZRb.js.map",
+        "sha256": "27f23511f7584b4c11614aab331da365f1a48370cbe9b0af4bfa3c35c2655f63",
+        "bytes": 159
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "[host]",
+        "original_sha256": "2030ca32677907d4be3f79f382ab824055fe5a49cbbc7dcaf3092d171de49cef",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 30
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    },
+    {
+      "reported_filename": "component-CEwHmLzb.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/batch-006/modules/component-CEwHmLzb.js",
+        "sha256": "096f03469b46e72834e785d5bd7f2c5c6a47dd57606b4b05d2be40fe85f27992",
+        "bytes": 39
+      },
+      "source_map": {
+        "path": "./recovery/batch-006/modules/component-CEwHmLzb.js.map",
+        "sha256": "86ff5920c8f09f141e654f3ff6f301044f8de87b2bd88b0d28b4296d492bd6f7",
+        "bytes": 159
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "[host]",
+        "original_sha256": "2030ca32677907d4be3f79f382ab824055fe5a49cbbc7dcaf3092d171de49cef",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 30
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    },
+    {
+      "reported_filename": "component-CHAr1UD2.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/batch-006/modules/component-CHAr1UD2.js",
+        "sha256": "4caa64b367317779d1d9f12c7313b493b7f912840b9b7ae7c57c9a5bd05aec8e",
+        "bytes": 21739
+      },
+      "source_map": {
+        "path": "./recovery/batch-006/modules/component-CHAr1UD2.js.map",
+        "sha256": "7c937cf74b222b2a2a07b89ae8f0b60c80c4b99098a9fe2e54cb6dc61d39c6f5",
+        "bytes": 10715
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "[host]",
+        "original_sha256": "9200b75d1a532f1075b74a0776f9f67f28e46fd6bd7ad38952d2a4694e775dd2",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 19511
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    },
+    {
+      "reported_filename": "component-CIl7yz5m.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/batch-006/modules/component-CIl7yz5m.js",
+        "sha256": "2c760c48f36f3f7bf5d9ba34c1bd28e35775f68b06aa9eb365dd5174688244d1",
+        "bytes": 26230
+      },
+      "source_map": {
+        "path": "./recovery/batch-006/modules/component-CIl7yz5m.js.map",
+        "sha256": "7493aca8746c37e5779aedf8a06ebe6c844d8b8c94859900e429fca5ce77ff84",
+        "bytes": 506
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "[host]",
+        "original_sha256": "001c15098c1b5910eaddd82fdc65f06a613dcc2b3163583d116291e61b203c74",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 26221
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    },
+    {
+      "reported_filename": "component-CJBnN79-.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/batch-006/modules/component-CJBnN79-.js",
+        "sha256": "096f03469b46e72834e785d5bd7f2c5c6a47dd57606b4b05d2be40fe85f27992",
+        "bytes": 39
+      },
+      "source_map": {
+        "path": "./recovery/batch-006/modules/component-CJBnN79-.js.map",
+        "sha256": "4f25413a74ec33e5a505ee65e278b24b433b4fa17531a067260d5c1c17505c83",
+        "bytes": 159
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "[host]",
+        "original_sha256": "2030ca32677907d4be3f79f382ab824055fe5a49cbbc7dcaf3092d171de49cef",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 30
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    },
+    {
+      "reported_filename": "component-CLZvFUCF.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/batch-006/modules/component-CLZvFUCF.js",
+        "sha256": "096f03469b46e72834e785d5bd7f2c5c6a47dd57606b4b05d2be40fe85f27992",
+        "bytes": 39
+      },
+      "source_map": {
+        "path": "./recovery/batch-006/modules/component-CLZvFUCF.js.map",
+        "sha256": "c0dd37699e4b112edaf4d685dbb4de5fee9411c90f23f586079e55dbcbe8ba77",
+        "bytes": 159
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "[host]",
+        "original_sha256": "2030ca32677907d4be3f79f382ab824055fe5a49cbbc7dcaf3092d171de49cef",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 30
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    },
+    {
+      "reported_filename": "component-COkht5bW.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/batch-006/modules/component-COkht5bW.js",
+        "sha256": "096f03469b46e72834e785d5bd7f2c5c6a47dd57606b4b05d2be40fe85f27992",
+        "bytes": 39
+      },
+      "source_map": {
+        "path": "./recovery/batch-006/modules/component-COkht5bW.js.map",
+        "sha256": "299283ed1788141091b6341d7ea8c30c5d35227121e35ec194a9062aa1a88a90",
+        "bytes": 159
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "[host]",
+        "original_sha256": "2030ca32677907d4be3f79f382ab824055fe5a49cbbc7dcaf3092d171de49cef",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 30
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    },
+    {
+      "reported_filename": "component-CQGDXGUk.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/batch-006/modules/component-CQGDXGUk.js",
+        "sha256": "c3947c2a45abe7873088217d6c9de9d29880067436fa887d35c7418529edf601",
+        "bytes": 12379
+      },
+      "source_map": {
+        "path": "./recovery/batch-006/modules/component-CQGDXGUk.js.map",
+        "sha256": "c6215456c9349f5dee1a53d22fe6106b4eba93961b1449f84e9075bcf9c0ad7b",
+        "bytes": 4649
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "[host]",
+        "original_sha256": "98ac4e78d199a9e9fbde473185275294efcd8077b54b1e1806fe4c42143e4338",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 11456
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    },
+    {
+      "reported_filename": "component-CS4yLRuV.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/batch-006/modules/component-CS4yLRuV.js",
+        "sha256": "096f03469b46e72834e785d5bd7f2c5c6a47dd57606b4b05d2be40fe85f27992",
+        "bytes": 39
+      },
+      "source_map": {
+        "path": "./recovery/batch-006/modules/component-CS4yLRuV.js.map",
+        "sha256": "7615ad68d063fbe5a9f2e422283be0686294c7c7c489f45756ff08833a3f1116",
+        "bytes": 159
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "[host]",
+        "original_sha256": "2030ca32677907d4be3f79f382ab824055fe5a49cbbc7dcaf3092d171de49cef",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 30
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    }
+  ],
+  "warnings": [],
+  "report": {
+    "path": "./recovery/batch-006/reports/stdout.json",
+    "sha256": "58f45f34e25e1375fa7f84bb9c49647e172a393510124caff158ed3ab820057a",
+    "bytes": 1054
+  },
+  "provenance": {
+    "path": "./recovery/batch-006/reports/provenance.json",
+    "sha256": "96415e1b1249cb2ba41856bfe5e7963dcdad93d1ff711ccfc95aefb9b5c7e472",
+    "bytes": 2164
+  },
+  "analysis_input": {
+    "input_path": "./recovery/batch-006/modules",
+    "format": "directory"
+  },
+  "runtime_equivalence": "unknown",
+  "limitations": [
+    "Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.",
+    "Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.",
+    "Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.",
+    "Inspection mode may produce non-executable regions. No input or recovered application code is executed.",
+    "Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB total input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment."
+  ]
+}

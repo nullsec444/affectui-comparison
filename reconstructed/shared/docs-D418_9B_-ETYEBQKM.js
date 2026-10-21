@@ -10,7 +10,7 @@ var docs = {
 export function ClientPage() {
   return (
     <ClientContext
-      me={{ name: "Lena Hart", avatar: "/avatars/lena.jpg" }}
+      me={{ name: "Lena Hart", avatar: "../avatars/lena.jpg" }}
       onAddContext={(clientId, text, files) => api.addContext(clientId, { text, files })}
       onCreateClient={(name) => api.createClient(name)}
     />

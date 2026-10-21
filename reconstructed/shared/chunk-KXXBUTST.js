@@ -603,7 +603,7 @@ function MComponent() {
   } : {
     width,
     zoom: t.scale
-  } : void 0, children: /* @__PURE__ */ jsx(S1Component, { userName: `Lena`, userAvatar: `/avatars/lena.jpg` }) }) });
+  } : void 0, children: /* @__PURE__ */ jsx(S1Component, { userName: `Lena`, userAvatar: `../avatars/lena.jpg` }) }) });
 }
 
 export {

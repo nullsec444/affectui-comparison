@@ -362,15 +362,15 @@ var f = `
 function PComponent() {
   return /* @__PURE__ */ jsx("div", { className: `agent-team-demo`, children: /* @__PURE__ */ jsx(LComponent, { members: [{
     role: `Lead Researcher`,
-    avatar: `/avatars/lena.jpg`,
+    avatar: `../avatars/lena.jpg`,
     tools: [`linkedin`, `hubspot`]
   }, {
     role: `Inbound Qualifier`,
-    avatar: `/avatars/theo.jpg`,
+    avatar: `../avatars/theo.jpg`,
     tools: [`hubspot`, `slack`]
   }, {
     role: `Outbound SDR`,
-    avatar: `/avatars/noah.jpg`,
+    avatar: `../avatars/noah.jpg`,
     tools: [`gmail`, `salesforce`]
   }] }) });
 }

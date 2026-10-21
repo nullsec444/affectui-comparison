@@ -1,0 +1,18 @@
+{
+  "format": "unknown",
+  "strategy": "structural",
+  "modules": {
+    "docs.clean-CMKNDwWl.js": {"input": "[host]", "ranges": [[0,7793]], "extraction": "structural"},
+    "docs.clean-CSmepD-w.js": {"input": "[host]", "ranges": [[0,3110]], "extraction": "structural"},
+    "docs.clean-CWU7X6cT.js": {"input": "[host]", "ranges": [[0,2206]], "extraction": "structural"},
+    "docs.clean-CYmTgIA9.js": {"input": "[host]", "ranges": [[0,1923]], "extraction": "structural"},
+    "docs.clean-CcOqdgxq.js": {"input": "[host]", "ranges": [[0,5644]], "extraction": "structural"},
+    "docs.clean-CflJ0oKJ.js": {"input": "[host]", "ranges": [[0,6596]], "extraction": "structural"},
+    "docs.clean-Cj2wJRA7.js": {"input": "[host]", "ranges": [[0,2554]], "extraction": "structural"},
+    "docs.clean-CyqSWI06.js": {"input": "[host]", "ranges": [[0,2715]], "extraction": "structural"},
+    "docs.clean-D6WKo64J.js": {"input": "[host]", "ranges": [[0,5711]], "extraction": "structural"},
+    "docs.clean-D6zbp80y.js": {"input": "[host]", "ranges": [[0,4048]], "extraction": "structural"},
+    "docs.clean-DAMwFsKO.js": {"input": "[host]", "ranges": [[0,1811]], "extraction": "structural"},
+    "docs.clean-DG9GSNHk.js": {"input": "[host]", "ranges": [[0,2723]], "extraction": "structural"}
+  }
+}

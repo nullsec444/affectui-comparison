@@ -1,6 +1,6 @@
 import {
   VeComponent
-} from "../shared/chunk-TYUBCQJ2.js";
+} from "../shared/chunk-TFHHKHDP.js";
 import {
   init_reconstructed_react,
   reconstructed_react_default,

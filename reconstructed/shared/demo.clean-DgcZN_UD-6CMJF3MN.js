@@ -534,7 +534,7 @@ var messages = [{
   id: `1`,
   author: {
     name: `Lena Lindqvist`,
-    avatar: `/avatars/lena.jpg`
+    avatar: `../avatars/lena.jpg`
   },
   createdAt: f(3),
   text: `/edit Rename every \u201Ccustomers\u201D to \u201Cmembers\u201D on the pricing page.`
@@ -551,7 +551,7 @@ var h = 0;
 function GComponent() {
   return /* @__PURE__ */ jsx("div", { className: `thread-demo`, children: /* @__PURE__ */ jsx(AComponent, { messages, currentUser: {
     name: `Sofia Marin`,
-    avatar: `/avatars/sofia.jpg`
+    avatar: `../avatars/sofia.jpg`
   }, assistant: d, onClose: () => {
   }, onReply: (e) => {
     if (!/@atlas/i.test(e)) {

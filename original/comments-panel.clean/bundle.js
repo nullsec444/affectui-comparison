@@ -1,6 +1,6 @@
 import {
   h
-} from "../shared/chunk-G2XH6T2E.js";
+} from "../shared/chunk-NRIY7SVK.js";
 import {
   init_original_react,
   original_react_default,

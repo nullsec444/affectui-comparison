@@ -1,0 +1,9 @@
+var e={requirements:[`React 19`],whenToUse:[`One word or a short phrase in a hero headline that should carry the brand`,`A highlight inside a heading, like a product name or the payoff of a sentence`],whenNotToUse:[`Body copy or long passages – a moving gradient makes them harder to read`,`Several highlights on one screen – the effect works because it's rare`],usage:`import { GradientText } from "@/components/ui/gradient-text";
+
+export function Hero() {
+  return (
+    <h1>
+      Interfaces people actually <GradientText>feel.</GradientText>
+    </h1>
+  );
+}`,props:[{name:`children`,type:`ReactNode`,description:`The text to fill with the gradient`},{name:`colors`,type:`string[]`,default:`["#dd0674", "#5e3ee0", "#ff5fae", "#7c5cff"]`,description:`Gradient start, end and up to two blob colors; replaces the dark-mode colors too`},{name:`speed`,type:`number`,default:`8`,description:`Seconds per flow cycle`},{name:`sweep`,type:`boolean`,default:`true`,description:`Sweep the color in from left to right when the text scrolls into view`},{name:`as`,type:`"span" | "h1" | "h2" | "p"`,default:`"span"`,description:`Element to render`},{name:`className`,type:`string`,description:`Extra class on the root`}],accessibility:[`The text stays real, selectable text – the gradient copy on top is aria-hidden`,`Pick colors with enough contrast against your background; the defaults are tuned for white and near-black`],motion:[`Soft color blobs drift across a two-color base in a slow loop; the sweep wipes the color in once, the first time the text is 60% visible`,`Reduced motion shows the finished gradient, standing still`],responsive:[`Font, size and weight come from the parent, so it scales with your headline`,`Dark mode built in: switches when an ancestor (usually <html>) has the class dark or data-theme="dark"`],related:[`text-reveal`]};export{e as docs};

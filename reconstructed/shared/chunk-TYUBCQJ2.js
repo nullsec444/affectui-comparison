@@ -16,19 +16,19 @@ var r = n2();
 var i = {
   lena: {
     name: `Lena Hart`,
-    avatar: `/avatars/lena.jpg`
+    avatar: `../avatars/lena.jpg`
   },
   jonas: {
     name: `Jonas Weber`,
-    avatar: `/avatars/jonas.jpg`
+    avatar: `../avatars/jonas.jpg`
   },
   mara: {
     name: `Mara Novak`,
-    avatar: `/avatars/mara.jpg`
+    avatar: `../avatars/mara.jpg`
   },
   theo: {
     name: `Theo Brandt`,
-    avatar: `/avatars/theo.jpg`
+    avatar: `../avatars/theo.jpg`
   }
 };
 var a = [{
@@ -276,7 +276,7 @@ function U1Component({
   clients = a,
   me = {
     name: `Sofia Lind`,
-    avatar: `/avatars/sofia.jpg`
+    avatar: `../avatars/sofia.jpg`
   },
   onAddContext,
   onCreateClient,

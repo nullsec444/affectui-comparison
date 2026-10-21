@@ -126,7 +126,7 @@ function m() {
     a2();
     let o2 = new ResizeObserver(a2);
     return o2.observe(i2), () => o2.disconnect();
-  }, []), (0, i.jsx)(`div`, { ref: e, className: `workspace-demo`, "data-fit": t ? t.card ? `card` : `stage` : void 0, children: (0, i.jsx)(`div`, { className: `workspace-demo__frame`, style: t ? t.card ? { width: p, transform: `scale(${t.scale})` } : { width: p, zoom: t.scale } : void 0, children: (0, i.jsx)(s2, { userName: `Lena`, userAvatar: `/avatars/lena.jpg` }) }) });
+  }, []), (0, i.jsx)(`div`, { ref: e, className: `workspace-demo`, "data-fit": t ? t.card ? `card` : `stage` : void 0, children: (0, i.jsx)(`div`, { className: `workspace-demo__frame`, style: t ? t.card ? { width: p, transform: `scale(${t.scale})` } : { width: p, zoom: t.scale } : void 0, children: (0, i.jsx)(s2, { userName: `Lena`, userAvatar: `../avatars/lena.jpg` }) }) });
 }
 
 export {

@@ -1,0 +1,13 @@
+{
+  "phase": "immediate-publication-authorized",
+  "variants": 111,
+  "accepted": 107,
+  "partial": 4,
+  "blocked": 0,
+  "complete": false,
+  "final_full_gate_completed": false,
+  "owner_authorized_publication_without_full_gate": true,
+  "acceptance_record": "acceptance-results.json",
+  "failure_table": "failure-table.json",
+  "verification_note": "Latest per-route evidence spans multiple harness revisions; the final immutable full gate was interrupted at the owner's request."
+}

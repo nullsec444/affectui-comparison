@@ -1,23 +1,32 @@
 {
   "route": "agent-steering",
   "demo_chunk": "demo-Bzg0Jm8m.js",
-  "recovered_jsx": "../reconstructed/",
+  "recovered_source_root": "../reconstructed/",
   "modules": [
     {
       "original_asset": "demo-Bzg0Jm8m.js",
-      "recovered_jsx": "../reconstructed/demo-Bzg0Jm8m.jsx"
+      "original_sha256": "04c73b95fc64c2f83c89f47ac2b81c70b7991e1b6c138a380f9a4b2248db02e4",
+      "recovered_jsx": "../reconstructed/demo-Bzg0Jm8m.jsx",
+      "jsx_sha256": "df1df4f5b82c443edcb4e75e7e0bc06c63f69c4613946db40697c9fc705ae86a"
     },
     {
       "original_asset": "jsx-runtime-CTsRTJUX.js",
-      "recovered_jsx": "../reconstructed/jsx-runtime-CTsRTJUX.jsx"
+      "original_sha256": "bbfce460103673e6a971186bd251442a2ef93afee567909f92fb934f5e6948ca",
+      "recovered_jsx": "../reconstructed/jsx-runtime-CTsRTJUX.jsx",
+      "jsx_sha256": "41026aec6c8554cadb9016712d98f682e95488a6a2f6958c6d6cbb79dde243dd"
     },
     {
       "original_asset": "react-BkAXpnfr.js",
-      "recovered_jsx": "../reconstructed/react-BkAXpnfr.jsx"
+      "original_sha256": "335971d771f8e3f5bbef42613ea6fdd7a6b141a133b4a9ab11ea9c8085069a03",
+      "recovered_jsx": "../reconstructed/react-BkAXpnfr.jsx",
+      "jsx_sha256": "cc88e620a17c18f587250f482251a2da2ee3f0acd5a2f6ffea064e23512faea1"
     },
     {
       "original_asset": "rolldown-runtime-BpQH8Ho1.js",
-      "recovered_jsx": "../reconstructed/rolldown-runtime-BpQH8Ho1.jsx"
+      "original_sha256": "f42a7e25f42fd00b0935f3a7b06f4429238b50b6798b53c273e30d7095f9e94e",
+      "recovered_jsx": "../reconstructed/rolldown-runtime-BpQH8Ho1.jsx",
+      "jsx_sha256": "d91fcd15dfd1bc82132411dcf92348b5f5e2558b48c870fe6a5377baf4a59a3c"
     }
-  ]
+  ],
+  "note": "Every link resolves to a recovered .jsx module. Identifiers, comments and TypeScript types are not claimed author-original."
 }

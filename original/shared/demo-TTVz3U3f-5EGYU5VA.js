@@ -350,11 +350,11 @@ img.ui-ct__avatar { box-shadow: 0 0 0 1px var(--ui-ct-avatar-ring); }
 `;
 var d = { name: `Atlas`, avatar: (0, r.jsx)(s, {}), assistant: true };
 var f = (e) => Date.now() - e * 6e4;
-var p = [{ id: `1`, author: { name: `Lena Lindqvist`, avatar: `/avatars/lena.jpg` }, createdAt: f(3), text: `/edit Rename every \u201Ccustomers\u201D to \u201Cmembers\u201D on the pricing page.` }, { id: `2`, author: d, createdAt: f(1), text: ``, status: `Edit completed`, details: [`Renamed 12 mentions in 3 sections`, `Kept \u201Ccustomer support\u201D as it is`, `Left the legal pages untouched`] }];
+var p = [{ id: `1`, author: { name: `Lena Lindqvist`, avatar: `../avatars/lena.jpg` }, createdAt: f(3), text: `/edit Rename every \u201Ccustomers\u201D to \u201Cmembers\u201D on the pricing page.` }, { id: `2`, author: d, createdAt: f(1), text: ``, status: `Edit completed`, details: [`Renamed 12 mentions in 3 sections`, `Kept \u201Ccustomer support\u201D as it is`, `Left the legal pages untouched`] }];
 var m = [`Done \u2013 I also updated the meta description.`, `Good catch. I'll leave a note for the copy review.`, `On it. You'll see the change in a minute.`];
 var h = 0;
 function g() {
-  return (0, r.jsx)(`div`, { className: `thread-demo`, children: (0, r.jsx)(a, { messages: p, currentUser: { name: `Sofia Marin`, avatar: `/avatars/sofia.jpg` }, assistant: d, onClose: () => {
+  return (0, r.jsx)(`div`, { className: `thread-demo`, children: (0, r.jsx)(a, { messages: p, currentUser: { name: `Sofia Marin`, avatar: `../avatars/sofia.jpg` }, assistant: d, onClose: () => {
   }, onReply: (e) => {
     if (!/@atlas/i.test(e)) return;
     let t = m[h++ % m.length];

@@ -1,0 +1,42 @@
+{
+  "steps_total": 1252,
+  "steps_mismatched": 2,
+  "categories": {
+    "matches_first_original_run_only": 1,
+    "state_only": 1
+  },
+  "detail": [
+    {
+      "route": "files",
+      "step": 34,
+      "action": {
+        "tag": "button",
+        "name": "PDFBrand-GuidelinesPDF · Jonas Weber · Shared",
+        "type": "button",
+        "nth": 0,
+        "role": null,
+        "placeholder": null
+      },
+      "state_match": true,
+      "pixels_vs_second_original": 1,
+      "pixels_vs_first_original": 0,
+      "category": "matches_first_original_run_only"
+    },
+    {
+      "route": "glow-keyboard",
+      "step": 0,
+      "action": {
+        "tag": "input",
+        "name": "Ask AI anything...",
+        "type": "text",
+        "nth": 0,
+        "role": null,
+        "placeholder": "Ask AI anything..."
+      },
+      "state_match": true,
+      "pixels_vs_second_original": 0,
+      "pixels_vs_first_original": 81787,
+      "category": "state_only"
+    }
+  ]
+}

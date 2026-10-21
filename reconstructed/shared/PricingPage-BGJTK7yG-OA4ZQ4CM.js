@@ -349,7 +349,7 @@ function PricingPage() {
     /* @__PURE__ */ jsx("section", { className: `review`, "aria-label": `What customers say`, children: /* @__PURE__ */ jsxs("figure", { className: `review__card`, children: [
       /* @__PURE__ */ jsx("blockquote", { children: `\u201CWe rebuilt the core screens of recruitpilot with affectUI. Every component feels like a senior designer obsessed over it \u2013 the motion, the spacing, the dark mode \u2013 and it drops straight into our React app. We shipped in days what would have taken us weeks, and our users noticed right away.\u201D` }),
       /* @__PURE__ */ jsxs("figcaption", { children: [
-        /* @__PURE__ */ jsx("img", { src: `/avatars/mike.jpg`, alt: ``, width: 44, height: 44 }),
+        /* @__PURE__ */ jsx("img", { src: `../avatars/mike.jpg`, alt: ``, width: 44, height: 44 }),
         /* @__PURE__ */ jsxs("span", { children: [
           /* @__PURE__ */ jsx("strong", { children: `Mike` }),
           /* @__PURE__ */ jsx("span", { children: `recruitpilot` })

@@ -3,27 +3,51 @@
   "catalog_asset": "current-catalog.js",
   "paid_distinct": 72,
   "paid_variants": 111,
-  "free_variants_hidden_in_index": 57,
+  "catalog_counts": {
+    "paid_items": 72,
+    "paid_variants": 111,
+    "free_items": 40,
+    "free_variants": 57
+  },
   "acceptance": {
-    "catalog_distinct": 72,
-    "variants": 111,
-    "tested": 111,
-    "reachable_modules": 567,
-    "recovered_modules": 567,
-    "inventory_complete": true,
-    "accepted": 54,
-    "partial": 57,
-    "blocked": 0,
-    "check_totals": {
-      "inventory": 111,
-      "reachable_recovered": 111,
-      "jsx_source": 111,
-      "build": 111,
-      "scenario_current": 111,
-      "visual": 94,
-      "dom": 107,
-      "interactions": 59
-    }
+    "source": "acceptance-results.json",
+    "sha256": "60f461294d7ccaf0d10ede4095bf228ad0db863e25b86fe150199fbba3964ea5",
+    "summary": {
+      "catalog_distinct": 72,
+      "variants": 111,
+      "tested": 111,
+      "reachable_modules": 567,
+      "recovered_modules": 567,
+      "inventory_complete": true,
+      "accepted": 107,
+      "partial": 4,
+      "blocked": 0,
+      "check_totals": {
+        "inventory": 111,
+        "reachable_recovered": 111,
+        "jsx_source": 111,
+        "build": 111,
+        "hosting": 111,
+        "scenario_current": 111,
+        "visual": 110,
+        "dom": 110,
+        "interactions": 107
+      }
+    },
+    "structural_errors": []
+  },
+  "full_gate": {
+    "recorded": true,
+    "pass": false,
+    "command": "node determinism.cjs && node full-gate.cjs takeover-final-gate.log",
+    "log": "takeover-final-gate.log"
+  },
+  "determinism": {
+    "recorded": true,
+    "pass": true
+  },
+  "live_check": {
+    "recorded": false
   },
   "items": [
     {
@@ -32,19 +56,22 @@
       "variant": "basic",
       "route": "agent-chat",
       "demo_chunk": "demo-BWWWdWrI.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 567,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-BWWWdWrI.jsx",
+      "source_graph": "agent-chat/source-graph.json"
     },
     {
       "slug": "agent-cursors",
@@ -52,19 +79,22 @@
       "variant": "basic",
       "route": "agent-cursors",
       "demo_chunk": "demo-BpwDm3_5.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-BpwDm3_5.jsx",
+      "source_graph": "agent-cursors/source-graph.json"
     },
     {
       "slug": "agent-cursors",
@@ -72,19 +102,22 @@
       "variant": "clean",
       "route": "agent-cursors.clean",
       "demo_chunk": "demo.clean-BdsziCoX.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
-        "visual": false,
-        "dom": false,
-        "interactions": false
+        "visual": true,
+        "dom": true,
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-BdsziCoX.jsx",
+      "source_graph": "agent-cursors.clean/source-graph.json"
     },
     {
       "slug": "agent-gallery",
@@ -92,19 +125,22 @@
       "variant": "basic",
       "route": "agent-gallery",
       "demo_chunk": "demo-Dx1zk5ox.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-Dx1zk5ox.jsx",
+      "source_graph": "agent-gallery/source-graph.json"
     },
     {
       "slug": "agent-inbox",
@@ -112,19 +148,22 @@
       "variant": "basic",
       "route": "agent-inbox",
       "demo_chunk": "demo-Bq86T0RX.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-Bq86T0RX.jsx",
+      "source_graph": "agent-inbox/source-graph.json"
     },
     {
       "slug": "agent-inbox",
@@ -132,19 +171,22 @@
       "variant": "clean",
       "route": "agent-inbox.clean",
       "demo_chunk": "demo.clean-DQ6MZQcD.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-DQ6MZQcD.jsx",
+      "source_graph": "agent-inbox.clean/source-graph.json"
     },
     {
       "slug": "agent-lanes",
@@ -152,19 +194,22 @@
       "variant": "basic",
       "route": "agent-lanes",
       "demo_chunk": "demo-CCeL1VNp.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-CCeL1VNp.jsx",
+      "source_graph": "agent-lanes/source-graph.json"
     },
     {
       "slug": "agent-lanes",
@@ -178,13 +223,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-DC3N3Pap.jsx",
+      "source_graph": "agent-lanes.clean/source-graph.json"
     },
     {
       "slug": "agent-plan",
@@ -198,13 +246,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 5,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-crn6hRBF.jsx",
+      "source_graph": "agent-plan/source-graph.json"
     },
     {
       "slug": "agent-plan",
@@ -218,13 +269,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-BjIF1-j-.jsx",
+      "source_graph": "agent-plan.clean/source-graph.json"
     },
     {
       "slug": "agent-run",
@@ -232,19 +286,22 @@
       "variant": "basic",
       "route": "agent-run",
       "demo_chunk": "demo-eQInHe1Q.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
-        "visual": false,
+        "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 567,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-eQInHe1Q.jsx",
+      "source_graph": "agent-run/source-graph.json"
     },
     {
       "slug": "agent-steering",
@@ -258,13 +315,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-Bzg0Jm8m.jsx",
+      "source_graph": "agent-steering/source-graph.json"
     },
     {
       "slug": "agent-steering",
@@ -272,19 +332,22 @@
       "variant": "clean",
       "route": "agent-steering.clean",
       "demo_chunk": "demo.clean-CykqoJC9.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
-        "visual": false,
+        "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-CykqoJC9.jsx",
+      "source_graph": "agent-steering.clean/source-graph.json"
     },
     {
       "slug": "agent-tree",
@@ -292,19 +355,22 @@
       "variant": "basic",
       "route": "agent-tree",
       "demo_chunk": "demo-Ddb1Dch3.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
-        "visual": false,
-        "dom": false,
+        "visual": true,
+        "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-Ddb1Dch3.jsx",
+      "source_graph": "agent-tree/source-graph.json"
     },
     {
       "slug": "agent-tree",
@@ -312,19 +378,22 @@
       "variant": "clean",
       "route": "agent-tree.clean",
       "demo_chunk": "demo.clean-CX0onucT.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
-        "visual": false,
-        "dom": false,
+        "visual": true,
+        "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-CX0onucT.jsx",
+      "source_graph": "agent-tree.clean/source-graph.json"
     },
     {
       "slug": "ai-answer",
@@ -338,13 +407,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-NvLm8mGU.jsx",
+      "source_graph": "ai-answer/source-graph.json"
     },
     {
       "slug": "ai-answer",
@@ -358,13 +430,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-B3KZIS0J.jsx",
+      "source_graph": "ai-answer.clean/source-graph.json"
     },
     {
       "slug": "ai-workspace",
@@ -372,19 +447,22 @@
       "variant": "basic",
       "route": "ai-workspace",
       "demo_chunk": "demo-CZJ2T4nU.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 5,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-CZJ2T4nU.jsx",
+      "source_graph": "ai-workspace/source-graph.json"
     },
     {
       "slug": "analytics",
@@ -392,19 +470,22 @@
       "variant": "basic",
       "route": "analytics",
       "demo_chunk": "demo-iLo3CJ8-.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
-        "visual": false,
+        "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 567,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-iLo3CJ8-.jsx",
+      "source_graph": "analytics/source-graph.json"
     },
     {
       "slug": "app-directory",
@@ -412,19 +493,22 @@
       "variant": "basic",
       "route": "app-directory",
       "demo_chunk": "demo-BiwOrW2x.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-BiwOrW2x.jsx",
+      "source_graph": "app-directory/source-graph.json"
     },
     {
       "slug": "app-shell",
@@ -438,13 +522,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 567,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-DwSEqjaS.jsx",
+      "source_graph": "app-shell/source-graph.json"
     },
     {
       "slug": "app-shell-flat",
@@ -458,13 +545,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 567,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-C1U6NI7B.jsx",
+      "source_graph": "app-shell-flat/source-graph.json"
     },
     {
       "slug": "approval-card",
@@ -478,13 +568,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 5,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-DtfhNS6P.jsx",
+      "source_graph": "approval-card/source-graph.json"
     },
     {
       "slug": "approval-card",
@@ -498,13 +591,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-Dkj-1MDj.jsx",
+      "source_graph": "approval-card.clean/source-graph.json"
     },
     {
       "slug": "assistant-home",
@@ -512,19 +608,22 @@
       "variant": "basic",
       "route": "assistant-home",
       "demo_chunk": "demo-Dj5g1Sf_.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 567,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-Dj5g1Sf_.jsx",
+      "source_graph": "assistant-home/source-graph.json"
     },
     {
       "slug": "autonomy-dial",
@@ -538,13 +637,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-CZQO5p6C.jsx",
+      "source_graph": "autonomy-dial/source-graph.json"
     },
     {
       "slug": "autonomy-dial",
@@ -552,19 +654,22 @@
       "variant": "clean",
       "route": "autonomy-dial.clean",
       "demo_chunk": "demo.clean-D4m3L74b.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-D4m3L74b.jsx",
+      "source_graph": "autonomy-dial.clean/source-graph.json"
     },
     {
       "slug": "billing-schedule",
@@ -578,13 +683,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-65xDbaC9.jsx",
+      "source_graph": "billing-schedule/source-graph.json"
     },
     {
       "slug": "billing-schedule",
@@ -598,13 +706,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-dYQPE1hb.jsx",
+      "source_graph": "billing-schedule.clean/source-graph.json"
     },
     {
       "slug": "blur-crossfade",
@@ -618,13 +729,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-Ye53Zfy1.jsx",
+      "source_graph": "blur-crossfade/source-graph.json"
     },
     {
       "slug": "breakdown-chart",
@@ -632,19 +746,22 @@
       "variant": "basic",
       "route": "breakdown-chart",
       "demo_chunk": "demo-BXlx9pcF.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 5,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-BXlx9pcF.jsx",
+      "source_graph": "breakdown-chart/source-graph.json"
     },
     {
       "slug": "breakdown-chart",
@@ -652,19 +769,22 @@
       "variant": "clean",
       "route": "breakdown-chart.clean",
       "demo_chunk": "demo.clean-D3ZXLUIO.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-D3ZXLUIO.jsx",
+      "source_graph": "breakdown-chart.clean/source-graph.json"
     },
     {
       "slug": "chat-composer",
@@ -672,19 +792,22 @@
       "variant": "basic",
       "route": "chat-composer",
       "demo_chunk": "demo-DI66HSts.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 5,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-DI66HSts.jsx",
+      "source_graph": "chat-composer/source-graph.json"
     },
     {
       "slug": "chat-composer",
@@ -692,19 +815,22 @@
       "variant": "clean",
       "route": "chat-composer.clean",
       "demo_chunk": "demo.clean-CCr62Jz8.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-CCr62Jz8.jsx",
+      "source_graph": "chat-composer.clean/source-graph.json"
     },
     {
       "slug": "cited-answer",
@@ -718,13 +844,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-xRyZ19Jc.jsx",
+      "source_graph": "cited-answer/source-graph.json"
     },
     {
       "slug": "cited-answer",
@@ -738,13 +867,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-CnchuWt9.jsx",
+      "source_graph": "cited-answer.clean/source-graph.json"
     },
     {
       "slug": "client-context",
@@ -758,13 +890,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-rS721rJa.jsx",
+      "source_graph": "client-context/source-graph.json"
     },
     {
       "slug": "combobox",
@@ -778,13 +913,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-tcGbF7g2.jsx",
+      "source_graph": "combobox/source-graph.json"
     },
     {
       "slug": "combobox",
@@ -798,13 +936,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-DhS0HlaW.jsx",
+      "source_graph": "combobox.clean/source-graph.json"
     },
     {
       "slug": "command-menu",
@@ -812,19 +953,22 @@
       "variant": "basic",
       "route": "command-menu",
       "demo_chunk": "demo-Cde_N0C0.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-Cde_N0C0.jsx",
+      "source_graph": "command-menu/source-graph.json"
     },
     {
       "slug": "command-menu",
@@ -832,19 +976,22 @@
       "variant": "clean",
       "route": "command-menu.clean",
       "demo_chunk": "demo.clean-BkpdJDtQ.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-BkpdJDtQ.jsx",
+      "source_graph": "command-menu.clean/source-graph.json"
     },
     {
       "slug": "comments-panel",
@@ -858,13 +1005,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-BlNBUErF.jsx",
+      "source_graph": "comments-panel/source-graph.json"
     },
     {
       "slug": "comments-panel",
@@ -878,13 +1028,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-Lan03W3V.jsx",
+      "source_graph": "comments-panel.clean/source-graph.json"
     },
     {
       "slug": "compact-breakdown",
@@ -892,19 +1045,22 @@
       "variant": "basic",
       "route": "compact-breakdown",
       "demo_chunk": "demo-BgsJzBTE.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
-        "visual": false,
+        "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-BgsJzBTE.jsx",
+      "source_graph": "compact-breakdown/source-graph.json"
     },
     {
       "slug": "compact-breakdown",
@@ -912,19 +1068,22 @@
       "variant": "clean",
       "route": "compact-breakdown.clean",
       "demo_chunk": "demo.clean-BmiiHyGl.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
-        "visual": false,
+        "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-BmiiHyGl.jsx",
+      "source_graph": "compact-breakdown.clean/source-graph.json"
     },
     {
       "slug": "context-window",
@@ -932,19 +1091,22 @@
       "variant": "basic",
       "route": "context-window",
       "demo_chunk": "demo-DgdoHbQS.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-DgdoHbQS.jsx",
+      "source_graph": "context-window/source-graph.json"
     },
     {
       "slug": "context-window",
@@ -952,19 +1114,22 @@
       "variant": "clean",
       "route": "context-window.clean",
       "demo_chunk": "demo.clean-DbXcMJMS.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-DbXcMJMS.jsx",
+      "source_graph": "context-window.clean/source-graph.json"
     },
     {
       "slug": "crm",
@@ -972,19 +1137,22 @@
       "variant": "basic",
       "route": "crm",
       "demo_chunk": "demo-De2n08Zl.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
-        "visual": false,
+        "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 567,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-De2n08Zl.jsx",
+      "source_graph": "crm/source-graph.json"
     },
     {
       "slug": "data-table",
@@ -992,19 +1160,22 @@
       "variant": "basic",
       "route": "data-table",
       "demo_chunk": "demo-DGaVy3XD.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 5,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-DGaVy3XD.jsx",
+      "source_graph": "data-table/source-graph.json"
     },
     {
       "slug": "data-table",
@@ -1018,13 +1189,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-OeBBW_7u.jsx",
+      "source_graph": "data-table.clean/source-graph.json"
     },
     {
       "slug": "date-range-picker",
@@ -1032,19 +1206,22 @@
       "variant": "basic",
       "route": "date-range-picker",
       "demo_chunk": "demo-CYhBENQa.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-CYhBENQa.jsx",
+      "source_graph": "date-range-picker/source-graph.json"
     },
     {
       "slug": "date-range-picker",
@@ -1058,13 +1235,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-DZiTLSj_.jsx",
+      "source_graph": "date-range-picker.clean/source-graph.json"
     },
     {
       "slug": "delegate-board",
@@ -1072,19 +1252,22 @@
       "variant": "basic",
       "route": "delegate-board",
       "demo_chunk": "demo-V6j80N0E.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-V6j80N0E.jsx",
+      "source_graph": "delegate-board/source-graph.json"
     },
     {
       "slug": "delegate-board",
@@ -1092,19 +1275,22 @@
       "variant": "clean",
       "route": "delegate-board.clean",
       "demo_chunk": "demo.clean-DNxPbueK.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-DNxPbueK.jsx",
+      "source_graph": "delegate-board.clean/source-graph.json"
     },
     {
       "slug": "dropzone",
@@ -1118,13 +1304,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-BBMr4ztO.jsx",
+      "source_graph": "dropzone/source-graph.json"
     },
     {
       "slug": "dropzone",
@@ -1132,19 +1321,22 @@
       "variant": "clean",
       "route": "dropzone.clean",
       "demo_chunk": "demo.clean-BtR7iQdY.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-BtR7iQdY.jsx",
+      "source_graph": "dropzone.clean/source-graph.json"
     },
     {
       "slug": "evals",
@@ -1158,13 +1350,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 567,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-IfuY4zjH.jsx",
+      "source_graph": "evals/source-graph.json"
     },
     {
       "slug": "experiment-card",
@@ -1178,13 +1373,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-ik_0XYps.jsx",
+      "source_graph": "experiment-card/source-graph.json"
     },
     {
       "slug": "experiment-card",
@@ -1198,13 +1396,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-Vp-K1jMG.jsx",
+      "source_graph": "experiment-card.clean/source-graph.json"
     },
     {
       "slug": "files",
@@ -1218,13 +1419,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": false
       },
       "reachable_modules": 567,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-CUdsyn6m.jsx",
+      "source_graph": "files/source-graph.json"
     },
     {
       "slug": "folder",
@@ -1232,19 +1436,22 @@
       "variant": "basic",
       "route": "folder",
       "demo_chunk": "demo-d_U4qihD.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
-        "visual": false,
+        "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 567,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-d_U4qihD.jsx",
+      "source_graph": "folder/source-graph.json"
     },
     {
       "slug": "glass-folder",
@@ -1258,13 +1465,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 567,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-DlhpiUWr.jsx",
+      "source_graph": "glass-folder/source-graph.json"
     },
     {
       "slug": "glow-keyboard",
@@ -1272,19 +1482,22 @@
       "variant": "basic",
       "route": "glow-keyboard",
       "demo_chunk": "demo-CfD9afHB.js",
-      "verification": "accepted",
+      "verification": "partial",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": true
+        "interactions": false
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-CfD9afHB.jsx",
+      "source_graph": "glow-keyboard/source-graph.json"
     },
     {
       "slug": "gradient-floor",
@@ -1292,19 +1505,22 @@
       "variant": "basic",
       "route": "gradient-floor",
       "demo_chunk": "demo-B-TgH1P-.js",
-      "verification": "accepted",
+      "verification": "partial",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
-        "visual": true,
-        "dom": true,
-        "interactions": true
+        "visual": false,
+        "dom": false,
+        "interactions": false
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-B-TgH1P-.jsx",
+      "source_graph": "gradient-floor/source-graph.json"
     },
     {
       "slug": "gradient-text",
@@ -1318,13 +1534,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-Dcdtba_V.jsx",
+      "source_graph": "gradient-text/source-graph.json"
     },
     {
       "slug": "inline-diff",
@@ -1338,13 +1557,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 5,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-Y9Qip8LJ.jsx",
+      "source_graph": "inline-diff/source-graph.json"
     },
     {
       "slug": "inline-diff",
@@ -1358,13 +1580,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-BXz9gUDp.jsx",
+      "source_graph": "inline-diff.clean/source-graph.json"
     },
     {
       "slug": "integration-flow",
@@ -1378,13 +1603,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-CL_ySX-H.jsx",
+      "source_graph": "integration-flow/source-graph.json"
     },
     {
       "slug": "integration-picker",
@@ -1398,13 +1626,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-5-hgQYhm.jsx",
+      "source_graph": "integration-picker/source-graph.json"
     },
     {
       "slug": "integration-picker",
@@ -1412,19 +1643,22 @@
       "variant": "clean",
       "route": "integration-picker.clean",
       "demo_chunk": "demo.clean-CPhhQKKr.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
-        "visual": false,
+        "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-CPhhQKKr.jsx",
+      "source_graph": "integration-picker.clean/source-graph.json"
     },
     {
       "slug": "integration-settings",
@@ -1432,19 +1666,22 @@
       "variant": "basic",
       "route": "integration-settings",
       "demo_chunk": "demo-Dxm1xr9_.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-Dxm1xr9_.jsx",
+      "source_graph": "integration-settings/source-graph.json"
     },
     {
       "slug": "integration-settings",
@@ -1458,13 +1695,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": false
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-CTC16fNW.jsx",
+      "source_graph": "integration-settings.clean/source-graph.json"
     },
     {
       "slug": "integrations",
@@ -1472,19 +1712,22 @@
       "variant": "basic",
       "route": "integrations",
       "demo_chunk": "demo-CRG7NKBx.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
-        "visual": false,
+        "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 567,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-CRG7NKBx.jsx",
+      "source_graph": "integrations/source-graph.json"
     },
     {
       "slug": "invoice-credit",
@@ -1492,19 +1735,22 @@
       "variant": "basic",
       "route": "invoice-credit",
       "demo_chunk": "demo-D1arByOa.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-D1arByOa.jsx",
+      "source_graph": "invoice-credit/source-graph.json"
     },
     {
       "slug": "kpi-board",
@@ -1518,13 +1764,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-mNpCRsfS.jsx",
+      "source_graph": "kpi-board/source-graph.json"
     },
     {
       "slug": "kpi-chart",
@@ -1538,13 +1787,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 5,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-BQ61UvP8.jsx",
+      "source_graph": "kpi-chart/source-graph.json"
     },
     {
       "slug": "kpi-chart",
@@ -1558,13 +1810,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-B4-Re8fT.jsx",
+      "source_graph": "kpi-chart.clean/source-graph.json"
     },
     {
       "slug": "memory-panel",
@@ -1572,19 +1827,22 @@
       "variant": "basic",
       "route": "memory-panel",
       "demo_chunk": "demo-CEgv5bR9.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-CEgv5bR9.jsx",
+      "source_graph": "memory-panel/source-graph.json"
     },
     {
       "slug": "memory-panel",
@@ -1592,19 +1850,22 @@
       "variant": "clean",
       "route": "memory-panel.clean",
       "demo_chunk": "demo.clean-C1W0NbsT.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-C1W0NbsT.jsx",
+      "source_graph": "memory-panel.clean/source-graph.json"
     },
     {
       "slug": "metrics-dashboard",
@@ -1612,19 +1873,22 @@
       "variant": "basic",
       "route": "metrics-dashboard",
       "demo_chunk": "demo-Ytbb4Swi.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
-        "visual": false,
+        "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-Ytbb4Swi.jsx",
+      "source_graph": "metrics-dashboard/source-graph.json"
     },
     {
       "slug": "model-picker",
@@ -1632,19 +1896,22 @@
       "variant": "basic",
       "route": "model-picker",
       "demo_chunk": "demo-C580yDTY.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-C580yDTY.jsx",
+      "source_graph": "model-picker/source-graph.json"
     },
     {
       "slug": "model-picker",
@@ -1652,19 +1919,22 @@
       "variant": "clean",
       "route": "model-picker.clean",
       "demo_chunk": "demo.clean-B7cgzOPZ.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-B7cgzOPZ.jsx",
+      "source_graph": "model-picker.clean/source-graph.json"
     },
     {
       "slug": "onboarding",
@@ -1678,13 +1948,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 567,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-CBRMIUgj.jsx",
+      "source_graph": "onboarding/source-graph.json"
     },
     {
       "slug": "outreach-branches",
@@ -1698,13 +1971,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-D-FldunI.jsx",
+      "source_graph": "outreach-branches/source-graph.json"
     },
     {
       "slug": "permission-request",
@@ -1718,13 +1994,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-B1zzQqO2.jsx",
+      "source_graph": "permission-request/source-graph.json"
     },
     {
       "slug": "permission-request",
@@ -1738,13 +2017,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-DKsx9U9O.jsx",
+      "source_graph": "permission-request.clean/source-graph.json"
     },
     {
       "slug": "pricing-plans",
@@ -1758,13 +2040,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-DWd1ZKX0.jsx",
+      "source_graph": "pricing-plans/source-graph.json"
     },
     {
       "slug": "project-card",
@@ -1772,19 +2057,22 @@
       "variant": "basic",
       "route": "project-card",
       "demo_chunk": "demo-9sHHhTyA.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-9sHHhTyA.jsx",
+      "source_graph": "project-card/source-graph.json"
     },
     {
       "slug": "project-card",
@@ -1792,19 +2080,22 @@
       "variant": "clean",
       "route": "project-card.clean",
       "demo_chunk": "demo.clean-DiU4wbPA.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-DiU4wbPA.jsx",
+      "source_graph": "project-card.clean/source-graph.json"
     },
     {
       "slug": "project-flow",
@@ -1812,19 +2103,22 @@
       "variant": "basic",
       "route": "project-flow",
       "demo_chunk": "demo-Cwdm4ytX.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
-        "visual": false,
+        "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-Cwdm4ytX.jsx",
+      "source_graph": "project-flow/source-graph.json"
     },
     {
       "slug": "prompt-library",
@@ -1832,19 +2126,22 @@
       "variant": "basic",
       "route": "prompt-library",
       "demo_chunk": "demo-CctwMXFR.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-CctwMXFR.jsx",
+      "source_graph": "prompt-library/source-graph.json"
     },
     {
       "slug": "prompt-library",
@@ -1852,19 +2149,22 @@
       "variant": "clean",
       "route": "prompt-library.clean",
       "demo_chunk": "demo.clean-DRfoB4wl.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-DRfoB4wl.jsx",
+      "source_graph": "prompt-library.clean/source-graph.json"
     },
     {
       "slug": "settings-billing",
@@ -1872,19 +2172,22 @@
       "variant": "basic",
       "route": "settings-billing",
       "demo_chunk": "demo-4lbOOBUM.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
-        "visual": false,
+        "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 567,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-4lbOOBUM.jsx",
+      "source_graph": "settings-billing/source-graph.json"
     },
     {
       "slug": "setup-guide",
@@ -1892,19 +2195,22 @@
       "variant": "basic",
       "route": "setup-guide",
       "demo_chunk": "demo-Cb1j7tKz.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 5,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-Cb1j7tKz.jsx",
+      "source_graph": "setup-guide/source-graph.json"
     },
     {
       "slug": "setup-guide",
@@ -1912,19 +2218,22 @@
       "variant": "clean",
       "route": "setup-guide.clean",
       "demo_chunk": "demo.clean-DgcWwiZH.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-DgcWwiZH.jsx",
+      "source_graph": "setup-guide.clean/source-graph.json"
     },
     {
       "slug": "stepper-form",
@@ -1938,13 +2247,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-BOLhhfTT.jsx",
+      "source_graph": "stepper-form/source-graph.json"
     },
     {
       "slug": "stepper-form",
@@ -1958,13 +2270,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-BYDkomFg.jsx",
+      "source_graph": "stepper-form.clean/source-graph.json"
     },
     {
       "slug": "task-board",
@@ -1972,19 +2287,22 @@
       "variant": "basic",
       "route": "task-board",
       "demo_chunk": "demo-BbZ2lqOk.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 5,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-BbZ2lqOk.jsx",
+      "source_graph": "task-board/source-graph.json"
     },
     {
       "slug": "thinking-state",
@@ -1998,13 +2316,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 5,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-sabUvR7r.jsx",
+      "source_graph": "thinking-state/source-graph.json"
     },
     {
       "slug": "thinking-state",
@@ -2018,13 +2339,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-CXxA6VEx.jsx",
+      "source_graph": "thinking-state.clean/source-graph.json"
     },
     {
       "slug": "tilt-card",
@@ -2038,13 +2362,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-BijqyLh8.jsx",
+      "source_graph": "tilt-card/source-graph.json"
     },
     {
       "slug": "toaster",
@@ -2058,13 +2385,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 567,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-Cv538yeC.jsx",
+      "source_graph": "toaster/source-graph.json"
     },
     {
       "slug": "toaster",
@@ -2078,13 +2408,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-CtdFgWee.jsx",
+      "source_graph": "toaster.clean/source-graph.json"
     },
     {
       "slug": "trace-waterfall",
@@ -2098,13 +2431,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-VWNU0E7Q.jsx",
+      "source_graph": "trace-waterfall/source-graph.json"
     },
     {
       "slug": "trace-waterfall",
@@ -2118,13 +2454,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-Cim7onyI.jsx",
+      "source_graph": "trace-waterfall.clean/source-graph.json"
     },
     {
       "slug": "usage-meter",
@@ -2132,19 +2471,22 @@
       "variant": "basic",
       "route": "usage-meter",
       "demo_chunk": "demo-izlk0-DS.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
-        "visual": false,
+        "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 5,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-izlk0-DS.jsx",
+      "source_graph": "usage-meter/source-graph.json"
     },
     {
       "slug": "usage-meter",
@@ -2152,19 +2494,22 @@
       "variant": "clean",
       "route": "usage-meter.clean",
       "demo_chunk": "demo.clean-BjDeSoUM.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
-        "visual": false,
-        "dom": false,
+        "visual": true,
+        "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-BjDeSoUM.jsx",
+      "source_graph": "usage-meter.clean/source-graph.json"
     },
     {
       "slug": "voice-orb",
@@ -2178,13 +2523,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-B3RzKcXL.jsx",
+      "source_graph": "voice-orb/source-graph.json"
     },
     {
       "slug": "world-map",
@@ -2198,13 +2546,16 @@
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
         "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-Q0wmIwEm.jsx",
+      "source_graph": "world-map/source-graph.json"
     },
     {
       "slug": "writing-assistant",
@@ -2212,19 +2563,22 @@
       "variant": "basic",
       "route": "writing-assistant",
       "demo_chunk": "demo-BhVeTwOS.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo-BhVeTwOS.jsx",
+      "source_graph": "writing-assistant/source-graph.json"
     },
     {
       "slug": "writing-assistant",
@@ -2232,19 +2586,22 @@
       "variant": "clean",
       "route": "writing-assistant.clean",
       "demo_chunk": "demo.clean-B-ER_Luk.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
         "jsx_source": true,
         "build": true,
+        "hosting": true,
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
-      "browser_scenario_version": 4
+      "browser_scenario_version": 4,
+      "source_jsx": "../reconstructed/demo.clean-B-ER_Luk.jsx",
+      "source_graph": "writing-assistant.clean/source-graph.json"
     }
   ]
 }

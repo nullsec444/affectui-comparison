@@ -1,6 +1,6 @@
 import {
   m
-} from "../shared/chunk-LUO2HLVA.js";
+} from "../shared/chunk-PLOK567O.js";
 import {
   init_original_react,
   original_react_default,

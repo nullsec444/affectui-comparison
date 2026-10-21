@@ -1,0 +1,11 @@
+var e={requirements:[`React 19`],whenToUse:[`Quoting and contract tools where a phase of billing is put together – set-up fees, licences, support`,`Admin screens for subscriptions with one-off and recurring charges, discounts and minimum commitments`],whenNotToUse:[`A simple plan picker – use the Pricing Plans block`,`Usage-based pricing with tiers per unit – this works with fixed prices per line`],usage:`import { BillingSchedule } from "@/components/ui/billing-schedule";
+
+export function NewContract() {
+  return (
+    <BillingSchedule
+      phase="Build-out phase"
+      defaultStart="2026-01-01"
+      onChange={(schedule) => save(schedule)}
+    />
+  );
+}`,props:[{name:`title`,type:`string`,default:`"Create a billing schedule"`,description:`Heading on the tray`},{name:`phase`,type:`string`,default:`"Build-out phase"`,description:`Starting phase name – editable in the summary`},{name:`currency`,type:`string`,default:`"$"`,description:`Currency symbol for prices and totals`},{name:`catalog`,type:`CatalogItem[]`,description:`Products under Add product – { name, repeat, price }`},{name:`defaultLines`,type:`ScheduleLine[]`,description:`Lines to start with – products, a discount or a minimum`},{name:`defaultStart`,type:`string`,default:`"2026-01-01"`,description:`Start date as yyyy-mm-dd`},{name:`onChange`,type:`(schedule) => void`,description:`Called with { phase, start, duration, lines } after every change`},{name:`className`,type:`string`,description:`Extra class on the root`}],keyboard:[{keys:[`Tab`],description:`Moves through the phase name, the fields, every line and the buttons`},{keys:[`Enter`],description:`Confirms a price; Esc closes an open menu`}],accessibility:[`The lines are a table with column headers; every input and select has a label naming its line`,`Duration and Add product are buttons that open listboxes; totals are announced politely`],motion:[`New lines slide in and the table glides to its new height; the duration menu and catalog scale in`,`The end date in the summary fades when it changes`,`With prefers-reduced-motion changes happen instantly`],responsive:[`Fills its container up to 560px; on narrow screens the fields stack and the Repeats column hides`,`Dark mode built in: switches when an ancestor (usually <html>) has the class dark or data-theme="dark"`]};export{e as docs};

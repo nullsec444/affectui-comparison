@@ -263,13 +263,13 @@ var o = `
 `;
 function SComponent() {
   return /* @__PURE__ */ jsx("div", { className: `team-invite-demo`, children: /* @__PURE__ */ jsx(IComponent, { avatars: [{
-    src: `/avatars/mara.jpg`,
+    src: `../avatars/mara.jpg`,
     name: `Mara`
   }, {
-    src: `/avatars/jonas.jpg`,
+    src: `../avatars/jonas.jpg`,
     name: `Jonas`
   }, {
-    src: `/avatars/sofia.jpg`,
+    src: `../avatars/sofia.jpg`,
     name: `Sofia`
   }] }) });
 }

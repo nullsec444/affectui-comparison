@@ -13,7 +13,7 @@ const items = [
     name: "Lena Hartmann",
     role: "Design Lead",
     company: "Fieldnote",
-    avatar: "/avatars/lena.jpg",
+    avatar: "../avatars/lena.jpg",
     rating: 5,
   },
   {

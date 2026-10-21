@@ -1,6 +1,6 @@
 import {
   HComponent
-} from "../shared/chunk-ZFZDRIDG.js";
+} from "../shared/chunk-6CYIGSWP.js";
 import {
   init_reconstructed_react,
   reconstructed_react_default,

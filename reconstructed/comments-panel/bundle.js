@@ -1,6 +1,6 @@
 import {
   MComponent
-} from "../shared/chunk-PEFG76LV.js";
+} from "../shared/chunk-PNXOMONF.js";
 import {
   init_reconstructed_react,
   reconstructed_react_default,

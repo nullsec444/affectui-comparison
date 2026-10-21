@@ -1,6 +1,6 @@
 import {
   YComponent
-} from "../shared/chunk-FXCCV7KT.js";
+} from "../shared/chunk-3QG2S5JW.js";
 import "../shared/chunk-KCKKNLM6.js";
 import {
   init_reconstructed_react,

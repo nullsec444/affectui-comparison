@@ -436,23 +436,23 @@ var labels = [{
 var people = [{
   id: `mara`,
   name: `Mara Lindqvist`,
-  avatar: `/avatars/mara.jpg`
+  avatar: `../avatars/mara.jpg`
 }, {
   id: `jonas`,
   name: `Jonas Weber`,
-  avatar: `/avatars/jonas.jpg`
+  avatar: `../avatars/jonas.jpg`
 }, {
   id: `lena`,
   name: `Lena Hart`,
-  avatar: `/avatars/lena.jpg`
+  avatar: `../avatars/lena.jpg`
 }, {
   id: `theo`,
   name: `Theo Brandt`,
-  avatar: `/avatars/theo.jpg`
+  avatar: `../avatars/theo.jpg`
 }, {
   id: `sofia`,
   name: `Sofia Marin`,
-  avatar: `/avatars/sofia.jpg`
+  avatar: `../avatars/sofia.jpg`
 }];
 var tasks = [{
   id: `1`,

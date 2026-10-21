@@ -1,0 +1,18 @@
+{
+  "format": "unknown",
+  "strategy": "structural",
+  "modules": {
+    "demo-OHW76bxc.js": {"input": "[host]", "ranges": [[0,9307]], "extraction": "structural"},
+    "demo-OZULToi6.js": {"input": "[host]", "ranges": [[0,14968]], "extraction": "structural"},
+    "demo-Q0wmIwEm.js": {"input": "[host]", "ranges": [[0,40803]], "extraction": "structural"},
+    "demo-RSBM-GoA.js": {"input": "[host]", "ranges": [[0,9437]], "extraction": "structural"},
+    "demo-S1hMjDCH.js": {"input": "[host]", "ranges": [[0,4247]], "extraction": "structural"},
+    "demo-TTVz3U3f.js": {"input": "[host]", "ranges": [[0,15420]], "extraction": "structural"},
+    "demo-V6j80N0E.js": {"input": "[host]", "ranges": [[0,37397]], "extraction": "structural"},
+    "demo-VapOqTsZ.js": {"input": "[host]", "ranges": [[0,1708]], "extraction": "structural"},
+    "demo-VtcZhlFb.js": {"input": "[host]", "ranges": [[0,205]], "extraction": "structural"},
+    "demo-Y9Qip8LJ.js": {"input": "[host]", "ranges": [[0,1375]], "extraction": "structural"},
+    "demo-Ye53Zfy1.js": {"input": "[host]", "ranges": [[0,6024]], "extraction": "structural"},
+    "demo-Ytbb4Swi.js": {"input": "[host]", "ranges": [[0,26114]], "extraction": "structural"}
+  }
+}

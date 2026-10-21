@@ -226,7 +226,7 @@ var o = `
 }
 `;
 function s() {
-  return (0, r.jsx)(`div`, { className: `team-invite-demo`, children: (0, r.jsx)(i, { avatars: [{ src: `/avatars/mara.jpg`, name: `Mara` }, { src: `/avatars/jonas.jpg`, name: `Jonas` }, { src: `/avatars/sofia.jpg`, name: `Sofia` }] }) });
+  return (0, r.jsx)(`div`, { className: `team-invite-demo`, children: (0, r.jsx)(i, { avatars: [{ src: `../avatars/mara.jpg`, name: `Mara` }, { src: `../avatars/jonas.jpg`, name: `Jonas` }, { src: `../avatars/sofia.jpg`, name: `Sofia` }] }) });
 }
 export {
   s as default

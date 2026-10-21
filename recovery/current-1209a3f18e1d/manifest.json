@@ -1,0 +1,519 @@
+{
+  "source": {
+    "path": "./current-assets/AccountPage-DvJClPAR.js",
+    "snapshot_path": "[host]",
+    "sha256": "4d5282601d1e86b539a6dd656b9a4d16518c784b0151a15fba04625a786d3b4f",
+    "bytes": 15063,
+    "published_copy": {
+      "path": "./recovery/current-1209a3f18e1d/inputs/AccountPage-DvJClPAR.js",
+      "sha256": "4d5282601d1e86b539a6dd656b9a4d16518c784b0151a15fba04625a786d3b4f",
+      "bytes": 15063
+    }
+  },
+  "additional_sources": [
+    {
+      "path": "./current-assets/BeforeAfter-XemvtPU0.js",
+      "snapshot_path": "[host]",
+      "sha256": "38707c5fa0a566d367c928e0401b4fcbf5ec2b0490ed72023bf83a980951b362",
+      "bytes": 93280,
+      "published_copy": {
+        "path": "./recovery/current-1209a3f18e1d/inputs/BeforeAfter-XemvtPU0.js",
+        "sha256": "38707c5fa0a566d367c928e0401b4fcbf5ec2b0490ed72023bf83a980951b362",
+        "bytes": 93280
+      }
+    },
+    {
+      "path": "./current-assets/ComponentPage-CfGkuqUP.js",
+      "snapshot_path": "[host]",
+      "sha256": "5965e43bdf5155247767aff8a2022f067aad8a97913211f9bda5a6020958b02c",
+      "bytes": 18711,
+      "published_copy": {
+        "path": "./recovery/current-1209a3f18e1d/inputs/ComponentPage-CfGkuqUP.js",
+        "sha256": "5965e43bdf5155247767aff8a2022f067aad8a97913211f9bda5a6020958b02c",
+        "bytes": 18711
+      }
+    },
+    {
+      "path": "./current-assets/ContactPage-DorHHgI_.js",
+      "snapshot_path": "[host]",
+      "sha256": "575e31059c84c0cf370e0ccb2d76edba16761a6b8c351e3c6d41c88441b8530c",
+      "bytes": 4456,
+      "published_copy": {
+        "path": "./recovery/current-1209a3f18e1d/inputs/ContactPage-DorHHgI_.js",
+        "sha256": "575e31059c84c0cf370e0ccb2d76edba16761a6b8c351e3c6d41c88441b8530c",
+        "bytes": 4456
+      }
+    },
+    {
+      "path": "./current-assets/DocsPage-Dn22oIr8.js",
+      "snapshot_path": "[host]",
+      "sha256": "2f04f782104ffbfd283550b94a991e63f7e45d0ce306d1319d10c58435028784",
+      "bytes": 896,
+      "published_copy": {
+        "path": "./recovery/current-1209a3f18e1d/inputs/DocsPage-Dn22oIr8.js",
+        "sha256": "2f04f782104ffbfd283550b94a991e63f7e45d0ce306d1319d10c58435028784",
+        "bytes": 896
+      }
+    },
+    {
+      "path": "./current-assets/LegalPage-Bm3lx0aM.js",
+      "snapshot_path": "[host]",
+      "sha256": "1be0fa8b1947786ff9ac62d12021b9788471b5f0670b30f8883c2bb31204d1fd",
+      "bytes": 20210,
+      "published_copy": {
+        "path": "./recovery/current-1209a3f18e1d/inputs/LegalPage-Bm3lx0aM.js",
+        "sha256": "1be0fa8b1947786ff9ac62d12021b9788471b5f0670b30f8883c2bb31204d1fd",
+        "bytes": 20210
+      }
+    },
+    {
+      "path": "./current-assets/LicensePage-wC-NfGoE.js",
+      "snapshot_path": "[host]",
+      "sha256": "3e412bb4b29d13f3c4c7ffc4185eff26db10dfca19d810bdc45442d9f6ce6da2",
+      "bytes": 6003,
+      "published_copy": {
+        "path": "./recovery/current-1209a3f18e1d/inputs/LicensePage-wC-NfGoE.js",
+        "sha256": "3e412bb4b29d13f3c4c7ffc4185eff26db10dfca19d810bdc45442d9f6ce6da2",
+        "bytes": 6003
+      }
+    },
+    {
+      "path": "./current-assets/LoginPage-BB75HT7y.js",
+      "snapshot_path": "[host]",
+      "sha256": "ad23e7aeeb6c8a289be24d8ebbd6432919d644664fa298d7d748007c8d0e81ca",
+      "bytes": 5934,
+      "published_copy": {
+        "path": "./recovery/current-1209a3f18e1d/inputs/LoginPage-BB75HT7y.js",
+        "sha256": "ad23e7aeeb6c8a289be24d8ebbd6432919d644664fa298d7d748007c8d0e81ca",
+        "bytes": 5934
+      }
+    },
+    {
+      "path": "./current-assets/PartnerPage-BKenGWHF.js",
+      "snapshot_path": "[host]",
+      "sha256": "cd89aacbe1b7d44b18c5d981bab94a414ca3ea54ec14c015c426f7dbe470547a",
+      "bytes": 8387,
+      "published_copy": {
+        "path": "./recovery/current-1209a3f18e1d/inputs/PartnerPage-BKenGWHF.js",
+        "sha256": "cd89aacbe1b7d44b18c5d981bab94a414ca3ea54ec14c015c426f7dbe470547a",
+        "bytes": 8387
+      }
+    },
+    {
+      "path": "./current-assets/PricingPage-BGJTK7yG.js",
+      "snapshot_path": "[host]",
+      "sha256": "c43b92306fc0a468b2e1697671610739db272c6b9ed811c9cbcec9cb07e6570e",
+      "bytes": 17026,
+      "published_copy": {
+        "path": "./recovery/current-1209a3f18e1d/inputs/PricingPage-BGJTK7yG.js",
+        "sha256": "c43b92306fc0a468b2e1697671610739db272c6b9ed811c9cbcec9cb07e6570e",
+        "bytes": 17026
+      }
+    },
+    {
+      "path": "./current-assets/component-Dor7H1ln.js",
+      "snapshot_path": "[host]",
+      "sha256": "a35f87f9c62e26503619b4bb206d415597387c12d2d8a00906f837987ddd4ed9",
+      "bytes": 30702,
+      "published_copy": {
+        "path": "./recovery/current-1209a3f18e1d/inputs/component-Dor7H1ln.js",
+        "sha256": "a35f87f9c62e26503619b4bb206d415597387c12d2d8a00906f837987ddd4ed9",
+        "bytes": 30702
+      }
+    },
+    {
+      "path": "./current-assets/demo-4lbOOBUM.js",
+      "snapshot_path": "[host]",
+      "sha256": "4228c100be9a314a76f0435842983c5fd7effd56e5d5cfdfa63916057751cde7",
+      "bytes": 29543,
+      "published_copy": {
+        "path": "./recovery/current-1209a3f18e1d/inputs/demo-4lbOOBUM.js",
+        "sha256": "4228c100be9a314a76f0435842983c5fd7effd56e5d5cfdfa63916057751cde7",
+        "bytes": 29543
+      }
+    }
+  ],
+  "engine": {
+    "id": "wakaru",
+    "version": "1.14.0",
+    "executable": {
+      "path": "./wakaru",
+      "sha256": "664fa06782a61eda7ed15885134b52525fd565dd77607e642062ceb6cd927c38",
+      "bytes": 26793296
+    },
+    "audited_source_revision": "8219bf5016a063d7fb215101a8c45d5959ec733f",
+    "executed_source_revision": null
+  },
+  "options": {
+    "extraction_mode": "structural",
+    "rewrite_level": "standard"
+  },
+  "status": "complete",
+  "detected_formats": [],
+  "reported_safety": "normal",
+  "reported_strategy": "structural",
+  "reported_format": "unknown",
+  "total": 12,
+  "failed": 0,
+  "modules": [
+    {
+      "reported_filename": "AccountPage-DvJClPAR.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/current-1209a3f18e1d/modules/AccountPage-DvJClPAR.js",
+        "sha256": "83536fb7e402af879398de63918bfc525c64bb107addb0b3130c393e47274b45",
+        "bytes": 17798
+      },
+      "source_map": {
+        "path": "./recovery/current-1209a3f18e1d/modules/AccountPage-DvJClPAR.js.map",
+        "sha256": "9127ac2f6fde915c5926f2f813f6e89943b9b7d12795fcf27ab9c11995305f98",
+        "bytes": 14649
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "./current-assets/AccountPage-DvJClPAR.js",
+        "original_sha256": "4d5282601d1e86b539a6dd656b9a4d16518c784b0151a15fba04625a786d3b4f",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 15063
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    },
+    {
+      "reported_filename": "BeforeAfter-XemvtPU0.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/current-1209a3f18e1d/modules/BeforeAfter-XemvtPU0.js",
+        "sha256": "b851d2eafd033b914e34215d4f3d8899f5e29468421499950ffa428269a6de2a",
+        "bytes": 106831
+      },
+      "source_map": {
+        "path": "./recovery/current-1209a3f18e1d/modules/BeforeAfter-XemvtPU0.js.map",
+        "sha256": "694fd76ced573a43dd73667b0dce333540af6711a88efd844dd08dd15782793d",
+        "bytes": 43143
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "./current-assets/BeforeAfter-XemvtPU0.js",
+        "original_sha256": "38707c5fa0a566d367c928e0401b4fcbf5ec2b0490ed72023bf83a980951b362",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 93280
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    },
+    {
+      "reported_filename": "ComponentPage-CfGkuqUP.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/current-1209a3f18e1d/modules/ComponentPage-CfGkuqUP.js",
+        "sha256": "22f75953bb74e4688941750b668fee66291b9a40a25e13c4509cacbb2dad4659",
+        "bytes": 20105
+      },
+      "source_map": {
+        "path": "./recovery/current-1209a3f18e1d/modules/ComponentPage-CfGkuqUP.js.map",
+        "sha256": "004b1dcdcf1f34b0b3dc1ee76576c3e30e49783b384b5729bbfddb3065b4de9d",
+        "bytes": 13017
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "./current-assets/ComponentPage-CfGkuqUP.js",
+        "original_sha256": "5965e43bdf5155247767aff8a2022f067aad8a97913211f9bda5a6020958b02c",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 18711
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    },
+    {
+      "reported_filename": "ContactPage-DorHHgI_.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/current-1209a3f18e1d/modules/ContactPage-DorHHgI_.js",
+        "sha256": "134344b20a6db1a1648836bb4f7ee9974279ceff0925a968de42d31363cc758e",
+        "bytes": 5132
+      },
+      "source_map": {
+        "path": "./recovery/current-1209a3f18e1d/modules/ContactPage-DorHHgI_.js.map",
+        "sha256": "4e2f9af8b3eb62c625f8494cfa73a22cd789d4f82fcbc6855edac675c2843d3d",
+        "bytes": 4279
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "./current-assets/ContactPage-DorHHgI_.js",
+        "original_sha256": "575e31059c84c0cf370e0ccb2d76edba16761a6b8c351e3c6d41c88441b8530c",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 4456
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    },
+    {
+      "reported_filename": "DocsPage-Dn22oIr8.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/current-1209a3f18e1d/modules/DocsPage-Dn22oIr8.js",
+        "sha256": "cfee051fcf89058aba31951292e241f0b1208034180840f21cf3e8a843526447",
+        "bytes": 759
+      },
+      "source_map": {
+        "path": "./recovery/current-1209a3f18e1d/modules/DocsPage-Dn22oIr8.js.map",
+        "sha256": "aba267e7c150c6cacddcde41b1868f83c4fa967c7413706a4e01c6e6185c25db",
+        "bytes": 717
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "./current-assets/DocsPage-Dn22oIr8.js",
+        "original_sha256": "2f04f782104ffbfd283550b94a991e63f7e45d0ce306d1319d10c58435028784",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 896
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    },
+    {
+      "reported_filename": "LegalPage-Bm3lx0aM.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/current-1209a3f18e1d/modules/LegalPage-Bm3lx0aM.js",
+        "sha256": "16dd10b96f7b54097de32b35b480490581dd9842d0cc3c27695d6e440538e112",
+        "bytes": 18071
+      },
+      "source_map": {
+        "path": "./recovery/current-1209a3f18e1d/modules/LegalPage-Bm3lx0aM.js.map",
+        "sha256": "44b6cd4ef8ccd731cf4309af82d3f4bc4581cdf73869fc8bf3f10c766267c8b3",
+        "bytes": 5593
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "./current-assets/LegalPage-Bm3lx0aM.js",
+        "original_sha256": "1be0fa8b1947786ff9ac62d12021b9788471b5f0670b30f8883c2bb31204d1fd",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 20210
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    },
+    {
+      "reported_filename": "LicensePage-wC-NfGoE.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/current-1209a3f18e1d/modules/LicensePage-wC-NfGoE.js",
+        "sha256": "46d2c4427828a2e5c99f317a81ad385b3af5923eec615b97025f409f5306135a",
+        "bytes": 5902
+      },
+      "source_map": {
+        "path": "./recovery/current-1209a3f18e1d/modules/LicensePage-wC-NfGoE.js.map",
+        "sha256": "211f3fb2d7cf3ca2b0f3d0b3f82ff2ee0fe845fc47daa3529a4089d270374577",
+        "bytes": 3284
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "./current-assets/LicensePage-wC-NfGoE.js",
+        "original_sha256": "3e412bb4b29d13f3c4c7ffc4185eff26db10dfca19d810bdc45442d9f6ce6da2",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 6003
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    },
+    {
+      "reported_filename": "LoginPage-BB75HT7y.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/current-1209a3f18e1d/modules/LoginPage-BB75HT7y.js",
+        "sha256": "d0c12b1ba3fa3ee8ffa3c6bff2e286b685f45cce3a06a344150234d320adce98",
+        "bytes": 6507
+      },
+      "source_map": {
+        "path": "./recovery/current-1209a3f18e1d/modules/LoginPage-BB75HT7y.js.map",
+        "sha256": "e3efd5cfcfabf8ebbaa61bdaa6637d46a1d6dd81ed42c474c769d940ca69fb51",
+        "bytes": 4119
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "./current-assets/LoginPage-BB75HT7y.js",
+        "original_sha256": "ad23e7aeeb6c8a289be24d8ebbd6432919d644664fa298d7d748007c8d0e81ca",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 5934
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    },
+    {
+      "reported_filename": "PartnerPage-BKenGWHF.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/current-1209a3f18e1d/modules/PartnerPage-BKenGWHF.js",
+        "sha256": "4091775cee306cdf0e6cd02f072f0d3e3bd5a27f4c398a50bb83589ed110fd0e",
+        "bytes": 9190
+      },
+      "source_map": {
+        "path": "./recovery/current-1209a3f18e1d/modules/PartnerPage-BKenGWHF.js.map",
+        "sha256": "9d01071b58d3ba69e855083ffb7349416e3ac1e398424dfeda8676838eee5acf",
+        "bytes": 8635
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "./current-assets/PartnerPage-BKenGWHF.js",
+        "original_sha256": "cd89aacbe1b7d44b18c5d981bab94a414ca3ea54ec14c015c426f7dbe470547a",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 8387
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    },
+    {
+      "reported_filename": "PricingPage-BGJTK7yG.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/current-1209a3f18e1d/modules/PricingPage-BGJTK7yG.js",
+        "sha256": "b4b9fb0b868515099a758ce9a34e2f639820ef4e5f63069057cb03e6902e7d54",
+        "bytes": 18031
+      },
+      "source_map": {
+        "path": "./recovery/current-1209a3f18e1d/modules/PricingPage-BGJTK7yG.js.map",
+        "sha256": "d793a85ded310683ec9372812afa7182862a42ce24e76c391fb7ce77ab26cfcb",
+        "bytes": 12335
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "./current-assets/PricingPage-BGJTK7yG.js",
+        "original_sha256": "c43b92306fc0a468b2e1697671610739db272c6b9ed811c9cbcec9cb07e6570e",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 17026
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    },
+    {
+      "reported_filename": "component-Dor7H1ln.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/current-1209a3f18e1d/modules/component-Dor7H1ln.js",
+        "sha256": "dfa12ac5ecc5e1f77a413fec9f2bcf954829104adc8062cc655a375782bf2c81",
+        "bytes": 38121
+      },
+      "source_map": {
+        "path": "./recovery/current-1209a3f18e1d/modules/component-Dor7H1ln.js.map",
+        "sha256": "c96950e85dd0b5cba9e9ddbb273e7e85558b09def4ed45a5078dc12a1c674b47",
+        "bytes": 18793
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "./current-assets/component-Dor7H1ln.js",
+        "original_sha256": "a35f87f9c62e26503619b4bb206d415597387c12d2d8a00906f837987ddd4ed9",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 30702
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    },
+    {
+      "reported_filename": "demo-4lbOOBUM.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "./recovery/current-1209a3f18e1d/modules/demo-4lbOOBUM.js",
+        "sha256": "7d086e6b689907ff5c34f840dab481f985b12bc23437afa22ad8b1a15f0254eb",
+        "bytes": 33279
+      },
+      "source_map": {
+        "path": "./recovery/current-1209a3f18e1d/modules/demo-4lbOOBUM.js.map",
+        "sha256": "b4d5154f42324b47b9260c1b9fc8f731152188d08ada986841907d1df46889e8",
+        "bytes": 18755
+      },
+      "provenance": {
+        "reported_input": "[host]",
+        "original_path": "./current-assets/demo-4lbOOBUM.js",
+        "original_sha256": "4228c100be9a314a76f0435842983c5fd7effd56e5d5cfdfa63916057751cde7",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 29543
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    }
+  ],
+  "warnings": [],
+  "report": {
+    "path": "./recovery/current-1209a3f18e1d/reports/stdout.json",
+    "sha256": "40ed32719bcd5b8e1c778b8ffef005da7ed9f875f53b6bee1ca2b5b78270d640",
+    "bytes": 1065
+  },
+  "provenance": {
+    "path": "./recovery/current-1209a3f18e1d/reports/provenance.json",
+    "sha256": "6375f431477e32fdb83e45d0e0e27782d7947d6c5adae91a65efbe4952e25fe0",
+    "bytes": 2199
+  },
+  "analysis_input": {
+    "input_path": "./recovery/current-1209a3f18e1d/modules",
+    "format": "directory"
+  },
+  "runtime_equivalence": "unknown",
+  "limitations": [
+    "Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.",
+    "Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.",
+    "Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.",
+    "Inspection mode may produce non-executable regions. No input or recovered application code is executed.",
+    "Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB total input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment."
+  ]
+}

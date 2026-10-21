@@ -1,0 +1,20 @@
+var e={requirements:[`React 19`],whenToUse:[`A “Trusted by” or “Used by teams at” strip under a hero or above pricing`,`Showing more customer, partner or integration logos than fit in one static row`],whenNotToUse:[`Three to five logos – a static, centred row reads calmer and needs no motion`,`Logos people need to compare or click through – use a grid; a moving target is hard to hit`],usage:`import { LogoMarquee } from "@/components/ui/logo-marquee";
+import { VercelMark, LinearMark, StripeMark, FigmaMark, NotionMark, GitHubMark } from "./marks";
+
+const logos = [
+  { name: "Vercel", svg: <VercelMark />, scale: 0.86 },
+  { name: "Linear", svg: <LinearMark />, color: "#5E6AD2" },
+  { name: "Stripe", svg: <StripeMark />, color: "#635BFF", href: "/customers/stripe" },
+  { name: "Figma", svg: <FigmaMark />, color: "#F24E1E" },
+  { name: "Notion", svg: <NotionMark /> },
+  { name: "GitHub", svg: <GitHubMark /> },
+];
+
+export function TrustedBy() {
+  return (
+    <section className="py-16">
+      <p className="mb-6 text-center text-sm text-neutral-500">Trusted by teams at</p>
+      <LogoMarquee logos={logos} rows={2} speed={36} labels="beside" />
+    </section>
+  );
+}`,props:[{name:`logos`,type:`{ name, svg?, src?, color?, scale?, href? }[]`,description:`The logos. svg is a ReactNode – use fill="currentColor" so it follows the muted colour; src takes an image instead. color is the brand colour it lifts to on hover, scale corrects optical size, href makes it a link`},{name:`speed`,type:`number`,default:`40`,description:`Pixels per second – the same pace on any width`},{name:`direction`,type:`"left" | "right"`,default:`"left"`,description:`Which way the first row runs`},{name:`rows`,type:`1 | 2`,default:`1`,description:`Two rows split the logos alternately and run in opposite directions`},{name:`gap`,type:`number`,default:`56`,description:`Space between logos in px; about 60 % of it on narrow containers`},{name:`pauseOnHover`,type:`boolean`,default:`true`,description:`Ease to a stop while hovered or focused with the keyboard, and speed back up on leave`},{name:`grayscale`,type:`boolean`,default:`true`,description:`Muted, colourless logos; the hovered one lifts to its brand colour. Off shows full colour and dims the others on hover`},{name:`labels`,type:`"none" | "below" | "beside"`,default:`"none"`,description:`Show the brand name as a small caption under the mark, or beside it like a wordmark`},{name:`label`,type:`string`,default:`"Logos of companies using the product"`,description:`Accessible name of the strip`},{name:`className`,type:`string`,description:`Extra class on the wrapper`}],keyboard:[{keys:[`Tab`],description:`Moves through linked logos; the strip stops and the focused logo is nudged into view`}],accessibility:[`A labelled region; each name is read once – the repeated copies that make the loop are aria-hidden and inert`,`Keyboard focus stops the strip so a logo never runs away from the focus ring`,`Hover and focus stop it too, which covers the WCAG pause requirement for moving content`,`Reduced motion shows every logo in a static, wrapping row`],motion:[`The loop repeats a measured set and wraps by exactly its width – no gap, no jump`,`One requestAnimationFrame loop eases a velocity per row: hover slows it to a stop, leaving winds it back up`,`Drag or swipe to scrub; letting go flings it with inertia before it settles back into its own pace`,`Only runs while on screen; edges fade out with a mask`],responsive:[`Container queries make logos and gaps smaller in narrow containers, down to 320px without page overflow`,`Touch: horizontal swipes scrub the strip, vertical swipes still scroll the page`,`Dark mode built in: switches when an ancestor (usually <html>) has the class dark or data-theme="dark"`],performance:[`Transforms only – no layout work per frame, and no React re-renders while it runs`],related:[`logo-cluster`,`text-reveal`,`gradient-text`]};export{e as docs};

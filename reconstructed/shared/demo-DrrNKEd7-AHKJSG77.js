@@ -494,14 +494,14 @@ var items = [{
   name: `Lena Hartmann`,
   role: `Design Lead`,
   company: `Fieldnote`,
-  avatar: `/avatars/lena.jpg`,
+  avatar: `../avatars/lena.jpg`,
   rating: 5
 }, {
   quote: `The motion is the part nobody notices \u2013 which is exactly the point.`,
   name: `Jonas Weber`,
   role: `Staff Engineer`,
   company: `Ledgerline`,
-  avatar: `/avatars/jonas.jpg`,
+  avatar: `../avatars/jonas.jpg`,
   verified: true
 }, {
   quote: `I opened the date range picker expecting to fix the keyboard handling. There was nothing to fix. Focus, arrows, Escape, screen reader labels \u2013 all there, and it still felt light.`,
@@ -514,7 +514,7 @@ var items = [{
   name: `Mara Lindqvist`,
   role: `Product Designer`,
   company: `Kitewise`,
-  avatar: `/avatars/mara.jpg`,
+  avatar: `../avatars/mara.jpg`,
   rating: 5
 }, {
   quote: `Our designers stopped redlining spacing in reviews. The defaults are calm and consistent, and dark mode just works without a second pass.`,
@@ -526,7 +526,7 @@ var items = [{
   name: `Noah Fischer`,
   role: `Tech Lead`,
   company: `Parcelwise`,
-  avatar: `/avatars/noah.jpg`,
+  avatar: `../avatars/noah.jpg`,
   verified: true
 }, {
   quote: `It feels like it was built by people who care about the last 5%.`,
@@ -539,7 +539,7 @@ var items = [{
   name: `Sofia Marino`,
   role: `Product Manager`,
   company: `Brightloop`,
-  avatar: `/avatars/sofia.jpg`,
+  avatar: `../avatars/sofia.jpg`,
   verified: true
 }, {
   quote: `Finally a library that doesn't look like every other AI-generated dashboard.`,
@@ -552,7 +552,7 @@ var items = [{
   name: `Theo Brandt`,
   role: `Mobile Engineer`,
   company: `Copperleaf`,
-  avatar: `/avatars/theo.jpg`
+  avatar: `../avatars/theo.jpg`
 }, {
   quote: `Accessible by default, without me having to argue for it in planning.`,
   name: `Marcus Lee`,

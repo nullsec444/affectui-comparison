@@ -1,0 +1,18 @@
+{
+  "format": "unknown",
+  "strategy": "structural",
+  "modules": {
+    "Delete02Icon-CsyBlwAn.js": {"input": "[host]", "ranges": [[0,994]], "extraction": "structural"},
+    "DocsPage-BymnN-ky.js": {"input": "[host]", "ranges": [[0,896]], "extraction": "structural"},
+    "Dollar01Icon-CKgdstwc.js": {"input": "[host]", "ranges": [[0,498]], "extraction": "structural"},
+    "Download04Icon-C2-aGxK5.js": {"input": "[host]", "ranges": [[0,884]], "extraction": "structural"},
+    "Globe02Icon-jOAiZzRC.js": {"input": "[host]", "ranges": [[0,497]], "extraction": "structural"},
+    "Home01Icon-CtlfDZqB.js": {"input": "[host]", "ranges": [[0,575]], "extraction": "structural"},
+    "HugeiconsIcon-C2cDExRS.js": {"input": "[host]", "ranges": [[0,897]], "extraction": "structural"},
+    "LegalPage-zAor_usS.js": {"input": "[host]", "ranges": [[0,20210]], "extraction": "structural"},
+    "LicensePage-C4cotqoY.js": {"input": "[host]", "ranges": [[0,6003]], "extraction": "structural"},
+    "Link01Icon-DMZyIG_F.js": {"input": "[host]", "ranges": [[0,696]], "extraction": "structural"},
+    "LoginPage-CGZHju3l.js": {"input": "[host]", "ranges": [[0,5934]], "extraction": "structural"},
+    "Mail01Icon-qGLuNJQs.js": {"input": "[host]", "ranges": [[0,860]], "extraction": "structural"}
+  }
+}

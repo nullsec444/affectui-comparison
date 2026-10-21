@@ -5,7 +5,7 @@ var e = { requirements: [`React 19`], whenToUse: [`Assigning people, labels, tag
 
 const people: ComboboxOption[] = [
   { value: "maya", label: "Maya Chen", hint: "Product Designer", avatar: true, group: "Design" },
-  { value: "sara", label: "Sara Okafor", hint: "Staff Engineer", avatar: "/avatars/sara.jpg", group: "Engineering" },
+  { value: "sara", label: "Sara Okafor", hint: "Staff Engineer", avatar: "../avatars/sara.jpg", group: "Engineering" },
   { value: "elif", label: "Elif Yilmaz", hint: "Head of Product", avatar: true, group: "Product" },
 ];
 
