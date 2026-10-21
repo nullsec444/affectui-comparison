@@ -1,9 +1,0 @@
-"use client";
-
-import { t as e } from "./jsx-runtime-CTsRTJUX.js";
-import { t } from "./index-C4AVl5zi.js";
-var n = e();
-function r() {
-  return <div className={`glass-folder-demo`}>{(0, n.jsx)(t, {})}</div>;
-}
-export { r as default };

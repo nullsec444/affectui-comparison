@@ -1,0 +1,1 @@
+.notice-demo{grid-template-columns:minmax(0,380px);place-content:center;width:100%;display:grid}.card__preview .notice-demo{grid-template-columns:auto;position:absolute;inset:0}.card__preview .notice-demo .ui-ns,.card__preview .notice-demo .ui-nsc{zoom:.62;width:380px;max-width:none}

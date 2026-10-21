@@ -1,0 +1,48 @@
+import "./chunk-CTH3ASD6.js";
+
+// reconstructed/docs-BpUkSURm.jsx
+var docs = {
+  requirements: [`React 19`],
+  whenToUse: [`Showing several agents, workflows or product areas on a landing page, one at a time with a real-looking screen`, `Feature sections that should feel explorable rather than a static grid`],
+  whenNotToUse: [`Two or three items \u2013 a simple tab switch reads faster`, `Content people need to compare side by side`],
+  usage: `import { AgentGallery } from "@/components/ui/agent-gallery";
+
+export function AgentsSection() {
+  return <AgentGallery title="Agents that run your playbook" />;
+}`,
+  props: [{
+    name: `title`,
+    type: `string`,
+    description: `Heading above the panels`
+  }, {
+    name: `subtitle`,
+    type: `string`,
+    description: `Line under the heading`
+  }, {
+    name: `items`,
+    type: `GalleryItem[]`,
+    description: `Each { id, name, description, colors: [strong, soft], trigger, steps, skills, guardrail } \u2013 drives the panel colors, the label and the screen`
+  }, {
+    name: `defaultIndex`,
+    type: `number`,
+    default: `the middle item`,
+    description: `Panel that starts open`
+  }, {
+    name: `className`,
+    type: `string`,
+    description: `Extra class on the root`
+  }],
+  keyboard: [{
+    keys: [`\u2190`, `\u2192`],
+    description: `With focus in the panels, opens the previous or next one`
+  }, {
+    keys: [`Tab`],
+    description: `Moves through the side panels and the arrow buttons`
+  }],
+  accessibility: [`Marked as a carousel; side panels are buttons labelled \u201CShow \u2026\u201D`, `The caption under the open panel is announced when it changes`],
+  motion: [`The picked panel widens into the middle while the open one folds into a slim panel \u2013 one smooth width transition`, `Side panels show the artwork muted and come to full color on hover; the screen slides in after the panel has opened`, `With prefers-reduced-motion panels switch instantly`],
+  responsive: [`Follows its own width: below 760px the open panel fills the width with one slim panel peeking on each side`, `Every panel shares one gradient artwork drawn in CSS \u2013 only two colors per item change, so it scales crisply`, `Dark mode built in: switches when an ancestor (usually <html>) has the class dark or data-theme="dark"`]
+};
+export {
+  docs
+};

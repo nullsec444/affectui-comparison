@@ -1,0 +1,27 @@
+{
+  "route": "usage-meter",
+  "demo_chunk": "demo-izlk0-DS.js",
+  "recovered_jsx": "../reconstructed/",
+  "modules": [
+    {
+      "original_asset": "component-DxL4SVuQ.js",
+      "recovered_jsx": "../reconstructed/component-DxL4SVuQ.jsx"
+    },
+    {
+      "original_asset": "demo-izlk0-DS.js",
+      "recovered_jsx": "../reconstructed/demo-izlk0-DS.jsx"
+    },
+    {
+      "original_asset": "jsx-runtime-CTsRTJUX.js",
+      "recovered_jsx": "../reconstructed/jsx-runtime-CTsRTJUX.jsx"
+    },
+    {
+      "original_asset": "react-BkAXpnfr.js",
+      "recovered_jsx": "../reconstructed/react-BkAXpnfr.jsx"
+    },
+    {
+      "original_asset": "rolldown-runtime-BpQH8Ho1.js",
+      "recovered_jsx": "../reconstructed/rolldown-runtime-BpQH8Ho1.jsx"
+    }
+  ]
+}

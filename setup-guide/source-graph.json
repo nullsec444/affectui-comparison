@@ -1,0 +1,27 @@
+{
+  "route": "setup-guide",
+  "demo_chunk": "demo-Cb1j7tKz.js",
+  "recovered_jsx": "../reconstructed/",
+  "modules": [
+    {
+      "original_asset": "component-BUgiZiPt.js",
+      "recovered_jsx": "../reconstructed/component-BUgiZiPt.jsx"
+    },
+    {
+      "original_asset": "demo-Cb1j7tKz.js",
+      "recovered_jsx": "../reconstructed/demo-Cb1j7tKz.jsx"
+    },
+    {
+      "original_asset": "jsx-runtime-CTsRTJUX.js",
+      "recovered_jsx": "../reconstructed/jsx-runtime-CTsRTJUX.jsx"
+    },
+    {
+      "original_asset": "react-BkAXpnfr.js",
+      "recovered_jsx": "../reconstructed/react-BkAXpnfr.jsx"
+    },
+    {
+      "original_asset": "rolldown-runtime-BpQH8Ho1.js",
+      "recovered_jsx": "../reconstructed/rolldown-runtime-BpQH8Ho1.jsx"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "route": "model-picker",
+  "demo_chunk": "demo-C580yDTY.js",
+  "recovered_jsx": "../reconstructed/",
+  "modules": [
+    {
+      "original_asset": "demo-C580yDTY.js",
+      "recovered_jsx": "../reconstructed/demo-C580yDTY.jsx"
+    },
+    {
+      "original_asset": "jsx-runtime-CTsRTJUX.js",
+      "recovered_jsx": "../reconstructed/jsx-runtime-CTsRTJUX.jsx"
+    },
+    {
+      "original_asset": "react-BkAXpnfr.js",
+      "recovered_jsx": "../reconstructed/react-BkAXpnfr.jsx"
+    },
+    {
+      "original_asset": "rolldown-runtime-BpQH8Ho1.js",
+      "recovered_jsx": "../reconstructed/rolldown-runtime-BpQH8Ho1.jsx"
+    }
+  ]
+}

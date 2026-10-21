@@ -1,0 +1,534 @@
+import {
+  init_react_BkAXpnfr,
+  n
+} from "./chunk-BEJH6NDY.js";
+import {
+  jsx,
+  jsxs,
+  n as n2
+} from "./chunk-57INBORX.js";
+
+// reconstructed/demo.clean-B7cgzOPZ.jsx
+init_react_BkAXpnfr();
+var n3 = n();
+var r = n2();
+var i = [{
+  id: `low`,
+  label: `Low`
+}, {
+  id: `medium`,
+  label: `Medium`
+}, {
+  id: `high`,
+  label: `High`
+}];
+var a = {
+  low: 1.6,
+  medium: 2.5,
+  high: 4
+};
+var o = [{
+  key: `speed`,
+  label: `Speed`
+}, {
+  key: `quality`,
+  label: `Quality`
+}, {
+  key: `cost`,
+  label: `Cost`
+}];
+var s = (e) => 1 - (1 - e) ** 4;
+var c = () => typeof window < `u` && window.matchMedia(`(prefers-reduced-motion: reduce)`).matches;
+var l = (e) => Math.max(0, Math.min(5, Math.round(e)));
+var u = (e) => `${(e / 1e3).toFixed(1)}s`;
+var d = (e, price) => `$${e.toFixed(Number.isInteger(price) ? 0 : 2)}`;
+function useF(e, t) {
+  let [r2, setR] = n3.useState(e);
+  let aRef = n3.useRef(e);
+  let o2 = JSON.stringify(e);
+  n3.useEffect(() => {
+    let e2 = JSON.parse(o2);
+    let n4 = {
+      ...aRef.current
+    };
+    if (c() || Object.keys(e2).every((t2) => n4[t2] === e2[t2])) {
+      aRef.current = e2;
+      setR(e2);
+      return;
+    }
+    let r3 = performance.now();
+    let l2 = 0;
+    let u2 = (o3) => {
+      let c2 = Math.min(1, (o3 - r3) / t);
+      let d2 = s(c2);
+      let f = {};
+      for (let t2 in e2) {
+        f[t2] = (n4[t2] ?? e2[t2]) + (e2[t2] - (n4[t2] ?? e2[t2])) * d2;
+      }
+      aRef.current = f;
+      setR(f);
+      if (c2 < 1) {
+        l2 = requestAnimationFrame(u2);
+      }
+    };
+    l2 = requestAnimationFrame(u2);
+    return () => cancelAnimationFrame(l2);
+  }, [o2, t]);
+  return r2;
+}
+function P1Component({
+  id,
+  children
+}) {
+  let iRef = n3.useRef({
+    id,
+    node: children
+  });
+  let [a2, setA] = n3.useState(id);
+  let [s2, setS] = n3.useState(null);
+  if (a2 !== id) {
+    setA(id);
+    setS(iRef.current);
+  }
+  iRef.current = {
+    id,
+    node: children
+  };
+  n3.useEffect(() => {
+    if (!s2) {
+      return;
+    }
+    let e = window.setTimeout(() => setS(null), 260);
+    return () => window.clearTimeout(e);
+  }, [s2]);
+  return /* @__PURE__ */ jsxs("span", { className: `ui-mdpc__swap`, children: [
+    s2 && /* @__PURE__ */ jsx("span", { className: `ui-mdpc__swap-item`, "data-out": ``, "aria-hidden": `true`, children: s2.node }, `out-${s2.id}`),
+    /* @__PURE__ */ jsx("span", { className: `ui-mdpc__swap-item`, children }, id)
+  ] });
+}
+var m = {
+  stroke: `currentColor`,
+  strokeWidth: 1.2,
+  strokeLinecap: `round`,
+  strokeLinejoin: `round`
+};
+var Ee1Component = () => /* @__PURE__ */ jsx("svg", { className: `ui-mdpc__chevron`, width: `14`, height: `14`, viewBox: `0 0 12 12`, fill: `none`, "aria-hidden": `true`, children: /* @__PURE__ */ jsx("path", { d: `m3 4.5 3 3 3-3`, ...m }) });
+var Te1Component = () => /* @__PURE__ */ jsx("svg", { className: `ui-mdpc__check`, width: `16`, height: `16`, viewBox: `0 0 14 14`, fill: `none`, "aria-hidden": `true`, children: /* @__PURE__ */ jsx("path", { d: `m3.4 7.3 2.4 2.4 4.8-5.2`, ...m, strokeWidth: 1.3 }) });
+var H1Component = () => /* @__PURE__ */ jsx("svg", { width: `16`, height: `16`, viewBox: `0 0 14 14`, fill: `none`, "aria-hidden": `true`, children: /* @__PURE__ */ jsx("path", { d: `M5.3 10.6h3.4M5.8 12.3h2.4M7 1.7a3.9 3.9 0 0 0-2.3 7c.4.3.6.7.6 1.1v.1h3.4v-.1c0-.4.2-.8.6-1.1A3.9 3.9 0 0 0 7 1.7Z`, ...m }) });
+var Ne1Component = () => /* @__PURE__ */ jsxs("svg", { width: `16`, height: `16`, viewBox: `0 0 14 14`, fill: `none`, "aria-hidden": `true`, children: [
+  /* @__PURE__ */ jsx("circle", { cx: `7`, cy: `7`, r: `5.3`, ...m }),
+  /* @__PURE__ */ jsx("path", { d: `M1.9 7h10.2M7 1.7c1.4 1.5 2 3.3 2 5.3s-.6 3.8-2 5.3c-1.4-1.5-2-3.3-2-5.3s.6-3.8 2-5.3Z`, ...m })
+] });
+function G1Component({
+  model
+}) {
+  return /* @__PURE__ */ jsx("span", { className: `ui-mdpc__glyph`, "aria-hidden": `true`, children: model.icon ?? model.name.trim().charAt(0).toUpperCase() });
+}
+function Component({
+  models: models2,
+  value,
+  defaultValue,
+  onChange,
+  thinking,
+  defaultThinking = false,
+  onThinkingChange,
+  webSearch,
+  defaultWebSearch = false,
+  onWebSearchChange,
+  effort,
+  defaultEffort = `medium`,
+  onEffortChange,
+  open,
+  defaultOpen = false,
+  onOpenChange,
+  align = `start`,
+  side = `bottom`,
+  className
+}) {
+  let S = n3.useId();
+  let CRef = n3.useRef(null);
+  let wRef = n3.useRef(null);
+  let TRef = n3.useRef(null);
+  let [pe, setPe] = n3.useState(defaultValue ?? models2[0]?.id);
+  let [he, setHe] = n3.useState(defaultThinking);
+  let [_e, set_e] = n3.useState(defaultWebSearch);
+  let [ye, setYe] = n3.useState(defaultEffort);
+  let [xe, setXe] = n3.useState(defaultOpen);
+  let E = value ?? pe;
+  let D = thinking ?? he;
+  let O = webSearch ?? _e;
+  let k = effort ?? ye;
+  let A = open ?? xe;
+  let j = Math.max(0, models2.findIndex((e) => e.id === E));
+  let M = models2[j];
+  let [N, setN] = n3.useState(j);
+  let [F, setF] = n3.useState(false);
+  let [Ce, setCe] = n3.useState(null);
+  let R = models2[F ? N : j] ?? M;
+  let z = (e, t) => {
+    if (e !== A) {
+      if (e) {
+        setN(j);
+        setF(false);
+      } else {
+        setCe(null);
+      }
+      setXe(e);
+      onOpenChange?.(e);
+    }
+    if (t === `list`) {
+      requestAnimationFrame(() => TRef.current?.focus({
+        preventScroll: true
+      }));
+    }
+    if (t === `trigger`) {
+      wRef.current?.focus({
+        preventScroll: true
+      });
+    }
+  };
+  let BRef = n3.useRef(A);
+  n3.useEffect(() => {
+    if (A && !BRef.current) {
+      setN(j);
+      setF(false);
+    }
+    BRef.current = A;
+  }, [A, j]);
+  let VRef = n3.useRef(null);
+  let [H, setH] = n3.useState(0);
+  n3.useLayoutEffect(() => {
+    if (!A) {
+      return;
+    }
+    let e = () => {
+      let e2 = wRef.current?.getBoundingClientRect();
+      let t = VRef.current?.offsetWidth ?? 0;
+      if (!e2 || !t) {
+        return;
+      }
+      let clientWidth = document.documentElement.clientWidth;
+      let r2 = align === `end` ? e2.right - t : e2.left;
+      setH(r2 < 12 ? 12 - r2 : r2 + t > clientWidth - 12 ? Math.min(0, clientWidth - 12 - (r2 + t)) : 0);
+    };
+    e();
+    window.addEventListener(`resize`, e);
+    return () => window.removeEventListener(`resize`, e);
+  }, [A, align]);
+  n3.useEffect(() => {
+    if (!A) {
+      return;
+    }
+    let e = (e2) => {
+      if (!CRef.current?.contains(e2.target)) {
+        z(false);
+      }
+    };
+    document.addEventListener(`pointerdown`, e);
+    return () => document.removeEventListener(`pointerdown`, e);
+  });
+  let Te = () => CRef.current?.contains(document.activeElement) ?? false;
+  let U = (t) => {
+    let n4 = models2[t];
+    if (n4) {
+      setPe(n4.id);
+      if (n4.id !== E) {
+        onChange?.(n4.id);
+      }
+      z(false, Te() ? `trigger` : void 0);
+    }
+  };
+  let Ee = () => {
+    setHe(!D);
+    onThinkingChange?.(!D);
+  };
+  let De = () => {
+    set_e(!O);
+    onWebSearchChange?.(!O);
+  };
+  let W = (e) => {
+    setYe(e);
+    if (e !== k) {
+      onEffortChange?.(e);
+    }
+  };
+  let Oe = (e) => {
+    if (e.key === `ArrowDown` || e.key === `ArrowUp`) {
+      e.preventDefault();
+      z(true, `list`);
+    }
+  };
+  let ke = (t) => {
+    let models_length = models2.length;
+    if (!models_length) {
+      return;
+    }
+    let r2 = (e) => {
+      t.preventDefault();
+      setN((e % models_length + models_length) % models_length);
+      setF(true);
+    };
+    if (t.key === `ArrowDown`) {
+      r2(N + 1);
+    } else if (t.key === `ArrowUp`) {
+      r2(N - 1);
+    } else if (t.key === `Home`) {
+      r2(0);
+    } else if (t.key === `End`) {
+      r2(models_length - 1);
+    } else if (t.key === `Enter` || t.key === ` `) {
+      t.preventDefault();
+      U(N);
+    }
+  };
+  let GRef = n3.useRef(null);
+  let [K, setK] = n3.useState(null);
+  n3.useLayoutEffect(() => {
+    let e = GRef.current?.querySelector(`[data-effort="${k}"]`);
+    if (e) {
+      setK({
+        x: e.offsetLeft,
+        w: e.offsetWidth
+      });
+    }
+  }, [k, A, D]);
+  let je = (e) => {
+    let t = i.findIndex((e2) => e2.id === k);
+    let n4 = e.key === `ArrowRight` || e.key === `ArrowDown` ? 1 : e.key === `ArrowLeft` || e.key === `ArrowUp` ? -1 : 0;
+    if (!n4) {
+      return;
+    }
+    e.preventDefault();
+    let r2 = i[(t + n4 + i.length) % i.length];
+    W(r2.id);
+    CRef.current?.querySelector(`[data-effort="${r2.id}"]`)?.focus();
+  };
+  let Me = (e) => {
+    if (e.key === `Escape` && A) {
+      e.stopPropagation();
+      z(false, `trigger`);
+    }
+  };
+  let Ne = D ? a[k] : 1;
+  let latency = (R?.latencyMs ?? 0) * Ne;
+  let price = R?.pricePerM ?? 0;
+  let Y = useF({
+    latency,
+    price
+  }, 560);
+  let X = R?.latencyMs !== void 0 || R?.pricePerM !== void 0;
+  let Z;
+  let id;
+  let $;
+  if (Ce === `search`) {
+    Z = O ? `Looks things up on the web when it helps` : `Answers from what it already knows`;
+    id = `search-${O}`;
+    $ = Z;
+  } else if (!X) {
+    Z = R?.description ?? R?.name ?? ``;
+    id = `plain-${R?.id}`;
+    $ = `${R?.name ?? ``}: ${Z}`;
+  } else {
+    let e = [];
+    let t = [];
+    if (R.latencyMs !== void 0) {
+      e.push(/* @__PURE__ */ jsxs("span", { children: [
+        `~`,
+        /* @__PURE__ */ jsx("b", { children: u(Y.latency ?? latency) }),
+        ` first token`
+      ] }, `l`));
+      t.push(`about ${u(latency)} to the first token`);
+    }
+    if (R.pricePerM !== void 0) {
+      e.push(/* @__PURE__ */ jsxs("span", { children: [
+        /* @__PURE__ */ jsx("b", { children: d(Y.price ?? price, price) }),
+        ` / M tokens`
+      ] }, `p`));
+      t.push(`${d(price, price)} per million tokens`);
+    }
+    Z = e.flatMap((e2, t2) => {
+      if (t2) {
+        return [/* @__PURE__ */ jsx("span", { className: `ui-mdpc__dot`, children: ` \xB7 ` }, `d${t2}`), e2];
+      }
+      return [e2];
+    });
+    id = `stats`;
+    $ = `${R.name}: ${t.join(`, `)}`;
+  }
+  let Pe = models2[N] ? `${S}-opt-${models2[N].id}` : void 0;
+  return /* @__PURE__ */ jsxs("div", { ref: CRef, className: [`ui-mdpc`, className].filter(Boolean).join(` `), "data-open": A ? `` : void 0, "data-align": align, "data-side": side, onKeyDown: Me, onBlur: (e) => {
+    if (A && e.relatedTarget && !CRef.current?.contains(e.relatedTarget)) {
+      z(false);
+    }
+  }, children: [
+    /* @__PURE__ */ jsx("style", { href: `ui-model-picker-clean`, precedence: `default`, children: re }),
+    /* @__PURE__ */ jsxs("button", { ref: wRef, type: `button`, className: `ui-mdpc__trigger`, "aria-haspopup": `dialog`, "aria-expanded": A, "aria-controls": `${S}-menu`, "aria-label": `Model: ${M?.name ?? `none`}${D ? `, extended thinking` : ``}`, onClick: () => z(!A, A ? void 0 : `list`), onKeyDown: Oe, children: [
+      M && /* @__PURE__ */ jsx(G1Component, { model: M }),
+      /* @__PURE__ */ jsx("span", { className: `ui-mdpc__name`, children: /* @__PURE__ */ jsx(P1Component, { id: M?.id ?? `none`, children: M?.name ?? `Choose a model` }) }),
+      /* @__PURE__ */ jsx("span", { className: `ui-mdpc__flag`, "data-on": D ? `` : void 0, "aria-hidden": `true`, children: /* @__PURE__ */ jsx("span", { children: /* @__PURE__ */ jsx(H1Component, {}) }) }),
+      /* @__PURE__ */ jsx(Ee1Component, {})
+    ] }),
+    /* @__PURE__ */ jsxs("div", { id: `${S}-menu`, ref: VRef, className: `ui-mdpc__pop`, style: H ? {
+      translate: `${H}px 0`
+    } : void 0, role: `dialog`, "aria-label": `Model settings`, inert: !A, children: [
+      /* @__PURE__ */ jsxs("div", { className: `ui-mdpc__card`, children: [
+        /* @__PURE__ */ jsxs("div", { className: `ui-mdpc__head`, "aria-hidden": `true`, children: [
+          /* @__PURE__ */ jsx("span", { children: `Model` }),
+          /* @__PURE__ */ jsx("span", { className: `ui-mdpc__cols`, children: o.map((e) => /* @__PURE__ */ jsx("span", { children: e.label }, e.key)) })
+        ] }),
+        /* @__PURE__ */ jsx("div", { ref: TRef, className: `ui-mdpc__list`, role: `listbox`, "aria-label": `Model`, tabIndex: 0, "aria-activedescendant": A ? Pe : void 0, "data-pointing": F ? `` : void 0, onKeyDown: ke, onPointerLeave: () => setF(false), children: models2.map((e, t) => {
+          let n4 = e.speed !== void 0 || e.quality !== void 0 || e.cost !== void 0;
+          return /* @__PURE__ */ jsxs("div", { id: `${S}-opt-${e.id}`, role: `option`, "aria-selected": t === j, "aria-label": `${e.name}${e.description ? `, ${e.description}` : ``}${n4 ? `. Speed ${e.speed ?? 0}, quality ${e.quality ?? 0}, cost ${e.cost ?? 0} of 5` : ``}`, className: `ui-mdpc__option`, "data-active": t === N ? `` : void 0, "data-lit": e.id === R?.id ? `` : void 0, onPointerEnter: (e2) => {
+            if (e2.pointerType === `mouse`) {
+              setN(t);
+              setF(true);
+            }
+          }, onClick: () => U(t), children: [
+            /* @__PURE__ */ jsx(G1Component, { model: e }),
+            /* @__PURE__ */ jsxs("span", { className: `ui-mdpc__text`, children: [
+              /* @__PURE__ */ jsxs("span", { className: `ui-mdpc__title`, children: [
+                /* @__PURE__ */ jsx("span", { className: `ui-mdpc__title-name`, children: e.name }),
+                t === j && /* @__PURE__ */ jsx(Te1Component, {})
+              ] }),
+              e.description && /* @__PURE__ */ jsx("span", { className: `ui-mdpc__desc`, children: e.description })
+            ] }),
+            n4 ? /* @__PURE__ */ jsx("span", { className: `ui-mdpc__bars`, "aria-hidden": `true`, children: o.map((t2, n5) => {
+              let i2 = l(e[t2.key] ?? 0);
+              return /* @__PURE__ */ jsx("span", { className: `ui-mdpc__meter`, style: {
+                "--c": n5
+              }, children: [0, 1, 2, 3, 4].map((e2) => /* @__PURE__ */ jsx("span", { className: `ui-mdpc__seg`, "data-on": e2 < i2 ? `` : void 0, style: {
+                "--s": e2
+              } }, e2)) }, t2.key);
+            }) }) : /* @__PURE__ */ jsx("span", { className: `ui-mdpc__varies`, "aria-hidden": `true`, children: `Varies` })
+          ] }, e.id);
+        }) }),
+        /* @__PURE__ */ jsxs("div", { className: `ui-mdpc__settings`, children: [
+          /* @__PURE__ */ jsxs("button", { type: `button`, role: `switch`, "aria-checked": D, className: `ui-mdpc__toggle`, onClick: Ee, children: [
+            /* @__PURE__ */ jsx("span", { className: `ui-mdpc__toggle-icon`, children: /* @__PURE__ */ jsx(H1Component, {}) }),
+            /* @__PURE__ */ jsx("span", { className: `ui-mdpc__toggle-label`, children: `Extended thinking` }),
+            /* @__PURE__ */ jsx("span", { className: `ui-mdpc__switch`, "aria-hidden": `true` })
+          ] }),
+          /* @__PURE__ */ jsx("div", { className: `ui-mdpc__fold`, "data-open": D ? `` : void 0, inert: !D, children: /* @__PURE__ */ jsx("div", { className: `ui-mdpc__clip`, children: /* @__PURE__ */ jsxs("div", { className: `ui-mdpc__effort`, children: [
+            /* @__PURE__ */ jsx("span", { className: `ui-mdpc__effort-label`, id: `${S}-effort`, children: `Effort` }),
+            /* @__PURE__ */ jsxs("div", { ref: GRef, className: `ui-mdpc__segmented`, role: `radiogroup`, "aria-labelledby": `${S}-effort`, style: K ? {
+              "--x": `${K.x}px`,
+              "--w": `${K.w}px`
+            } : void 0, onKeyDown: je, children: [
+              /* @__PURE__ */ jsx("span", { className: `ui-mdpc__thumb`, "aria-hidden": `true` }),
+              i.map((e) => /* @__PURE__ */ jsx("button", { type: `button`, role: `radio`, "aria-checked": e.id === k, tabIndex: e.id === k ? 0 : -1, "data-effort": e.id, className: `ui-mdpc__seg-btn`, onClick: () => W(e.id), children: e.label }, e.id))
+            ] })
+          ] }) }) }),
+          /* @__PURE__ */ jsxs("button", { type: `button`, role: `switch`, "aria-checked": O, className: `ui-mdpc__toggle`, onClick: De, onPointerEnter: (e) => e.pointerType === `mouse` && setCe(`search`), onPointerLeave: () => setCe(null), onFocus: () => setCe(`search`), onBlur: () => setCe(null), children: [
+            /* @__PURE__ */ jsx("span", { className: `ui-mdpc__toggle-icon`, children: /* @__PURE__ */ jsx(Ne1Component, {}) }),
+            /* @__PURE__ */ jsx("span", { className: `ui-mdpc__toggle-label`, children: `Web search` }),
+            /* @__PURE__ */ jsx("span", { className: `ui-mdpc__switch`, "aria-hidden": `true` })
+          ] })
+        ] })
+      ] }),
+      /* @__PURE__ */ jsxs("div", { className: `ui-mdpc__foot`, children: [
+        /* @__PURE__ */ jsx("span", { className: `ui-mdpc__caption`, "aria-hidden": `true`, children: /* @__PURE__ */ jsx(P1Component, { id, children: Z }) }),
+        /* @__PURE__ */ jsxs("span", { className: `ui-mdpc__keys`, "aria-hidden": `true`, children: [
+          /* @__PURE__ */ jsx("kbd", { children: `\u2191\u2193` }),
+          /* @__PURE__ */ jsx("kbd", { children: `\u21B5` })
+        ] }),
+        /* @__PURE__ */ jsx("span", { className: `ui-mdpc__sr`, "aria-live": `polite`, children: A ? $ : `` })
+      ] })
+    ] })
+  ] });
+}
+var re = `.ui-mdpc{--ui-mdpc-card: #ffffff;--ui-mdpc-strong: #000000;--ui-mdpc-ink: rgba(0, 0, 0, 0.88);--ui-mdpc-text: rgba(0, 0, 0, 0.61);--ui-mdpc-muted: rgba(0, 0, 0, 0.45);--ui-mdpc-faint: rgba(0, 0, 0, 0.27);--ui-mdpc-icon: rgba(0, 0, 0, 0.447);--ui-mdpc-line: rgba(0, 0, 0, 0.06);--ui-mdpc-line-strong: rgba(0, 0, 0, 0.1);--ui-mdpc-fill: rgba(0, 0, 0, 0.06);--ui-mdpc-wash: rgba(0, 0, 0, 0.03);--ui-mdpc-bar: rgba(0, 0, 0, 0.2);--ui-mdpc-bar-off: rgba(0, 0, 0, 0.06);--ui-mdpc-switch: rgba(0, 0, 0, 0.1);--ui-mdpc-knob: #ffffff;--ui-mdpc-accent: rgba(0, 96, 226, 0.765);--ui-mdpc-focus: rgba(0, 96, 226, 0.35);--ui-mdpc-shadow-tile: 0 0 0 0.5px rgba(0, 0, 0, 0.1), 0 1px 1px -1px rgba(0, 0, 0, 0.1);--ui-mdpc-shadow-pop: 0 0 0 0.5px rgba(0, 0, 0, 0.08), 0 12px 28px -10px rgba(0, 0, 0, 0.16), 0 1px 2px 0 rgba(0, 0, 0, 0.05);--ui-mdpc-ease: cubic-bezier(0.32, 0.72, 0.24, 1);position: relative;display: inline-block;font-family: "Inter", "InterVariable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;font-size: 13px;line-height: 20px;font-weight: 400;color: var(--ui-mdpc-ink);text-align: left;-webkit-font-smoothing: antialiased}.ui-mdpc *, .ui-mdpc *::before, .ui-mdpc *::after{box-sizing: border-box}:where(.ui-mdpc) button{appearance: none;margin: 0;padding: 0;border: 0;background: none;font: inherit;color: inherit;text-align: inherit;cursor: pointer;-webkit-tap-highlight-color: transparent}.ui-mdpc button:focus-visible{outline: 2px solid var(--ui-mdpc-focus);outline-offset: 1px}.ui-mdpc svg{display: block;flex: none}.ui-mdpc b{font-weight: 500;color: var(--ui-mdpc-ink)}.ui-mdpc__sr{position: absolute;width: 1px;height: 1px;overflow: hidden;clip-path: inset(50%);white-space: nowrap}.ui-mdpc__trigger{display: inline-flex;align-items: center;gap: 6px;max-width: 100%;height: 28px;padding: 0 6px 0 6px;border-radius: 6px;font-weight: 500;color: var(--ui-mdpc-text);white-space: nowrap;transition: background-color 160ms ease, color 160ms ease}.ui-mdpc__trigger:hover, .ui-mdpc[data-open] .ui-mdpc__trigger{background: var(--ui-mdpc-wash);color: var(--ui-mdpc-ink)}.ui-mdpc__trigger .ui-mdpc__glyph{width: 18px;height: 18px;border-radius: 5px;font-size: 10px}.ui-mdpc__trigger .ui-mdpc__glyph > svg{width: 10px;height: 10px}.ui-mdpc__name{display: grid;min-width: 0}.ui-mdpc__chevron{margin-left: -2px;color: var(--ui-mdpc-icon);transition: transform 300ms var(--ui-mdpc-ease)}.ui-mdpc[data-open] .ui-mdpc__chevron{transform: rotate(180deg)}.ui-mdpc__flag{display: grid;grid-template-columns: 0fr;margin-left: -6px;opacity: 0;color: var(--ui-mdpc-accent);transition: grid-template-columns 360ms var(--ui-mdpc-ease), margin 360ms var(--ui-mdpc-ease), opacity 220ms ease}.ui-mdpc__flag > span{min-width: 0;overflow: hidden}.ui-mdpc__flag[data-on]{grid-template-columns: 1fr;margin-left: -2px;opacity: 1;transition: grid-template-columns 360ms var(--ui-mdpc-ease), margin 360ms var(--ui-mdpc-ease), opacity 280ms ease 80ms}.ui-mdpc__glyph{display: grid;flex: none;place-items: center;width: 20px;height: 20px;overflow: hidden;border-radius: 5px;background: var(--ui-mdpc-card);box-shadow: var(--ui-mdpc-shadow-tile);font-size: 10px;font-weight: 500;line-height: 1;color: var(--ui-mdpc-strong)}.ui-mdpc__glyph > svg, .ui-mdpc__glyph > img{width: 12px;height: 12px}.ui-mdpc__pop{position: absolute;z-index: 30;top: calc(100% + 6px);left: 0;width: min(320px, calc(100vw - 32px));container-type: inline-size;border-radius: 10px;background: var(--ui-mdpc-card);box-shadow: var(--ui-mdpc-shadow-pop);transform-origin: top left;opacity: 0;visibility: hidden;transform: translateY(-4px) scale(0.96);transition: opacity 160ms ease, transform 220ms var(--ui-mdpc-ease), visibility 0s linear 220ms}.ui-mdpc[data-align="end"] .ui-mdpc__pop{left: auto;right: 0;transform-origin: top right}.ui-mdpc[data-side="top"] .ui-mdpc__pop{top: auto;bottom: calc(100% + 6px);transform-origin: bottom left;transform: translateY(4px) scale(0.96)}.ui-mdpc[data-side="top"][data-align="end"] .ui-mdpc__pop{transform-origin: bottom right}.ui-mdpc[data-open] .ui-mdpc__pop{opacity: 1;visibility: visible;transform: none;transition: opacity 200ms ease, transform 320ms var(--ui-mdpc-ease), visibility 0s}.ui-mdpc__card{padding: 4px}.ui-mdpc__head{display: flex;align-items: center;justify-content: space-between;gap: 12px;height: 28px;padding: 4px 8px 0;font-size: 10px;font-weight: 500;line-height: 16px;letter-spacing: 0.5px;text-transform: uppercase;color: var(--ui-mdpc-muted)}.ui-mdpc__cols{display: grid;grid-template-columns: repeat(3, 40px);gap: 8px}.ui-mdpc__cols > span{display: flex;justify-content: center;white-space: nowrap}.ui-mdpc__list{display: grid;gap: 0;border-radius: 6px;outline: none}.ui-mdpc__option{display: flex;align-items: center;gap: 10px;min-height: 44px;padding: 6px 8px;border-radius: 6px;cursor: pointer;transition: background-color 90ms ease-out, opacity 200ms ease}.ui-mdpc__list[data-pointing] .ui-mdpc__option[data-active]{background: var(--ui-mdpc-fill)}.ui-mdpc__list:focus-visible{outline: none}.ui-mdpc__list:focus-visible .ui-mdpc__option[data-active]{background: var(--ui-mdpc-fill);box-shadow: inset 0 0 0 1px var(--ui-mdpc-focus)}.ui-mdpc__list[data-pointing] .ui-mdpc__option:not([data-active]){opacity: 0.55}.ui-mdpc__text{display: grid;flex: 1;min-width: 0}.ui-mdpc__title{display: flex;align-items: center;gap: 4px;min-width: 0;font-weight: 500;color: var(--ui-mdpc-strong)}.ui-mdpc__title-name{min-width: 0;overflow: hidden;white-space: nowrap;text-overflow: ellipsis}.ui-mdpc__check{color: var(--ui-mdpc-accent);animation: ui-mdpc-pop 320ms var(--ui-mdpc-ease) both}.ui-mdpc__desc{overflow: hidden;font-size: 12px;line-height: 16px;color: var(--ui-mdpc-text);white-space: nowrap;text-overflow: ellipsis}.ui-mdpc__bars{display: grid;flex: none;grid-template-columns: repeat(3, 40px);gap: 8px}.ui-mdpc__meter{display: grid;grid-template-columns: repeat(5, 1fr);gap: 2px;height: 4px}.ui-mdpc__seg{border-radius: 1px;background: var(--ui-mdpc-bar-off);transition: background-color 180ms ease, transform 260ms var(--ui-mdpc-ease)}.ui-mdpc__seg[data-on]{background: var(--ui-mdpc-bar)}.ui-mdpc__option[data-lit] .ui-mdpc__seg[data-on]{background: var(--ui-mdpc-accent);transition-delay: calc(var(--c) * 70ms + var(--s) * 45ms);animation: ui-mdpc-fill 360ms var(--ui-mdpc-ease) both;animation-delay: calc(var(--c) * 70ms + var(--s) * 45ms)}.ui-mdpc__varies{flex: none;width: 136px;font-size: 12px;line-height: 16px;color: var(--ui-mdpc-muted);text-align: center}.ui-mdpc__settings{margin: 4px -4px 0;padding: 4px 4px 0;border-top: 0.5px solid var(--ui-mdpc-line)}.ui-mdpc__toggle{display: flex;align-items: center;gap: 10px;width: 100%;height: 32px;padding: 0 8px;border-radius: 6px;color: var(--ui-mdpc-ink);transition: background-color 90ms ease-out}.ui-mdpc__toggle:hover{background: var(--ui-mdpc-fill)}.ui-mdpc__toggle-icon{display: grid;flex: none;place-items: center;width: 20px;color: var(--ui-mdpc-icon);transition: color 200ms ease}.ui-mdpc__toggle[aria-checked="true"] .ui-mdpc__toggle-icon{color: var(--ui-mdpc-ink)}.ui-mdpc__toggle-label{flex: 1;min-width: 0;overflow: hidden;white-space: nowrap;text-overflow: ellipsis}.ui-mdpc__switch{position: relative;flex: none;width: 26px;height: 16px;border-radius: 5px;background: var(--ui-mdpc-switch);transition: background-color 220ms ease}.ui-mdpc__switch::after{content: "";position: absolute;top: 2px;left: 2px;width: 12px;height: 12px;border-radius: 3.5px;background: var(--ui-mdpc-knob);box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.16);transition: transform 280ms var(--ui-mdpc-ease)}.ui-mdpc__toggle[aria-checked="true"] .ui-mdpc__switch{background: var(--ui-mdpc-accent)}.ui-mdpc__toggle[aria-checked="true"] .ui-mdpc__switch::after{transform: translateX(10px)}.ui-mdpc__fold{display: grid;grid-template-rows: 0fr;opacity: 0;transition: grid-template-rows 420ms var(--ui-mdpc-ease), opacity 220ms ease}.ui-mdpc__fold[data-open]{grid-template-rows: 1fr;opacity: 1;transition: grid-template-rows 420ms var(--ui-mdpc-ease), opacity 320ms ease 100ms}.ui-mdpc__clip{min-height: 0;overflow: hidden}.ui-mdpc__effort{display: flex;align-items: center;gap: 10px;padding: 2px 8px 6px 38px}.ui-mdpc__effort-label{flex: 1;min-width: 0;color: var(--ui-mdpc-text)}.ui-mdpc__segmented{position: relative;display: flex;flex: none;gap: 4px}.ui-mdpc__thumb{position: absolute;top: 0;bottom: 0;left: 0;width: var(--w, 0);border-radius: 5px;background: var(--ui-mdpc-fill);transform: translateX(var(--x, 0));transition: transform 220ms var(--ui-mdpc-ease), width 220ms var(--ui-mdpc-ease)}.ui-mdpc__seg-btn{position: relative;height: 22px;padding: 0 7px;border-radius: 5px;box-shadow: inset 0 0 0 0.5px var(--ui-mdpc-line);font-size: 12px;font-weight: 500;line-height: 16px;color: var(--ui-mdpc-text);text-align: center !important;transition: color 160ms ease, background-color 160ms ease}.ui-mdpc__seg-btn[aria-checked="true"]{color: var(--ui-mdpc-ink)}.ui-mdpc__seg-btn[aria-checked="false"]:hover{background: var(--ui-mdpc-wash);color: var(--ui-mdpc-ink)}.ui-mdpc__foot{display: flex;align-items: center;gap: 8px;height: 36px;padding: 0 8px 0 12px;border-top: 0.5px solid var(--ui-mdpc-line)}.ui-mdpc__caption{flex: 1;min-width: 0;overflow: hidden;font-size: 12px;line-height: 16px;color: var(--ui-mdpc-muted);white-space: nowrap;font-variant-numeric: tabular-nums}.ui-mdpc__dot{color: var(--ui-mdpc-faint)}.ui-mdpc__swap{display: grid;min-width: 0}.ui-mdpc__swap-item{grid-area: 1 / 1;min-width: 0;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;animation: ui-mdpc-swap-in 320ms ease both}.ui-mdpc__swap-item[data-out]{animation: ui-mdpc-swap-out 220ms ease both}.ui-mdpc__keys{display: flex;flex: none;gap: 2px}.ui-mdpc__keys kbd{display: grid;place-items: center;min-width: 20px;height: 20px;padding: 0 5px;border-radius: 5px;box-shadow: inset 0 0 0 0.5px var(--ui-mdpc-line-strong);font-family: inherit;font-size: 11px;font-weight: 500;line-height: 16px;color: var(--ui-mdpc-muted)}@keyframes ui-mdpc-swap-in{from{opacity: 0;filter: blur(2px)}}@keyframes ui-mdpc-swap-out{from{opacity: 1}to{opacity: 0;filter: blur(2px)}}@keyframes ui-mdpc-pop{from{opacity: 0;transform: scale(0.6)}}@keyframes ui-mdpc-fill{0%{transform: scaleY(1)}45%{transform: scaleY(1.6)}100%{transform: scaleY(1)}}@container (max-width: 300px){.ui-mdpc__option .ui-mdpc__glyph{display: none}.ui-mdpc__keys{display: none}.ui-mdpc__effort{padding-left: 8px}}@media (pointer: coarse){.ui-mdpc__trigger{height: 34px}.ui-mdpc__option{min-height: 52px}.ui-mdpc__toggle{height: 40px}.ui-mdpc__seg-btn{height: 30px;padding: 0 10px}.ui-mdpc__keys{display: none}}@media (prefers-reduced-motion: reduce){.ui-mdpc *, .ui-mdpc *::before, .ui-mdpc *::after{animation: none !important;transition: none !important}}:where(.dark, [data-theme="dark"]) .ui-mdpc{--ui-mdpc-card: #1c1c1e;--ui-mdpc-strong: #ffffff;--ui-mdpc-ink: rgba(255, 255, 255, 0.9);--ui-mdpc-text: rgba(255, 255, 255, 0.62);--ui-mdpc-muted: rgba(255, 255, 255, 0.46);--ui-mdpc-faint: rgba(255, 255, 255, 0.3);--ui-mdpc-icon: rgba(255, 255, 255, 0.5);--ui-mdpc-line: rgba(255, 255, 255, 0.08);--ui-mdpc-line-strong: rgba(255, 255, 255, 0.12);--ui-mdpc-fill: rgba(255, 255, 255, 0.08);--ui-mdpc-wash: rgba(255, 255, 255, 0.04);--ui-mdpc-bar: rgba(255, 255, 255, 0.24);--ui-mdpc-bar-off: rgba(255, 255, 255, 0.08);--ui-mdpc-switch: rgba(255, 255, 255, 0.14);--ui-mdpc-knob: #ffffff;--ui-mdpc-accent: #4d8dff;--ui-mdpc-focus: rgba(77, 141, 255, 0.5);--ui-mdpc-shadow-tile: 0 0 0 0.5px rgba(255, 255, 255, 0.12), 0 1px 2px rgba(0, 0, 0, 0.4);--ui-mdpc-shadow-pop: 0 0 0 0.5px rgba(255, 255, 255, 0.12), 0 12px 28px -10px rgba(0, 0, 0, 0.6), 0 1px 2px 0 rgba(0, 0, 0, 0.4)}:where(.dark, [data-theme="dark"]) .ui-mdpc__glyph{background: #2a2a2d}`;
+var InlineComponent = () => /* @__PURE__ */ jsx("svg", { viewBox: `0 0 12 12`, fill: `none`, "aria-hidden": `true`, children: /* @__PURE__ */ jsx("path", { d: `M6 1.5 7.1 4.9 10.5 6 7.1 7.1 6 10.5 4.9 7.1 1.5 6 4.9 4.9Z`, fill: `currentColor` }) });
+var models = [{
+  id: `opus`,
+  name: `Opus 5.5`,
+  description: `Hardest problems`,
+  speed: 2,
+  quality: 5,
+  cost: 5,
+  latencyMs: 2100,
+  pricePerM: 25
+}, {
+  id: `sonnet`,
+  name: `Sonnet 5.5`,
+  description: `Everyday work`,
+  speed: 4,
+  quality: 4,
+  cost: 3,
+  latencyMs: 900,
+  pricePerM: 15
+}, {
+  id: `haiku`,
+  name: `Haiku 5.5`,
+  description: `Quick and light`,
+  speed: 5,
+  quality: 3,
+  cost: 1,
+  latencyMs: 400,
+  pricePerM: 4
+}, {
+  id: `auto`,
+  name: `Auto`,
+  description: `Picks per message`,
+  icon: /* @__PURE__ */ jsx(InlineComponent, {})
+}];
+function YComponent() {
+  let eRef = n3.useRef(null);
+  let [t, setT] = n3.useState(0);
+  let [open, setOpen] = n3.useState(false);
+  let sRef = n3.useRef(false);
+  let cRef = n3.useRef(false);
+  n3.useEffect(() => {
+    let t2 = (t3) => eRef.current?.querySelector(t3) ?? null;
+    let n4 = (e, t3, n5 = {}) => {
+      if (e) {
+        cRef.current = true;
+        e.dispatchEvent(new PointerEvent(t3, {
+          bubbles: true,
+          pointerType: `mouse`,
+          ...n5
+        }));
+        cRef.current = false;
+      }
+    };
+    let r2 = (e) => t2(`.ui-mdpc__option:nth-child(${e})`);
+    let a2 = (e) => () => n4(r2(e), `pointerover`);
+    let l3 = () => n4(t2(`.ui-mdpc__option[data-active]`), `pointerout`, {
+      relatedTarget: t2(`.ui-mdpc__settings`)
+    });
+    let u2 = [[700, () => setOpen(true)], [800, a2(1)], [2800, a2(3)], [1200, a2(1)], [1300, () => {
+      l3();
+      t2(`.ui-mdpc__toggle`)?.click();
+    }], [1400, () => t2(`[data-effort="high"]`)?.click()], [1400, a2(1)], [1100, () => r2(1)?.click()], [3200, () => setT((e) => e + 1)]];
+    let d2 = 0;
+    let f = 0;
+    let p = () => {
+      if (!(sRef.current || d2 >= u2.length)) {
+        f = window.setTimeout(() => {
+          if (!sRef.current) {
+            u2[d2][1]();
+            d2++;
+            p();
+          }
+        }, u2[d2][0]);
+      }
+    };
+    p();
+    return () => window.clearTimeout(f);
+  }, [t]);
+  let l2 = () => {
+    if (!cRef.current) {
+      sRef.current = true;
+    }
+  };
+  return /* @__PURE__ */ jsx("div", { ref: eRef, className: `mdp-demo mdp-demo--clean`, onPointerEnter: l2, onPointerDownCapture: l2, onKeyDownCapture: l2, onFocusCapture: l2, onClick: (e) => e.target.closest(`.ui-mdpc__pop`) && e.stopPropagation(), children: /* @__PURE__ */ jsxs("div", { className: `mdp-demo__composer`, children: [
+    /* @__PURE__ */ jsx("div", { className: `mdp-demo__text`, children: `Ask anything\u2026` }),
+    /* @__PURE__ */ jsxs("div", { className: `mdp-demo__bar`, children: [
+      /* @__PURE__ */ jsx(Component, { models, defaultValue: `sonnet`, open, onOpenChange: setOpen }, t),
+      /* @__PURE__ */ jsx("span", { className: `mdp-demo__send`, "aria-hidden": `true`, children: /* @__PURE__ */ jsx("svg", { width: `16`, height: `16`, viewBox: `0 0 14 14`, fill: `none`, children: /* @__PURE__ */ jsx("path", { d: `M7 11.5v-9M3.2 6.3 7 2.5l3.8 3.8`, stroke: `currentColor`, strokeWidth: `1.3`, strokeLinecap: `round`, strokeLinejoin: `round` }) }) })
+    ] })
+  ] }) });
+}
+
+export {
+  YComponent
+};

@@ -1,0 +1,23 @@
+{
+  "route": "app-directory",
+  "demo_chunk": "demo-BiwOrW2x.js",
+  "recovered_jsx": "../reconstructed/",
+  "modules": [
+    {
+      "original_asset": "demo-BiwOrW2x.js",
+      "recovered_jsx": "../reconstructed/demo-BiwOrW2x.jsx"
+    },
+    {
+      "original_asset": "jsx-runtime-CTsRTJUX.js",
+      "recovered_jsx": "../reconstructed/jsx-runtime-CTsRTJUX.jsx"
+    },
+    {
+      "original_asset": "react-BkAXpnfr.js",
+      "recovered_jsx": "../reconstructed/react-BkAXpnfr.jsx"
+    },
+    {
+      "original_asset": "rolldown-runtime-BpQH8Ho1.js",
+      "recovered_jsx": "../reconstructed/rolldown-runtime-BpQH8Ho1.jsx"
+    }
+  ]
+}

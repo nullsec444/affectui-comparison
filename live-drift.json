@@ -1,0 +1,701 @@
+{
+  "paid": 72,
+  "same_demos": 56,
+  "added": [],
+  "removed": [],
+  "rows": [
+    {
+      "slug": "agent-cursors",
+      "chunks": [
+        "./demo-BpwDm3_5.js",
+        "./component-BfIA_sur.js",
+        "./docs-F9iwrvZt.js",
+        "./demo.clean-BdsziCoX.js",
+        "./component.clean-C81bLSK9.js",
+        "./docs.clean-BCszff8i.js"
+      ]
+    },
+    {
+      "slug": "agent-inbox",
+      "chunks": [
+        "./demo-Bq86T0RX.js",
+        "./component-zV5da3i0.js",
+        "./docs-D_d0RPGD.js",
+        "./demo.clean-DQ6MZQcD.js",
+        "./component.clean-G7HptHGl.js",
+        "./docs.clean-BKGBfDOD.js"
+      ]
+    },
+    {
+      "slug": "agent-lanes",
+      "chunks": [
+        "./demo-CCeL1VNp.js",
+        "./component-CVBds3Db.js",
+        "./docs-Cr8lKUzQ.js",
+        "./demo.clean-DC3N3Pap.js",
+        "./component.clean-C7ROz4iL.js",
+        "./docs.clean-C4vtpNbt.js"
+      ]
+    },
+    {
+      "slug": "agent-plan",
+      "chunks": [
+        "./demo-crn6hRBF.js",
+        "./component-CJBnN79-.js",
+        "./docs-D3ABdLPT.js",
+        "./demo.clean-BjIF1-j-.js",
+        "./component.clean-MnuLboKN.js",
+        "./docs.clean-DSswoBJu.js"
+      ]
+    },
+    {
+      "slug": "agent-steering",
+      "chunks": [
+        "./demo-Bzg0Jm8m.js",
+        "./component-DEaAy1BC.js",
+        "./docs-CaN0P0XV.js",
+        "./demo.clean-CykqoJC9.js",
+        "./component.clean-BEShq_nD.js",
+        "./docs.clean-D6WKo64J.js"
+      ]
+    },
+    {
+      "slug": "agent-tree",
+      "chunks": [
+        "./demo-Ddb1Dch3.js",
+        "./component-B-u-OuX-.js",
+        "./docs-Bu9_xt8V.js",
+        "./demo.clean-CX0onucT.js",
+        "./component.clean-DZ0boXyY.js",
+        "./docs.clean-DN7ImmUS.js"
+      ]
+    },
+    {
+      "slug": "ai-answer",
+      "chunks": [
+        "./demo-NvLm8mGU.js",
+        "./component-CC41BuLe.js",
+        "./docs-DnStOjCc.js",
+        "./demo.clean-B3KZIS0J.js",
+        "./component.clean-DFTWGCQh.js",
+        "./docs.clean-q_5UM703.js"
+      ]
+    },
+    {
+      "slug": "approval-card",
+      "chunks": [
+        "./demo-DtfhNS6P.js",
+        "./component-DMHjnFWv.js",
+        "./docs-BfqH4QUp.js",
+        "./demo.clean-Dkj-1MDj.js",
+        "./component.clean-BZVoUx2k.js",
+        "./docs.clean-BblgJ4cP.js"
+      ]
+    },
+    {
+      "slug": "autonomy-dial",
+      "chunks": [
+        "./demo-CZQO5p6C.js",
+        "./component-B_9gj-Ov.js",
+        "./docs-Bo7zVMZQ.js",
+        "./demo.clean-D4m3L74b.js",
+        "./component.clean-CLZvFUCF.js",
+        "./docs.clean-Bh2SgH6-.js"
+      ]
+    },
+    {
+      "slug": "billing-schedule",
+      "chunks": [
+        "./demo-65xDbaC9.js",
+        "./component-D4LZ8L6f.js",
+        "./docs-CWsQ8QN-.js",
+        "./demo.clean-dYQPE1hb.js",
+        "./component.clean-CtS7yavp.js",
+        "./docs.clean-B5LUm_il.js"
+      ]
+    },
+    {
+      "slug": "breakdown-chart",
+      "chunks": [
+        "./demo-BXlx9pcF.js",
+        "./component-BcChx9Jw.js",
+        "./docs-IkEC_JRe.js",
+        "./demo.clean-D3ZXLUIO.js",
+        "./component.clean-CWGZCMX-.js",
+        "./docs.clean-kzokqAH9.js"
+      ]
+    },
+    {
+      "slug": "chat-composer",
+      "chunks": [
+        "./demo-DI66HSts.js",
+        "./component-Bcgm0lKS.js",
+        "./docs-kKiOVARV.js",
+        "./demo.clean-CCr62Jz8.js",
+        "./component.clean-L0LpkbiF.js",
+        "./docs.clean-LcU0OicS.js"
+      ]
+    },
+    {
+      "slug": "cited-answer",
+      "chunks": [
+        "./demo-xRyZ19Jc.js",
+        "./component-BNbr74FU.js",
+        "./docs-B05SYv6Z.js",
+        "./demo.clean-CnchuWt9.js",
+        "./component.clean-OoeQadAf.js",
+        "./docs.clean-Bgc76ydH.js"
+      ]
+    },
+    {
+      "slug": "combobox",
+      "chunks": [
+        "./demo-tcGbF7g2.js",
+        "./component-DUiKVJf3.js",
+        "./docs-gx2cWf0_.js",
+        "./demo.clean-DhS0HlaW.js",
+        "./component.clean-BeLkFd64.js",
+        "./docs.clean-C6fAXNCk.js"
+      ]
+    },
+    {
+      "slug": "command-menu",
+      "chunks": [
+        "./demo-Cde_N0C0.js",
+        "./component-D1ism7Wk.js",
+        "./docs-Ch0zWVGM.js",
+        "./demo.clean-BkpdJDtQ.js",
+        "./component.clean-Cuyk80dR.js",
+        "./docs.clean-DPoM2rqj.js"
+      ]
+    },
+    {
+      "slug": "comments-panel",
+      "chunks": [
+        "./demo-BlNBUErF.js",
+        "./component-BdmpRaui.js",
+        "./docs-Ckp_fKFV.js",
+        "./demo.clean-Lan03W3V.js",
+        "./component.clean-DXXuHFnW.js",
+        "./docs.clean-ALKW-pwL.js"
+      ]
+    },
+    {
+      "slug": "compact-breakdown",
+      "chunks": [
+        "./demo-BgsJzBTE.js",
+        "./component-pTy_OjKD.js",
+        "./docs-DIzwe3nY.js",
+        "./demo.clean-BmiiHyGl.js",
+        "./component.clean-DPcOx-S-.js",
+        "./docs.clean-DwdLDQor.js"
+      ]
+    },
+    {
+      "slug": "context-window",
+      "chunks": [
+        "./demo-DgdoHbQS.js",
+        "./component-MY9L9DOs.js",
+        "./docs-4sS4mJxe.js",
+        "./demo.clean-DbXcMJMS.js",
+        "./component.clean-DV8U20np.js",
+        "./docs.clean--EKmLA6h.js"
+      ]
+    },
+    {
+      "slug": "data-table",
+      "chunks": [
+        "./demo-DGaVy3XD.js",
+        "./component-zjZL_VoW.js",
+        "./docs-BF18aJ-j.js",
+        "./demo.clean-OeBBW_7u.js",
+        "./component.clean-DihFuV2a.js",
+        "./docs.clean-D6zbp80y.js"
+      ]
+    },
+    {
+      "slug": "date-range-picker",
+      "chunks": [
+        "./demo-CYhBENQa.js",
+        "./component-BtM-sP6A.js",
+        "./docs-Co7_OGHR.js",
+        "./demo.clean-DZiTLSj_.js",
+        "./component.clean-CEv4fZRb.js",
+        "./docs.clean-B0oHunXD.js"
+      ]
+    },
+    {
+      "slug": "delegate-board",
+      "chunks": [
+        "./demo-V6j80N0E.js",
+        "./component-C4JJselr.js",
+        "./docs-zsx878sd.js",
+        "./demo.clean-DNxPbueK.js",
+        "./component.clean-CEwHmLzb.js",
+        "./docs.clean-Pqz2BG28.js"
+      ]
+    },
+    {
+      "slug": "dropzone",
+      "chunks": [
+        "./demo-BBMr4ztO.js",
+        "./component-CS4yLRuV.js",
+        "./docs-CEAyQswo.js",
+        "./demo.clean-BtR7iQdY.js",
+        "./component.clean-ISS8Q3NK.js",
+        "./docs.clean-BnqtWD6T.js"
+      ]
+    },
+    {
+      "slug": "experiment-card",
+      "chunks": [
+        "./demo-ik_0XYps.js",
+        "./component-x34Rnmkd.js",
+        "./docs-4mTBCgRQ.js",
+        "./demo.clean-Vp-K1jMG.js",
+        "./component.clean-JBe9bepD.js",
+        "./docs.clean-BMZW7XW_.js"
+      ]
+    },
+    {
+      "slug": "inline-diff",
+      "chunks": [
+        "./demo-Y9Qip8LJ.js",
+        "./component-DcePCLLi.js",
+        "./docs-B2DLF_SS.js",
+        "./demo.clean-BXz9gUDp.js",
+        "./component.clean-DiUTkznR.js",
+        "./docs.clean-BcLvHkbg.js"
+      ]
+    },
+    {
+      "slug": "integration-picker",
+      "chunks": [
+        "./demo-5-hgQYhm.js",
+        "./component-o-R9Codt.js",
+        "./docs-BF4_1L0x.js",
+        "./demo.clean-CPhhQKKr.js",
+        "./component.clean-LFzR0Bzq.js",
+        "./docs.clean-tUSra5Eq.js"
+      ]
+    },
+    {
+      "slug": "integration-settings",
+      "chunks": [
+        "./demo-Dxm1xr9_.js",
+        "./component-Bjr5P8jy.js",
+        "./docs-subIR2Oi.js",
+        "./demo.clean-CTC16fNW.js",
+        "./component.clean-BUrOVrhl.js",
+        "./docs.clean-Q5m9NBRf.js"
+      ]
+    },
+    {
+      "slug": "kpi-chart",
+      "chunks": [
+        "./demo-BQ61UvP8.js",
+        "./component-Jgn6z6mZ.js",
+        "./docs-Dde47EwE.js",
+        "./demo.clean-B4-Re8fT.js",
+        "./component.clean-BKIbnoSt.js",
+        "./docs.clean-DG9GSNHk.js"
+      ]
+    },
+    {
+      "slug": "memory-panel",
+      "chunks": [
+        "./demo-CEgv5bR9.js",
+        "./component-D7aihq6a.js",
+        "./docs-BYw0IeXU.js",
+        "./demo.clean-C1W0NbsT.js",
+        "./component.clean-CyzFAbzv.js",
+        "./docs.clean-DIZNujLU.js"
+      ]
+    },
+    {
+      "slug": "model-picker",
+      "chunks": [
+        "./demo-C580yDTY.js",
+        "./component-BicykQ1s.js",
+        "./docs-B2vZk3kt.js",
+        "./demo.clean-B7cgzOPZ.js",
+        "./component.clean-O4r9_IHP.js",
+        "./docs.clean-BaZCBKT8.js"
+      ]
+    },
+    {
+      "slug": "permission-request",
+      "chunks": [
+        "./demo-B1zzQqO2.js",
+        "./component-COkht5bW.js",
+        "./docs-BZMuWE3V.js",
+        "./demo.clean-DKsx9U9O.js",
+        "./component.clean-CZdJFe3o.js",
+        "./docs.clean-CcOqdgxq.js"
+      ]
+    },
+    {
+      "slug": "project-card",
+      "chunks": [
+        "./demo-9sHHhTyA.js",
+        "./component-ouJ0vbVn.js",
+        "./docs-B7LDXgsz.js",
+        "./demo.clean-DiU4wbPA.js",
+        "./component.clean-Bkj7cENz.js",
+        "./docs.clean-BzBRkLoA.js"
+      ]
+    },
+    {
+      "slug": "prompt-library",
+      "chunks": [
+        "./demo-CctwMXFR.js",
+        "./component-irX2Z2jz.js",
+        "./docs-BkEThM39.js",
+        "./demo.clean-DRfoB4wl.js",
+        "./component.clean-iuex-cSq.js",
+        "./docs.clean-pSez6WcC.js"
+      ]
+    },
+    {
+      "slug": "setup-guide",
+      "chunks": [
+        "./demo-Cb1j7tKz.js",
+        "./component-DK30rsxS.js",
+        "./docs-CiCBMHAb.js",
+        "./demo.clean-DgcWwiZH.js",
+        "./component.clean-OCK50Cmo.js",
+        "./docs.clean-CWU7X6cT.js"
+      ]
+    },
+    {
+      "slug": "stepper-form",
+      "chunks": [
+        "./demo-BOLhhfTT.js",
+        "./component-C81bLSK9.js",
+        "./docs-C4pAsv52.js",
+        "./demo.clean-BYDkomFg.js",
+        "./component.clean-DCdgppww.js",
+        "./docs.clean-CGankNEa.js"
+      ]
+    },
+    {
+      "slug": "thinking-state",
+      "chunks": [
+        "./demo-sabUvR7r.js",
+        "./component-G7HptHGl.js",
+        "./docs-DQUTX2jQ.js",
+        "./demo.clean-CXxA6VEx.js",
+        "./component.clean-DpWH1oax.js",
+        "./docs.clean-6__65Xac.js"
+      ]
+    },
+    {
+      "slug": "toaster",
+      "chunks": [
+        "./demo-Cv538yeC.js",
+        "./component-C7ROz4iL.js",
+        "./docs-CQfMJLpp.js",
+        "./demo.clean-CtdFgWee.js",
+        "./component.clean-DSitrADN.js",
+        "./docs.clean-CflJ0oKJ.js"
+      ]
+    },
+    {
+      "slug": "trace-waterfall",
+      "chunks": [
+        "./demo-VWNU0E7Q.js",
+        "./component-MnuLboKN.js",
+        "./docs-CPzCd5SO.js",
+        "./demo.clean-Cim7onyI.js",
+        "./component.clean-uYI34p6t.js",
+        "./docs.clean-CMKNDwWl.js"
+      ]
+    },
+    {
+      "slug": "usage-meter",
+      "chunks": [
+        "./demo-izlk0-DS.js",
+        "./component-BEShq_nD.js",
+        "./docs-CeOV3oLU.js",
+        "./demo.clean-BjDeSoUM.js",
+        "./component.clean-DZEPLsCQ.js",
+        "./docs.clean-C76Xpqc0.js"
+      ]
+    },
+    {
+      "slug": "writing-assistant",
+      "chunks": [
+        "./demo-BhVeTwOS.js",
+        "./component-DZ0boXyY.js",
+        "./docs-cbxE_Tr5.js",
+        "./demo.clean-B-ER_Luk.js",
+        "./component.clean-D2uIa_Gl.js",
+        "./docs.clean-B6YbLikW.js"
+      ]
+    },
+    {
+      "slug": "agent-gallery",
+      "chunks": [
+        "./demo-Dx1zk5ox.js",
+        "./component-DFTWGCQh.js",
+        "./docs-BpUkSURm.js"
+      ]
+    },
+    {
+      "slug": "ai-workspace",
+      "chunks": [
+        "./demo-CZJ2T4nU.js",
+        "./component-BZVoUx2k.js",
+        "./docs-DP4g1Nn7.js"
+      ]
+    },
+    {
+      "slug": "app-directory",
+      "chunks": [
+        "./demo-BiwOrW2x.js",
+        "./component-CLZvFUCF.js",
+        "./docs-Bi_YQg2x.js"
+      ]
+    },
+    {
+      "slug": "client-context",
+      "chunks": [
+        "./demo-rS721rJa.js",
+        "./component-CtS7yavp.js",
+        "./docs-D418_9B_.js"
+      ]
+    },
+    {
+      "slug": "invoice-credit",
+      "chunks": [
+        "./demo-D1arByOa.js",
+        "./component-CWGZCMX-.js",
+        "./docs-BUxqzOgh.js"
+      ]
+    },
+    {
+      "slug": "kpi-board",
+      "chunks": [
+        "./demo-mNpCRsfS.js",
+        "./component-L0LpkbiF.js",
+        "./docs-D5diAW3h.js"
+      ]
+    },
+    {
+      "slug": "metrics-dashboard",
+      "chunks": [
+        "./demo-Ytbb4Swi.js",
+        "./component-OoeQadAf.js",
+        "./docs-ZdpK_fwc.js"
+      ]
+    },
+    {
+      "slug": "pricing-plans",
+      "chunks": [
+        "./demo-DWd1ZKX0.js",
+        "./component-BeLkFd64.js",
+        "./docs-KUHWR962.js"
+      ]
+    },
+    {
+      "slug": "task-board",
+      "chunks": [
+        "./demo-BbZ2lqOk.js",
+        "./component-Cuyk80dR.js",
+        "./docs-BQ4CPEZB.js"
+      ]
+    },
+    {
+      "slug": "glass-folder",
+      "chunks": [
+        "./demo-DlhpiUWr.js",
+        "./component-DXXuHFnW.js",
+        "./docs-DSLhnq5S.js"
+      ]
+    },
+    {
+      "slug": "glow-keyboard",
+      "chunks": [
+        "./demo-CfD9afHB.js",
+        "./component-DPcOx-S-.js",
+        "./docs-BnO3I4vF.js"
+      ]
+    },
+    {
+      "slug": "integration-flow",
+      "chunks": [
+        "./demo-CL_ySX-H.js",
+        "./component-DV8U20np.js",
+        "./docs-DVNki4xQ.js"
+      ]
+    },
+    {
+      "slug": "outreach-branches",
+      "chunks": [
+        "./demo-D-FldunI.js",
+        "./component-DihFuV2a.js",
+        "./docs-CgriwkwB.js"
+      ]
+    },
+    {
+      "slug": "project-flow",
+      "chunks": [
+        "./demo-Cwdm4ytX.js",
+        "./component-CEv4fZRb.js",
+        "./docs-DF3ihqsX.js"
+      ]
+    },
+    {
+      "slug": "voice-orb",
+      "chunks": [
+        "./demo-B3RzKcXL.js",
+        "./component-CEwHmLzb.js",
+        "./docs-B_2rjjD8.js"
+      ]
+    },
+    {
+      "slug": "world-map",
+      "chunks": [
+        "./demo-Q0wmIwEm.js",
+        "./component-ISS8Q3NK.js",
+        "./docs-B-pCOumb.js"
+      ]
+    },
+    {
+      "slug": "agent-chat",
+      "chunks": [
+        "./demo-BWWWdWrI.js",
+        "./component-JBe9bepD.js",
+        "./docs-BxLsAAJw.js"
+      ]
+    },
+    {
+      "slug": "agent-run",
+      "chunks": [
+        "./demo-eQInHe1Q.js",
+        "./component-DiUTkznR.js",
+        "./docs-J0FQBf8r.js"
+      ]
+    },
+    {
+      "slug": "analytics",
+      "chunks": [
+        "./demo-iLo3CJ8-.js",
+        "./component-LFzR0Bzq.js",
+        "./docs-BLrJfzvH.js"
+      ]
+    },
+    {
+      "slug": "app-shell",
+      "chunks": [
+        "./demo-DwSEqjaS.js",
+        "./component-BUrOVrhl.js",
+        "./docs-Cfk5B1z9.js"
+      ]
+    },
+    {
+      "slug": "app-shell-flat",
+      "chunks": [
+        "./demo-C1U6NI7B.js",
+        "./component-BKIbnoSt.js",
+        "./docs-n3nxXhui.js"
+      ]
+    },
+    {
+      "slug": "assistant-home",
+      "chunks": [
+        "./demo-Dj5g1Sf_.js",
+        "./component-CyzFAbzv.js",
+        "./docs-Cdva6Ahi.js"
+      ]
+    },
+    {
+      "slug": "crm",
+      "chunks": [
+        "./demo-De2n08Zl.js",
+        "./component-O4r9_IHP.js",
+        "./docs-sV6Exspv.js"
+      ]
+    },
+    {
+      "slug": "evals",
+      "chunks": [
+        "./demo-IfuY4zjH.js",
+        "./component-CZdJFe3o.js",
+        "./docs-B-2N1ZTn.js"
+      ]
+    },
+    {
+      "slug": "files",
+      "chunks": [
+        "./demo-CUdsyn6m.js",
+        "./component-Bkj7cENz.js",
+        "./docs-Bg0MHHdB.js"
+      ]
+    },
+    {
+      "slug": "folder",
+      "chunks": [
+        "./demo-d_U4qihD.js",
+        "./component-iuex-cSq.js",
+        "./docs-Bk4Nc0yi.js"
+      ]
+    },
+    {
+      "slug": "integrations",
+      "chunks": [
+        "./demo-CRG7NKBx.js",
+        "./component-OCK50Cmo.js",
+        "./docs-CqGta5k3.js"
+      ]
+    },
+    {
+      "slug": "onboarding",
+      "chunks": [
+        "./demo-CBRMIUgj.js",
+        "./component-DCdgppww.js",
+        "./docs-DKnQ9DNv.js"
+      ]
+    },
+    {
+      "slug": "settings-billing",
+      "chunks": [
+        "./demo-4lbOOBUM.js",
+        "./component-DpWH1oax.js",
+        "./docs-DR5BTgCD.js"
+      ]
+    },
+    {
+      "slug": "blur-crossfade",
+      "chunks": [
+        "./demo-Ye53Zfy1.js",
+        "./component-DSitrADN.js",
+        "./docs-Datr-mCn.js"
+      ]
+    },
+    {
+      "slug": "gradient-floor",
+      "chunks": [
+        "./demo-B-TgH1P-.js",
+        "./component-uYI34p6t.js",
+        "./docs-DdQN5WXt.js"
+      ]
+    },
+    {
+      "slug": "gradient-text",
+      "chunks": [
+        "./demo-Dcdtba_V.js",
+        "./component-DZEPLsCQ.js",
+        "./docs-JecR3ZCs.js"
+      ]
+    },
+    {
+      "slug": "tilt-card",
+      "chunks": [
+        "./demo-BijqyLh8.js",
+        "./component-D2uIa_Gl.js",
+        "./docs-Bbarn97a.js"
+      ]
+    }
+  ]
+}

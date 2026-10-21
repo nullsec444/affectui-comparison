@@ -1,0 +1,18 @@
+import "./chunk-CTH3ASD6.js";
+
+// current-assets/docs-ZdpK_fwc.js
+var e = { requirements: [`React 19`], whenToUse: [`A compact sales or business overview with a handful of headline metrics`, `Dashboards where one chart, picked by KPI cards and shown as a line or as bars, says more than a grid of small charts`], whenNotToUse: [`Large data sets or drill-downs \u2013 the chart shows up to 30 points per period`, `A single number \u2013 use a KPI card instead`], usage: `import { MetricsDashboard } from "@/components/ui/metrics-dashboard";
+
+export function Overview() {
+  return (
+    <MetricsDashboard
+      title="Sales"
+      site="Northwind Store"
+      defaultRange="30d"
+      onExport={(range, metric) => console.log("export", range, metric)}
+    />
+  );
+}`, props: [{ name: `title`, type: `string`, default: `"Sales"`, description: `Title in the bar on top` }, { name: `site`, type: `string`, default: `"Northwind Store"`, description: `Site or workspace shown under the title` }, { name: `defaultRange`, type: `"7d" | "30d" | "90d"`, default: `"30d"`, description: `Period to start on \u2013 shown as Week, Month and Quarter` }, { name: `defaultMetric`, type: `"revenue" | "orders" | "aov" | "refunds"`, default: `"revenue"`, description: `Metric to start on` }, { name: `onExport`, type: `(range, metric) => void`, description: `Called when Export is pressed; the button confirms locally either way` }, { name: `className`, type: `string`, description: `Extra class on the root` }], keyboard: [{ keys: [`Tab`], description: `Moves through the period switch, Export, the KPI cards, the chart type, Compare and the chart` }, { keys: [`\u2190`, `\u2192`], description: `With the chart focused, moves the inspected point` }, { keys: [`Home`, `End`], description: `Jumps to the first or last point` }], accessibility: [`Period and chart-type buttons use aria-pressed; the KPI cards are tabs with aria-selected`, `The chart has a text label with the range and values; the inspected point is announced through a status tooltip`, `Deltas say up or down in text, not only with color \u2013 and a falling refund rate counts as good`], motion: [`KPI values and list counts count to their new amounts with tabular numerals`, `The chosen KPI card turns fully opaque while the others dim; the line draws in with its dots popping on, bars grow up one after another`, `With prefers-reduced-motion values and views switch instantly`], responsive: [`Follows the block's own width with container queries: below 640px the KPI cards form a 2 \xD7 2 grid and the lists stack`, `Below 460px the period switch fills the width, figures shrink and the chart is 168px tall`, `Dark mode built in: switches when an ancestor (usually <html>) has the class dark or data-theme="dark"`], performance: [`Hand-built SVG chart with a monotone cubic path \u2013 no charting library`, `Sample data is generated once in memory; replace sampleDays and the PRODUCTS / CHANNELS lists with your own data`] };
+export {
+  e as docs
+};

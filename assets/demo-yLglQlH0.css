@@ -1,0 +1,1 @@
+.glow-cloud-demo{width:min(100%,360px);display:grid}.stage .glow-cloud-demo,.card__preview .glow-cloud-demo{width:auto;position:absolute;inset:0;overflow:hidden}.stage .glow-cloud-demo>*,.card__preview .glow-cloud-demo>*{aspect-ratio:auto;height:100%}.stage .glow-cloud-demo svg{max-width:min(380px,78%)}.card__preview .glow-cloud-demo svg{width:175px;max-width:175px}

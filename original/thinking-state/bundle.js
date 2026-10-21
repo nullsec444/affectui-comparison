@@ -1,1 +1,24 @@
-import{b as o}from"../shared/chunk-HMPJON4M.js";import"../shared/chunk-HI4U6RSI.js";import"../shared/chunk-BBLBVXTT.js";import{a as c}from"../shared/chunk-PWBCLQI6.js";import{a as m}from"../shared/chunk-LKG2PFLG.js";import"../shared/chunk-H7MXNYVQ.js";import{b as e}from"../shared/chunk-MOQMIKSW.js";var t=e(m()),r=e(c());(0,r.createRoot)(document.getElementById("root")).render(t.default.createElement(o));
+import {
+  a
+} from "../shared/chunk-LSE2W2EK.js";
+import "../shared/chunk-TEB46D5N.js";
+import {
+  init_original_react,
+  original_react_default,
+  require_client
+} from "../shared/chunk-TISG53JG.js";
+import "../shared/chunk-C7RUFYJH.js";
+import "../shared/chunk-Y3JEZZ7A.js";
+import "../shared/chunk-IV3FP5QI.js";
+import {
+  __toESM
+} from "../shared/chunk-CTH3ASD6.js";
+
+// entries/original-thinking-state.js
+init_original_react();
+var import_client = __toESM(require_client());
+var root = (0, import_client.createRoot)(document.getElementById("demo"));
+var generation = 0;
+window.__resetDemo = () => root.render(original_react_default.createElement(a, { key: ++generation }));
+window.__resetDemo();
+window.__entryReady = true;

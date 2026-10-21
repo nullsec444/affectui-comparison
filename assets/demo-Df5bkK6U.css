@@ -1,0 +1,1 @@
+.frost-cloud-demo{width:min(100%,360px);display:grid}.stage .frost-cloud-demo,.card__preview .frost-cloud-demo{width:auto;position:absolute;inset:0;overflow:hidden}.stage .frost-cloud-demo>*,.card__preview .frost-cloud-demo>*{aspect-ratio:auto;height:100%}.stage .frost-cloud-demo svg{max-width:min(380px,78%)}.card__preview .frost-cloud-demo svg{width:175px;max-width:175px}

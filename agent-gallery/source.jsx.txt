@@ -1,0 +1,205 @@
+// Derived from public demo JS via REA/Wakaru and scope-aware AST recovery. Not author-original source.
+import { t as t_1 } from "./react-BkAXpnfr.jsx";
+import { t } from "./jsx-runtime-CTsRTJUX.jsx";
+const n = t_1();
+const r = t();
+const i = [{
+  id: `triage`,
+  name: `Support triage`,
+  description: `Sorts new tickets by urgency and routes them to the right team.`,
+  colors: [`#8b5cf6`, `#e9d5ff`],
+  trigger: `Ticket created`,
+  steps: [`Read the ticket and detect the product area.`, `Set priority from customer plan and sentiment.`, `Assign the team and post a summary in the thread.`],
+  skills: [`Classify ticket`, `Summarize thread`],
+  guardrail: `Cannot close tickets`
+}, {
+  id: `enrich`,
+  name: `Lead enrichment`,
+  description: `Fills in company data for every new lead before sales picks it up.`,
+  colors: [`#2f6bff`, `#c7d7ff`],
+  trigger: `Lead added`,
+  steps: [`Look up the company by email domain.`, `Add size, industry and location to the record.`, `Score the lead and notify the owner above 80.`],
+  skills: [`Find company`, `Score lead`],
+  guardrail: `Cannot change lead owner`
+}, {
+  id: `recap`,
+  name: `Meeting recap`,
+  description: `Turns call transcripts into notes, decisions and next steps.`,
+  colors: [`#ec4899`, `#fbcfe8`],
+  trigger: `Call ended`,
+  steps: [`Pull the transcript from the recording.`, `Write a short recap with decisions and owners.`, `Create follow-up tasks and share the notes.`],
+  skills: [`Write recap`, `Create tasks`],
+  guardrail: `Cannot email external guests`
+}, {
+  id: `churn`,
+  name: `Churn watch`,
+  description: `Spots accounts that go quiet and suggests a save play.`,
+  colors: [`#f97316`, `#fed7aa`],
+  trigger: `Usage drops 30%`,
+  steps: [`Compare weekly usage against the last quarter.`, `Check open tickets and recent NPS answers.`, `Draft a check-in for the account manager.`],
+  skills: [`Read usage`, `Draft check-in`],
+  guardrail: `Cannot offer discounts`
+}, {
+  id: `onboard`,
+  name: `Onboarding coach`,
+  description: `Guides new customers through setup and nudges when they get stuck.`,
+  colors: [`#14b8a6`, `#ccfbf1`],
+  trigger: `Workspace created`,
+  steps: [`Send a welcome note with the first three steps.`, `Watch for steps that stay open for two days.`, `Offer a short call when setup stalls.`],
+  skills: [`Send nudge`, `Book call`],
+  guardrail: `Cannot change billing`
+}, {
+  id: `review`,
+  name: `Content review`,
+  description: `Checks drafts for tone, claims and brand terms before they ship.`,
+  colors: [`#6366f1`, `#e0e7ff`],
+  trigger: `Draft submitted`,
+  steps: [`Check tone against the brand guide.`, `Flag claims that need a source.`, `Suggest fixes inline and tag the author.`],
+  skills: [`Check tone`, `Flag claims`],
+  guardrail: `Cannot publish`
+}, {
+  id: `release`,
+  name: `Release notes`,
+  description: `Writes customer-facing notes from merged pull requests.`,
+  colors: [`#d946ef`, `#f5d0fe`],
+  trigger: `Release tagged`,
+  steps: [`Collect merged pull requests since the last tag.`, `Group them into features, fixes and changes.`, `Draft notes in plain language for review.`],
+  skills: [`Group changes`, `Write notes`],
+  guardrail: `Cannot post without review`
+}];
+function AComponent({
+  title = `Agents that run your playbook`,
+  subtitle = `Give each agent its steps, tools and limits – then let it work inside the tools your team already uses.`,
+  items = i,
+  defaultIndex,
+  className
+}) {
+  let items_length = items.length;
+  let [l, setL] = n.useState(items_length + (defaultIndex ?? Math.floor(items_length / 2)));
+  let [p, setP] = n.useState(false);
+  let h = items[(l % items_length + items_length) % items_length];
+  let g = [...items, ...items, ...items];
+  n.useEffect(() => {
+    if (l >= items_length && l < 2 * items_length) {
+      return;
+    }
+    let e = window.setTimeout(() => {
+      setP(true);
+      setL(e => {
+        if (e < items_length) {
+          return e + items_length;
+        }
+        return e - items_length;
+      });
+    }, 660);
+    return () => window.clearTimeout(e);
+  }, [l, items_length]);
+  n.useEffect(() => {
+    if (!p) {
+      return;
+    }
+    let e = requestAnimationFrame(() => e = requestAnimationFrame(() => setP(false)));
+    return () => cancelAnimationFrame(e);
+  }, [p]);
+  let _ = e => setL(Math.max(0, Math.min(3 * items_length - 1, e)));
+  return <section className={[`ui-ag`, className].filter(Boolean).join(` `)} aria-roledescription={`carousel`} aria-label={title}><style href={`ui-agent-gallery`} precedence={`default`}>{f}</style><header className={`ui-ag__head`}><h2>{title}</h2><p>{subtitle}</p></header><div className={`ui-ag__viewport`} onKeyDown={e => {
+      if (e.key === `ArrowRight`) {
+        e.preventDefault();
+        _(l + 1);
+      } else if (e.key === `ArrowLeft`) {
+        e.preventDefault();
+        _(l - 1);
+      }
+    }}><div className={`ui-ag__track`} data-snap={p ? `` : undefined} style={{
+        "--pos": l
+      }}>{g.map((item, t) => {
+          let n = t === l;
+          let i = Math.abs(t - l);
+          return <div key={`${Math.floor(t / items_length)}-${item.id}`} className={`ui-ag__panel`} data-open={n ? `` : undefined} data-far={i >= 2 ? `` : undefined} style={{
+            "--a": item.colors[0],
+            "--b": item.colors[1]
+          }} aria-hidden={i > 3 || undefined}><span className={`ui-ag__art`} aria-hidden={`true`} />{i <= 3 && <DComponent item={item} hidden={!n} />}{!n && <button type={`button`} className={`ui-ag__pick`} aria-label={`Show ${item.name}`} tabIndex={i > 3 ? -1 : undefined} onClick={() => _(t)}><span className={`ui-ag__label`}>{item.name}</span></button>}</div>;
+        })}</div></div><div className={`ui-ag__foot`}><p key={h.id} className={`ui-ag__caption`} aria-live={`polite`}><b>{h.name}{`.`}</b>{` `}{h.description}</p><div className={`ui-ag__arrows`}><button type={`button`} aria-label={`Previous agent`} onClick={() => _(l - 1)}><svg viewBox={`0 0 24 24`} aria-hidden={`true`}><path d={`M19 12H5m0 0 6-6m-6 6 6 6`} /></svg></button><button type={`button`} aria-label={`Next agent`} onClick={() => _(l + 1)}><svg viewBox={`0 0 24 24`} aria-hidden={`true`}><path d={`M5 12h14m0 0-6-6m6 6-6 6`} /></svg></button></div></div></section>;
+}
+const o = e => [...e].reduce((acc, item) => (acc * 31 + item.charCodeAt(0)) % 997, 7);
+function SComponent({
+  n: n_1,
+  color
+}) {
+  let n = Array.from({
+    length: 10
+  }, (t, n) => [n * 8, 15 - (n_1 * (n + 5) * 7 + n * 3) % 13]);
+  let d = n.map(([e, t], n) => `${n ? `L` : `M`}${e} ${t}`).join(` `);
+  let [cx, cy] = n[n.length - 1];
+  return <svg className={`ui-ag__spark`} viewBox={`-2 -2 78 20`} aria-hidden={`true`}><path d={d} style={{
+      stroke: color
+    }} /><circle cx={cx} cy={cy} r={`2.2`} style={{
+      fill: color
+    }} /></svg>;
+}
+const CComponent = ({
+  name
+}) => <span className={`ui-ag__avatar`} aria-hidden={`true`}>{name.split(` `).map(e => e[0]).join(``)}</span>;
+const LComponent = ({
+  d
+}) => <svg viewBox={`0 0 24 24`} aria-hidden={`true`}><path d={d} /></svg>;
+const u = {
+  note: `M5 6.5A1.5 1.5 0 0 1 6.5 5h11A1.5 1.5 0 0 1 19 6.5v8a1.5 1.5 0 0 1-1.5 1.5H10l-4 3v-3h-.5A.5.5 0 0 1 5 15.5Z`,
+  chart: `M6 18V11M10 18V7M14 18v-5M18 18V9`,
+  file: `M8 3.5h6l4 4v12a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-15a1 1 0 0 1 1-1ZM14 3.5v4h4`,
+  plug: `M9 4v4M15 4v4M7 8h10v3a5 5 0 0 1-10 0V8ZM12 16v4`,
+  search: `M10.5 17a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13ZM20 20l-4.5-4.5`,
+  clip: `m15.5 7.5-6.4 6.4a1.8 1.8 0 0 0 2.5 2.5l6.7-6.7a3.5 3.5 0 0 0-5-5l-6.9 6.9a5.2 5.2 0 0 0 7.4 7.4l6-6`,
+  sync: `M19 12a7 7 0 0 1-12.3 4.6M5 12a7 7 0 0 1 12.3-4.6M17.5 4v3.5H14M6.5 20v-3.5H10`,
+  filter: `M5 7h14M8 12h8M11 17h2`
+};
+function DComponent({
+  item,
+  hidden
+}) {
+  let n = o(item.id);
+  let i = [[`Runs`, `${40 + n % 160}`, `#22a06b`], [`Success`, `${94 + n % 6}%`, `#2f9bd6`], [`Time saved`, `${(2 + n % 70 / 10).toFixed(1)}h`, `#8b5cf6`], [`Escalated`, `${1 + n % 7}`, `#ec4899`]];
+  return <div className={`ui-ag__screen`} aria-label={`${item.name} workspace`} aria-hidden={hidden || undefined} inert={hidden || undefined}><div className={`ui-ag__bar`}><span className={`ui-ag__brand`} aria-hidden={`true`} /><span className={`ui-ag__switch`}><span className={`ui-ag__mark`} aria-hidden={`true`} />{item.name}<svg viewBox={`0 0 24 24`} aria-hidden={`true`}><path d={`m8 10 4-4 4 4M8 14l4 4 4-4`} /></svg></span><span className={`ui-ag__new`}>{`+ New agent`}</span><CComponent name={`Lena Hart`} /></div><div className={`ui-ag__page`}><div className={`ui-ag__hero`}><span className={`ui-ag__logo`} aria-hidden={`true`} /><span className={`ui-ag__sync`}>{`3m ago`}<LComponent d={u.sync} /></span></div><h3>{item.name}</h3><p className={`ui-ag__sub`}>{`Triggered by “`}{item.trigger}{`” · Owner Lena Hart`}</p><div className={`ui-ag__kpis`}>{i.map(([e, t, color], a) => <div key={e}><span>{e}</span><b>{t}</b><SComponent n={n + a * 13} color={color} /></div>)}</div><div className={`ui-ag__tabs`}><span>{`Runs`}</span><span>{`Tools`}</span><b>{`Context`}</b><span>{`Settings`}</span></div><h4>{`Agent context`}</h4><p className={`ui-ag__hint`}>{`Goals, files and rules the agent uses on every run.`}</p><div className={`ui-ag__toolbar`}><span className={`ui-ag__search`}><LComponent d={u.search} />{`Search context…`}</span><span className={`ui-ag__filter`}><LComponent d={u.filter} />{`All`}</span></div><ol className={`ui-ag__feed`}><li className={`ui-ag__compose`}><CComponent name={`Lena Hart`} /><div className={`ui-ag__box`}><span>{`Add context, e.g. “`}{item.guardrail}{`”`}</span><span className={`ui-ag__box-foot`}><LComponent d={u.clip} /><b>{`Add context`}</b></span></div></li><li><span className={`ui-ag__dot`}><LComponent d={u.note} /></span><div><p className={`ui-ag__line`}><CComponent name={`Jonas Weber`} /><b>{`Jonas Weber`}</b>{` added context · today`}</p><p className={`ui-ag__card`}>{item.steps[0]}</p></div></li><li><span className={`ui-ag__dot`}><LComponent d={u.chart} /></span><p className={`ui-ag__line`}><CComponent name={`Mara Lindqvist`} /><b>{`Mara Lindqvist`}</b>{` generated a `}<u>{`Weekly summary`}</u>{` · 1d ago`}</p></li><li><span className={`ui-ag__dot`}><LComponent d={u.file} /></span><p className={`ui-ag__line`}><CComponent name={`Mara Lindqvist`} /><b>{`Mara Lindqvist`}</b>{` added `}<u>{`playbook.pdf`}</u><i className={`ui-ag__ext`} data-kind={`pdf`} />{` and `}<u>{`accounts.csv`}</u><i className={`ui-ag__ext`} data-kind={`csv`} />{` · 2d ago`}</p></li><li><span className={`ui-ag__dot`}><LComponent d={u.note} /></span><div><p className={`ui-ag__line`}><CComponent name={`Jonas Weber`} /><b>{`Jonas Weber`}</b>{` added context · 2d ago`}</p><p className={`ui-ag__card`}>{item.steps[1]}{` `}{item.steps[2]}</p></div></li><li><span className={`ui-ag__dot ui-ag__dot--app`}><LComponent d={u.plug} /></span><p className={`ui-ag__line`}>{`Connected `}<u>{`Slack`}</u>{` and `}<u>{`HubSpot`}</u>{` · 3d ago`}</p></li></ol></div></div>;
+}
+var f = `.ui-ag{--ui-ag-ink: #171717;--ui-ag-text: #404040;--ui-ag-muted: #8f8f8f;--ui-ag-base-top: #f4f4f6;--ui-ag-base-bottom: #e9e9ee;--ui-ag-screen: #ffffff;--ui-ag-page: #fafafa;--ui-ag-screen-line: #ececec;--ui-ag-chip: #ffffff;--ui-ag-chip-line: #e5e5e5;--ui-ag-soft: #f5f5f5;--ui-ag-btn: #ffffff;--ui-ag-shine: rgba(255, 255, 255, 0.75);--ui-ag-ok: #2f7d32;--ui-ag-ok-bg: #e8f5e6;--ui-ag-height: 560px;--ui-ag-side: 104px;--ui-ag-gap: 14px;--ui-ag-open: min(70cqw, 1120px);--ui-ag-ease: cubic-bezier(0.65, 0, 0.25, 1);container-type: inline-size;overflow: hidden;padding: 8px 0 4px;font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;color: var(--ui-ag-ink);-webkit-font-smoothing: antialiased}.ui-ag *, .ui-ag *::before, .ui-ag *::after{box-sizing: border-box}.ui-ag button{font: inherit;color: inherit;margin: 0;cursor: pointer;-webkit-tap-highlight-color: transparent}.ui-ag button:focus-visible{outline: 2px solid #2f6bff;outline-offset: 3px}.ui-ag__head{max-width: 620px;margin: 0 auto 36px;padding: 0 20px;text-align: center}.ui-ag__head h2{margin: 0;font-size: 30px;font-weight: 600;letter-spacing: -0.025em;line-height: 1.15}.ui-ag__head p{margin: 12px 0 0;font-size: 16px;line-height: 1.5;color: var(--ui-ag-muted)}.ui-ag__viewport{overflow: hidden}.ui-ag__track{display: flex;gap: var(--ui-ag-gap);width: max-content;height: var(--ui-ag-height);transform: translateX(calc(50cqw - var(--pos) * (var(--ui-ag-side) + var(--ui-ag-gap)) - var(--ui-ag-open) / 2));transition: transform 620ms var(--ui-ag-ease)}.ui-ag__track[data-snap], .ui-ag__track[data-snap] *{transition: none !important;animation: none !important}.ui-ag__panel{position: relative;flex: 0 0 var(--ui-ag-side);overflow: hidden;border-radius: 20px;transition: flex-basis 620ms var(--ui-ag-ease)}.ui-ag__panel[data-open]{flex-basis: var(--ui-ag-open)}.ui-ag__art{position: absolute;inset: 0;background: linear-gradient(118deg, transparent 38%, var(--ui-ag-shine) 47%, transparent 57%), radial-gradient(110% 80% at 0% 0%, color-mix(in srgb, var(--a) 70%, transparent) 0%, transparent 60%), radial-gradient(90% 70% at 100% 100%, var(--b) 0%, transparent 72%), radial-gradient(60% 50% at 30% 100%, color-mix(in srgb, var(--a) 28%, transparent) 0%, transparent 70%), linear-gradient(180deg, var(--ui-ag-base-top), var(--ui-ag-base-bottom));filter: saturate(0.35);transition: filter 500ms ease, transform 900ms var(--ui-ag-ease)}.ui-ag__panel:hover .ui-ag__art{filter: none}.ui-ag__panel[data-open] .ui-ag__art{filter: none}.ui-ag__panel[data-far] .ui-ag__art{filter: saturate(0.12)}.ui-ag__pick{position: absolute;inset: 0;display: flex;align-items: flex-end;padding: 0 0 22px 16px;border: 0;background: none;animation: ui-ag-fade 400ms ease 200ms both}.ui-ag__label{writing-mode: vertical-rl;transform: rotate(180deg);font-size: 17px;font-weight: 500;letter-spacing: -0.01em;white-space: nowrap;color: color-mix(in srgb, var(--a) 70%, var(--ui-ag-text));opacity: 0.85}.ui-ag__panel[data-far] .ui-ag__label{color: var(--ui-ag-muted)}.ui-ag__screen{position: absolute;top: 44px;left: 44px;width: max(640px, calc(100% - 88px));min-height: 620px;overflow: hidden;border-radius: 16px;background: var(--ui-ag-page);box-shadow: 0 0 0 1px var(--ui-ag-screen-line), 0 20px 50px -20px rgba(0, 0, 0, 0.18);font-size: 11.5px;color: var(--ui-ag-text);opacity: 0;transform: translate(28px, 14px) scale(0.98);transition: opacity 260ms ease, transform 420ms var(--ui-ag-ease)}.ui-ag__panel[data-open] .ui-ag__screen{opacity: 1;transform: none;transition: opacity 420ms ease 260ms, transform 620ms var(--ui-ag-ease) 220ms}.ui-ag__screen svg{width: 13px;height: 13px;flex: none;fill: none;stroke: currentColor;stroke-width: 1.7;stroke-linecap: round;stroke-linejoin: round}.ui-ag__screen u{text-decoration: underline;text-decoration-color: var(--ui-ag-chip-line);text-underline-offset: 3px;text-decoration-thickness: 1.5px;color: var(--ui-ag-ink)}.ui-ag__bar{display: flex;align-items: center;gap: 12px;height: 48px;padding: 0 14px;background: var(--ui-ag-screen)}.ui-ag__brand{width: 18px;height: 18px;border-radius: 5px;background: var(--ui-ag-ink)}.ui-ag__switch{display: inline-flex;align-items: center;gap: 7px;height: 28px;padding: 0 8px 0 6px;border-radius: 8px;box-shadow: inset 0 0 0 1px var(--ui-ag-chip-line);font-size: 11.5px;font-weight: 500;color: var(--ui-ag-ink)}.ui-ag__switch svg{width: 12px;height: 12px;color: var(--ui-ag-muted)}.ui-ag__mark, .ui-ag__logo{border-radius: 5px;background: linear-gradient(135deg, var(--a), var(--b));box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35)}.ui-ag__mark{width: 16px;height: 16px}.ui-ag__new{margin-left: auto;padding: 5px 10px;border-radius: 8px;box-shadow: inset 0 0 0 1px var(--ui-ag-chip-line), 0 1px 1px rgba(0, 0, 0, 0.04);font-size: 11px;font-weight: 500;color: var(--ui-ag-ink)}.ui-ag__avatar{display: inline-grid;place-items: center;width: 18px;height: 18px;flex: none;border-radius: 50%;background: var(--ui-ag-soft);box-shadow: inset 0 0 0 1px var(--ui-ag-chip-line);font-size: 7.5px;font-weight: 600;color: var(--ui-ag-text)}.ui-ag__bar .ui-ag__avatar{width: 26px;height: 26px;font-size: 9px}.ui-ag__page{padding: 16px max(28px, calc((100% - 560px) / 2)) 24px}.ui-ag__hero{display: flex;align-items: flex-start;justify-content: space-between}.ui-ag__logo{width: 30px;height: 30px;border-radius: 8px}.ui-ag__sync{display: inline-flex;align-items: center;gap: 6px;font-size: 11px;color: var(--ui-ag-muted)}.ui-ag__page h3{margin: 8px 0 2px;font-size: 15px;font-weight: 600;letter-spacing: -0.01em;color: var(--ui-ag-ink)}.ui-ag__sub{margin: 0 0 12px;font-size: 11px;color: var(--ui-ag-muted)}.ui-ag__kpis{display: grid;grid-template-columns: repeat(4, minmax(0, 1fr));margin-bottom: 12px}.ui-ag__kpis > div{display: grid;grid-template-columns: minmax(0, 1fr) 54px;grid-template-areas: "label spark" "value spark";column-gap: 8px;padding: 0 12px;border-left: 1px solid var(--ui-ag-screen-line)}.ui-ag__kpis > div:first-child{padding-left: 0;border-left: 0}.ui-ag__kpis span{grid-area: label;font-size: 10.5px;color: var(--ui-ag-muted);white-space: nowrap}.ui-ag__kpis b{grid-area: value;font-size: 15px;font-weight: 600;letter-spacing: -0.02em;color: var(--ui-ag-ink);font-variant-numeric: tabular-nums}.ui-ag__screen .ui-ag__spark{grid-area: spark;align-self: end;width: 54px;height: 20px;margin-bottom: 2px;overflow: visible}.ui-ag__spark path{fill: none;stroke-width: 1.6;stroke-linecap: round;stroke-linejoin: round}.ui-ag__tabs{display: flex;gap: 16px;margin: 0 -400px 14px;padding: 0 400px;border-bottom: 1px solid var(--ui-ag-screen-line)}.ui-ag__tabs > *{padding: 0 1px 8px;font-size: 11.5px;color: var(--ui-ag-muted)}.ui-ag__tabs b{font-weight: 500;color: var(--ui-ag-ink);box-shadow: inset 0 -1.5px 0 var(--ui-ag-ink)}.ui-ag__page h4{margin: 0;font-size: 13px;font-weight: 600;color: var(--ui-ag-ink)}.ui-ag__hint{margin: 3px 0 12px;font-size: 11px;color: var(--ui-ag-muted)}.ui-ag__toolbar{display: flex;gap: 6px;margin-bottom: 14px}.ui-ag__search, .ui-ag__filter{display: flex;align-items: center;gap: 7px;height: 30px;padding: 0 10px;border-radius: 10px;background: var(--ui-ag-screen);box-shadow: inset 0 0 0 1px var(--ui-ag-chip-line);font-size: 11px;color: var(--ui-ag-muted)}.ui-ag__search{flex: 1}.ui-ag__filter{color: var(--ui-ag-ink)}.ui-ag__feed{position: relative;display: grid;gap: 12px;margin: 0;padding: 0;list-style: none}.ui-ag__feed::before{content: "";position: absolute;left: 12px;top: 24px;bottom: 8px;width: 1px;background: var(--ui-ag-screen-line)}.ui-ag__feed li{position: relative;display: grid;grid-template-columns: 25px 1fr;gap: 10px;align-items: start}.ui-ag__compose .ui-ag__avatar{width: 25px;height: 25px;font-size: 8.5px}.ui-ag__box{display: grid;gap: 18px;padding: 10px 10px 8px 12px;border-radius: 12px;background: var(--ui-ag-screen);box-shadow: inset 0 0 0 1px var(--ui-ag-chip-line), 0 1px 2px rgba(0, 0, 0, 0.04);color: var(--ui-ag-muted)}.ui-ag__box-foot{display: flex;align-items: center;justify-content: space-between}.ui-ag__box-foot b{padding: 4px 9px;border-radius: 8px;background: var(--ui-ag-soft);font-size: 10.5px;font-weight: 500;color: var(--ui-ag-ink)}.ui-ag__dot{display: grid;place-items: center;width: 25px;height: 25px;border-radius: 50%;background: var(--ui-ag-page);box-shadow: inset 0 0 0 1px var(--ui-ag-chip-line);color: var(--ui-ag-muted)}.ui-ag__dot svg{width: 12px;height: 12px}.ui-ag__dot--app{background: linear-gradient(135deg, var(--a), var(--b));box-shadow: none;color: #fff}.ui-ag__line{display: flex;flex-wrap: wrap;align-items: center;gap: 5px;margin: 5px 0 0;color: var(--ui-ag-muted)}.ui-ag__line b{font-weight: 500;color: var(--ui-ag-ink)}.ui-ag__ext{width: 9px;height: 11px;border-radius: 2px;background: #e5484d}.ui-ag__ext[data-kind="csv"]{background: #30a46c}.ui-ag__card{margin: 7px 0 0;padding: 9px 12px;border-radius: 10px;background: var(--ui-ag-screen);box-shadow: inset 0 0 0 1px var(--ui-ag-chip-line), 0 1px 2px rgba(0, 0, 0, 0.04);line-height: 1.5;color: var(--ui-ag-ink)}.ui-ag__foot{display: flex;align-items: flex-start;justify-content: space-between;gap: 24px;width: var(--ui-ag-open);margin: 26px auto 0}.ui-ag__caption{max-width: 520px;margin: 0;font-size: 19px;line-height: 1.45;letter-spacing: -0.01em;color: var(--ui-ag-muted);animation: ui-ag-fade 420ms ease both}.ui-ag__caption b{font-weight: 500;color: var(--ui-ag-ink)}.ui-ag__arrows{display: flex;flex: none;border-radius: 12px;background: var(--ui-ag-btn);box-shadow: 0 0 0 1px var(--ui-ag-chip-line), 0 1px 2px rgba(0, 0, 0, 0.05)}.ui-ag__arrows button{display: grid;place-items: center;width: 42px;height: 38px;padding: 0;border: 0;background: none;transition: background-color 160ms ease}.ui-ag__arrows button:first-child{border-radius: 12px 0 0 12px;box-shadow: 1px 0 0 var(--ui-ag-chip-line)}.ui-ag__arrows button:last-child{border-radius: 0 12px 12px 0}.ui-ag__arrows button:hover{background: var(--ui-ag-soft)}.ui-ag__arrows svg{width: 17px;height: 17px;fill: none;stroke: currentColor;stroke-width: 1.8;stroke-linecap: round;stroke-linejoin: round}@keyframes ui-ag-fade{from{opacity: 0}}@container (max-width: 760px){.ui-ag{--ui-ag-height: 400px;--ui-ag-side: 56px;--ui-ag-gap: 10px}.ui-ag{--ui-ag-open: calc(100cqw - 2 * (var(--ui-ag-side) + var(--ui-ag-gap)) - 24px)}.ui-ag__label{font-size: 14px}.ui-ag__pick{padding: 0 0 16px 10px}.ui-ag__screen{top: 40px;left: 22px}.ui-ag__foot{width: calc(100cqw - 40px)}.ui-ag__caption{font-size: 16px}.ui-ag__head h2{font-size: 24px}}@media (prefers-reduced-motion: reduce){.ui-ag__track, .ui-ag__panel, .ui-ag__art{transition: none}.ui-ag__caption, .ui-ag__pick{animation: none}.ui-ag__screen, .ui-ag__panel[data-open] .ui-ag__screen{transition: none}}:where(.dark, [data-theme="dark"]) .ui-ag{--ui-ag-ink: #ededed;--ui-ag-text: #c4c4c4;--ui-ag-muted: #8f8f8f;--ui-ag-base-top: #232326;--ui-ag-base-bottom: #1a1a1c;--ui-ag-screen: #232326;--ui-ag-page: #1c1c1f;--ui-ag-screen-line: rgba(255, 255, 255, 0.08);--ui-ag-chip: #2a2a2d;--ui-ag-chip-line: rgba(255, 255, 255, 0.08);--ui-ag-soft: #2a2a2d;--ui-ag-btn: #232326;--ui-ag-shine: rgba(255, 255, 255, 0.08);--ui-ag-ok: #6fd27a;--ui-ag-ok-bg: rgba(111, 210, 122, 0.14)}`;
+const width = 1200;
+function MComponent() {
+  let eRef = n.useRef(null);
+  let [t, setT] = n.useState(null);
+  n.useLayoutEffect(() => {
+    let eRef_current = eRef.current;
+    let n = eRef_current?.closest(`.card__preview`);
+    let r = n ?? eRef_current?.closest(`.stage`);
+    if (!eRef_current || !r) {
+      return;
+    }
+    let a = () => {
+      let r_clientWidth = r.clientWidth;
+      if (n) {
+        return setT({
+          scale: r_clientWidth / width,
+          card: true
+        });
+      }
+      if (r_clientWidth < 760) {
+        return setT(null);
+      }
+      setT({
+        scale: r_clientWidth / width,
+        card: false
+      });
+    };
+    a();
+    let o = new ResizeObserver(a);
+    o.observe(r);
+    return () => o.disconnect();
+  }, []);
+  return <div ref={eRef} className={`gallery-demo`} data-fit={t ? t.card ? `card` : `stage` : undefined}><div className={`gallery-demo__frame`} style={t ? t.card ? {
+      width,
+      transform: `scale(${t.scale})`
+    } : {
+      width,
+      zoom: t.scale
+    } : undefined}><AComponent /></div></div>;
+}
+export { MComponent as default };

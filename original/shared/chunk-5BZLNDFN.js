@@ -1,0 +1,109 @@
+import {
+  init_react_BkAXpnfr,
+  n
+} from "./chunk-C7RUFYJH.js";
+import {
+  n as n2
+} from "./chunk-Y3JEZZ7A.js";
+
+// current-assets/demo-ik_0XYps.js
+init_react_BkAXpnfr();
+var n3 = n();
+var r = n2();
+var i = [`var(--ui-xc-c1)`, `var(--ui-xc-c2)`, `var(--ui-xc-c3)`, `var(--ui-xc-c4)`];
+var a = (e) => new Intl.NumberFormat(`en-US`, { maximumFractionDigits: 1 }).format(e);
+var o = (e) => new Intl.NumberFormat(`en-US`, { maximumFractionDigits: 0 }).format(e);
+var s = (e) => 1 - (1 - e) ** 4;
+var c = () => typeof window < `u` && window.matchMedia(`(prefers-reduced-motion: reduce)`).matches;
+function l(e, t) {
+  let [r2, i2] = (0, n3.useState)(e), a2 = (0, n3.useRef)(e), o2 = JSON.stringify(e);
+  return (0, n3.useEffect)(() => {
+    let e2 = JSON.parse(o2), n4 = { ...a2.current };
+    if (c() || Object.keys(e2).every((t2) => n4[t2] === e2[t2])) {
+      a2.current = e2, i2(e2);
+      return;
+    }
+    let r3 = performance.now(), l2 = 0, u2 = (o3) => {
+      let c2 = Math.min(1, (o3 - r3) / t), d2 = s(c2), f2 = {};
+      for (let t2 in e2) f2[t2] = (n4[t2] ?? e2[t2]) + (e2[t2] - (n4[t2] ?? e2[t2])) * d2;
+      a2.current = f2, i2(f2), c2 < 1 && (l2 = requestAnimationFrame(u2));
+    };
+    return l2 = requestAnimationFrame(u2), () => cancelAnimationFrame(l2);
+  }, [o2, t]), r2;
+}
+var u = { stroke: `currentColor`, strokeWidth: 1.5, strokeLinecap: `round`, strokeLinejoin: `round` };
+var d = () => (0, r.jsx)(`svg`, { width: `10`, height: `10`, viewBox: `0 0 10 10`, fill: `none`, "aria-hidden": `true`, children: (0, r.jsx)(`path`, { d: `m2.2 5.2 1.9 1.9 3.7-4.1`, ...u, strokeWidth: 1.7 }) });
+var f = () => (0, r.jsx)(`svg`, { width: `12`, height: `12`, viewBox: `0 0 12 12`, fill: `none`, "aria-hidden": `true`, children: (0, r.jsx)(`path`, { d: `M2.5 6h7M6.5 3l3 3-3 3`, ...u, strokeWidth: 1.4 }) });
+var ee = ({ down: e }) => (0, r.jsx)(`svg`, { width: `10`, height: `10`, viewBox: `0 0 10 10`, fill: `none`, "aria-hidden": `true`, style: e ? { transform: `scaleY(-1)` } : void 0, children: (0, r.jsx)(`path`, { d: `M1.5 7 4 4.5l1.6 1.6L8.5 3M6.2 3h2.3v2.3`, ...u, strokeWidth: 1.4 }) });
+var te = () => (0, r.jsxs)(`svg`, { width: `12`, height: `12`, viewBox: `0 0 12 12`, fill: `none`, "aria-hidden": `true`, children: [(0, r.jsx)(`circle`, { cx: `6`, cy: `6`, r: `4.25`, ...u }), (0, r.jsx)(`circle`, { cx: `6`, cy: `6`, r: `1.5`, fill: `currentColor` })] });
+function p({ title: e, variants: t, metrics: s2, metric: c2, defaultMetric: u2, onMetricChange: p2, winner: m2, defaultWinner: h2 = null, onWinnerChange: g2, status: _, note: v, action: y, hint: b, trigger: re = `hover`, open: ie, defaultOpen: ae = false, onOpenChange: oe, className: se }) {
+  let x = (0, n3.useId)(), [ce, S] = (0, n3.useState)(ae), C = ie ?? ce, [le, ue] = (0, n3.useState)(u2 ?? s2[0]?.id), w = s2.find((e2) => e2.id === (c2 ?? le)) ?? s2[0], [de, fe] = (0, n3.useState)(h2), T = m2 === void 0 ? de : m2, [E, D] = (0, n3.useState)(null), O = (0, n3.useRef)(null), k = w?.format ?? a, pe = !!w?.lowerIsBetter, A = (e2) => e2.values[w?.id ?? ``] ?? 0, j = t.find((e2) => e2.control) ?? t[0], M = j ? A(j) : 0, N = (e2) => M ? (A(e2) - M) / Math.abs(M) * 100 : 0, P = (e2) => N(e2) * (pe ? -1 : 1), F = (e2) => `${e2 >= 0 ? `+` : `\u2212`}${Math.abs(e2).toFixed(1)}%`, I = t.reduce((e2, t2) => !e2 || P(t2) > P(e2) ? t2 : e2, void 0), L = Math.max(...t.map(A), 1e-4), R = Math.min(...t.map(A)), z = (e2) => L > R ? 0.38 + 0.62 * ((A(e2) - R) / (L - R)) : 0.7, B = (e2) => e2.color ?? (e2 === j ? `var(--ui-xc-c0)` : i[t.filter((e3) => e3 !== j).indexOf(e2) % i.length]), me = l(Object.fromEntries(t.map((e2) => [e2.id, A(e2)])), 620), V = (0, n3.useRef)(0), H = (e2) => {
+    window.clearTimeout(V.current), e2 !== C && (e2 || D(null), S(e2), oe?.(e2));
+  }, U = (e2, t2) => {
+    window.clearTimeout(V.current), V.current = window.setTimeout(() => H(e2), t2);
+  };
+  (0, n3.useEffect)(() => () => window.clearTimeout(V.current), []);
+  let W = re === `hover`, he = (e2) => {
+    W && e2.pointerType === `mouse` && U(true, 90);
+  }, ge = (e2) => {
+    W && e2.pointerType === `mouse` && U(false, 220);
+  };
+  (0, n3.useEffect)(() => {
+    if (!C) return;
+    let e2 = (e3) => {
+      O.current?.contains(e3.target) || H(false);
+    };
+    return document.addEventListener(`pointerdown`, e2), () => document.removeEventListener(`pointerdown`, e2);
+  });
+  let _e = (e2) => {
+    e2.key === `Escape` && C && (e2.stopPropagation(), H(false), O.current?.querySelector(`.ui-xc__toggle`)?.focus({ preventScroll: true }));
+  }, G = (0, n3.useRef)(null), [K, ve] = (0, n3.useState)(null);
+  (0, n3.useLayoutEffect)(() => {
+    let e2 = G.current?.querySelector(`[aria-checked="true"]`);
+    e2 && ve({ left: e2.offsetLeft, width: e2.offsetWidth });
+  }, [w?.id, s2.length, C]);
+  let q = (e2) => {
+    ue(e2), p2?.(e2);
+  }, ye = (e2) => {
+    let t2 = s2.findIndex((e3) => e3.id === w?.id), n4 = e2.key === `ArrowRight` ? t2 + 1 : e2.key === `ArrowLeft` ? t2 - 1 : e2.key === `Home` ? 0 : e2.key === `End` ? s2.length - 1 : null;
+    if (n4 === null) return;
+    e2.preventDefault();
+    let r2 = s2[(n4 + s2.length) % s2.length];
+    q(r2.id), requestAnimationFrame(() => G.current?.querySelector(`[aria-checked="true"]`)?.focus());
+  }, J = (e2) => {
+    let t2 = T === e2 ? null : e2;
+    fe(t2), g2?.(t2);
+  }, Y = I && I !== j && P(I) > 0 ? I : null, X = t.find((e2) => e2.id === T) ?? null, Z = t.find((e2) => e2.id === E) ?? null ?? null, Q = b ?? (X ? null : `Pick a winner`), $ = `rest`;
+  if (Z) {
+    let e2 = Z.confidence?.[w?.id ?? ``];
+    Q = (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(`b`, { children: Z.key }), Z.visitors !== void 0 && (0, r.jsxs)(r.Fragment, { children: [` \xB7 `, o(Z.visitors), ` visitors`] }), Z === j ? (0, r.jsx)(r.Fragment, { children: ` \xB7 baseline` }) : e2 !== void 0 && (0, r.jsxs)(r.Fragment, { children: [` \xB7 `, o(e2), `% confidence`] })] }), $ = `hot-${Z.id}-${w?.id}`;
+  } else X && (Q = (0, r.jsxs)(r.Fragment, { children: [(0, r.jsx)(`b`, { children: X.name }), ` picked`] }), $ = `picked-${X.id}`);
+  let be = X && y ? typeof y.label == `function` ? y.label(X) : y.label : null;
+  return (0, r.jsxs)(`div`, { ref: O, className: [`ui-xc`, se].filter(Boolean).join(` `), "data-open": C ? `` : void 0, onPointerEnter: he, onPointerLeave: ge, onKeyDown: _e, children: [(0, r.jsx)(`style`, { href: `ui-experiment-card`, precedence: `default`, children: ne }), (0, r.jsxs)(`div`, { className: `ui-xc__card`, children: [(0, r.jsxs)(`div`, { className: `ui-xc__head`, children: [(0, r.jsx)(`button`, { type: `button`, className: `ui-xc__toggle`, "aria-expanded": C, "aria-controls": `${x}-body`, "aria-label": `${e}${_ ? `, ${_.label}` : ``}${Y ? `, ${Y.name} is ahead by ${Math.abs(N(Y)).toFixed(1)} percent` : ``}`, onClick: () => H(!C) }), (0, r.jsx)(`span`, { className: `ui-xc__chart`, "aria-hidden": `true`, onPointerLeave: () => D(null), children: t.map((e2) => (0, r.jsx)(`span`, { className: `ui-xc__col`, "data-hot": E === e2.id ? `` : void 0, "data-dim": E && E !== e2.id ? `` : void 0, "data-picked": T === e2.id ? `` : void 0, "data-passed": T && T !== e2.id ? `` : void 0, style: { "--ui-xc-color": B(e2), "--ui-xc-size": z(e2) }, onPointerEnter: (t2) => t2.pointerType === `mouse` && D(e2.id), onClick: () => J(e2.id) }, e2.id)) }), (0, r.jsxs)(`span`, { className: `ui-xc__titles`, children: [(0, r.jsx)(`span`, { className: `ui-xc__name`, children: e }), (0, r.jsxs)(`span`, { className: `ui-xc__sub`, children: [_ && (0, r.jsxs)(`span`, { className: `ui-xc__tag`, "data-tone": _.tone ?? `gray`, children: [(0, r.jsx)(te, {}), _.label] }), v && (0, r.jsx)(`span`, { className: `ui-xc__note`, children: v })] })] }), Y ? (0, r.jsxs)(`span`, { className: `ui-xc__lead`, "data-tone": `green`, children: [(0, r.jsx)(`b`, { children: Y.key }), (0, r.jsx)(ee, { down: N(Y) < 0 }), F(N(Y))] }, `${Y.id}-${w?.id}`) : (0, r.jsx)(`span`, { className: `ui-xc__lead`, "data-tone": `gray`, children: `No lift yet` }, `none-${w?.id}`)] }), (0, r.jsx)(`div`, { id: `${x}-body`, className: `ui-xc__fold`, inert: !C, children: (0, r.jsx)(`div`, { className: `ui-xc__clip`, children: (0, r.jsxs)(`div`, { className: `ui-xc__body`, children: [s2.length > 1 && (0, r.jsxs)(`div`, { ref: G, className: `ui-xc__switch`, role: `radiogroup`, "aria-label": `Metric`, onKeyDown: ye, children: [K && (0, r.jsx)(`span`, { className: `ui-xc__thumb`, style: { transform: `translateX(${K.left}px)`, width: K.width } }), s2.map((e2) => (0, r.jsx)(`button`, { type: `button`, role: `radio`, "aria-checked": e2.id === w?.id, tabIndex: e2.id === w?.id ? 0 : -1, className: `ui-xc__metric`, onClick: () => q(e2.id), children: e2.label }, e2.id))] }), (0, r.jsx)(`div`, { className: `ui-xc__rows`, role: `radiogroup`, "aria-label": `Winner`, onPointerLeave: () => D(null), children: t.map((e2) => {
+    let t2 = P(e2), n4 = e2 === j;
+    return (0, r.jsxs)(`button`, { type: `button`, role: `radio`, "aria-checked": T === e2.id, "aria-label": `${e2.name}: ${k(A(e2))}${n4 ? `, baseline` : `, ${N(e2) >= 0 ? `up` : `down`} ${Math.abs(N(e2)).toFixed(1)} percent`}`, className: `ui-xc__row`, "data-hot": E === e2.id ? `` : void 0, "data-dim": E && E !== e2.id ? `` : void 0, style: { "--ui-xc-color": B(e2) }, onPointerEnter: (t3) => t3.pointerType === `mouse` && D(e2.id), onFocus: () => D(e2.id), onBlur: () => D(null), onClick: () => J(e2.id), children: [(0, r.jsxs)(`span`, { className: `ui-xc__badge`, children: [(0, r.jsx)(`span`, { children: e2.key }), (0, r.jsx)(d, {})] }), (0, r.jsx)(`span`, { className: `ui-xc__label`, children: e2.name }), (0, r.jsx)(`span`, { className: `ui-xc__value`, children: k(me[e2.id] ?? A(e2)) }), n4 ? (0, r.jsx)(`span`, { className: `ui-xc__lift`, "data-tone": `gray`, children: `Base` }) : (0, r.jsx)(`span`, { className: `ui-xc__lift`, "data-tone": t2 > 0.05 ? `green` : t2 < -0.05 ? `red` : `gray`, children: F(N(e2)) }), (0, r.jsx)(`span`, { className: `ui-xc__track`, children: (0, r.jsx)(`span`, { className: `ui-xc__bar`, style: { transform: `scaleX(${Math.max(0.02, A(e2) / L)})` } }) })] }, e2.id);
+  }) })] }) }) })] }), (0, r.jsx)(`div`, { className: `ui-xc__fold`, inert: !C, children: (0, r.jsx)(`div`, { className: `ui-xc__clip`, children: (0, r.jsxs)(`div`, { className: `ui-xc__foot`, children: [(0, r.jsx)(`span`, { className: `ui-xc__caption`, "aria-live": `polite`, children: (0, r.jsx)(`span`, { children: Q }, $) }), X && y && (0, r.jsxs)(`button`, { type: `button`, className: `ui-xc__action`, onClick: () => y.onClick(X), children: [be, (0, r.jsx)(f, {})] }, X.id)] }) }) })] });
+}
+var ne = `.ui-xc{--ui-xc-tray: #f0f0f0;--ui-xc-card: #ffffff;--ui-xc-line: #ececec;--ui-xc-ink: #171717;--ui-xc-text: #404040;--ui-xc-muted: #8f8f8f;--ui-xc-well: #f4f4f5;--ui-xc-track: #ededf0;--ui-xc-c0: #b4b4ba;--ui-xc-c1: #2f6bff;--ui-xc-c2: #7c5cff;--ui-xc-c3: #f0a020;--ui-xc-c4: #22a05a;--ui-xc-focus: rgba(23, 23, 23, 0.22);--ui-xc-ease: cubic-bezier(0.32, 0.72, 0.24, 1);--ui-xc-time: 520ms;box-sizing: border-box;width: 100%;max-width: 340px;padding: 4px;border-radius: 20px;background: var(--ui-xc-tray);container-type: inline-size;font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;font-size: 13px;line-height: 20px;color: var(--ui-xc-text);text-align: left;-webkit-font-smoothing: antialiased}.ui-xc *, .ui-xc *::before, .ui-xc *::after{box-sizing: border-box}:where(.ui-xc) button{margin: 0;padding: 0;border: 0;background: none;font: inherit;color: inherit;text-align: inherit;cursor: pointer;-webkit-tap-highlight-color: transparent}.ui-xc button:focus-visible{outline: 2px solid var(--ui-xc-focus);outline-offset: 2px}.ui-xc svg{display: block;flex: none}.ui-xc b{font-weight: 600;color: var(--ui-xc-ink)}.ui-xc [data-tone="red"]{--ui-xc-tag: #b42318;--ui-xc-tag-bg: rgba(229, 72, 77, 0.1)}.ui-xc [data-tone="amber"]{--ui-xc-tag: #96590a;--ui-xc-tag-bg: rgba(240, 160, 32, 0.14)}.ui-xc [data-tone="green"]{--ui-xc-tag: #18794e;--ui-xc-tag-bg: rgba(34, 160, 90, 0.11)}.ui-xc [data-tone="blue"]{--ui-xc-tag: #1f55d6;--ui-xc-tag-bg: rgba(47, 107, 255, 0.09)}.ui-xc [data-tone="violet"]{--ui-xc-tag: #6941c6;--ui-xc-tag-bg: rgba(124, 92, 255, 0.1)}.ui-xc [data-tone="gray"]{--ui-xc-tag: #6b6b72;--ui-xc-tag-bg: rgba(110, 110, 120, 0.09)}.ui-xc__card{border-radius: 16px;background: var(--ui-xc-card);box-shadow: 0 0 0 1px var(--ui-xc-line), 0 1px 2px rgba(0, 0, 0, 0.04)}.ui-xc__fold{display: grid;grid-template-rows: 0fr;opacity: 0;transition: grid-template-rows var(--ui-xc-time) var(--ui-xc-ease), opacity 260ms ease}.ui-xc__clip{min-height: 0;overflow: hidden}.ui-xc[data-open] > .ui-xc__fold, .ui-xc[data-open] > .ui-xc__card > .ui-xc__fold{grid-template-rows: 1fr;opacity: 1;transition: grid-template-rows var(--ui-xc-time) var(--ui-xc-ease), opacity 380ms ease 120ms}.ui-xc__head{position: relative;display: flex;align-items: center;gap: 10px;padding: 10px 12px}.ui-xc__toggle{position: absolute;inset: 0;border-radius: 16px}.ui-xc__head > :not(.ui-xc__toggle){position: relative;pointer-events: none}.ui-xc[data-open] .ui-xc__chart{pointer-events: auto}.ui-xc__chart{display: flex;flex: none;align-items: flex-end;justify-content: center;gap: 3px;width: 34px;height: 34px;padding: 6px 5px 5px;border-radius: 10px;background: var(--ui-xc-well);box-shadow: inset 0 0 0 1px var(--ui-xc-line)}.ui-xc__col{flex: 1;max-width: 7px;height: calc(var(--ui-xc-size) * 100%);border-radius: 2.5px;background: var(--ui-xc-color);cursor: pointer;transition: height 620ms var(--ui-xc-ease), opacity 220ms ease, transform 260ms var(--ui-xc-ease);transform-origin: 50% 100%}.ui-xc__col[data-hot]{transform: scaleX(1.25)}.ui-xc__col[data-dim]{opacity: 0.3}.ui-xc__col[data-passed]:not([data-hot]){opacity: 0.35}.ui-xc__titles{display: grid;grid-template-columns: minmax(0, 1fr);flex: 1;min-width: 0}.ui-xc__name{overflow: hidden;font-size: 13.5px;font-weight: 600;color: var(--ui-xc-ink);white-space: nowrap;text-overflow: ellipsis}.ui-xc__sub{display: flex;align-items: center;gap: 6px;min-width: 0;height: 20px;margin-top: 1px;overflow: hidden;font-size: 12px;line-height: 20px;color: var(--ui-xc-muted);white-space: nowrap}.ui-xc__tag{display: inline-flex;flex: none;align-items: center;gap: 4px;height: 20px;padding: 0 7px 0 5px;border-radius: 5px;background: var(--ui-xc-tag-bg);font-weight: 500;color: var(--ui-xc-tag)}.ui-xc__note{min-width: 0;overflow: hidden;text-overflow: ellipsis}.ui-xc__lead{display: inline-flex;flex: none;align-items: center;gap: 4px;height: 24px;padding: 0 8px;border-radius: 6px;background: var(--ui-xc-tag-bg);font-size: 12px;font-weight: 500;color: var(--ui-xc-tag);white-space: nowrap;font-variant-numeric: tabular-nums;animation: ui-xc-pop 360ms var(--ui-xc-ease) both}.ui-xc__lead b{color: inherit}.ui-xc__body{padding: 0 12px 10px}.ui-xc__switch{position: relative;display: grid;grid-auto-columns: 1fr;grid-auto-flow: column;padding: 2px;border-radius: 10px;background: var(--ui-xc-well);box-shadow: inset 0 0 0 1px var(--ui-xc-line)}.ui-xc__thumb{position: absolute;top: 2px;left: 0;height: calc(100% - 4px);border-radius: 8px;background: var(--ui-xc-card);box-shadow: 0 0 0 1px var(--ui-xc-line), 0 1px 2px rgba(0, 0, 0, 0.06);transition: transform 420ms var(--ui-xc-ease), width 420ms var(--ui-xc-ease)}.ui-xc__metric{position: relative;height: 26px;padding: 0 8px;border-radius: 8px;font-size: 12px;font-weight: 500;color: var(--ui-xc-muted);text-align: center;white-space: nowrap;transition: color 200ms ease}.ui-xc__metric:hover, .ui-xc__metric[aria-checked="true"]{color: var(--ui-xc-ink)}.ui-xc__rows{display: grid;gap: 2px;margin-top: 8px}.ui-xc__row{display: grid;grid-template-columns: auto minmax(0, 1fr) auto auto;align-items: center;column-gap: 9px;row-gap: 6px;width: calc(100% + 12px);margin: 0 -6px;padding: 7px 6px 8px;border-radius: 10px;transition: background-color 160ms ease, opacity 220ms ease, box-shadow 200ms ease}.ui-xc__row[data-hot]{background: var(--ui-xc-well)}.ui-xc__row[data-dim]{opacity: 0.5}.ui-xc__row[aria-checked="true"]{background: var(--ui-xc-well);box-shadow: inset 0 0 0 1px var(--ui-xc-line)}.ui-xc__badge{display: grid;place-items: center;width: 20px;height: 20px;border-radius: 6px;background: color-mix(in srgb, var(--ui-xc-color) 16%, transparent);font-size: 11px;font-weight: 600;line-height: 1;color: color-mix(in srgb, var(--ui-xc-color) 72%, var(--ui-xc-ink));transition: background-color 220ms ease, color 220ms ease}.ui-xc__badge > *{grid-area: 1 / 1;transition: opacity 180ms ease, transform 260ms var(--ui-xc-ease)}.ui-xc__badge svg{opacity: 0;transform: scale(0.5)}.ui-xc__row[aria-checked="true"] .ui-xc__badge{background: var(--ui-xc-color);color: #fff}.ui-xc__row[aria-checked="true"] .ui-xc__badge span{opacity: 0;transform: scale(0.5)}.ui-xc__row[aria-checked="true"] .ui-xc__badge svg{opacity: 1;transform: none}.ui-xc__label{overflow: hidden;color: var(--ui-xc-text);white-space: nowrap;text-overflow: ellipsis}.ui-xc__value{font-weight: 500;color: var(--ui-xc-ink);font-variant-numeric: tabular-nums}.ui-xc__lift{min-width: 50px;height: 20px;padding: 0 6px;border-radius: 5px;background: var(--ui-xc-tag-bg);font-size: 11.5px;font-weight: 500;line-height: 20px;color: var(--ui-xc-tag);text-align: center;font-variant-numeric: tabular-nums;transition: background-color 240ms ease, color 240ms ease}.ui-xc__track{grid-column: 2 / -1;height: 4px;overflow: hidden;border-radius: 2px;background: var(--ui-xc-track)}.ui-xc__bar{display: block;width: 100%;height: 100%;border-radius: 2px;background: var(--ui-xc-color);transform-origin: 0 50%;transition: transform 620ms var(--ui-xc-ease)}.ui-xc__foot{display: flex;align-items: center;gap: 8px;height: 38px;padding: 4px 4px 0 10px}.ui-xc__caption{flex: 1;min-width: 0;overflow: hidden;font-size: 12.5px;color: var(--ui-xc-muted);white-space: nowrap;text-overflow: ellipsis;font-variant-numeric: tabular-nums}.ui-xc__caption > span{display: inline-block;animation: ui-xc-in 280ms var(--ui-xc-ease) both}.ui-xc__action{display: inline-flex;align-items: center;gap: 4px;flex: none;height: 26px;padding: 0 7px 0 10px;border-radius: 10px;background: var(--ui-xc-ink);font-size: 12.5px;font-weight: 500;color: var(--ui-xc-card);white-space: nowrap;animation: ui-xc-pop 360ms var(--ui-xc-ease) both;transition: opacity 160ms ease}.ui-xc__action:hover{opacity: 0.88}.ui-xc__action svg{transition: transform 220ms var(--ui-xc-ease)}.ui-xc__action:hover svg{transform: translateX(2px)}@keyframes ui-xc-in{from{opacity: 0;transform: translateY(3px)}}@keyframes ui-xc-pop{from{opacity: 0;transform: scale(0.94)}}@container (max-width: 300px){.ui-xc__head{gap: 8px;padding: 10px}.ui-xc__chart{width: 30px;height: 30px;padding: 5px 4px 4px;gap: 2.5px}.ui-xc__note{display: none}.ui-xc__lead{gap: 3px;padding: 0 6px}.ui-xc__lead svg{display: none}.ui-xc__body{padding: 0 10px 10px}.ui-xc__metric{padding: 0 4px}.ui-xc__row{column-gap: 7px}.ui-xc__lift{min-width: 44px;padding: 0 4px}}@media (pointer: coarse){.ui-xc__metric{height: 32px}.ui-xc__row{padding: 10px 6px 11px}.ui-xc__action{height: 30px}}@media (prefers-reduced-motion: reduce){.ui-xc *, .ui-xc *::before, .ui-xc *::after{animation: none !important;transition: none !important}}:where(.dark, [data-theme="dark"]) .ui-xc{--ui-xc-tray: #111113;--ui-xc-card: #19191b;--ui-xc-line: #2a2a2e;--ui-xc-ink: #ededed;--ui-xc-text: #c8c8cc;--ui-xc-muted: #8b8b92;--ui-xc-well: #222225;--ui-xc-track: #2c2c31;--ui-xc-c0: #6e6e76;--ui-xc-c1: #5b8cff;--ui-xc-c2: #9b83ff;--ui-xc-focus: rgba(255, 255, 255, 0.3)}:where(.dark, [data-theme="dark"]) .ui-xc [data-tone="red"]{--ui-xc-tag: #ff9b93}:where(.dark, [data-theme="dark"]) .ui-xc [data-tone="amber"]{--ui-xc-tag: #f5c264}:where(.dark, [data-theme="dark"]) .ui-xc [data-tone="green"]{--ui-xc-tag: #6ee7a8}:where(.dark, [data-theme="dark"]) .ui-xc [data-tone="blue"]{--ui-xc-tag: #9bb8ff}:where(.dark, [data-theme="dark"]) .ui-xc [data-tone="violet"]{--ui-xc-tag: #c3b1ff}:where(.dark, [data-theme="dark"]) .ui-xc [data-tone="gray"]{--ui-xc-tag: #b4b4bb}:where(.dark, [data-theme="dark"]) .ui-xc__row[aria-checked="true"] .ui-xc__badge{color: #111113}`;
+var m = [{ id: `conversion`, label: `Conversion`, format: (e) => `${e.toFixed(1)}%` }, { id: `revenue`, label: `Revenue`, format: (e) => `$${e.toFixed(2)}` }, { id: `bounce`, label: `Bounce`, format: (e) => `${e.toFixed(1)}%`, lowerIsBetter: true }];
+var h = [{ id: `a`, key: `A`, name: `Start free trial`, control: true, visitors: 4790, values: { conversion: 4.2, revenue: 18.4, bounce: 41.3 } }, { id: `b`, key: `B`, name: `Try it free`, visitors: 4812, values: { conversion: 4.7, revenue: 19.1, bounce: 38.2 }, confidence: { conversion: 96, revenue: 81, bounce: 93 } }, { id: `c`, key: `C`, name: `Get started \u2013 $0`, visitors: 4755, values: { conversion: 4, revenue: 21.6, bounce: 43.9 }, confidence: { conversion: 62, revenue: 97, bounce: 71 } }];
+function g() {
+  let [e, t] = (0, n3.useState)(false), [i2, a2] = (0, n3.useState)(`conversion`), o2 = (0, n3.useRef)(false);
+  (0, n3.useEffect)(() => {
+    let e2 = 0, n4 = () => {
+      o2.current || (e2 = (e2 + 1) % 5, e2 === 1 ? t(true) : e2 === 2 ? a2(`revenue`) : e2 === 3 ? a2(`bounce`) : e2 === 4 ? a2(`conversion`) : t(false));
+    }, r2 = 0, i3 = window.setTimeout(() => {
+      n4(), r2 = window.setInterval(n4, 2200);
+    }, 700);
+    return () => {
+      window.clearTimeout(i3), window.clearInterval(r2);
+    };
+  }, []);
+  let s2 = () => o2.current = true;
+  return (0, r.jsx)(`div`, { className: `xc-demo`, onPointerEnter: s2, onPointerDownCapture: s2, onKeyDownCapture: s2, onFocusCapture: s2, children: (0, r.jsx)(p, { title: `Signup button copy`, status: { label: `Running`, tone: `green` }, note: `Day 9 of 14`, metrics: m, metric: i2, onMetricChange: a2, variants: h, action: { label: (e2) => `Ship ${e2.key}`, onClick: () => {
+  } }, open: e, onOpenChange: t }) });
+}
+
+export {
+  g
+};

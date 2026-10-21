@@ -1,0 +1,24 @@
+import {
+  LComponent
+} from "../shared/chunk-5P7TMITD.js";
+import "../shared/chunk-4F2T52KM.js";
+import {
+  init_reconstructed_react,
+  reconstructed_react_default,
+  require_client
+} from "../shared/chunk-5TRWDZSI.js";
+import "../shared/chunk-BEJH6NDY.js";
+import "../shared/chunk-57INBORX.js";
+import "../shared/chunk-JTXQSSYA.js";
+import {
+  __toESM
+} from "../shared/chunk-CTH3ASD6.js";
+
+// entries/reconstructed-toaster.js
+init_reconstructed_react();
+var import_client = __toESM(require_client());
+var root = (0, import_client.createRoot)(document.getElementById("demo"));
+var generation = 0;
+window.__resetDemo = () => root.render(reconstructed_react_default.createElement(LComponent, { key: ++generation }));
+window.__resetDemo();
+window.__entryReady = true;

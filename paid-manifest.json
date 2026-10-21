@@ -1,951 +1,2250 @@
 {
+  "catalog_sha256": "272e920a5e885f60f9295ab4f8a12b13d7b32ed13ebd69a351121cc8e8b7cfb2",
+  "catalog_asset": "current-catalog.js",
+  "paid_distinct": 72,
+  "paid_variants": 111,
+  "free_variants_hidden_in_index": 57,
+  "acceptance": {
+    "catalog_distinct": 72,
+    "variants": 111,
+    "tested": 111,
+    "reachable_modules": 567,
+    "recovered_modules": 567,
+    "inventory_complete": true,
+    "accepted": 54,
+    "partial": 57,
+    "blocked": 0,
+    "check_totals": {
+      "inventory": 111,
+      "reachable_recovered": 111,
+      "jsx_source": 111,
+      "build": 111,
+      "scenario_current": 111,
+      "visual": 94,
+      "dom": 107,
+      "interactions": 59
+    }
+  },
   "items": [
-    {
-      "slug": "data-table",
-      "paid": true,
-      "demo_chunk": "demo-DGaVy3XD.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "data-table"
-    },
-    {
-      "slug": "world-map",
-      "paid": true,
-      "demo_chunk": "demo-Q0wmIwEm.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "world-map"
-    },
-    {
-      "slug": "integration-settings",
-      "paid": true,
-      "demo_chunk": "demo-Dxm1xr9_.js",
-      "verification": "not_fully_verified",
-      "variant": "clean",
-      "route": "integration-settings.clean"
-    },
-    {
-      "slug": "stepper-form",
-      "paid": true,
-      "demo_chunk": "demo-BOLhhfTT.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "stepper-form"
-    },
-    {
-      "slug": "metrics-dashboard",
-      "paid": true,
-      "demo_chunk": "demo-Ytbb4Swi.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "metrics-dashboard"
-    },
-    {
-      "slug": "blur-crossfade",
-      "paid": true,
-      "demo_chunk": "demo-Ye53Zfy1.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "blur-crossfade"
-    },
-    {
-      "slug": "experiment-card",
-      "paid": true,
-      "demo_chunk": "demo-ik_0XYps.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "experiment-card"
-    },
-    {
-      "slug": "integration-picker",
-      "paid": true,
-      "demo_chunk": "demo-5-hgQYhm.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "integration-picker"
-    },
-    {
-      "slug": "date-range-picker",
-      "paid": true,
-      "demo_chunk": "demo-CYhBENQa.js",
-      "verification": "not_fully_verified",
-      "variant": "clean",
-      "route": "date-range-picker.clean"
-    },
-    {
-      "slug": "integration-settings",
-      "paid": true,
-      "demo_chunk": "demo-Dxm1xr9_.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "integration-settings"
-    },
-    {
-      "slug": "stepper-form",
-      "paid": true,
-      "demo_chunk": "demo-BOLhhfTT.js",
-      "verification": "not_fully_verified",
-      "variant": "clean",
-      "route": "stepper-form.clean"
-    },
-    {
-      "slug": "agent-tree",
-      "paid": true,
-      "demo_chunk": "demo-Ddb1Dch3.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "agent-tree"
-    },
-    {
-      "slug": "integration-flow",
-      "paid": true,
-      "demo_chunk": "demo-CL_ySX-H.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "integration-flow"
-    },
-    {
-      "slug": "dropzone",
-      "paid": true,
-      "demo_chunk": "demo-BBMr4ztO.js",
-      "verification": "not_fully_verified",
-      "variant": "clean",
-      "route": "dropzone.clean"
-    },
-    {
-      "slug": "data-table",
-      "paid": true,
-      "demo_chunk": "demo-DGaVy3XD.js",
-      "verification": "not_fully_verified",
-      "variant": "clean",
-      "route": "data-table.clean"
-    },
-    {
-      "slug": "usage-meter",
-      "paid": true,
-      "demo_chunk": "demo-izlk0-DS.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "usage-meter"
-    },
-    {
-      "slug": "agent-steering",
-      "paid": true,
-      "demo_chunk": "demo-Bzg0Jm8m.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "agent-steering"
-    },
-    {
-      "slug": "chat-composer",
-      "paid": true,
-      "demo_chunk": "demo-DI66HSts.js",
-      "verification": "not_fully_verified",
-      "variant": "clean",
-      "route": "chat-composer.clean"
-    },
-    {
-      "slug": "agent-run",
-      "paid": true,
-      "demo_chunk": "demo-Cj5VtBEI.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "agent-run"
-    },
-    {
-      "slug": "settings-billing",
-      "paid": true,
-      "demo_chunk": "demo-C8acxvKL.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "settings-billing"
-    },
-    {
-      "slug": "inline-diff",
-      "paid": true,
-      "demo_chunk": "demo-Y9Qip8LJ.js",
-      "verification": "not_fully_verified",
-      "variant": "clean",
-      "route": "inline-diff.clean"
-    },
-    {
-      "slug": "chat-composer",
-      "paid": true,
-      "demo_chunk": "demo-DI66HSts.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "chat-composer"
-    },
-    {
-      "slug": "comments-panel",
-      "paid": true,
-      "demo_chunk": "demo-BlNBUErF.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "comments-panel"
-    },
-    {
-      "slug": "trace-waterfall",
-      "paid": true,
-      "demo_chunk": "demo-ClS58yMQ.js",
-      "verification": "not_fully_verified",
-      "variant": "clean",
-      "route": "trace-waterfall.clean"
-    },
     {
       "slug": "agent-chat",
       "paid": true,
-      "demo_chunk": "demo-DfzMaoSM.js",
-      "verification": "not_fully_verified",
       "variant": "basic",
-      "route": "agent-chat"
+      "route": "agent-chat",
+      "demo_chunk": "demo-BWWWdWrI.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 567,
+      "browser_scenario_version": 4
     },
     {
-      "slug": "delegate-board",
+      "slug": "agent-cursors",
       "paid": true,
-      "demo_chunk": "demo-V6j80N0E.js",
-      "verification": "not_fully_verified",
       "variant": "basic",
-      "route": "delegate-board"
+      "route": "agent-cursors",
+      "demo_chunk": "demo-BpwDm3_5.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
     },
     {
-      "slug": "combobox",
+      "slug": "agent-cursors",
       "paid": true,
-      "demo_chunk": "demo-tcGbF7g2.js",
-      "verification": "not_fully_verified",
       "variant": "clean",
-      "route": "combobox.clean"
-    },
-    {
-      "slug": "writing-assistant",
-      "paid": true,
-      "demo_chunk": "demo-BhVeTwOS.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "writing-assistant"
-    },
-    {
-      "slug": "permission-request",
-      "paid": true,
-      "demo_chunk": "demo-B1zzQqO2.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "permission-request"
+      "route": "agent-cursors.clean",
+      "demo_chunk": "demo.clean-BdsziCoX.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": false,
+        "dom": false,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
     },
     {
       "slug": "agent-gallery",
       "paid": true,
+      "variant": "basic",
+      "route": "agent-gallery",
       "demo_chunk": "demo-Dx1zk5ox.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "agent-gallery"
-    },
-    {
-      "slug": "date-range-picker",
-      "paid": true,
-      "demo_chunk": "demo-CYhBENQa.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "date-range-picker"
-    },
-    {
-      "slug": "writing-assistant",
-      "paid": true,
-      "demo_chunk": "demo-BhVeTwOS.js",
-      "verification": "not_fully_verified",
-      "variant": "clean",
-      "route": "writing-assistant.clean"
-    },
-    {
-      "slug": "setup-guide",
-      "paid": true,
-      "demo_chunk": "demo-Cb1j7tKz.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "setup-guide"
-    },
-    {
-      "slug": "experiment-card",
-      "paid": true,
-      "demo_chunk": "demo-ik_0XYps.js",
-      "verification": "not_fully_verified",
-      "variant": "clean",
-      "route": "experiment-card.clean"
-    },
-    {
-      "slug": "project-card",
-      "paid": true,
-      "demo_chunk": "demo-9sHHhTyA.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "project-card"
-    },
-    {
-      "slug": "context-window",
-      "paid": true,
-      "demo_chunk": "demo-DgdoHbQS.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "context-window"
-    },
-    {
-      "slug": "agent-cursors",
-      "paid": true,
-      "demo_chunk": "demo-BpwDm3_5.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "agent-cursors"
-    },
-    {
-      "slug": "toaster",
-      "paid": true,
-      "demo_chunk": "demo-D8pZHeij.js",
-      "verification": "not_fully_verified",
-      "variant": "clean",
-      "route": "toaster.clean"
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
     },
     {
       "slug": "agent-inbox",
       "paid": true,
+      "variant": "basic",
+      "route": "agent-inbox",
       "demo_chunk": "demo-Bq86T0RX.js",
-      "verification": "not_fully_verified",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "agent-inbox",
+      "paid": true,
       "variant": "clean",
-      "route": "agent-inbox.clean"
+      "route": "agent-inbox.clean",
+      "demo_chunk": "demo.clean-DQ6MZQcD.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
     },
     {
-      "slug": "agent-cursors",
+      "slug": "agent-lanes",
       "paid": true,
-      "demo_chunk": "demo-BpwDm3_5.js",
-      "verification": "not_fully_verified",
+      "variant": "basic",
+      "route": "agent-lanes",
+      "demo_chunk": "demo-CCeL1VNp.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "agent-lanes",
+      "paid": true,
       "variant": "clean",
-      "route": "agent-cursors.clean"
+      "route": "agent-lanes.clean",
+      "demo_chunk": "demo.clean-DC3N3Pap.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
     },
     {
-      "slug": "context-window",
+      "slug": "agent-plan",
       "paid": true,
-      "demo_chunk": "demo-DgdoHbQS.js",
-      "verification": "not_fully_verified",
+      "variant": "basic",
+      "route": "agent-plan",
+      "demo_chunk": "demo-crn6hRBF.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 5,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "agent-plan",
+      "paid": true,
       "variant": "clean",
-      "route": "context-window.clean"
+      "route": "agent-plan.clean",
+      "demo_chunk": "demo.clean-BjIF1-j-.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
     },
     {
-      "slug": "memory-panel",
+      "slug": "agent-run",
       "paid": true,
-      "demo_chunk": "demo-CEgv5bR9.js",
-      "verification": "not_fully_verified",
       "variant": "basic",
-      "route": "memory-panel"
-    },
-    {
-      "slug": "project-flow",
-      "paid": true,
-      "demo_chunk": "demo-Cwdm4ytX.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "project-flow"
-    },
-    {
-      "slug": "invoice-credit",
-      "paid": true,
-      "demo_chunk": "demo-D1arByOa.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "invoice-credit"
-    },
-    {
-      "slug": "kpi-chart",
-      "paid": true,
-      "demo_chunk": "demo-BQ61UvP8.js",
-      "verification": "not_fully_verified",
-      "variant": "clean",
-      "route": "kpi-chart.clean"
-    },
-    {
-      "slug": "cited-answer",
-      "paid": true,
-      "demo_chunk": "demo-xRyZ19Jc.js",
-      "verification": "not_fully_verified",
-      "variant": "clean",
-      "route": "cited-answer.clean"
-    },
-    {
-      "slug": "voice-orb",
-      "paid": true,
-      "demo_chunk": "demo-B3RzKcXL.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "voice-orb"
-    },
-    {
-      "slug": "client-context",
-      "paid": true,
-      "demo_chunk": "demo-rS721rJa.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "client-context"
-    },
-    {
-      "slug": "memory-panel",
-      "paid": true,
-      "demo_chunk": "demo-CEgv5bR9.js",
-      "verification": "not_fully_verified",
-      "variant": "clean",
-      "route": "memory-panel.clean"
-    },
-    {
-      "slug": "glow-keyboard",
-      "paid": true,
-      "demo_chunk": "demo-CfD9afHB.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "glow-keyboard"
-    },
-    {
-      "slug": "comments-panel",
-      "paid": true,
-      "demo_chunk": "demo-BlNBUErF.js",
-      "verification": "not_fully_verified",
-      "variant": "clean",
-      "route": "comments-panel.clean"
-    },
-    {
-      "slug": "analytics",
-      "paid": true,
-      "demo_chunk": "demo-DoZvL8St.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "analytics"
+      "route": "agent-run",
+      "demo_chunk": "demo-eQInHe1Q.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": false,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 567,
+      "browser_scenario_version": 4
     },
     {
       "slug": "agent-steering",
       "paid": true,
+      "variant": "basic",
+      "route": "agent-steering",
       "demo_chunk": "demo-Bzg0Jm8m.js",
-      "verification": "not_fully_verified",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "agent-steering",
+      "paid": true,
       "variant": "clean",
-      "route": "agent-steering.clean"
-    },
-    {
-      "slug": "agent-plan",
-      "paid": true,
-      "demo_chunk": "demo-crn6hRBF.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "agent-plan"
-    },
-    {
-      "slug": "prompt-library",
-      "paid": true,
-      "demo_chunk": "demo-CctwMXFR.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "prompt-library"
-    },
-    {
-      "slug": "ai-answer",
-      "paid": true,
-      "demo_chunk": "demo-NvLm8mGU.js",
-      "verification": "not_fully_verified",
-      "variant": "clean",
-      "route": "ai-answer.clean"
-    },
-    {
-      "slug": "approval-card",
-      "paid": true,
-      "demo_chunk": "demo-DtfhNS6P.js",
-      "verification": "not_fully_verified",
-      "variant": "clean",
-      "route": "approval-card.clean"
-    },
-    {
-      "slug": "ai-answer",
-      "paid": true,
-      "demo_chunk": "demo-NvLm8mGU.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "ai-answer"
-    },
-    {
-      "slug": "breakdown-chart",
-      "paid": true,
-      "demo_chunk": "demo-BXlx9pcF.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "breakdown-chart"
-    },
-    {
-      "slug": "approval-card",
-      "paid": true,
-      "demo_chunk": "demo-DtfhNS6P.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "approval-card"
-    },
-    {
-      "slug": "toaster",
-      "paid": true,
-      "demo_chunk": "demo-D8pZHeij.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "toaster"
-    },
-    {
-      "slug": "command-menu",
-      "paid": true,
-      "demo_chunk": "demo-Cde_N0C0.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "command-menu"
-    },
-    {
-      "slug": "ai-workspace",
-      "paid": true,
-      "demo_chunk": "demo-CZJ2T4nU.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "ai-workspace"
-    },
-    {
-      "slug": "outreach-branches",
-      "paid": true,
-      "demo_chunk": "demo-D-FldunI.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "outreach-branches"
-    },
-    {
-      "slug": "task-board",
-      "paid": true,
-      "demo_chunk": "demo-BbZ2lqOk.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "task-board"
-    },
-    {
-      "slug": "app-directory",
-      "paid": true,
-      "demo_chunk": "demo-BiwOrW2x.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "app-directory"
-    },
-    {
-      "slug": "billing-schedule",
-      "paid": true,
-      "demo_chunk": "demo-65xDbaC9.js",
-      "verification": "not_fully_verified",
-      "variant": "clean",
-      "route": "billing-schedule.clean"
-    },
-    {
-      "slug": "integrations",
-      "paid": true,
-      "demo_chunk": "demo-CIKoqFjv.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "integrations"
-    },
-    {
-      "slug": "cited-answer",
-      "paid": true,
-      "demo_chunk": "demo-xRyZ19Jc.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "cited-answer"
-    },
-    {
-      "slug": "usage-meter",
-      "paid": true,
-      "demo_chunk": "demo-izlk0-DS.js",
-      "verification": "not_fully_verified",
-      "variant": "clean",
-      "route": "usage-meter.clean"
-    },
-    {
-      "slug": "compact-breakdown",
-      "paid": true,
-      "demo_chunk": "demo-BgsJzBTE.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "compact-breakdown"
-    },
-    {
-      "slug": "files",
-      "paid": true,
-      "demo_chunk": "demo-DFRjCQMT.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "files"
-    },
-    {
-      "slug": "onboarding",
-      "paid": true,
-      "demo_chunk": "demo-Djeoaldi.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "onboarding"
-    },
-    {
-      "slug": "evals",
-      "paid": true,
-      "demo_chunk": "demo-BbKQebRQ.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "evals"
-    },
-    {
-      "slug": "app-shell",
-      "paid": true,
-      "demo_chunk": "demo-DEDAzzL5.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "app-shell"
-    },
-    {
-      "slug": "model-picker",
-      "paid": true,
-      "demo_chunk": "demo-C580yDTY.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "model-picker"
-    },
-    {
-      "slug": "inline-diff",
-      "paid": true,
-      "demo_chunk": "demo-Y9Qip8LJ.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "inline-diff"
-    },
-    {
-      "slug": "breakdown-chart",
-      "paid": true,
-      "demo_chunk": "demo-BXlx9pcF.js",
-      "verification": "not_fully_verified",
-      "variant": "clean",
-      "route": "breakdown-chart.clean"
-    },
-    {
-      "slug": "model-picker",
-      "paid": true,
-      "demo_chunk": "demo-C580yDTY.js",
-      "verification": "not_fully_verified",
-      "variant": "clean",
-      "route": "model-picker.clean"
-    },
-    {
-      "slug": "app-shell-flat",
-      "paid": true,
-      "demo_chunk": "demo-VapOqTsZ.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "app-shell-flat"
-    },
-    {
-      "slug": "agent-lanes",
-      "paid": true,
-      "demo_chunk": "demo-CCeL1VNp.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "agent-lanes"
-    },
-    {
-      "slug": "pricing-plans",
-      "paid": true,
-      "demo_chunk": "demo-DWd1ZKX0.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "pricing-plans"
-    },
-    {
-      "slug": "integration-picker",
-      "paid": true,
-      "demo_chunk": "demo-5-hgQYhm.js",
-      "verification": "not_fully_verified",
-      "variant": "clean",
-      "route": "integration-picker.clean"
-    },
-    {
-      "slug": "agent-lanes",
-      "paid": true,
-      "demo_chunk": "demo-CCeL1VNp.js",
-      "verification": "not_fully_verified",
-      "variant": "clean",
-      "route": "agent-lanes.clean"
-    },
-    {
-      "slug": "trace-waterfall",
-      "paid": true,
-      "demo_chunk": "demo-ClS58yMQ.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "trace-waterfall"
-    },
-    {
-      "slug": "glass-folder",
-      "paid": true,
-      "demo_chunk": "demo-VtcZhlFb.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "glass-folder"
-    },
-    {
-      "slug": "combobox",
-      "paid": true,
-      "demo_chunk": "demo-tcGbF7g2.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "combobox"
-    },
-    {
-      "slug": "tilt-card",
-      "paid": true,
-      "demo_chunk": "demo-BijqyLh8.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "tilt-card"
-    },
-    {
-      "slug": "gradient-floor",
-      "paid": true,
-      "demo_chunk": "demo-B-TgH1P-.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "gradient-floor"
-    },
-    {
-      "slug": "autonomy-dial",
-      "paid": true,
-      "demo_chunk": "demo-CZQO5p6C.js",
-      "verification": "not_fully_verified",
-      "variant": "clean",
-      "route": "autonomy-dial.clean"
-    },
-    {
-      "slug": "crm",
-      "paid": true,
-      "demo_chunk": "demo-DYRcii43.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "crm"
-    },
-    {
-      "slug": "billing-schedule",
-      "paid": true,
-      "demo_chunk": "demo-65xDbaC9.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "billing-schedule"
-    },
-    {
-      "slug": "kpi-board",
-      "paid": true,
-      "demo_chunk": "demo-mNpCRsfS.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "kpi-board"
-    },
-    {
-      "slug": "delegate-board",
-      "paid": true,
-      "demo_chunk": "demo-V6j80N0E.js",
-      "verification": "not_fully_verified",
-      "variant": "clean",
-      "route": "delegate-board.clean"
-    },
-    {
-      "slug": "autonomy-dial",
-      "paid": true,
-      "demo_chunk": "demo-CZQO5p6C.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "autonomy-dial"
-    },
-    {
-      "slug": "dropzone",
-      "paid": true,
-      "demo_chunk": "demo-BBMr4ztO.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "dropzone"
-    },
-    {
-      "slug": "setup-guide",
-      "paid": true,
-      "demo_chunk": "demo-Cb1j7tKz.js",
-      "verification": "not_fully_verified",
-      "variant": "clean",
-      "route": "setup-guide.clean"
-    },
-    {
-      "slug": "thinking-state",
-      "paid": true,
-      "demo_chunk": "demo-sabUvR7r.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "thinking-state"
-    },
-    {
-      "slug": "project-card",
-      "paid": true,
-      "demo_chunk": "demo-9sHHhTyA.js",
-      "verification": "not_fully_verified",
-      "variant": "clean",
-      "route": "project-card.clean"
-    },
-    {
-      "slug": "kpi-chart",
-      "paid": true,
-      "demo_chunk": "demo-BQ61UvP8.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "kpi-chart"
-    },
-    {
-      "slug": "folder",
-      "paid": true,
-      "demo_chunk": "demo-OHW76bxc.js",
-      "verification": "not_fully_verified",
-      "variant": "basic",
-      "route": "folder"
-    },
-    {
-      "slug": "compact-breakdown",
-      "paid": true,
-      "demo_chunk": "demo-BgsJzBTE.js",
-      "verification": "not_fully_verified",
-      "variant": "clean",
-      "route": "compact-breakdown.clean"
-    },
-    {
-      "slug": "command-menu",
-      "paid": true,
-      "demo_chunk": "demo-Cde_N0C0.js",
-      "verification": "not_fully_verified",
-      "variant": "clean",
-      "route": "command-menu.clean"
-    },
-    {
-      "slug": "prompt-library",
-      "paid": true,
-      "demo_chunk": "demo-CctwMXFR.js",
-      "verification": "not_fully_verified",
-      "variant": "clean",
-      "route": "prompt-library.clean"
+      "route": "agent-steering.clean",
+      "demo_chunk": "demo.clean-CykqoJC9.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": false,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
     },
     {
       "slug": "agent-tree",
       "paid": true,
-      "demo_chunk": "demo-Ddb1Dch3.js",
-      "verification": "not_fully_verified",
-      "variant": "clean",
-      "route": "agent-tree.clean"
-    },
-    {
-      "slug": "gradient-text",
-      "paid": true,
-      "demo_chunk": "demo-Dcdtba_V.js",
-      "verification": "not_fully_verified",
       "variant": "basic",
-      "route": "gradient-text"
+      "route": "agent-tree",
+      "demo_chunk": "demo-Ddb1Dch3.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": false,
+        "dom": false,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
     },
     {
-      "slug": "permission-request",
+      "slug": "agent-tree",
       "paid": true,
-      "demo_chunk": "demo-B1zzQqO2.js",
-      "verification": "not_fully_verified",
       "variant": "clean",
-      "route": "permission-request.clean"
+      "route": "agent-tree.clean",
+      "demo_chunk": "demo.clean-CX0onucT.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": false,
+        "dom": false,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "ai-answer",
+      "paid": true,
+      "variant": "basic",
+      "route": "ai-answer",
+      "demo_chunk": "demo-NvLm8mGU.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "ai-answer",
+      "paid": true,
+      "variant": "clean",
+      "route": "ai-answer.clean",
+      "demo_chunk": "demo.clean-B3KZIS0J.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "ai-workspace",
+      "paid": true,
+      "variant": "basic",
+      "route": "ai-workspace",
+      "demo_chunk": "demo-CZJ2T4nU.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 5,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "analytics",
+      "paid": true,
+      "variant": "basic",
+      "route": "analytics",
+      "demo_chunk": "demo-iLo3CJ8-.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": false,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 567,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "app-directory",
+      "paid": true,
+      "variant": "basic",
+      "route": "app-directory",
+      "demo_chunk": "demo-BiwOrW2x.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "app-shell",
+      "paid": true,
+      "variant": "basic",
+      "route": "app-shell",
+      "demo_chunk": "demo-DwSEqjaS.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 567,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "app-shell-flat",
+      "paid": true,
+      "variant": "basic",
+      "route": "app-shell-flat",
+      "demo_chunk": "demo-C1U6NI7B.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 567,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "approval-card",
+      "paid": true,
+      "variant": "basic",
+      "route": "approval-card",
+      "demo_chunk": "demo-DtfhNS6P.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 5,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "approval-card",
+      "paid": true,
+      "variant": "clean",
+      "route": "approval-card.clean",
+      "demo_chunk": "demo.clean-Dkj-1MDj.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
     },
     {
       "slug": "assistant-home",
       "paid": true,
-      "demo_chunk": "demo-CdN1C5vO.js",
-      "verification": "not_fully_verified",
       "variant": "basic",
-      "route": "assistant-home"
+      "route": "assistant-home",
+      "demo_chunk": "demo-Dj5g1Sf_.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 567,
+      "browser_scenario_version": 4
     },
     {
-      "slug": "agent-plan",
+      "slug": "autonomy-dial",
       "paid": true,
-      "demo_chunk": "demo-crn6hRBF.js",
-      "verification": "not_fully_verified",
+      "variant": "basic",
+      "route": "autonomy-dial",
+      "demo_chunk": "demo-CZQO5p6C.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "autonomy-dial",
+      "paid": true,
       "variant": "clean",
-      "route": "agent-plan.clean"
+      "route": "autonomy-dial.clean",
+      "demo_chunk": "demo.clean-D4m3L74b.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
     },
     {
-      "slug": "agent-inbox",
+      "slug": "billing-schedule",
       "paid": true,
-      "demo_chunk": "demo-Bq86T0RX.js",
-      "verification": "not_fully_verified",
       "variant": "basic",
-      "route": "agent-inbox"
+      "route": "billing-schedule",
+      "demo_chunk": "demo-65xDbaC9.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "billing-schedule",
+      "paid": true,
+      "variant": "clean",
+      "route": "billing-schedule.clean",
+      "demo_chunk": "demo.clean-dYQPE1hb.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "blur-crossfade",
+      "paid": true,
+      "variant": "basic",
+      "route": "blur-crossfade",
+      "demo_chunk": "demo-Ye53Zfy1.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "breakdown-chart",
+      "paid": true,
+      "variant": "basic",
+      "route": "breakdown-chart",
+      "demo_chunk": "demo-BXlx9pcF.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 5,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "breakdown-chart",
+      "paid": true,
+      "variant": "clean",
+      "route": "breakdown-chart.clean",
+      "demo_chunk": "demo.clean-D3ZXLUIO.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "chat-composer",
+      "paid": true,
+      "variant": "basic",
+      "route": "chat-composer",
+      "demo_chunk": "demo-DI66HSts.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 5,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "chat-composer",
+      "paid": true,
+      "variant": "clean",
+      "route": "chat-composer.clean",
+      "demo_chunk": "demo.clean-CCr62Jz8.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "cited-answer",
+      "paid": true,
+      "variant": "basic",
+      "route": "cited-answer",
+      "demo_chunk": "demo-xRyZ19Jc.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "cited-answer",
+      "paid": true,
+      "variant": "clean",
+      "route": "cited-answer.clean",
+      "demo_chunk": "demo.clean-CnchuWt9.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "client-context",
+      "paid": true,
+      "variant": "basic",
+      "route": "client-context",
+      "demo_chunk": "demo-rS721rJa.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "combobox",
+      "paid": true,
+      "variant": "basic",
+      "route": "combobox",
+      "demo_chunk": "demo-tcGbF7g2.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "combobox",
+      "paid": true,
+      "variant": "clean",
+      "route": "combobox.clean",
+      "demo_chunk": "demo.clean-DhS0HlaW.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "command-menu",
+      "paid": true,
+      "variant": "basic",
+      "route": "command-menu",
+      "demo_chunk": "demo-Cde_N0C0.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "command-menu",
+      "paid": true,
+      "variant": "clean",
+      "route": "command-menu.clean",
+      "demo_chunk": "demo.clean-BkpdJDtQ.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "comments-panel",
+      "paid": true,
+      "variant": "basic",
+      "route": "comments-panel",
+      "demo_chunk": "demo-BlNBUErF.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "comments-panel",
+      "paid": true,
+      "variant": "clean",
+      "route": "comments-panel.clean",
+      "demo_chunk": "demo.clean-Lan03W3V.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "compact-breakdown",
+      "paid": true,
+      "variant": "basic",
+      "route": "compact-breakdown",
+      "demo_chunk": "demo-BgsJzBTE.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": false,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "compact-breakdown",
+      "paid": true,
+      "variant": "clean",
+      "route": "compact-breakdown.clean",
+      "demo_chunk": "demo.clean-BmiiHyGl.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": false,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "context-window",
+      "paid": true,
+      "variant": "basic",
+      "route": "context-window",
+      "demo_chunk": "demo-DgdoHbQS.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "context-window",
+      "paid": true,
+      "variant": "clean",
+      "route": "context-window.clean",
+      "demo_chunk": "demo.clean-DbXcMJMS.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "crm",
+      "paid": true,
+      "variant": "basic",
+      "route": "crm",
+      "demo_chunk": "demo-De2n08Zl.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": false,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 567,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "data-table",
+      "paid": true,
+      "variant": "basic",
+      "route": "data-table",
+      "demo_chunk": "demo-DGaVy3XD.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 5,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "data-table",
+      "paid": true,
+      "variant": "clean",
+      "route": "data-table.clean",
+      "demo_chunk": "demo.clean-OeBBW_7u.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "date-range-picker",
+      "paid": true,
+      "variant": "basic",
+      "route": "date-range-picker",
+      "demo_chunk": "demo-CYhBENQa.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "date-range-picker",
+      "paid": true,
+      "variant": "clean",
+      "route": "date-range-picker.clean",
+      "demo_chunk": "demo.clean-DZiTLSj_.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "delegate-board",
+      "paid": true,
+      "variant": "basic",
+      "route": "delegate-board",
+      "demo_chunk": "demo-V6j80N0E.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "delegate-board",
+      "paid": true,
+      "variant": "clean",
+      "route": "delegate-board.clean",
+      "demo_chunk": "demo.clean-DNxPbueK.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "dropzone",
+      "paid": true,
+      "variant": "basic",
+      "route": "dropzone",
+      "demo_chunk": "demo-BBMr4ztO.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "dropzone",
+      "paid": true,
+      "variant": "clean",
+      "route": "dropzone.clean",
+      "demo_chunk": "demo.clean-BtR7iQdY.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "evals",
+      "paid": true,
+      "variant": "basic",
+      "route": "evals",
+      "demo_chunk": "demo-IfuY4zjH.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 567,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "experiment-card",
+      "paid": true,
+      "variant": "basic",
+      "route": "experiment-card",
+      "demo_chunk": "demo-ik_0XYps.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "experiment-card",
+      "paid": true,
+      "variant": "clean",
+      "route": "experiment-card.clean",
+      "demo_chunk": "demo.clean-Vp-K1jMG.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "files",
+      "paid": true,
+      "variant": "basic",
+      "route": "files",
+      "demo_chunk": "demo-CUdsyn6m.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 567,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "folder",
+      "paid": true,
+      "variant": "basic",
+      "route": "folder",
+      "demo_chunk": "demo-d_U4qihD.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": false,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 567,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "glass-folder",
+      "paid": true,
+      "variant": "basic",
+      "route": "glass-folder",
+      "demo_chunk": "demo-DlhpiUWr.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 567,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "glow-keyboard",
+      "paid": true,
+      "variant": "basic",
+      "route": "glow-keyboard",
+      "demo_chunk": "demo-CfD9afHB.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "gradient-floor",
+      "paid": true,
+      "variant": "basic",
+      "route": "gradient-floor",
+      "demo_chunk": "demo-B-TgH1P-.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "gradient-text",
+      "paid": true,
+      "variant": "basic",
+      "route": "gradient-text",
+      "demo_chunk": "demo-Dcdtba_V.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "inline-diff",
+      "paid": true,
+      "variant": "basic",
+      "route": "inline-diff",
+      "demo_chunk": "demo-Y9Qip8LJ.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 5,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "inline-diff",
+      "paid": true,
+      "variant": "clean",
+      "route": "inline-diff.clean",
+      "demo_chunk": "demo.clean-BXz9gUDp.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "integration-flow",
+      "paid": true,
+      "variant": "basic",
+      "route": "integration-flow",
+      "demo_chunk": "demo-CL_ySX-H.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "integration-picker",
+      "paid": true,
+      "variant": "basic",
+      "route": "integration-picker",
+      "demo_chunk": "demo-5-hgQYhm.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "integration-picker",
+      "paid": true,
+      "variant": "clean",
+      "route": "integration-picker.clean",
+      "demo_chunk": "demo.clean-CPhhQKKr.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": false,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "integration-settings",
+      "paid": true,
+      "variant": "basic",
+      "route": "integration-settings",
+      "demo_chunk": "demo-Dxm1xr9_.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "integration-settings",
+      "paid": true,
+      "variant": "clean",
+      "route": "integration-settings.clean",
+      "demo_chunk": "demo.clean-CTC16fNW.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "integrations",
+      "paid": true,
+      "variant": "basic",
+      "route": "integrations",
+      "demo_chunk": "demo-CRG7NKBx.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": false,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 567,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "invoice-credit",
+      "paid": true,
+      "variant": "basic",
+      "route": "invoice-credit",
+      "demo_chunk": "demo-D1arByOa.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "kpi-board",
+      "paid": true,
+      "variant": "basic",
+      "route": "kpi-board",
+      "demo_chunk": "demo-mNpCRsfS.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "kpi-chart",
+      "paid": true,
+      "variant": "basic",
+      "route": "kpi-chart",
+      "demo_chunk": "demo-BQ61UvP8.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 5,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "kpi-chart",
+      "paid": true,
+      "variant": "clean",
+      "route": "kpi-chart.clean",
+      "demo_chunk": "demo.clean-B4-Re8fT.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "memory-panel",
+      "paid": true,
+      "variant": "basic",
+      "route": "memory-panel",
+      "demo_chunk": "demo-CEgv5bR9.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "memory-panel",
+      "paid": true,
+      "variant": "clean",
+      "route": "memory-panel.clean",
+      "demo_chunk": "demo.clean-C1W0NbsT.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "metrics-dashboard",
+      "paid": true,
+      "variant": "basic",
+      "route": "metrics-dashboard",
+      "demo_chunk": "demo-Ytbb4Swi.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": false,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "model-picker",
+      "paid": true,
+      "variant": "basic",
+      "route": "model-picker",
+      "demo_chunk": "demo-C580yDTY.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "model-picker",
+      "paid": true,
+      "variant": "clean",
+      "route": "model-picker.clean",
+      "demo_chunk": "demo.clean-B7cgzOPZ.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "onboarding",
+      "paid": true,
+      "variant": "basic",
+      "route": "onboarding",
+      "demo_chunk": "demo-CBRMIUgj.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 567,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "outreach-branches",
+      "paid": true,
+      "variant": "basic",
+      "route": "outreach-branches",
+      "demo_chunk": "demo-D-FldunI.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "permission-request",
+      "paid": true,
+      "variant": "basic",
+      "route": "permission-request",
+      "demo_chunk": "demo-B1zzQqO2.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "permission-request",
+      "paid": true,
+      "variant": "clean",
+      "route": "permission-request.clean",
+      "demo_chunk": "demo.clean-DKsx9U9O.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "pricing-plans",
+      "paid": true,
+      "variant": "basic",
+      "route": "pricing-plans",
+      "demo_chunk": "demo-DWd1ZKX0.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "project-card",
+      "paid": true,
+      "variant": "basic",
+      "route": "project-card",
+      "demo_chunk": "demo-9sHHhTyA.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "project-card",
+      "paid": true,
+      "variant": "clean",
+      "route": "project-card.clean",
+      "demo_chunk": "demo.clean-DiU4wbPA.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "project-flow",
+      "paid": true,
+      "variant": "basic",
+      "route": "project-flow",
+      "demo_chunk": "demo-Cwdm4ytX.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": false,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "prompt-library",
+      "paid": true,
+      "variant": "basic",
+      "route": "prompt-library",
+      "demo_chunk": "demo-CctwMXFR.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "prompt-library",
+      "paid": true,
+      "variant": "clean",
+      "route": "prompt-library.clean",
+      "demo_chunk": "demo.clean-DRfoB4wl.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "settings-billing",
+      "paid": true,
+      "variant": "basic",
+      "route": "settings-billing",
+      "demo_chunk": "demo-4lbOOBUM.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": false,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 567,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "setup-guide",
+      "paid": true,
+      "variant": "basic",
+      "route": "setup-guide",
+      "demo_chunk": "demo-Cb1j7tKz.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 5,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "setup-guide",
+      "paid": true,
+      "variant": "clean",
+      "route": "setup-guide.clean",
+      "demo_chunk": "demo.clean-DgcWwiZH.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "stepper-form",
+      "paid": true,
+      "variant": "basic",
+      "route": "stepper-form",
+      "demo_chunk": "demo-BOLhhfTT.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "stepper-form",
+      "paid": true,
+      "variant": "clean",
+      "route": "stepper-form.clean",
+      "demo_chunk": "demo.clean-BYDkomFg.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "task-board",
+      "paid": true,
+      "variant": "basic",
+      "route": "task-board",
+      "demo_chunk": "demo-BbZ2lqOk.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 5,
+      "browser_scenario_version": 4
     },
     {
       "slug": "thinking-state",
       "paid": true,
+      "variant": "basic",
+      "route": "thinking-state",
       "demo_chunk": "demo-sabUvR7r.js",
-      "verification": "not_fully_verified",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 5,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "thinking-state",
+      "paid": true,
       "variant": "clean",
-      "route": "thinking-state.clean"
+      "route": "thinking-state.clean",
+      "demo_chunk": "demo.clean-CXxA6VEx.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "tilt-card",
+      "paid": true,
+      "variant": "basic",
+      "route": "tilt-card",
+      "demo_chunk": "demo-BijqyLh8.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "toaster",
+      "paid": true,
+      "variant": "basic",
+      "route": "toaster",
+      "demo_chunk": "demo-Cv538yeC.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 567,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "toaster",
+      "paid": true,
+      "variant": "clean",
+      "route": "toaster.clean",
+      "demo_chunk": "demo.clean-CtdFgWee.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "trace-waterfall",
+      "paid": true,
+      "variant": "basic",
+      "route": "trace-waterfall",
+      "demo_chunk": "demo-VWNU0E7Q.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "trace-waterfall",
+      "paid": true,
+      "variant": "clean",
+      "route": "trace-waterfall.clean",
+      "demo_chunk": "demo.clean-Cim7onyI.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "usage-meter",
+      "paid": true,
+      "variant": "basic",
+      "route": "usage-meter",
+      "demo_chunk": "demo-izlk0-DS.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": false,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 5,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "usage-meter",
+      "paid": true,
+      "variant": "clean",
+      "route": "usage-meter.clean",
+      "demo_chunk": "demo.clean-BjDeSoUM.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": false,
+        "dom": false,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "voice-orb",
+      "paid": true,
+      "variant": "basic",
+      "route": "voice-orb",
+      "demo_chunk": "demo-B3RzKcXL.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "world-map",
+      "paid": true,
+      "variant": "basic",
+      "route": "world-map",
+      "demo_chunk": "demo-Q0wmIwEm.js",
+      "verification": "accepted",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": true
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "writing-assistant",
+      "paid": true,
+      "variant": "basic",
+      "route": "writing-assistant",
+      "demo_chunk": "demo-BhVeTwOS.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
+    },
+    {
+      "slug": "writing-assistant",
+      "paid": true,
+      "variant": "clean",
+      "route": "writing-assistant.clean",
+      "demo_chunk": "demo.clean-B-ER_Luk.js",
+      "verification": "partial",
+      "checks": {
+        "inventory": true,
+        "reachable_recovered": true,
+        "jsx_source": true,
+        "build": true,
+        "scenario_current": true,
+        "visual": true,
+        "dom": true,
+        "interactions": false
+      },
+      "reachable_modules": 4,
+      "browser_scenario_version": 4
     }
-  ],
-  "hidden_free_routes": [
-    "agent-team",
-    "button",
-    "button.clean",
-    "change-summary",
-    "change-summary.clean",
-    "comment-thread",
-    "comment-thread.clean",
-    "cover-flow",
-    "decision-inbox",
-    "decision-inbox.clean",
-    "email-draft",
-    "email-draft.clean",
-    "empty-calendar",
-    "enrichment-orbit",
-    "filter-menu",
-    "filter-menu.clean",
-    "frost-cloud",
-    "ghosted-chat",
-    "glow-cloud",
-    "grid-background",
-    "integration-beam",
-    "integration-grid",
-    "layer-stack",
-    "lead-sourcing",
-    "logo-cluster",
-    "logo-marquee",
-    "message-actions",
-    "message-actions.clean",
-    "model-wheel",
-    "notification-stack",
-    "notification-stack.clean",
-    "number-ticker",
-    "otp-input",
-    "otp-input.clean",
-    "profile-menu",
-    "profile-menu.clean",
-    "progress-tracker",
-    "progress-tracker.clean",
-    "reaction-bar",
-    "reaction-bar.clean",
-    "region-dach",
-    "segmented-control",
-    "segmented-control.clean",
-    "shimmer-loader",
-    "side-folder",
-    "smart-recommendation",
-    "smart-recommendation.clean",
-    "tab-overload",
-    "team-invite",
-    "testimonial-wall",
-    "text-reveal",
-    "thinking-loader",
-    "thinking-loader.clean",
-    "tips-panel",
-    "tips-panel.clean",
-    "tool-call-card",
-    "tool-call-card.clean"
   ]
 }

@@ -1,0 +1,27 @@
+{
+  "route": "ai-workspace",
+  "demo_chunk": "demo-CZJ2T4nU.js",
+  "recovered_jsx": "../reconstructed/",
+  "modules": [
+    {
+      "original_asset": "component-MWY_GX0G.js",
+      "recovered_jsx": "../reconstructed/component-MWY_GX0G.jsx"
+    },
+    {
+      "original_asset": "demo-CZJ2T4nU.js",
+      "recovered_jsx": "../reconstructed/demo-CZJ2T4nU.jsx"
+    },
+    {
+      "original_asset": "jsx-runtime-CTsRTJUX.js",
+      "recovered_jsx": "../reconstructed/jsx-runtime-CTsRTJUX.jsx"
+    },
+    {
+      "original_asset": "react-BkAXpnfr.js",
+      "recovered_jsx": "../reconstructed/react-BkAXpnfr.jsx"
+    },
+    {
+      "original_asset": "rolldown-runtime-BpQH8Ho1.js",
+      "recovered_jsx": "../reconstructed/rolldown-runtime-BpQH8Ho1.jsx"
+    }
+  ]
+}

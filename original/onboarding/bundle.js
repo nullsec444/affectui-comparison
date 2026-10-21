@@ -1,1 +1,35 @@
-import{a as o}from"../shared/chunk-PJLEQC2E.js";import"../shared/chunk-YS72EX4O.js";import"../shared/chunk-ZUVLPP6J.js";import"../shared/chunk-JNGUI7YM.js";import"../shared/chunk-IE7K553N.js";import"../shared/chunk-K66LXZZ4.js";import"../shared/chunk-GLKTGB6H.js";import"../shared/chunk-XI3RBFDE.js";import"../shared/chunk-T6MNPOXD.js";import"../shared/chunk-ZWLINIHO.js";import"../shared/chunk-QWDTD2G2.js";import"../shared/chunk-LNXHCXDY.js";import"../shared/chunk-B5YVTSUR.js";import"../shared/chunk-XJEQMMP6.js";import"../shared/chunk-BBLBVXTT.js";import{a as c}from"../shared/chunk-PWBCLQI6.js";import{a as m}from"../shared/chunk-LKG2PFLG.js";import"../shared/chunk-H7MXNYVQ.js";import{b as e}from"../shared/chunk-MOQMIKSW.js";var t=e(m()),r=e(c());(0,r.createRoot)(document.getElementById("root")).render(t.default.createElement(o));
+import {
+  M
+} from "../shared/chunk-D3K6GMTH.js";
+import "../shared/chunk-LTO723IJ.js";
+import "../shared/chunk-5ZTBOI6C.js";
+import "../shared/chunk-ZAKXD3NT.js";
+import "../shared/chunk-MBQM7MIA.js";
+import "../shared/chunk-GHTRCSG7.js";
+import "../shared/chunk-CT2IJ575.js";
+import "../shared/chunk-OWVT3G6X.js";
+import "../shared/chunk-4YLIT7JM.js";
+import "../shared/chunk-UOO4RA3A.js";
+import "../shared/chunk-WFGXI776.js";
+import "../shared/chunk-BGGGYJPT.js";
+import "../shared/chunk-OLSFNPAI.js";
+import {
+  init_original_react,
+  original_react_default,
+  require_client
+} from "../shared/chunk-TISG53JG.js";
+import "../shared/chunk-C7RUFYJH.js";
+import "../shared/chunk-Y3JEZZ7A.js";
+import "../shared/chunk-IV3FP5QI.js";
+import {
+  __toESM
+} from "../shared/chunk-CTH3ASD6.js";
+
+// entries/original-onboarding.js
+init_original_react();
+var import_client = __toESM(require_client());
+var root = (0, import_client.createRoot)(document.getElementById("demo"));
+var generation = 0;
+window.__resetDemo = () => root.render(original_react_default.createElement(M, { key: ++generation }));
+window.__resetDemo();
+window.__entryReady = true;

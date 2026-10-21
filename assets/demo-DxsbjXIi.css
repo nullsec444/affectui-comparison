@@ -1,0 +1,1 @@
+.reaction-demo{grid-template-columns:minmax(0,1fr);place-items:center;width:100%;display:grid}.card__preview .reaction-demo{position:absolute;inset:0}.card__preview .reaction-demo .ui-rb{zoom:.9}.stage .reaction-demo .ui-rbc{zoom:1.3}.card__preview .reaction-demo .ui-rbc{zoom:1.15}

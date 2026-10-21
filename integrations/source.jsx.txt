@@ -1,0 +1,281 @@
+// Derived from public demo JS via REA/Wakaru and scope-aware AST recovery. Not author-original source.
+import { t as t_1 } from "./react-BkAXpnfr.jsx";
+import { t } from "./jsx-runtime-CTsRTJUX.jsx";
+import { l as N1, u as onNavigate } from "./index-CxCSU7QX.jsx";
+import { t as I1 } from "./component-x-U6EJWL.jsx";
+import { S as icon_2, _ as __1, k as icon_1, l as C1, o as L1, p as U, r as D1, t as F1, u as P1, y as y_1 } from "./component-qs8CseUl.jsx";
+const icon = [[`path`, {
+  d: `M18.9905 19H19M18.9905 19C18.3678 19.6175 17.2393 19.4637 16.4479 19.4637C15.4765 19.4637 15.0087 19.6537 14.3154 20.347C13.7251 20.9374 12.9337 22 12 22C11.0663 22 10.2749 20.9374 9.68457 20.347C8.99128 19.6537 8.52349 19.4637 7.55206 19.4637C6.76068 19.4637 5.63218 19.6175 5.00949 19C4.38181 18.3776 4.53628 17.2444 4.53628 16.4479C4.53628 15.4414 4.31616 14.9786 3.59938 14.2618C2.53314 13.1956 2.00002 12.6624 2 12C2.00001 11.3375 2.53312 10.8044 3.59935 9.73817C4.2392 9.09832 4.53628 8.46428 4.53628 7.55206C4.53628 6.76065 4.38249 5.63214 5 5.00944C5.62243 4.38178 6.7556 4.53626 7.55208 4.53626C8.46427 4.53626 9.09832 4.2392 9.73815 3.59937C10.8044 2.53312 11.3375 2 12 2C12.6625 2 13.1956 2.53312 14.2618 3.59937C14.9015 4.23907 15.5355 4.53626 16.4479 4.53626C17.2393 4.53626 18.3679 4.38247 18.9906 5C19.6182 5.62243 19.4637 6.75559 19.4637 7.55206C19.4637 8.55858 19.6839 9.02137 20.4006 9.73817C21.4669 10.8044 22 11.3375 22 12C22 12.6624 21.4669 13.1956 20.4006 14.2618C19.6838 14.9786 19.4637 15.4414 19.4637 16.4479C19.4637 17.2444 19.6182 18.3776 18.9905 19Z`,
+  stroke: `currentColor`,
+  strokeWidth: `1.5`,
+  key: `0`
+}], [`path`, {
+  d: `M9 12.8929C9 12.8929 10.2 13.5447 10.8 14.5C10.8 14.5 12.6 10.75 15 9.5`,
+  stroke: `currentColor`,
+  strokeLinecap: `round`,
+  strokeLinejoin: `round`,
+  strokeWidth: `1.5`,
+  key: `1`
+}]];
+const g = t_1();
+const _ = t();
+const VComponent = (d, fill) => <svg viewBox={`0 0 24 24`} fill={fill} aria-hidden={`true`}><path d={d} /></svg>;
+const InlineComponent = () => <svg viewBox={`0 0 24 24`} aria-hidden={`true`}><path fill={`#E01E5A`} d={`M5.04 15.17a2.53 2.53 0 0 1-2.52 2.52A2.53 2.53 0 0 1 0 15.17a2.53 2.53 0 0 1 2.52-2.53h2.52zm1.27 0a2.53 2.53 0 0 1 2.53-2.53 2.53 2.53 0 0 1 2.52 2.53v6.31A2.53 2.53 0 0 1 8.84 24a2.53 2.53 0 0 1-2.53-2.52z`} /><path fill={`#36C5F0`} d={`M8.84 5.04a2.53 2.53 0 0 1-2.53-2.52A2.53 2.53 0 0 1 8.84 0a2.53 2.53 0 0 1 2.52 2.52v2.52zm0 1.27a2.53 2.53 0 0 1 2.52 2.53 2.53 2.53 0 0 1-2.52 2.52H2.52A2.53 2.53 0 0 1 0 8.84a2.53 2.53 0 0 1 2.52-2.53z`} /><path fill={`#2EB67D`} d={`M18.96 8.84a2.53 2.53 0 0 1 2.52-2.53A2.53 2.53 0 0 1 24 8.84a2.53 2.53 0 0 1-2.52 2.52h-2.52zm-1.27 0a2.53 2.53 0 0 1-2.53 2.52 2.53 2.53 0 0 1-2.52-2.52V2.52A2.53 2.53 0 0 1 15.16 0a2.53 2.53 0 0 1 2.53 2.52z`} /><path fill={`#ECB22E`} d={`M15.16 18.96a2.53 2.53 0 0 1 2.53 2.52A2.53 2.53 0 0 1 15.16 24a2.53 2.53 0 0 1-2.52-2.52v-2.52zm0-1.27a2.53 2.53 0 0 1-2.52-2.53 2.53 2.53 0 0 1 2.52-2.52h6.32A2.53 2.53 0 0 1 24 15.16a2.53 2.53 0 0 1-2.52 2.53z`} /></svg>;
+const InlineComponent_1 = () => <svg viewBox={`0 0 38 57`} aria-hidden={`true`}><path d={`M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0Z`} fill={`#1ABCFE`} /><path d={`M0 47.5A9.5 9.5 0 0 1 9.5 38H19v9.5a9.5 9.5 0 1 1-19 0Z`} fill={`#0ACF83`} /><path d={`M19 0v19h9.5a9.5 9.5 0 1 0 0-19H19Z`} fill={`#FF7262`} /><path d={`M0 9.5A9.5 9.5 0 0 0 9.5 19H19V0H9.5A9.5 9.5 0 0 0 0 9.5Z`} fill={`#F24E1E`} /><path d={`M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5Z`} fill={`#A259FF`} /></svg>;
+const y = [{
+  id: `slack`,
+  connected: true,
+  name: `Slack`,
+  vendor: `Slack`,
+  description: `Get alerts in your channels and act on them without leaving the conversation.`,
+  categories: [`communication`],
+  logo: <InlineComponent />,
+  essential: true
+}, {
+  id: `notion`,
+  name: `Notion`,
+  vendor: `Notion`,
+  description: `Turn records into pages and keep project docs in sync both ways.`,
+  categories: [`docs`],
+  logo: VComponent(`M4.459 4.208c.746.606 1.026.56 2.428.466l13.215-.793c.28 0 .047-.28-.046-.326L17.86 1.968c-.42-.326-.981-.7-2.055-.607L3.01 2.295c-.466.046-.56.28-.374.466zm.793 3.08v13.904c0 .747.373 1.027 1.214.98l14.523-.84c.841-.046.935-.56.935-1.167V6.354c0-.606-.233-.933-.748-.887l-15.177.887c-.56.047-.747.327-.747.933zm14.337.745c.093.42 0 .84-.42.888l-.7.14v10.264c-.608.327-1.168.514-1.635.514-.748 0-.935-.234-1.495-.933l-4.577-7.186v6.952L12.21 19s0 .84-1.168.84l-3.222.186c-.093-.186 0-.653.327-.746l.84-.233V9.854L7.822 9.76c-.094-.42.14-1.026.793-1.073l3.456-.233 4.764 7.279v-6.44l-1.215-.139c-.093-.514.28-.887.747-.933zM1.936 1.035l13.31-.98c1.634-.14 2.055-.047 3.082.7l4.249 2.986c.7.513.934.653.934 1.213v16.378c0 1.026-.373 1.634-1.68 1.726l-15.458.934c-.98.047-1.448-.093-1.962-.747l-3.129-4.06c-.56-.747-.793-1.306-.793-1.96V2.667c0-.839.374-1.54 1.447-1.632z`, `currentColor`),
+  essential: true
+}, {
+  id: `linear`,
+  name: `Linear`,
+  vendor: `Linear`,
+  description: `Create issues from customer feedback and track them to release.`,
+  categories: [`product`],
+  logo: VComponent(`M2.886 4.18A11.982 11.982 0 0 1 11.99 0C18.624 0 24 5.376 24 12.009c0 3.64-1.62 6.903-4.18 9.105L2.887 4.18ZM1.817 5.626l16.556 16.556c-.524.33-1.075.62-1.65.866L.951 7.277c.247-.575.537-1.126.866-1.65ZM.322 9.163l14.515 14.515c-.71.172-1.443.282-2.195.322L0 11.358a12 12 0 0 1 .322-2.195Zm-.17 4.862 9.823 9.824a12.02 12.02 0 0 1-9.824-9.824Z`, `#ffffff`),
+  tile: `#5E6AD2`,
+  essential: true
+}, {
+  id: `figma`,
+  name: `Figma`,
+  vendor: `Figma`,
+  description: `Preview designs inline and link frames to the work they belong to.`,
+  categories: [`design`],
+  logo: <InlineComponent_1 />,
+  essential: true
+}, {
+  id: `github`,
+  name: `GitHub`,
+  vendor: `GitHub`,
+  description: `Link pull requests and see deploy status next to every task.`,
+  categories: [`development`],
+  logo: VComponent(`M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12`, `#ffffff`),
+  tile: `#171717`,
+  essential: true
+}, {
+  id: `stripe`,
+  name: `Stripe`,
+  vendor: `Stripe`,
+  description: `Sync customers, invoices and subscriptions in real time.`,
+  categories: [`billing`],
+  logo: VComponent(`M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219 2.585.92 3.445 1.574 3.445 2.583 0 .98-.84 1.545-2.354 1.545-1.875 0-4.965-.921-6.99-2.109l-.9 5.555C5.175 22.99 8.385 24 11.714 24c2.641 0 4.843-.624 6.328-1.813 1.664-1.305 2.525-3.236 2.525-5.732 0-4.128-2.524-5.851-6.594-7.305h.003z`, `#ffffff`),
+  tile: `#635BFF`,
+  essential: true
+}, {
+  id: `zapier`,
+  name: `Zapier`,
+  vendor: `Zapier`,
+  description: `Connect 6,000 apps with no-code workflows and triggers.`,
+  categories: [`automation`],
+  logo: VComponent(`M4.157 0A4.151 4.151 0 0 0 0 4.161v15.678A4.151 4.151 0 0 0 4.157 24h15.682A4.152 4.152 0 0 0 24 19.839V4.161A4.152 4.152 0 0 0 19.839 0H4.157Zm10.61 8.761h.03a.577.577 0 0 1 .23.038.585.585 0 0 1 .201.124.63.63 0 0 1 .162.431.612.612 0 0 1-.162.435.58.58 0 0 1-.201.128.58.58 0 0 1-.23.042.529.529 0 0 1-.235-.042.585.585 0 0 1-.332-.328.559.559 0 0 1-.038-.235.613.613 0 0 1 .17-.431.59.59 0 0 1 .405-.162Zm2.853 1.572c.03.004.061.004.095.004.325-.011.646.064.937.219.238.144.431.355.552.609.128.279.189.582.185.888v.193a2 2 0 0 1 0 .219h-2.498c.003.227.075.45.204.642a.78.78 0 0 0 .646.265.714.714 0 0 0 .484-.136.642.642 0 0 0 .23-.318l.915.257a1.398 1.398 0 0 1-.28.537c-.14.159-.321.284-.521.355a2.234 2.234 0 0 1-.836.136 1.923 1.923 0 0 1-1.001-.245 1.618 1.618 0 0 1-.665-.703 2.221 2.221 0 0 1-.227-1.036 1.95 1.95 0 0 1 .48-1.398 1.9 1.9 0 0 1 1.3-.488Zm-9.607.023c.162.004.325.026.48.079.207.065.4.174.563.314.26.302.393.692.366 1.088v2.276H8.53l-.109-.711h-.065c-.064.163-.155.31-.272.439a1.122 1.122 0 0 1-.374.264 1.023 1.023 0 0 1-.453.083 1.334 1.334 0 0 1-.866-.264.965.965 0 0 1-.329-.801.993.993 0 0 1 .076-.431 1.02 1.02 0 0 1 .242-.363 1.478 1.478 0 0 1 1.043-.303h.952v-.181a.696.696 0 0 0-.136-.454.553.553 0 0 0-.438-.154.695.695 0 0 0-.378.086.48.48 0 0 0-.193.254l-.99-.144a1.26 1.26 0 0 1 .257-.563c.14-.174.321-.302.533-.378.261-.091.54-.136.82-.129.053-.003.106-.007.163-.007Zm4.384.007c.174 0 .347.038.506.114.182.083.34.211.458.374.257.423.377.911.351 1.406a2.53 2.53 0 0 1-.355 1.448 1.148 1.148 0 0 1-1.009.517c-.204 0-.401-.045-.582-.136a1.052 1.052 0 0 1-.48-.457 1.298 1.298 0 0 1-.114-.234h-.045l.004 1.784h-1.059v-4.713h.904l.117.805h.057c.068-.208.177-.401.328-.56a1.129 1.129 0 0 1 .843-.344h.076v-.004Zm7.559.084h.903l.113.805h.053a1.37 1.37 0 0 1 .235-.484.813.813 0 0 1 .313-.242.82.82 0 0 1 .39-.076h.234v1.051h-.401a.662.662 0 0 0-.313.008.623.623 0 0 0-.272.155.663.663 0 0 0-.174.26.683.683 0 0 0-.027.314v1.875h-1.054v-3.666Zm-17.515.003h3.262v.896L3.73 13.104l.034.113h1.973l.042.9H2.4v-.9l1.931-1.754-.045-.117H2.441v-.896Zm11.815 0h1.055v3.659h-1.055V10.45Zm3.443.684.019.016a.69.69 0 0 0-.351.045.756.756 0 0 0-.287.204c-.11.155-.174.336-.189.522h1.545c-.034-.526-.257-.787-.74-.787h.003Zm-5.718.163c-.026 0-.057 0-.083.004a.78.78 0 0 0-.31.053.746.746 0 0 0-.257.189 1.016 1.016 0 0 0-.204.695v.064c-.015.257.057.507.204.711a.634.634 0 0 0 .253.196.638.638 0 0 0 .314.061.644.644 0 0 0 .578-.265c.14-.223.204-.48.189-.74a1.216 1.216 0 0 0-.181-.711.677.677 0 0 0-.503-.257Zm-4.509 1.266a.464.464 0 0 0-.268.102.373.373 0 0 0-.114.276c0 .053.008.106.027.155a.375.375 0 0 0 .087.132.576.576 0 0 0 .397.11v.004a.863.863 0 0 0 .563-.182.573.573 0 0 0 .211-.457v-.14h-.903Z`, `#ffffff`),
+  tile: `#FF4F00`,
+  essential: true
+}, {
+  id: `hubspot`,
+  name: `HubSpot`,
+  vendor: `HubSpot`,
+  description: `Keep contacts, companies and deals matched across both tools.`,
+  categories: [`crm`],
+  logo: VComponent(`M18.164 7.93V5.084a2.198 2.198 0 001.267-1.978v-.067A2.2 2.2 0 0017.238.845h-.067a2.2 2.2 0 00-2.193 2.193v.067a2.196 2.196 0 001.252 1.973l.013.006v2.852a6.22 6.22 0 00-2.969 1.31l.012-.01-7.828-6.095A2.497 2.497 0 104.3 4.656l-.012.006 7.697 5.991a6.176 6.176 0 00-1.038 3.446c0 1.343.425 2.588 1.147 3.607l-.013-.02-2.342 2.343a1.968 1.968 0 00-.58-.095h-.002a2.033 2.033 0 102.033 2.033 1.978 1.978 0 00-.1-.595l.005.014 2.317-2.317a6.247 6.247 0 104.782-11.134l-.036-.005zm-.964 9.378a3.206 3.206 0 113.215-3.207v.002a3.206 3.206 0 01-3.207 3.207z`, `#FF7A59`),
+  essential: true
+}, {
+  id: `zoom`,
+  name: `Zoom`,
+  vendor: `Zoom`,
+  description: `Start meetings from any record and save the recording link.`,
+  categories: [`communication`, `scheduling`],
+  logo: VComponent(`M5.033 14.649H.743a.74.74 0 0 1-.686-.458.74.74 0 0 1 .16-.808L3.19 10.41H1.06A1.06 1.06 0 0 1 0 9.35h3.957c.301 0 .57.18.686.458a.74.74 0 0 1-.161.808L1.51 13.59h2.464c.585 0 1.06.475 1.06 1.06zM24 11.338c0-1.14-.927-2.066-2.066-2.066-.61 0-1.158.265-1.537.686a2.061 2.061 0 0 0-1.536-.686c-1.14 0-2.066.926-2.066 2.066v3.311a1.06 1.06 0 0 0 1.06-1.06v-2.251a1.004 1.004 0 0 1 2.013 0v2.251c0 .586.474 1.06 1.06 1.06v-3.311a1.004 1.004 0 0 1 2.012 0v2.251c0 .586.475 1.06 1.06 1.06zM16.265 12a2.728 2.728 0 1 1-5.457 0 2.728 2.728 0 0 1 5.457 0zm-1.06 0a1.669 1.669 0 1 0-3.338 0 1.669 1.669 0 0 0 3.338 0zm-4.82 0a2.728 2.728 0 1 1-5.458 0 2.728 2.728 0 0 1 5.457 0zm-1.06 0a1.669 1.669 0 1 0-3.338 0 1.669 1.669 0 0 0 3.338 0z`, `#ffffff`),
+  tile: `#0B5CFF`
+}, {
+  id: `discord`,
+  name: `Discord`,
+  vendor: `Discord`,
+  description: `Post updates to community channels when something ships.`,
+  categories: [`communication`],
+  logo: VComponent(`M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z`, `#ffffff`),
+  tile: `#5865F2`
+}, {
+  id: `calendly`,
+  name: `Calendly`,
+  vendor: `Calendly`,
+  description: `Log booked meetings and the answers people gave when booking.`,
+  categories: [`scheduling`],
+  logo: VComponent(`M19.655 14.262c.281 0 .557.023.828.064 0 .005-.005.01-.005.014-.105.267-.234.534-.381.786l-1.219 2.106c-1.112 1.936-3.177 3.127-5.411 3.127h-2.432c-2.23 0-4.294-1.191-5.412-3.127l-1.218-2.106a6.251 6.251 0 0 1 0-6.252l1.218-2.106C6.736 4.832 8.8 3.641 11.035 3.641h2.432c2.23 0 4.294 1.191 5.411 3.127l1.219 2.106c.147.252.271.519.381.786 0 .004.005.009.005.014-.267.041-.543.064-.828.064-1.816 0-2.501-.607-3.291-1.306-.764-.676-1.711-1.517-3.44-1.517h-1.029c-1.251 0-2.387.455-3.2 1.278-.796.805-1.233 1.904-1.233 3.099v1.411c0 1.196.437 2.295 1.233 3.099.813.823 1.949 1.278 3.2 1.278h1.034c1.729 0 2.676-.841 3.439-1.517.791-.703 1.471-1.306 3.287-1.301Zm.005-3.237c.399 0 .794-.036 1.179-.11-.002-.004-.002-.01-.002-.014-.073-.414-.193-.823-.349-1.218.731-.12 1.407-.396 1.986-.819 0-.004-.005-.013-.005-.018-.331-1.085-.832-2.101-1.489-3.03-.649-.915-1.435-1.719-2.331-2.395-1.867-1.398-4.088-2.138-6.428-2.138-1.448 0-2.855.28-4.175.841-1.273.543-2.423 1.315-3.407 2.299S2.878 6.552 2.341 7.83c-.557 1.324-.842 2.726-.842 4.175 0 1.448.281 2.855.842 4.174.542 1.274 1.314 2.423 2.298 3.407s2.129 1.761 3.407 2.299c1.324.556 2.727.841 4.175.841 2.34 0 4.561-.74 6.428-2.137a10.815 10.815 0 0 0 2.331-2.396c.652-.929 1.158-1.949 1.489-3.03 0-.004.005-.014.005-.018-.579-.423-1.255-.699-1.986-.819.161-.395.276-.804.349-1.218.005-.009.005-.014.005-.023.869.166 1.692.506 2.404 1.035.685.505.552 1.075.446 1.416C22.184 20.437 17.619 24 12.221 24c-6.625 0-12-5.375-12-12s5.37-12 12-12c5.398 0 9.963 3.563 11.471 8.464.106.341.239.915-.446 1.421-.717.529-1.535.873-2.404 1.034.128.716.128 1.45 0 2.166-.387-.074-.782-.11-1.182-.11-4.184 0-3.968 2.823-6.736 2.823h-1.029c-1.899 0-3.15-1.357-3.15-3.095v-1.411c0-1.738 1.251-3.094 3.15-3.094h1.034c2.768 0 2.552 2.823 6.731 2.827Z`, `#ffffff`),
+  tile: `#006BFF`
+}, {
+  id: `google-calendar`,
+  name: `Google Calendar`,
+  vendor: `Google`,
+  description: `See upcoming meetings with every contact in one timeline.`,
+  categories: [`scheduling`],
+  logo: VComponent(`M18.316 5.684H24v12.632h-5.684V5.684zM5.684 24h12.632v-5.684H5.684V24zM18.316 5.684V0H1.895A1.894 1.894 0 0 0 0 1.895v16.421h5.684V5.684h12.632zm-7.207 6.25v-.065c.272-.144.5-.349.687-.617s.279-.595.279-.982c0-.379-.099-.72-.3-1.025a2.05 2.05 0 0 0-.832-.714 2.703 2.703 0 0 0-1.197-.257c-.6 0-1.094.156-1.481.467-.386.311-.65.671-.793 1.078l1.085.452c.086-.249.224-.461.413-.633.189-.172.445-.257.767-.257.33 0 .602.088.816.264a.86.86 0 0 1 .322.703c0 .33-.12.589-.36.778-.24.19-.535.284-.886.284h-.567v1.085h.633c.407 0 .748.109 1.02.327.272.218.407.499.407.843 0 .336-.129.614-.387.832s-.565.327-.924.327c-.351 0-.651-.103-.897-.311-.248-.208-.422-.502-.521-.881l-1.096.452c.178.616.505 1.082.977 1.401.472.319.984.478 1.538.477a2.84 2.84 0 0 0 1.293-.291c.382-.193.684-.458.902-.794.218-.336.327-.72.327-1.149 0-.429-.115-.797-.344-1.105a2.067 2.067 0 0 0-.881-.689zm2.093-1.931l.602.913L15 10.045v5.744h1.187V8.446h-.827l-2.158 1.557zM22.105 0h-3.289v5.184H24V1.895A1.894 1.894 0 0 0 22.105 0zm-3.289 23.5l4.684-4.684h-4.684V23.5zM0 22.105C0 23.152.848 24 1.895 24h3.289v-5.184H0v3.289z`, `#4285F4`)
+}, {
+  id: `make`,
+  name: `Make`,
+  vendor: `Make`,
+  description: `Build visual multi-step automations with branches and filters.`,
+  categories: [`automation`],
+  logo: VComponent(`M13.38 3.498c-.27 0-.511.19-.566.465L9.85 18.986a.578.578 0 0 0 .453.678l4.095.826a.58.58 0 0 0 .682-.455l2.963-15.021a.578.578 0 0 0-.453-.678l-4.096-.826a.589.589 0 0 0-.113-.012zm-5.876.098a.576.576 0 0 0-.516.318L.062 17.697a.575.575 0 0 0 .256.774l3.733 1.877a.578.578 0 0 0 .775-.258l6.926-13.781a.577.577 0 0 0-.256-.776L7.762 3.658a.571.571 0 0 0-.258-.062zm11.74.115a.576.576 0 0 0-.576.576v15.426c0 .318.258.578.576.578h4.178a.58.58 0 0 0 .578-.578V4.287a.578.578 0 0 0-.578-.576Z`, `#ffffff`),
+  tile: `#6D00CC`
+}, {
+  id: `mixpanel`,
+  name: `Mixpanel`,
+  vendor: `Mixpanel`,
+  description: `Send product events and build reports from real usage.`,
+  categories: [`analytics`],
+  logo: VComponent(`M6.967 9.996h3.053c-.763-.477-1.048-1.145-1.431-2.384L7.443 3.366C6.919 1.458 6.49.551 4.39.551H.004v1.145h.621c1.286 0 1.431.477 1.814 1.908L3.44 7.326c.524 1.814 1.337 2.67 3.53 2.67h-.003Zm7.06 0h3.053c2.194 0 2.956-.86 3.484-2.67l1.001-3.722c.382-1.431.57-1.908 1.814-1.908H24V.551h-4.34c-2.146 0-2.576.86-3.053 2.815l-1.145 4.246c-.384 1.286-.673 1.907-1.435 2.384Zm-4.007 4.008h4.007V9.996H10.02v4.008ZM0 23.449h4.39c2.1 0 2.529-.907 3.053-2.815l1.146-4.246c.383-1.239.668-1.907 1.431-2.384H6.967c-2.194 0-3.007.86-3.531 2.67l-1.001 3.722c-.383 1.431-.524 1.907-1.814 1.907H0v1.146Zm19.65 0h4.343v-1.146h-.622c-1.239 0-1.431-.476-1.814-1.907l-1.001-3.722c-.524-1.814-1.286-2.67-3.483-2.67h-3.046c.762.477 1.041 1.098 1.424 2.384l1.145 4.246c.477 1.955.907 2.815 3.054 2.815Z`, `#ffffff`),
+  tile: `#7856FF`
+}, {
+  id: `google-analytics`,
+  name: `Google Analytics`,
+  vendor: `Google`,
+  description: `Attribute signups to the campaigns and pages that brought them.`,
+  categories: [`analytics`],
+  logo: VComponent(`M22.84 2.9982v17.9987c.0086 1.6473-1.3197 2.9897-2.967 2.9984a2.9808 2.9808 0 01-.3677-.0208c-1.528-.226-2.6477-1.5558-2.6105-3.1V3.1204c-.0369-1.5458 1.0856-2.8762 2.6157-3.1 1.6361-.1915 3.1178.9796 3.3093 2.6158.014.1201.0208.241.0202.3619zM4.1326 18.0548c-1.6417 0-2.9726 1.331-2.9726 2.9726C1.16 22.6691 2.4909 24 4.1326 24s2.9726-1.3309 2.9726-2.9726-1.331-2.9726-2.9726-2.9726zm7.8728-9.0098c-.0171 0-.0342 0-.0513.0003-1.6495.0904-2.9293 1.474-2.891 3.1256v7.9846c0 2.167.9535 3.4825 2.3505 3.763 1.6118.3266 3.1832-.7152 3.5098-2.327.04-.1974.06-.3983.0593-.5998v-8.9585c.003-1.6474-1.33-2.9852-2.9773-2.9882z`, `#E37400`)
+}, {
+  id: `paddle`,
+  name: `Paddle`,
+  vendor: `Paddle`,
+  description: `Handle checkout, tax and subscriptions as merchant of record.`,
+  categories: [`billing`],
+  logo: VComponent(`M2.363 7.904v.849a3.95 3.95 0 0 1 3.65 2.425c.198.476.3.987.299 1.502h.791c0-1.04.416-2.037 1.157-2.772a3.962 3.962 0 0 1 2.792-1.149V7.91a3.959 3.959 0 0 1-3.65-2.425 3.893 3.893 0 0 1-.299-1.502h-.791c0 1.04-.416 2.037-1.157 2.772a3.96 3.96 0 0 1-2.792 1.149M13.105 2.51H6.312V0h6.793c4.772 0 8.532 3.735 8.532 8.314 0 4.58-3.76 8.314-8.532 8.314H9.156V24H6.312v-9.882h6.793c3.319 0 5.688-2.352 5.688-5.804 0-3.451-2.37-5.804-5.688-5.804`, `#ffffff`),
+  tile: `#FDDD35`
+}, {
+  id: `dropbox`,
+  name: `Dropbox`,
+  vendor: `Dropbox`,
+  description: `Attach files from Dropbox and keep shared folders linked.`,
+  categories: [`storage`],
+  logo: VComponent(`M6 1.807L0 5.629l6 3.822 6.001-3.822L6 1.807zM18 1.807l-6 3.822 6 3.822 6-3.822-6-3.822zM0 13.274l6 3.822 6.001-3.822L6 9.452l-6 3.822zM18 9.452l-6 3.822 6 3.822 6-3.822-6-3.822zM6 18.371l6.001 3.822 6-3.822-6-3.822L6 18.371z`, `#0061FF`)
+}, {
+  id: `google-drive`,
+  name: `Google Drive`,
+  vendor: `Google`,
+  description: `Pick files from Drive and preview them without downloading.`,
+  categories: [`storage`, `docs`],
+  logo: VComponent(`M12.01 1.485c-2.082 0-3.754.02-3.743.047.01.02 1.708 3.001 3.774 6.62l3.76 6.574h3.76c2.081 0 3.753-.02 3.742-.047-.005-.02-1.708-3.001-3.775-6.62l-3.76-6.574zm-4.76 1.73a789.828 789.861 0 0 0-3.63 6.319L0 15.868l1.89 3.298 1.885 3.297 3.62-6.335 3.618-6.33-1.88-3.287C8.1 4.704 7.255 3.22 7.25 3.214zm2.259 12.653-.203.348c-.114.198-.96 1.672-1.88 3.287a423.93 423.948 0 0 1-1.698 2.97c-.01.026 3.24.042 7.222.042h7.244l1.796-3.157c.992-1.734 1.85-3.23 1.906-3.323l.104-.167h-7.249z`, `#1FA463`)
+}, {
+  id: `typeform`,
+  name: `Typeform`,
+  vendor: `Typeform`,
+  description: `Create records from form answers the moment they come in.`,
+  categories: [`product`],
+  logo: VComponent(`M15.502 13.035c-.5 0-.756-.411-.756-.917 0-.505.252-.894.756-.894.513 0 .756.407.756.894-.004.515-.261.917-.756.917Zm-4.888-1.81c.292 0 .414.17.414.317 0 .357-.365.514-1.126.536 0-.442.253-.854.712-.854Zm-3.241 1.81c-.473 0-.67-.384-.67-.917 0-.527.202-.894.67-.894.477 0 .702.38.702.894 0 .537-.234.917-.702.917Zm-3.997-2.334h-.738l1.224 2.808c-.234.519-.36.648-.522.648-.171 0-.333-.138-.45-.259l-.324.43c.22.232.522.366.832.366.387 0 .685-.224.856-.626l1.413-3.371h-.725l-.738 2.012-.828-2.008Zm19.553.523c.36 0 .432.246.432.823v1.516H24v-1.914c0-.689-.473-.988-.91-.988-.386 0-.742.241-.94.688a.901.901 0 0 0-.891-.688c-.365 0-.73.232-.927.666v-.626h-.64v2.857h.64v-1.22c0-.617.324-1.114.765-1.114.36 0 .427.246.427.823v1.516h.64l-.005-1.225c0-.617.329-1.114.77-1.114Zm-5.1-.523h-.324v2.857h.639v-1.095c0-.693.306-1.163.76-1.163.118 0 .217.005.325.05l.099-.676c-.081-.009-.153-.018-.225-.018-.45 0-.774.309-.964.707V10.7h-.31Zm-2.327-.045c-.846 0-1.418.644-1.418 1.458 0 .845.58 1.475 1.418 1.475.85 0 1.431-.648 1.431-1.475-.004-.818-.594-1.458-1.431-1.458Zm-4.852 2.38c-.333 0-.581-.17-.685-.515.847-.036 1.675-.242 1.675-.988 0-.43-.423-.872-1.03-.872-.82 0-1.374.666-1.374 1.457 0 .828.545 1.476 1.36 1.476.567 0 .927-.228 1.21-.559l-.31-.42c-.329.335-.531.42-.846.42Zm-3.151-2.38c-.324 0-.648.188-.774.483v-.438h-.64v3.98h.64v-1.422c.135.205.445.34.72.34.85 0 1.3-.631 1.3-1.48-.004-.841-.445-1.463-1.246-1.463Zm-4.483-1.1H0v.622h1.18v3.38h.67v-3.38h1.166v-.622Zm9.502 1.145h-.383v.572h.383v2.285h.639v-2.285h.621v-.572h-.621v-.447c0-.286.117-.385.382-.385.1 0 .19.027.311.068l.144-.537c-.117-.067-.351-.094-.504-.094-.612 0-.972.367-.972 1.002v.393Z`, `#ffffff`),
+  tile: `#262627`
+}, {
+  id: `jira`,
+  name: `Jira`,
+  vendor: `Atlassian`,
+  description: `Sync issues, statuses and assignees with your Jira projects.`,
+  categories: [`product`, `development`],
+  logo: VComponent(`M11.571 11.513H0a5.218 5.218 0 0 0 5.232 5.215h2.13v2.057A5.215 5.215 0 0 0 12.575 24V12.518a1.005 1.005 0 0 0-1.005-1.005zm5.723-5.756H5.736a5.215 5.215 0 0 0 5.215 5.214h2.129v2.058a5.218 5.218 0 0 0 5.215 5.214V6.758a1.001 1.001 0 0 0-1.001-1.001zM23.013 0H11.455a5.215 5.215 0 0 0 5.215 5.215h2.129v2.057A5.215 5.215 0 0 0 24 12.483V1.005A1.001 1.001 0 0 0 23.013 0Z`, `#0052CC`)
+}, {
+  id: `intercom`,
+  name: `Intercom`,
+  vendor: `Intercom`,
+  description: `See conversations next to the customer and reply from one place.`,
+  categories: [`communication`, `crm`],
+  logo: VComponent(`M21 0H3C1.343 0 0 1.343 0 3v18c0 1.658 1.343 3 3 3h18c1.658 0 3-1.342 3-3V3c0-1.657-1.342-3-3-3zm-5.801 4.399c0-.44.36-.8.802-.8.44 0 .8.36.8.8v10.688c0 .442-.36.801-.8.801-.443 0-.802-.359-.802-.801V4.399zM11.2 3.994c0-.44.357-.799.8-.799s.8.359.8.799v11.602c0 .44-.357.8-.8.8s-.8-.36-.8-.8V3.994zm-4 .405c0-.44.359-.8.799-.8.443 0 .802.36.802.8v10.688c0 .442-.36.801-.802.801-.44 0-.799-.359-.799-.801V4.399zM3.199 6c0-.442.36-.8.802-.8.44 0 .799.358.799.8v7.195c0 .441-.359.8-.799.8-.443 0-.802-.36-.802-.8V6zM20.52 18.202c-.123.105-3.086 2.593-8.52 2.593-5.433 0-8.397-2.486-8.521-2.593-.335-.288-.375-.792-.086-1.128.285-.334.79-.375 1.125-.09.047.041 2.693 2.211 7.481 2.211 4.848 0 7.456-2.186 7.479-2.207.334-.289.839-.25 1.128.086.289.336.25.84-.086 1.128zm.281-5.007c0 .441-.36.8-.801.8-.441 0-.801-.36-.801-.8V6c0-.442.361-.8.801-.8.441 0 .801.357.801.8v7.195z`, `#ffffff`),
+  tile: `#1F8DED`
+}, {
+  id: `airtable`,
+  name: `Airtable`,
+  vendor: `Airtable`,
+  description: `Mirror bases as tables and keep fields in sync automatically.`,
+  categories: [`storage`],
+  logo: VComponent(`M11.992 1.966c-.434 0-.87.086-1.28.257L1.779 5.917c-.503.208-.49.908.012 1.116l8.982 3.558a3.266 3.266 0 0 0 2.454 0l8.982-3.558c.503-.196.503-.908.012-1.116l-8.957-3.694a3.255 3.255 0 0 0-1.272-.257zM23.4 8.056a.589.589 0 0 0-.222.045l-10.012 3.877a.612.612 0 0 0-.38.564v8.896a.6.6 0 0 0 .821.552L23.62 18.1a.583.583 0 0 0 .38-.551V8.653a.6.6 0 0 0-.6-.596zM.676 8.095a.644.644 0 0 0-.48.19C.086 8.396 0 8.53 0 8.69v8.355c0 .442.515.737.908.54l6.27-3.006.307-.147 2.969-1.436c.466-.22.43-.908-.061-1.092L.883 8.138a.57.57 0 0 0-.207-.044z`, `#18BFFF`)
+}];
+const b = e => e.map(e => y.find(t => t.id === e)).filter(Boolean);
+const x = [{
+  title: `Popular`,
+  items: b([`slack`, `notion`, `linear`, `figma`, `github`, `hubspot`]),
+  more: b([`stripe`, `zapier`, `airtable`, `jira`])
+}, {
+  title: `Google`,
+  items: b([`google-drive`, `google-calendar`, `google-analytics`]),
+  more: []
+}, {
+  title: `Communication`,
+  items: b([`zoom`, `discord`, `intercom`, `calendly`, `typeform`, `dropbox`]),
+  more: b([`mixpanel`, `make`, `paddle`])
+}];
+function SComponent(e) {
+  let [t, setT] = g.useState(`All`);
+  let [r, setR] = g.useState(``);
+  let [h, setH] = g.useState(() => new Set(y.filter(e => e.connected).map(e => e.id)));
+  let [b, setB] = g.useState(() => new Set());
+  let [E, setE] = g.useState(() => new Set());
+  let [open, setOpen] = g.useState(false);
+  let [A, setA] = g.useState(``);
+  let [M, N] = __1();
+  let P = e => {
+    if (!b.has(e.id)) {
+      if (h.has(e.id)) {
+        setH(t => new Set([...t].filter(t => t !== e.id)));
+        N(`${e.name} disconnected`);
+        return;
+      }
+      setB(t => new Set(t).add(e.id));
+      window.setTimeout(() => {
+        setB(t => new Set([...t].filter(t => t !== e.id)));
+        setH(t => new Set(t).add(e.id));
+        N(`${e.name} connected`);
+      }, 900);
+    }
+  };
+  let F = r.trim().toLowerCase();
+  let I = e => (t === `All` || t === `Connected` === h.has(e.id)) && (!F || `${e.name} ${e.vendor} ${e.description}`.toLowerCase().includes(F));
+  let L = t !== `All` || !!F;
+  let R = x.map(e => {
+    let t = L || E.has(e.title);
+    return {
+      ...e,
+      items: (t ? [...e.items, ...e.more] : e.items).filter(I),
+      more: t ? [] : e.more
+    };
+  }).filter(e => e.items.length > 0);
+  return <F1 active={`Integrations`} {...e}><style href={`ui-screen-integrations`} precedence={`default`}>{T}</style><div className={`ui-as-integrations`}><h1 className={`ui-as-page-title`}>{`Integrations`}</h1><p className={`ui-as-page-sub`}>{`Connect the tools your team already uses and work with them right in the chat.`}</p><div className={`ui-as-toolbar ui-as-integrations__bar`}><U items={[`All`, `Connected`, `Available`]} value={t} onChange={setT} /><div className={`ui-as-toolbar__right`}><P1 placeholder={`Search integrations`} width={254} value={r} onChange={setR} /><span className={`ui-as-anchor`}><I1 size={`sm`} icon=<L1 icon={icon_2} size={15} /> onClick={() => setOpen(e => !e)}>{`Request`}</I1><C1 open={open} onClose={() => setOpen(false)} align={`end`} className={`ui-as-menu ui-as-request`}><form onSubmit={e => {
+                e.preventDefault();
+                if (A.trim()) {
+                  setOpen(false);
+                  setA(``);
+                  N(`Request sent – thanks!`);
+                }
+              }}><b>{`Request an integration`}</b><span>{`Which tool should we add next?`}</span><input autoFocus value={A} placeholder={`e.g. Pipedrive`} aria-label={`Tool name`} onChange={e => setA(e.target.value)} /><I1 size={`sm`} type={`submit`} disabled={!A.trim()}>{`Send request`}</I1></form></C1></span></div></div><div key={`${t}|${F}`}>{R.length === 0 && <div className={`ui-as-rise ui-as-int-empty`}><D1 title={`No integrations found`} text={F ? `Nothing matches “${r}”.` : `Nothing connected yet – add one from All.`} /></div>}{R.map((e, t) => <section key={e.title} className={`ui-as-int-section ui-as-rise`} style={{
+          "--i": t
+        }}><h2 className={`ui-as-int-section__title`}>{e.title}</h2><div className={`ui-as-int-grid`}>{e.items.map((e, t) => <WComponent key={e.id} app={e} fresh={t >= 6} state={b.has(e.id) ? `busy` : h.has(e.id) ? `on` : `off`} onToggle={() => P(e)} />)}</div>{e.more.length > 0 && <button type={`button`} className={`ui-as-int-more`} onClick={() => setE(t => new Set(t).add(e.title))}><span className={`ui-as-int-more__logos`} aria-hidden={`true`}>{e.more.slice(0, 3).map(e => <CComponent key={e.id} app={e} />)}</span>{e.more[0].name}{`, `}{e.more[1].name}{` and `}{e.more.length - 2}{` more`}<L1 icon={icon_1} size={14} /></button>}</section>)}</div></div>{M}</F1>;
+}
+function CComponent({
+  app
+}) {
+  return <span className={`ui-as-int-logo`} style={app.tile ? {
+    background: app.tile,
+    boxShadow: `none`
+  } : undefined}>{app.logo}</span>;
+}
+function WComponent({
+  app,
+  state,
+  onToggle,
+  fresh
+}) {
+  return <div className={fresh ? `ui-as-int-row ui-as-rise` : `ui-as-int-row`}><CComponent app={app} /><span className={`ui-as-int-row__text`}><span className={`ui-as-int-row__name`}>{app.name}{app.essential && <span className={`ui-as-int-row__badge`} title={`Official`}><L1 icon={icon} size={14} /></span>}</span><span className={`ui-as-int-row__desc`}>{app.description}</span></span><button type={`button`} className={`ui-as-int-add`} data-state={state} aria-label={state === `on` ? `Disconnect ${app.name}` : `Connect ${app.name}`} title={state === `on` ? `Connected – click to disconnect` : `Connect`} onClick={onToggle}>{state === `busy` ? <span className={`ui-as-spinner`} /> : <L1 key={state} icon={state === `on` ? y_1 : icon_2} size={15} />}</button></div>;
+}
+var T = `.ui-as-integrations{width: min(957px, calc(100% - 64px));margin: 0 auto;padding: 40px 0 64px}.ui-as-integrations__bar{position: sticky;top: 0;z-index: 5;margin: 14px -16px 0;padding: 26px 16px 12px;background: var(--panel)}.ui-as-integrations__bar::after{content: "";position: absolute;left: 0;right: 0;top: 100%;height: 32px;background: linear-gradient(to bottom, var(--panel), transparent);pointer-events: none}.ui-as-int-section{margin-top: 38px}.ui-as-int-section + .ui-as-int-section{margin-top: 46px}.ui-as-int-section__title{margin: 0;font-size: 15px;line-height: 20px;font-weight: 500;color: var(--ink)}.ui-as-int-grid{display: grid;grid-template-columns: repeat(2, minmax(0, 1fr));column-gap: 32px;margin-top: 12px}.ui-as-int-row{display: flex;align-items: center;gap: 12px;height: 58px;margin: 0 -8px;padding: 0 8px;border-radius: 12px;transition: background-color 140ms ease}.ui-as-int-row:hover{background: var(--subtle)}.ui-as-int-logo{display: grid;place-items: center;flex: none;width: 30px;height: 30px;border-radius: 8px;background: var(--card);box-shadow: 0 0 0 1px var(--line), var(--shadow)}.ui-as-int-logo svg{width: 17px;height: 17px}.ui-as-int-row__text{display: grid;gap: 2px;flex: 1;min-width: 0}.ui-as-int-row__name{display: flex;align-items: center;gap: 5px;font-size: 14px;line-height: 19px;font-weight: 500;color: var(--ink)}.ui-as-int-row__badge{display: grid;color: var(--faint)}.ui-as-int-row__desc{overflow: hidden;font-size: 13px;line-height: 18px;color: var(--muted);white-space: nowrap;text-overflow: ellipsis}.ui-as-int-add{display: grid;place-items: center;flex: none;width: 28px;height: 28px;border-radius: 8px;background: var(--card);box-shadow: 0 0 0 1px var(--line), var(--shadow);color: var(--text);transition: box-shadow 140ms ease, background-color 160ms ease, color 160ms ease}.ui-as-int-add:hover{box-shadow: 0 0 0 1px var(--line-strong), var(--shadow);color: var(--ink)}.ui-as-int-add svg{animation: ui-as-pop 260ms var(--ease)}.ui-as-int-add[data-state="on"]{background: var(--ink);box-shadow: none;color: var(--on-ink)}.ui-as-int-add[data-state="on"]:hover{background: var(--ink-hover);color: var(--on-ink)}.ui-as-spinner{width: 14px;height: 14px;border: 2px solid var(--line);border-top-color: var(--ink);border-radius: 50%;animation: ui-as-spin 700ms linear infinite}@keyframes ui-as-spin{to{transform: rotate(360deg)}}.ui-as-int-empty{margin-top: 24px}.ui-as-request{width: 260px;padding: 14px}.ui-as-request form{display: grid;gap: 6px}.ui-as-request b{font-size: 13.5px;font-weight: 500;color: var(--ink)}.ui-as-request span{font-size: 12.5px;color: var(--muted)}.ui-as-request input{height: 34px;margin: 6px 0 4px;padding: 0 10px;border: 0;border-radius: 9px;background: var(--card);box-shadow: 0 0 0 1px var(--line);font: inherit;font-size: 13px;color: var(--ink);outline: none}.ui-as-request input:focus{box-shadow: 0 0 0 1px var(--line-strong), 0 0 0 3px rgba(0, 0, 0, 0.04)}.ui-as-int-more{display: inline-flex;align-items: center;gap: 10px;margin-top: 8px;padding: 4px 8px 4px 4px;border-radius: 10px;font-size: 13.5px;color: var(--text);transition: background-color 140ms ease}.ui-as-int-more:hover{background: var(--chip)}.ui-as-int-more > svg{color: var(--faint)}.ui-as-int-more__logos{display: flex;padding: 3px;border-radius: 9px;background: var(--card);box-shadow: 0 0 0 1px var(--line), var(--shadow)}.ui-as-int-more__logos .ui-as-int-logo{width: 20px;height: 20px;border-radius: 6px;box-shadow: 0 0 0 1px var(--line)}.ui-as-int-more__logos .ui-as-int-logo + .ui-as-int-logo{margin-left: 3px}.ui-as-int-more__logos .ui-as-int-logo svg{width: 12px;height: 12px}@container ui-as-main (max-width: 760px){.ui-as-int-grid{grid-template-columns: minmax(0, 1fr)}}@container ui-as (max-width: 900px){.ui-as-integrations{width: calc(100% - 48px)}}@container ui-as (max-width: 600px){.ui-as-integrations{width: calc(100% - 32px);padding: 52px 0 48px}.ui-as-integrations__bar{margin: 8px -12px 0;padding: 18px 12px 10px}.ui-as-int-section{margin-top: 30px}.ui-as-int-section + .ui-as-int-section{margin-top: 36px}.ui-as-int-more{flex-wrap: wrap;text-align: left}.ui-as-integrations__bar .ui-as-toolbar__right{display: contents}.ui-as-integrations__bar .ui-as-anchor{margin-left: auto}}`;
+function EComponent() {
+  return <N1><SComponent onNavigate={onNavigate} /></N1>;
+}
+export { EComponent as default };

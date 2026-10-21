@@ -1,1 +1,36 @@
-import{a as o}from"../shared/chunk-QSPUME3E.js";import"../shared/chunk-S4QSEUXY.js";import"../shared/chunk-VI7B5XRA.js";import"../shared/chunk-RYDG3NLS.js";import"../shared/chunk-YUN7DIOG.js";import"../shared/chunk-O7KCL7YY.js";import"../shared/chunk-VSRYL3VV.js";import"../shared/chunk-GLKTGB6H.js";import"../shared/chunk-XI3RBFDE.js";import"../shared/chunk-T6MNPOXD.js";import"../shared/chunk-ZWLINIHO.js";import"../shared/chunk-QWDTD2G2.js";import"../shared/chunk-LNXHCXDY.js";import"../shared/chunk-B5YVTSUR.js";import"../shared/chunk-XJEQMMP6.js";import"../shared/chunk-BBLBVXTT.js";import{a as c}from"../shared/chunk-PWBCLQI6.js";import{a as m}from"../shared/chunk-LKG2PFLG.js";import"../shared/chunk-H7MXNYVQ.js";import{b as e}from"../shared/chunk-MOQMIKSW.js";var t=e(m()),r=e(c());(0,r.createRoot)(document.getElementById("root")).render(t.default.createElement(o));
+import {
+  H
+} from "../shared/chunk-DTN3O5VN.js";
+import "../shared/chunk-GQO2X72X.js";
+import "../shared/chunk-M3H3T3W5.js";
+import "../shared/chunk-3R32IMQQ.js";
+import "../shared/chunk-AI2CBFFJ.js";
+import "../shared/chunk-WYF7BKSQ.js";
+import "../shared/chunk-CT2IJ575.js";
+import "../shared/chunk-2QFMHGA6.js";
+import "../shared/chunk-OWVT3G6X.js";
+import "../shared/chunk-4YLIT7JM.js";
+import "../shared/chunk-UOO4RA3A.js";
+import "../shared/chunk-WFGXI776.js";
+import "../shared/chunk-BGGGYJPT.js";
+import "../shared/chunk-OLSFNPAI.js";
+import {
+  init_original_react,
+  original_react_default,
+  require_client
+} from "../shared/chunk-TISG53JG.js";
+import "../shared/chunk-C7RUFYJH.js";
+import "../shared/chunk-Y3JEZZ7A.js";
+import "../shared/chunk-IV3FP5QI.js";
+import {
+  __toESM
+} from "../shared/chunk-CTH3ASD6.js";
+
+// entries/original-analytics.js
+init_original_react();
+var import_client = __toESM(require_client());
+var root = (0, import_client.createRoot)(document.getElementById("demo"));
+var generation = 0;
+window.__resetDemo = () => root.render(original_react_default.createElement(H, { key: ++generation }));
+window.__resetDemo();
+window.__entryReady = true;

@@ -1,0 +1,71 @@
+import "./chunk-CTH3ASD6.js";
+
+// reconstructed/docs.clean-DPoM2rqj.jsx
+var docs = {
+  requirements: [`React 19`],
+  whenToUse: [`A \u2318K menu that runs actions across the tools your product connects to`, `Power users who want to reach any page or action without the mouse`],
+  whenNotToUse: [`The only way to reach something \u2013 keep the main navigation visible as well`, `Fewer than five actions \u2013 buttons are easier to discover`],
+  usage: `import { CommandMenu, type CommandGroup } from "@/components/ui/command-menu-clean";
+
+export function Commands({ onClose }: { onClose: () => void }) {
+  return (
+    <CommandMenu
+      autoFocus
+      onClose={onClose}
+      onRun={(id, query) => (id === "ask" ? askAssistant(query) : runCommand(id))}
+    />
+  );
+}`,
+  props: [{
+    name: `groups`,
+    type: `CommandGroup[]`,
+    default: `Suggestions, Share, General, Go to`,
+    description: `Each { id, label, commands: { id, label, hint?, logo? | icon?, keys?, keywords? }[] }; the group with id "suggestions" gets \u23181\u2013\u23185`
+  }, {
+    name: `placeholder`,
+    type: `string`,
+    default: `"Type a command or search\u2026"`,
+    description: `Text in the empty field`
+  }, {
+    name: `onRun`,
+    type: `(id: string, query?: string) => void`,
+    description: `Called when a command runs; the assistant fallback sends "ask" and the typed text`
+  }, {
+    name: `onClose`,
+    type: `() => void`,
+    description: `Runs on Esc in an empty field \u2013 close your dialog here`
+  }, {
+    name: `autoFocus`,
+    type: `boolean`,
+    description: `Focus the field when the menu appears`
+  }, {
+    name: `className`,
+    type: `string`,
+    description: `Extra class on the root`
+  }],
+  keyboard: [{
+    keys: [`\u2191`, `\u2193`],
+    description: `Move row by row through all sections`
+  }, {
+    keys: [`\u21B5`],
+    description: `Run the highlighted command`
+  }, {
+    keys: [`Tab`],
+    description: `Jump to the next section (Shift Tab goes back)`
+  }, {
+    keys: [`\u2318`, `1\u20135`],
+    description: `Run a suggestion straight away (Ctrl on Windows)`
+  }, {
+    keys: [`Esc`],
+    description: `Clear the field, then close`
+  }, {
+    keys: [`\u2318`, `K`],
+    description: `Focus the field from anywhere`
+  }],
+  accessibility: [`The field is a combobox that controls the list; the highlighted command is the active option`, `Groups are labelled, shortcut keys are hidden from screen readers`, `What just ran is announced in a polite live region`],
+  motion: [`A light gray highlight follows the active row with a short, crisp move and fades out when the pointer leaves the list`, `The row that runs gives a short press; a check and its name appear in the last row of the panel`, `With prefers-reduced-motion everything switches instantly`],
+  responsive: [`Fills its container up to 600px; on phones shortcut keys and hints are left out`, `Dark mode built in: switches when an ancestor (usually <html>) has the class dark or data-theme="dark"`]
+};
+export {
+  docs
+};
