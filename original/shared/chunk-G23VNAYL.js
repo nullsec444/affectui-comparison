@@ -1,0 +1,1 @@
+import{a as t}from"./chunk-OIM5XGVA.js";import{a as r}from"./chunk-H7MXNYVQ.js";var i=r();function n(){return(0,i.jsx)("div",{className:"integration-grid-demo",children:(0,i.jsx)(t,{})})}export{n as a};

@@ -1,0 +1,1 @@
+import{ha as e}from"./chunk-UKGUB75L.js";import"./chunk-XJEQMMP6.js";import"./chunk-BBLBVXTT.js";import{a as r}from"./chunk-VXCLO5JM.js";import"./chunk-LKG2PFLG.js";import"./chunk-KHKHHDEU.js";import"./chunk-MOQMIKSW.js";var o=r();function a(){return(0,o.jsx)("div",{className:"glass-folder-demo",children:(0,o.jsx)(e,{})})}export{a as default};

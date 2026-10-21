@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>permission-request.clean — affectUI comparison</title><style>
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body { margin: 0; font: 15px/1.5 ui-sans-serif, -apple-system, "Segoe UI", sans-serif; color: #111; background: #fff; }
+header { position: sticky; top: 0; z-index: 10; display: flex; gap: 16px; align-items: center;
+  padding: 12px 20px; background: #fff; border-bottom: 1px solid #e6e6e6; }
+header b { font-size: 13px; letter-spacing: .06em; text-transform: uppercase; }
+header a { color: #111; text-decoration: none; opacity: .55; font-size: 13px; }
+header a:hover { opacity: 1; }
+.wrap { padding: 24px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; }
+.card { display: block; padding: 12px 14px; border: 1px solid #e6e6e6; border-radius: 10px;
+  color: #111; text-decoration: none; font-size: 14px; }
+.card:hover { border-color: #111; }
+.card small { display: block; color: #888; font-size: 11px; margin-top: 2px; }
+input[type=search] { flex: 1; max-width: 380px; padding: 8px 12px; border: 1px solid #ddd;
+  border-radius: 8px; font-size: 14px; outline: none; }
+input[type=search]:focus { border-color: #111; }
+.stage { min-height: 60vh; padding: 32px; border: 1px solid #eee; border-radius: 12px; margin-bottom: 24px; }
+pre { background: #0d0d0d; color: #e8e8e8; padding: 18px; border-radius: 12px; overflow: auto;
+  font: 12px/1.55 ui-monospace, SFMono-Regular, Menlo, monospace; max-height: 70vh; white-space: pre; }
+.toolbar { display: flex; gap: 10px; align-items: center; margin-bottom: 12px; }
+button { padding: 7px 12px; border: 1px solid #111; background: #111; color: #fff; border-radius: 8px;
+  font-size: 13px; cursor: pointer; }
+.pill { font-size: 11px; padding: 2px 8px; border-radius: 99px; background: #f0f0f0; color: #555; }
+.muted { color: #888; font-size: 12px; }
+</style></head>
+<body>
+<header><b>affectUI comparison</b><a href="../index.html">← all</a><span class="pill">permission-request.clean</span><span class="muted">38 KB source</span></header>
+<div class="wrap">
+  <div class="toolbar" role="group" aria-label="Версия компонента"><button id="original" aria-pressed="true">Оригинал</button><button id="reconstructed" aria-pressed="false">Реконструкция</button><span id="mode">Оригинальный демо-бандл</span></div><iframe id="preview" title="Component preview" src="original-frame.html" style="width:100%;height:740px;border:1px solid #eee;border-radius:12px;background:white"></iframe>
+  <div class="toolbar"><button id="cb">copy source</button><a class="pill" href="source.tsx.txt" target="_blank">open .tsx</a></div>
+  <pre id="src">loading…</pre>
+</div>
+<script>
+const frame=document.getElementById('preview');
+for(const mode of ['original','reconstructed']) document.getElementById(mode).onclick=()=>{frame.src=mode+'-frame.html';for(const x of ['original','reconstructed']){const b=document.getElementById(x);b.setAttribute('aria-pressed',String(x===mode));b.style.opacity=x===mode?'1':'.4';}document.getElementById('mode').textContent=mode==='original'?'Оригинальный демо-бандл':'Сборка восстановленного TSX';};
+document.getElementById('reconstructed').style.opacity='.4';
+</script>
+<script>
+fetch("source.tsx.txt").then(r => r.text()).then(t => { document.getElementById("src").textContent = t;
+  document.getElementById("cb").onclick = () => navigator.clipboard.writeText(t); });
+</script>
+</body></html>

@@ -1,0 +1,10 @@
+"use client";
+
+import { t as e } from "./jsx-runtime-CTsRTJUX.js";
+import { t } from "./component-MWY_GX0G.js";
+/* empty css             */
+var n = e();
+function r() {
+  return <div className={`chat-composer-demo`} onClick={e => e.stopPropagation()}>{(0, n.jsx)(t, {})}</div>;
+}
+export { r as default };

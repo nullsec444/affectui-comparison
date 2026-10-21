@@ -1,0 +1,1 @@
+import{a as r}from"./chunk-6P7K4TAZ.js";import"./chunk-BBLBVXTT.js";import{a as o}from"./chunk-VXCLO5JM.js";import"./chunk-LKG2PFLG.js";import"./chunk-KHKHHDEU.js";import"./chunk-MOQMIKSW.js";var t=o();function i(){return(0,t.jsx)("div",{className:"chat-composer-demo",onClick:a=>a.stopPropagation(),children:(0,t.jsx)(r,{})})}export{i as default};

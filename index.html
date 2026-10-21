@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>affectUI — reversed components</title><style>
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body { margin: 0; font: 15px/1.5 ui-sans-serif, -apple-system, "Segoe UI", sans-serif; color: #111; background: #fff; }
+header { position: sticky; top: 0; z-index: 10; display: flex; gap: 16px; align-items: center;
+  padding: 12px 20px; background: #fff; border-bottom: 1px solid #e6e6e6; }
+header b { font-size: 13px; letter-spacing: .06em; text-transform: uppercase; }
+header a { color: #111; text-decoration: none; opacity: .55; font-size: 13px; }
+header a:hover { opacity: 1; }
+.wrap { padding: 24px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; }
+.card { display: block; padding: 12px 14px; border: 1px solid #e6e6e6; border-radius: 10px;
+  color: #111; text-decoration: none; font-size: 14px; }
+.card:hover { border-color: #111; }
+.card small { display: block; color: #888; font-size: 11px; margin-top: 2px; }
+input[type=search] { flex: 1; max-width: 380px; padding: 8px 12px; border: 1px solid #ddd;
+  border-radius: 8px; font-size: 14px; outline: none; }
+input[type=search]:focus { border-color: #111; }
+.stage { min-height: 60vh; padding: 32px; border: 1px solid #eee; border-radius: 12px; margin-bottom: 24px; }
+pre { background: #0d0d0d; color: #e8e8e8; padding: 18px; border-radius: 12px; overflow: auto;
+  font: 12px/1.55 ui-monospace, SFMono-Regular, Menlo, monospace; max-height: 70vh; white-space: pre; }
+.toolbar { display: flex; gap: 10px; align-items: center; margin-bottom: 12px; }
+button { padding: 7px 12px; border: 1px solid #111; background: #111; color: #fff; border-radius: 8px;
+  font-size: 13px; cursor: pointer; }
+.pill { font-size: 11px; padding: 2px 8px; border-radius: 99px; background: #f0f0f0; color: #555; }
+.muted { color: #888; font-size: 12px; }
+</style></head>
+<body>
+<header><b>affectUI comparison</b><input type="search" id="q" placeholder="filter 168 components…" autofocus></header>
+<div class="wrap"><p>Оригинал ↔ Реконструкция. Переключатель внутри каждой карточки. Оригинал — опубликованный JS демо; реконструкция — сборка восстановленного TSX, не авторские исходники.</p><div class="grid" id="grid"><a class="card" href="agent-chat/index.html">agent-chat<small>38 KB · tsx</small></a>
+<a class="card" href="agent-cursors/index.html">agent-cursors<small>65 KB · tsx</small></a>
+<a class="card" href="agent-cursors.clean/index.html">agent-cursors.clean<small>73 KB · tsx</small></a>
+<a class="card" href="agent-gallery/index.html">agent-gallery<small>22 KB · tsx</small></a>
+<a class="card" href="agent-inbox/index.html">agent-inbox<small>24 KB · tsx</small></a>
+<a class="card" href="agent-inbox.clean/index.html">agent-inbox.clean<small>23 KB · tsx</small></a>
+<a class="card" href="agent-lanes/index.html">agent-lanes<small>37 KB · tsx</small></a>
+<a class="card" href="agent-lanes.clean/index.html">agent-lanes.clean<small>38 KB · tsx</small></a>
+<a class="card" href="agent-plan/index.html">agent-plan<small>3 KB · tsx</small></a>
+<a class="card" href="agent-plan.clean/index.html">agent-plan.clean<small>36 KB · tsx</small></a>
+<a class="card" href="agent-run/index.html">agent-run<small>27 KB · tsx</small></a>
+<a class="card" href="agent-steering/index.html">agent-steering<small>24 KB · tsx</small></a>
+<a class="card" href="agent-steering.clean/index.html">agent-steering.clean<small>25 KB · tsx</small></a>
+<a class="card" href="agent-team/index.html">agent-team<small>22 KB · tsx</small></a>
+<a class="card" href="agent-tree/index.html">agent-tree<small>45 KB · tsx</small></a>
+<a class="card" href="agent-tree.clean/index.html">agent-tree.clean<small>46 KB · tsx</small></a>
+<a class="card" href="ai-answer/index.html">ai-answer<small>38 KB · tsx</small></a>
+<a class="card" href="ai-answer.clean/index.html">ai-answer.clean<small>36 KB · tsx</small></a>
+<a class="card" href="ai-workspace/index.html">ai-workspace<small>39 KB · tsx</small></a>
+<a class="card" href="analytics/index.html">analytics<small>16 KB · tsx</small></a>
+<a class="card" href="app-directory/index.html">app-directory<small>46 KB · tsx</small></a>
+<a class="card" href="app-shell/index.html">app-shell<small>0 KB · tsx</small></a>
+<a class="card" href="app-shell-flat/index.html">app-shell-flat<small>1 KB · tsx</small></a>
+<a class="card" href="approval-card/index.html">approval-card<small>2 KB · tsx</small></a>
+<a class="card" href="approval-card.clean/index.html">approval-card.clean<small>23 KB · tsx</small></a>
+<a class="card" href="assistant-home/index.html">assistant-home<small>0 KB · tsx</small></a>
+<a class="card" href="autonomy-dial/index.html">autonomy-dial<small>24 KB · tsx</small></a>
+<a class="card" href="autonomy-dial.clean/index.html">autonomy-dial.clean<small>24 KB · tsx</small></a>
+<a class="card" href="billing-schedule/index.html">billing-schedule<small>21 KB · tsx</small></a>
+<a class="card" href="billing-schedule.clean/index.html">billing-schedule.clean<small>24 KB · tsx</small></a>
+<a class="card" href="blur-crossfade/index.html">blur-crossfade<small>6 KB · tsx</small></a>
+<a class="card" href="breakdown-chart/index.html">breakdown-chart<small>2 KB · tsx</small></a>
+<a class="card" href="breakdown-chart.clean/index.html">breakdown-chart.clean<small>24 KB · tsx</small></a>
+<a class="card" href="button/index.html">button<small>6 KB · tsx</small></a>
+<a class="card" href="button.clean/index.html">button.clean<small>16 KB · tsx</small></a>
+<a class="card" href="change-summary/index.html">change-summary<small>6 KB · tsx</small></a>
+<a class="card" href="change-summary.clean/index.html">change-summary.clean<small>7 KB · tsx</small></a>
+<a class="card" href="chat-composer/index.html">chat-composer<small>0 KB · tsx</small></a>
+<a class="card" href="chat-composer.clean/index.html">chat-composer.clean<small>44 KB · tsx</small></a>
+<a class="card" href="cited-answer/index.html">cited-answer<small>24 KB · tsx</small></a>
+<a class="card" href="cited-answer.clean/index.html">cited-answer.clean<small>28 KB · tsx</small></a>
+<a class="card" href="client-context/index.html">client-context<small>49 KB · tsx</small></a>
+<a class="card" href="combobox/index.html">combobox<small>25 KB · tsx</small></a>
+<a class="card" href="combobox.clean/index.html">combobox.clean<small>27 KB · tsx</small></a>
+<a class="card" href="command-menu/index.html">command-menu<small>24 KB · tsx</small></a>
+<a class="card" href="command-menu.clean/index.html">command-menu.clean<small>25 KB · tsx</small></a>
+<a class="card" href="comment-thread/index.html">comment-thread<small>16 KB · tsx</small></a>
+<a class="card" href="comment-thread.clean/index.html">comment-thread.clean<small>19 KB · tsx</small></a>
+<a class="card" href="comments-panel/index.html">comments-panel<small>17 KB · tsx</small></a>
+<a class="card" href="comments-panel.clean/index.html">comments-panel.clean<small>20 KB · tsx</small></a>
+<a class="card" href="compact-breakdown/index.html">compact-breakdown<small>15 KB · tsx</small></a>
+<a class="card" href="compact-breakdown.clean/index.html">compact-breakdown.clean<small>16 KB · tsx</small></a>
+<a class="card" href="context-window/index.html">context-window<small>25 KB · tsx</small></a>
+<a class="card" href="context-window.clean/index.html">context-window.clean<small>28 KB · tsx</small></a>
+<a class="card" href="cover-flow/index.html">cover-flow<small>18 KB · tsx</small></a>
+<a class="card" href="crm/index.html">crm<small>29 KB · tsx</small></a>
+<a class="card" href="data-table/index.html">data-table<small>4 KB · tsx</small></a>
+<a class="card" href="data-table.clean/index.html">data-table.clean<small>35 KB · tsx</small></a>
+<a class="card" href="date-range-picker/index.html">date-range-picker<small>25 KB · tsx</small></a>
+<a class="card" href="date-range-picker.clean/index.html">date-range-picker.clean<small>26 KB · tsx</small></a>
+<a class="card" href="decision-inbox/index.html">decision-inbox<small>9 KB · tsx</small></a>
+<a class="card" href="decision-inbox.clean/index.html">decision-inbox.clean<small>11 KB · tsx</small></a>
+<a class="card" href="delegate-board/index.html">delegate-board<small>38 KB · tsx</small></a>
+<a class="card" href="delegate-board.clean/index.html">delegate-board.clean<small>39 KB · tsx</small></a>
+<a class="card" href="dropzone/index.html">dropzone<small>21 KB · tsx</small></a>
+<a class="card" href="dropzone.clean/index.html">dropzone.clean<small>24 KB · tsx</small></a>
+<a class="card" href="email-draft/index.html">email-draft<small>20 KB · tsx</small></a>
+<a class="card" href="email-draft.clean/index.html">email-draft.clean<small>23 KB · tsx</small></a>
+<a class="card" href="empty-calendar/index.html">empty-calendar<small>6 KB · tsx</small></a>
+<a class="card" href="enrichment-orbit/index.html">enrichment-orbit<small>7 KB · tsx</small></a>
+<a class="card" href="evals/index.html">evals<small>35 KB · tsx</small></a>
+<a class="card" href="experiment-card/index.html">experiment-card<small>21 KB · tsx</small></a>
+<a class="card" href="experiment-card.clean/index.html">experiment-card.clean<small>22 KB · tsx</small></a>
+<a class="card" href="files/index.html">files<small>9 KB · tsx</small></a>
+<a class="card" href="filter-menu/index.html">filter-menu<small>1 KB · tsx</small></a>
+<a class="card" href="filter-menu.clean/index.html">filter-menu.clean<small>17 KB · tsx</small></a>
+<a class="card" href="folder/index.html">folder<small>11 KB · tsx</small></a>
+<a class="card" href="frost-cloud/index.html">frost-cloud<small>10 KB · tsx</small></a>
+<a class="card" href="ghosted-chat/index.html">ghosted-chat<small>7 KB · tsx</small></a>
+<a class="card" href="glass-folder/index.html">glass-folder<small>0 KB · tsx</small></a>
+<a class="card" href="glow-cloud/index.html">glow-cloud<small>10 KB · tsx</small></a>
+<a class="card" href="glow-keyboard/index.html">glow-keyboard<small>24 KB · tsx</small></a>
+<a class="card" href="gradient-floor/index.html">gradient-floor<small>5 KB · tsx</small></a>
+<a class="card" href="gradient-text/index.html">gradient-text<small>3 KB · tsx</small></a>
+<a class="card" href="grid-background/index.html">grid-background<small>4 KB · tsx</small></a>
+<a class="card" href="inline-diff/index.html">inline-diff<small>1 KB · tsx</small></a>
+<a class="card" href="inline-diff.clean/index.html">inline-diff.clean<small>25 KB · tsx</small></a>
+<a class="card" href="integration-beam/index.html">integration-beam<small>24 KB · tsx</small></a>
+<a class="card" href="integration-flow/index.html">integration-flow<small>40 KB · tsx</small></a>
+<a class="card" href="integration-grid/index.html">integration-grid<small>0 KB · tsx</small></a>
+<a class="card" href="integration-picker/index.html">integration-picker<small>27 KB · tsx</small></a>
+<a class="card" href="integration-picker.clean/index.html">integration-picker.clean<small>30 KB · tsx</small></a>
+<a class="card" href="integration-settings/index.html">integration-settings<small>20 KB · tsx</small></a>
+<a class="card" href="integration-settings.clean/index.html">integration-settings.clean<small>23 KB · tsx</small></a>
+<a class="card" href="integrations/index.html">integrations<small>34 KB · tsx</small></a>
+<a class="card" href="invoice-credit/index.html">invoice-credit<small>20 KB · tsx</small></a>
+<a class="card" href="kpi-board/index.html">kpi-board<small>29 KB · tsx</small></a>
+<a class="card" href="kpi-chart/index.html">kpi-chart<small>1 KB · tsx</small></a>
+<a class="card" href="kpi-chart.clean/index.html">kpi-chart.clean<small>11 KB · tsx</small></a>
+<a class="card" href="layer-stack/index.html">layer-stack<small>8 KB · tsx</small></a>
+<a class="card" href="lead-sourcing/index.html">lead-sourcing<small>12 KB · tsx</small></a>
+<a class="card" href="logo-cluster/index.html">logo-cluster<small>28 KB · tsx</small></a>
+<a class="card" href="logo-marquee/index.html">logo-marquee<small>21 KB · tsx</small></a>
+<a class="card" href="memory-panel/index.html">memory-panel<small>32 KB · tsx</small></a>
+<a class="card" href="memory-panel.clean/index.html">memory-panel.clean<small>35 KB · tsx</small></a>
+<a class="card" href="message-actions/index.html">message-actions<small>25 KB · tsx</small></a>
+<a class="card" href="message-actions.clean/index.html">message-actions.clean<small>27 KB · tsx</small></a>
+<a class="card" href="metrics-dashboard/index.html">metrics-dashboard<small>27 KB · tsx</small></a>
+<a class="card" href="model-picker/index.html">model-picker<small>25 KB · tsx</small></a>
+<a class="card" href="model-picker.clean/index.html">model-picker.clean<small>26 KB · tsx</small></a>
+<a class="card" href="model-wheel/index.html">model-wheel<small>16 KB · tsx</small></a>
+<a class="card" href="notification-stack/index.html">notification-stack<small>10 KB · tsx</small></a>
+<a class="card" href="notification-stack.clean/index.html">notification-stack.clean<small>11 KB · tsx</small></a>
+<a class="card" href="number-ticker/index.html">number-ticker<small>6 KB · tsx</small></a>
+<a class="card" href="onboarding/index.html">onboarding<small>41 KB · tsx</small></a>
+<a class="card" href="otp-input/index.html">otp-input<small>22 KB · tsx</small></a>
+<a class="card" href="otp-input.clean/index.html">otp-input.clean<small>22 KB · tsx</small></a>
+<a class="card" href="outreach-branches/index.html">outreach-branches<small>12 KB · tsx</small></a>
+<a class="card" href="permission-request/index.html">permission-request<small>38 KB · tsx</small></a>
+<a class="card" href="permission-request.clean/index.html">permission-request.clean<small>38 KB · tsx</small></a>
+<a class="card" href="pricing-plans/index.html">pricing-plans<small>23 KB · tsx</small></a>
+<a class="card" href="profile-menu/index.html">profile-menu<small>10 KB · tsx</small></a>
+<a class="card" href="profile-menu.clean/index.html">profile-menu.clean<small>11 KB · tsx</small></a>
+<a class="card" href="progress-tracker/index.html">progress-tracker<small>9 KB · tsx</small></a>
+<a class="card" href="progress-tracker.clean/index.html">progress-tracker.clean<small>10 KB · tsx</small></a>
+<a class="card" href="project-card/index.html">project-card<small>19 KB · tsx</small></a>
+<a class="card" href="project-card.clean/index.html">project-card.clean<small>21 KB · tsx</small></a>
+<a class="card" href="project-flow/index.html">project-flow<small>132 KB · tsx</small></a>
+<a class="card" href="prompt-library/index.html">prompt-library<small>29 KB · tsx</small></a>
+<a class="card" href="prompt-library.clean/index.html">prompt-library.clean<small>31 KB · tsx</small></a>
+<a class="card" href="reaction-bar/index.html">reaction-bar<small>7 KB · tsx</small></a>
+<a class="card" href="reaction-bar.clean/index.html">reaction-bar.clean<small>7 KB · tsx</small></a>
+<a class="card" href="region-dach/index.html">region-dach<small>149 KB · tsx</small></a>
+<a class="card" href="segmented-control/index.html">segmented-control<small>2 KB · tsx</small></a>
+<a class="card" href="segmented-control.clean/index.html">segmented-control.clean<small>19 KB · tsx</small></a>
+<a class="card" href="settings-billing/index.html">settings-billing<small>32 KB · tsx</small></a>
+<a class="card" href="setup-guide/index.html">setup-guide<small>1 KB · tsx</small></a>
+<a class="card" href="setup-guide.clean/index.html">setup-guide.clean<small>12 KB · tsx</small></a>
+<a class="card" href="shimmer-loader/index.html">shimmer-loader<small>4 KB · tsx</small></a>
+<a class="card" href="side-folder/index.html">side-folder<small>5 KB · tsx</small></a>
+<a class="card" href="smart-recommendation/index.html">smart-recommendation<small>12 KB · tsx</small></a>
+<a class="card" href="smart-recommendation.clean/index.html">smart-recommendation.clean<small>16 KB · tsx</small></a>
+<a class="card" href="stepper-form/index.html">stepper-form<small>37 KB · tsx</small></a>
+<a class="card" href="stepper-form.clean/index.html">stepper-form.clean<small>39 KB · tsx</small></a>
+<a class="card" href="tab-overload/index.html">tab-overload<small>6 KB · tsx</small></a>
+<a class="card" href="task-board/index.html">task-board<small>32 KB · tsx</small></a>
+<a class="card" href="team-invite/index.html">team-invite<small>10 KB · tsx</small></a>
+<a class="card" href="testimonial-wall/index.html">testimonial-wall<small>17 KB · tsx</small></a>
+<a class="card" href="text-reveal/index.html">text-reveal<small>3 KB · tsx</small></a>
+<a class="card" href="thinking-loader/index.html">thinking-loader<small>0 KB · tsx</small></a>
+<a class="card" href="thinking-loader.clean/index.html">thinking-loader.clean<small>8 KB · tsx</small></a>
+<a class="card" href="thinking-state/index.html">thinking-state<small>9 KB · tsx</small></a>
+<a class="card" href="thinking-state.clean/index.html">thinking-state.clean<small>24 KB · tsx</small></a>
+<a class="card" href="tilt-card/index.html">tilt-card<small>5 KB · tsx</small></a>
+<a class="card" href="tips-panel/index.html">tips-panel<small>9 KB · tsx</small></a>
+<a class="card" href="tips-panel.clean/index.html">tips-panel.clean<small>10 KB · tsx</small></a>
+<a class="card" href="toaster/index.html">toaster<small>4 KB · tsx</small></a>
+<a class="card" href="toaster.clean/index.html">toaster.clean<small>27 KB · tsx</small></a>
+<a class="card" href="tool-call-card/index.html">tool-call-card<small>3 KB · tsx</small></a>
+<a class="card" href="tool-call-card.clean/index.html">tool-call-card.clean<small>27 KB · tsx</small></a>
+<a class="card" href="trace-waterfall/index.html">trace-waterfall<small>57 KB · tsx</small></a>
+<a class="card" href="trace-waterfall.clean/index.html">trace-waterfall.clean<small>59 KB · tsx</small></a>
+<a class="card" href="usage-meter/index.html">usage-meter<small>3 KB · tsx</small></a>
+<a class="card" href="usage-meter.clean/index.html">usage-meter.clean<small>31 KB · tsx</small></a>
+<a class="card" href="voice-orb/index.html">voice-orb<small>10 KB · tsx</small></a>
+<a class="card" href="world-map/index.html">world-map<small>41 KB · tsx</small></a>
+<a class="card" href="writing-assistant/index.html">writing-assistant<small>16 KB · tsx</small></a>
+<a class="card" href="writing-assistant.clean/index.html">writing-assistant.clean<small>19 KB · tsx</small></a></div></div>
+<script>
+const q = document.getElementById("q"), grid = document.getElementById("grid");
+q.oninput = () => { const v = q.value.toLowerCase(); for (const c of grid.children) c.style.display = c.textContent.toLowerCase().includes(v) ? "" : "none"; };
+</script>
+</body></html>

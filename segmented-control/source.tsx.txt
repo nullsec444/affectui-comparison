@@ -1,0 +1,81 @@
+"use client";
+
+import * as ReactNS from "react";
+const i = _jsxRuntime;
+const r = ReactNS;
+import * as _jsxRuntime from "react/jsx-runtime";
+/* empty css             */import { t as n } from "./component-BDo0fvGw.js";
+var a = ({
+    d: e
+  }) => <svg viewBox={`0 0 24 24`} fill={`none`} stroke={`currentColor`} strokeWidth={`1.8`} strokeLinecap={`round`} strokeLinejoin={`round`} aria-hidden={`true`}>{<path d={e} />}</svg>,
+  o = [{
+    value: `overview`,
+    label: `Overview`
+  }, {
+    value: `analytics`,
+    label: `Analytics`
+  }, {
+    value: `reports`,
+    label: `Reports`
+  }, {
+    value: `notifications`,
+    label: `Notifications`,
+    count: 3
+  }],
+  s = [{
+    value: `list`,
+    label: `List`,
+    icon: (0, i.jsx)(a, {
+      d: `M9 6h11M9 12h11M9 18h11M4.5 6h.01M4.5 12h.01M4.5 18h.01`
+    })
+  }, {
+    value: `board`,
+    label: `Board`,
+    icon: (0, i.jsx)(a, {
+      d: `M5 4h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zM15 4h4a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z`
+    })
+  }, {
+    value: `calendar`,
+    label: `Calendar`,
+    icon: (0, i.jsx)(a, {
+      d: `M8 3v3M16 3v3M4 9.5h16M6 5h12a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z`
+    })
+  }],
+  c = [{
+    value: `monthly`,
+    label: `Monthly`
+  }, {
+    value: `yearly`,
+    label: `Yearly`,
+    badge: `Save 20%`
+  }],
+  l = [`analytics`, `reports`, `notifications`, `overview`];
+function u() {
+  let [e, t] = (0, r.useState)(`overview`),
+    [a, u] = (0, r.useState)(`board`),
+    [d, f] = (0, r.useState)(`yearly`),
+    p = (0, r.useRef)([]),
+    m = (0, r.useId)(),
+    h = () => {
+      p.current.forEach(clearTimeout), p.current = [];
+    };
+  return (0, r.useEffect)(() => (p.current = l.map((e, n) => window.setTimeout(() => t(e), 1e3 + n * 1400)), h), []), <div className={`seg-demo`} onPointerDownCapture={h} onKeyDownCapture={h}>{<div className={`seg-demo__card`}>{<div className={`seg-demo__row`}>{<span className={`seg-demo__label`} id={`${m}-section`}>{`Dashboard`}</span>}{(0, i.jsx)(n, {
+          options: o,
+          value: e,
+          onChange: t,
+          "aria-labelledby": `${m}-section`
+        })}</div>}{<div className={`seg-demo__row`}>{<span className={`seg-demo__label`} id={`${m}-view`}>{`Layout`}</span>}{(0, i.jsx)(n, {
+          options: s,
+          value: a,
+          onChange: u,
+          size: `sm`,
+          "aria-labelledby": `${m}-view`
+        })}</div>}{<div className={`seg-demo__row`}>{<span className={`seg-demo__label`} id={`${m}-billing`}>{`Billing`}</span>}{(0, i.jsx)(n, {
+          options: c,
+          value: d,
+          onChange: f,
+          variant: `underline`,
+          "aria-labelledby": `${m}-billing`
+        })}</div>}</div>}</div>;
+}
+export { u as default };

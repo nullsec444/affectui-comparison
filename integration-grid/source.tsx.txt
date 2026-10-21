@@ -1,0 +1,9 @@
+"use client";
+
+import { t as e } from "./jsx-runtime-CTsRTJUX.js";
+import { IntegrationGrid as t } from "./component-WEwHkvy1.js";
+var n = e();
+function r() {
+  return <div className={`integration-grid-demo`}>{(0, n.jsx)(t, {})}</div>;
+}
+export { r as default };

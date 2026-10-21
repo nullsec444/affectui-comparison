@@ -1,0 +1,34 @@
+"use client";
+
+import { t as e } from "./jsx-runtime-CTsRTJUX.js";
+import { l as t, u as n } from "./index-C4AVl5zi.js";
+import { r, t as i } from "./component-qs8CseUl.js";
+var a = e();
+function o({
+  className: e,
+  ...t
+}) {
+  return (0, a.jsxs)(a.Fragment, {
+    children: [<style href={`ui-app-shell-flat`} precedence={`default`}>{s}</style>, (0, a.jsx)(i, {
+      ...t,
+      className: [`ui-asf`, e].filter(Boolean).join(` `)
+    })]
+  });
+}
+var s = `.ui-asf.ui-as-app{--frame-gap: 0px}.ui-asf.ui-as-app > *{--frame-gap: 0px}.ui-asf.ui-as-app > .ui-as-main{margin: 0;border: 0;border-left: 1px solid var(--line);border-radius: 0;background: var(--panel);transition: border-color 260ms ease}.ui-asf.ui-as-app[data-collapsed] > .ui-as-main{margin-left: 0;border-left-color: transparent}.ui-asf.ui-as-app > .ui-as-side{padding: 10px 10px 10px 10px}.ui-asf.ui-as-app > .ui-as-side-open{top: 10px;left: 12px}@container ui-as (max-width: 900px){.ui-asf.ui-as-app > .ui-as-main{margin: 0;border-left: 0}.ui-asf.ui-as-app > .ui-as-side{border-radius: 0;box-shadow: 1px 0 0 var(--line), 0 24px 48px -12px rgba(0, 0, 0, 0.22)}.ui-asf.ui-as-app > .ui-as-side-open{left: 12px}}@container ui-as (max-width: 600px){.ui-asf.ui-as-app > .ui-as-main{border-radius: 0}}`;
+function c() {
+  return (0, a.jsx)(t, {
+    children: (0, a.jsx)(o, {
+      active: `New chat`,
+      onNavigate: n,
+      children: <div className={`ui-as-page`}>{<h1 className={`ui-as-page-title`}>{`Overview`}</h1>}{<p className={`ui-as-page-sub`}>{`Everything in your workspace at a glance.`}</p>}{<div style={{
+          marginTop: 28
+        }}>{(0, a.jsx)(r, {
+            tall: !0,
+            title: `Your page goes here`,
+            text: `The flat shell brings the sidebar and the scroll container – put any screen inside.`
+          })}</div>}</div>
+    })
+  });
+}
+export { c as default };
