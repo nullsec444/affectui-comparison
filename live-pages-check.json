@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-10-21T21:07:28.043Z",
+  "timestamp": "2026-10-21T21:10:05.533Z",
   "base": "https://nullsec444.github.io/affectui-comparison/",
-  "sha": "e4063ed0368d67097fc4d0c7342209f8526dd673",
+  "sha": "a9103d58ee3da748f324ac81646c29853936e258",
   "routes": [
     {
       "route": "settings-billing",
-      "url": "https://nullsec444.github.io/affectui-comparison/settings-billing/?v=e4063ed0368d67097fc4d0c7342209f8526dd673",
-      "sha": "e4063ed0368d67097fc4d0c7342209f8526dd673",
+      "url": "https://nullsec444.github.io/affectui-comparison/settings-billing/?v=a9103d58ee3da748f324ac81646c29853936e258",
+      "sha": "a9103d58ee3da748f324ac81646c29853936e258",
       "viewport": {
         "width": 1280,
         "height": 900
@@ -27,16 +27,14 @@
           "controls": 27
         }
       ],
-      "errors": [
-        "Failed to load resource: the server responded with a status of 404 ()"
-      ],
+      "errors": [],
       "request_failures": [],
-      "pass": false
+      "pass": true
     },
     {
       "route": "trace-waterfall",
-      "url": "https://nullsec444.github.io/affectui-comparison/trace-waterfall/?v=e4063ed0368d67097fc4d0c7342209f8526dd673",
-      "sha": "e4063ed0368d67097fc4d0c7342209f8526dd673",
+      "url": "https://nullsec444.github.io/affectui-comparison/trace-waterfall/?v=a9103d58ee3da748f324ac81646c29853936e258",
+      "sha": "a9103d58ee3da748f324ac81646c29853936e258",
       "viewport": {
         "width": 590,
         "height": 1280
@@ -68,8 +66,8 @@
     },
     {
       "route": "agent-cursors.clean",
-      "url": "https://nullsec444.github.io/affectui-comparison/agent-cursors.clean/?v=e4063ed0368d67097fc4d0c7342209f8526dd673",
-      "sha": "e4063ed0368d67097fc4d0c7342209f8526dd673",
+      "url": "https://nullsec444.github.io/affectui-comparison/agent-cursors.clean/?v=a9103d58ee3da748f324ac81646c29853936e258",
+      "sha": "a9103d58ee3da748f324ac81646c29853936e258",
       "viewport": {
         "width": 1280,
         "height": 900
@@ -96,8 +94,8 @@
     },
     {
       "route": "agent-tree.clean",
-      "url": "https://nullsec444.github.io/affectui-comparison/agent-tree.clean/?v=e4063ed0368d67097fc4d0c7342209f8526dd673",
-      "sha": "e4063ed0368d67097fc4d0c7342209f8526dd673",
+      "url": "https://nullsec444.github.io/affectui-comparison/agent-tree.clean/?v=a9103d58ee3da748f324ac81646c29853936e258",
+      "sha": "a9103d58ee3da748f324ac81646c29853936e258",
       "viewport": {
         "width": 1280,
         "height": 900
@@ -124,8 +122,8 @@
     },
     {
       "route": "usage-meter.clean",
-      "url": "https://nullsec444.github.io/affectui-comparison/usage-meter.clean/?v=e4063ed0368d67097fc4d0c7342209f8526dd673",
-      "sha": "e4063ed0368d67097fc4d0c7342209f8526dd673",
+      "url": "https://nullsec444.github.io/affectui-comparison/usage-meter.clean/?v=a9103d58ee3da748f324ac81646c29853936e258",
+      "sha": "a9103d58ee3da748f324ac81646c29853936e258",
       "viewport": {
         "width": 1280,
         "height": 900
@@ -152,8 +150,8 @@
     },
     {
       "route": "integration-settings",
-      "url": "https://nullsec444.github.io/affectui-comparison/integration-settings/?v=e4063ed0368d67097fc4d0c7342209f8526dd673",
-      "sha": "e4063ed0368d67097fc4d0c7342209f8526dd673",
+      "url": "https://nullsec444.github.io/affectui-comparison/integration-settings/?v=a9103d58ee3da748f324ac81646c29853936e258",
+      "sha": "a9103d58ee3da748f324ac81646c29853936e258",
       "viewport": {
         "width": 1280,
         "height": 900
@@ -179,5 +177,5 @@
       "pass": true
     }
   ],
-  "pass": false
+  "pass": true
 }

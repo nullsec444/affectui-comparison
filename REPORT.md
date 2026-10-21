@@ -2,7 +2,7 @@
 
 Status: PARTIAL: full behavioural equivalence is NOT established
 
-Generated from `acceptance-results.json`; report written 2026-10-21T21:08:28.849286+00:00.
+Generated from `acceptance-results.json`; report written 2026-10-21T21:10:18.821210+00:00.
 
 ## Scope
 
@@ -52,7 +52,7 @@ Generated from `acceptance-results.json`; report written 2026-10-21T21:08:28.849
 
 ## Live comparison
 
-- Last recorded live check: 2026-10-21T21:07:28.043Z for published commit `e4063ed0368d`; pass=False over 6 route(s); evidence in live-pages-check.json.
+- Last recorded live check: 2026-10-21T21:10:05.533Z for published commit `a9103d58ee3d`; pass=True over 6 route(s); evidence in live-pages-check.json.
 - URL: https://nullsec444.github.io/affectui-comparison/
 
 ## Hosting adaptation (disclosed)
