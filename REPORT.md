@@ -2,13 +2,13 @@
 
 Status: PARTIAL: full behavioural equivalence is NOT established
 
-Generated from `acceptance-results.json`; report written 2026-10-22T12:14:39.759682+00:00.
+Generated from `acceptance-results.json`; report written 2026-10-22T12:20:35.560642+00:00.
 
 ## Scope
 
 - Canonical live catalog pinned at `current-catalog.js` (sha256 `272e920a5e885f60f9295ab4f8a12b13d7b32ed13ebd69a351121cc8e8b7cfb2`).
 - Public byte audit: 676/676 pinned files matched affectui.com; catalog entry still live: True.
-- 72 paid components, 111 paid variants (`pro: true` + every `clean` sibling). 40 free components / 57 free variants are excluded from the published index; their old directories are untouched.
+- 72 paid components, 111 paid variants (`pro: true` + every `clean` sibling). 40 free components / 57 free variants are not published.
 - Complete transitive app-owned graph: 567 JavaScript modules. Recovered with REA 6.7.0 (https://github.com/morluto/rea; Wakaru sha256 `664fa06782a6…`).
 - Recovered output is `.jsx`. No TypeScript types, original identifiers, comments or author file names are claimed recovered. Hashed chunk names are the published names.
 - The original frame replays the unmodified published chunk sources; the reconstructed frame builds only from the recovered `.jsx` graph plus official npm React/ReactDOM. The gate fails if any original app chunk appears in the reconstructed bundle inputs.
