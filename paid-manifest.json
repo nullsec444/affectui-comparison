@@ -11,7 +11,7 @@
   },
   "acceptance": {
     "source": "acceptance-results.json",
-    "sha256": "60f461294d7ccaf0d10ede4095bf228ad0db863e25b86fe150199fbba3964ea5",
+    "sha256": "e0b7b150bf4717138bfbefebcc539ca33f428000de6808f39e2009747ce56562",
     "summary": {
       "catalog_distinct": 72,
       "variants": 111,
@@ -29,8 +29,8 @@
         "build": 111,
         "hosting": 111,
         "scenario_current": 111,
-        "visual": 110,
-        "dom": 110,
+        "visual": 109,
+        "dom": 109,
         "interactions": 107
       }
     },
@@ -39,8 +39,8 @@
   "full_gate": {
     "recorded": true,
     "pass": false,
-    "command": "node determinism.cjs && node full-gate.cjs takeover-final-gate.log",
-    "log": "takeover-final-gate.log"
+    "command": "node full-gate.cjs final-gate.log",
+    "log": "final-gate.log"
   },
   "determinism": {
     "recorded": true,
@@ -197,7 +197,7 @@
       "variant": "basic",
       "route": "agent-lanes",
       "demo_chunk": "demo-CCeL1VNp.js",
-      "verification": "accepted",
+      "verification": "partial",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
@@ -207,7 +207,7 @@
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": true
+        "interactions": false
       },
       "reachable_modules": 4,
       "browser_scenario_version": 4,
@@ -220,7 +220,7 @@
       "variant": "clean",
       "route": "agent-lanes.clean",
       "demo_chunk": "demo.clean-DC3N3Pap.js",
-      "verification": "accepted",
+      "verification": "partial",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
@@ -230,7 +230,7 @@
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": true
+        "interactions": false
       },
       "reachable_modules": 4,
       "browser_scenario_version": 4,
@@ -703,7 +703,7 @@
       "variant": "clean",
       "route": "billing-schedule.clean",
       "demo_chunk": "demo.clean-dYQPE1hb.js",
-      "verification": "accepted",
+      "verification": "partial",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
@@ -711,9 +711,9 @@
         "build": true,
         "hosting": true,
         "scenario_current": true,
-        "visual": true,
-        "dom": true,
-        "interactions": true
+        "visual": false,
+        "dom": false,
+        "interactions": false
       },
       "reachable_modules": 4,
       "browser_scenario_version": 4,
@@ -726,7 +726,7 @@
       "variant": "basic",
       "route": "blur-crossfade",
       "demo_chunk": "demo-Ye53Zfy1.js",
-      "verification": "accepted",
+      "verification": "partial",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
@@ -734,9 +734,9 @@
         "build": true,
         "hosting": true,
         "scenario_current": true,
-        "visual": true,
-        "dom": true,
-        "interactions": true
+        "visual": false,
+        "dom": false,
+        "interactions": false
       },
       "reachable_modules": 4,
       "browser_scenario_version": 4,
@@ -1416,7 +1416,7 @@
       "variant": "basic",
       "route": "files",
       "demo_chunk": "demo-CUdsyn6m.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
@@ -1426,7 +1426,7 @@
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 567,
       "browser_scenario_version": 4,
@@ -1485,7 +1485,7 @@
       "variant": "basic",
       "route": "glow-keyboard",
       "demo_chunk": "demo-CfD9afHB.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
@@ -1495,7 +1495,7 @@
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
       "browser_scenario_version": 4,
@@ -1508,7 +1508,7 @@
       "variant": "basic",
       "route": "gradient-floor",
       "demo_chunk": "demo-B-TgH1P-.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
@@ -1516,9 +1516,9 @@
         "build": true,
         "hosting": true,
         "scenario_current": true,
-        "visual": false,
-        "dom": false,
-        "interactions": false
+        "visual": true,
+        "dom": true,
+        "interactions": true
       },
       "reachable_modules": 4,
       "browser_scenario_version": 4,
@@ -1692,7 +1692,7 @@
       "variant": "clean",
       "route": "integration-settings.clean",
       "demo_chunk": "demo.clean-CTC16fNW.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
@@ -1702,7 +1702,7 @@
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
       "browser_scenario_version": 4,

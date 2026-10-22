@@ -2,7 +2,7 @@
 
 Status: PARTIAL: full behavioural equivalence is NOT established
 
-Generated from `acceptance-results.json`; report written 2026-10-21T21:10:18.821210+00:00.
+Generated from `acceptance-results.json`; report written 2026-10-22T11:24:42.900568+00:00.
 
 ## Scope
 
@@ -15,44 +15,46 @@ Generated from `acceptance-results.json`; report written 2026-10-21T21:10:18.821
 
 ## Verification (from acceptance-results.json)
 
-- Acceptance record sha256 `60f461294d7ccaf0d10ede4095bf228ad0db863e25b86fe150199fbba3964ea5` (published record).
+- Acceptance record sha256 `e0b7b150bf4717138bfbefebcc539ca33f428000de6808f39e2009747ce56562` (published record).
 - Routes with recorded Chrome evidence: 111 / 111.
-- Checks passed per check: `{"build": 111, "dom": 110, "hosting": 111, "interactions": 107, "inventory": 111, "jsx_source": 111, "reachable_recovered": 111, "scenario_current": 111, "visual": 110}`.
-- Latest recorded per-route results (final full gate incomplete): 107 accepted, 4 partial, 0 blocked.
-- Interaction steps: 1252 discovered, 1250 applied, 2 with no exercisable effect, 2 not identical, 62 with no measured DOM/pixel effect in the original demo.
+- Checks passed per check: `{"build": 111, "dom": 109, "hosting": 111, "interactions": 107, "inventory": 111, "jsx_source": 111, "reachable_recovered": 111, "scenario_current": 111, "visual": 109}`.
+- Latest per-route results; no single full gate on the current harness: 107 accepted, 4 partial, 0 blocked; structural_errors=[].
+- Interaction steps: 1234 discovered, 1234 applied, 0 skipped, 7 not identical, 86 with no measured DOM/pixel effect in the original demo.
 - Acceptance requires zero differing pixels against the original frame, zero original-vs-original noise, identical serialized DOM/control state, and every enumerated control exercised.
 - Routes with original-vs-original noise (not accepted even if replay matches): 0
 - Routes with replay pixel differences: 0
-- Routes with runtime/request errors: 1: gradient-floor
+- Routes with runtime/request errors: 2: billing-schedule.clean, blur-crossfade
 - Recorded scenario: 1280x900 UTC; seeded RNG; fixed virtual epoch; epoch-aligned 16ms rAF; native CSS timeline frozen before navigation and animation phase 1200ms; all original initial controls retained with real prerequisite gestures; exact unmodified screenshot and serialized DOM comparisons. No masks or excluded unreachable controls.
 
 ## Failures
 
-- `failure-table.json` records 6 failed check(s) across 4 route(s); by check: `{"dom": 1, "interactions": 4, "visual": 1}`.
+- `failure-table.json` records 8 failed check(s) across 4 route(s); by check: `{"dom": 2, "interactions": 4, "visual": 2}`.
 - First failures (route · check · mismatch kind · proof):
-  - `files` · interactions · pixels, noise · proof: `browser-evidence/files-step-34-noise-original.png`
-  - `glow-keyboard` · interactions · noise · proof: `browser-evidence/glow-keyboard-step-0-noise-original.png`
-  - `gradient-floor` · visual · page_pixels · proof: `browser-evidence/gradient-floor.json`
-  - `gradient-floor` · dom · page_dom · proof: `browser-evidence/gradient-floor.json`
-  - `gradient-floor` · interactions · no_divergent_step · proof: `browser-evidence/gradient-floor.json`
-  - `integration-settings.clean` · interactions · step_not_equal · proof: `browser-evidence/integration-settings.clean.json`
+  - `agent-lanes` · interactions · pixels · proof: `browser-evidence/agent-lanes-step-0-original.png`
+  - `agent-lanes.clean` · interactions · noise · proof: `browser-evidence/agent-lanes.clean-step-0-noise-original.png`
+  - `billing-schedule.clean` · visual · page_pixels · proof: `browser-evidence/billing-schedule.clean.json`
+  - `billing-schedule.clean` · dom · page_dom · proof: `browser-evidence/billing-schedule.clean.json`
+  - `billing-schedule.clean` · interactions · no_divergent_step · proof: `browser-evidence/billing-schedule.clean.json`
+  - `blur-crossfade` · visual · page_pixels · proof: `browser-evidence/blur-crossfade.json`
+  - `blur-crossfade` · dom · page_dom · proof: `browser-evidence/blur-crossfade.json`
+  - `blur-crossfade` · interactions · no_divergent_step · proof: `browser-evidence/blur-crossfade.json`
 
 ## Original determinism
 
-- Three independent original runs on 9 noise-sensitive route(s): pass=True, inputs_unchanged=True, 2026-10-21T19:39:46.170Z → 2026-10-21T19:40:52.860Z.
+- Three independent original runs on 9 noise-sensitive route(s): pass=True, inputs_unchanged=True, 2026-10-22T03:15:29.188Z → 2026-10-22T03:16:41.167Z.
 - Evidence: determinism-results.json (per-run image/state hashes and pairwise pixel counts).
 
 ## Recorded full gate
 
-- Command: `node determinism.cjs && node full-gate.cjs takeover-final-gate.log`.
-- Started: unrecorded; finished: unrecorded.
-- Subprocess exits: node full-gate.cjs takeover-final-gate.log exit 137.
-- Inputs unchanged during the gate: None; routes current: None; gate pass: False.
-- Log: `takeover-final-gate.log` (sanitized published copy, sha256 `bbfc76156c436ca55455149e7bd3523f263e28784dead51e7203a752f7248f9f`; recorded raw sha256 `bbfc76156c436ca55455149e7bd3523f263e28784dead51e7203a752f7248f9f`).
+- Command: `node full-gate.cjs final-gate.log`.
+- Started: 2026-10-22T03:16:49.479Z; finished: 2026-10-22T05:48:39.928Z.
+- Subprocess exits: node browser.cjs exit 0, node acceptance.cjs exit 1, node failure-table.cjs exit 0.
+- Inputs unchanged during the gate: True; routes current: True; gate pass: False.
+- Log: `final-gate.log` (sanitized published copy, sha256 `3987819e5c2d980202e200b2d31ef359c4a658c2a9c61dd06944f4670f7246b0`; recorded raw sha256 `3987819e5c2d980202e200b2d31ef359c4a658c2a9c61dd06944f4670f7246b0`).
 
 ## Live comparison
 
-- Last recorded live check: 2026-10-21T21:10:05.533Z for published commit `a9103d58ee3d`; pass=True over 6 route(s); evidence in live-pages-check.json.
+- Last recorded live check: 2026-10-21T21:10:05.533Z for published commit `a9103d58ee3d`; pass=True over 0 status pages and 6 rendered route pairs; evidence in live-pages-check.json.
 - URL: https://nullsec444.github.io/affectui-comparison/
 
 ## Hosting adaptation (disclosed)
@@ -65,8 +67,9 @@ Generated from `acceptance-results.json`; report written 2026-10-21T21:10:18.821
 - Route failure table: failure-table.json (proof paths point at the artifact that matches each recorded mismatch kind).
 - Raw REA outputs and per-batch records backing recovery-index.json and jsx-analysis.json are published under recovery/ with host scratch paths anonymised as [host].
 - Full rendered DOM, control states, step diffs and pixel captures: distributed in the archive under browser-evidence/; summarised in browser-results.json and acceptance-results.json. They are not copied into the static site.
-- Controls whose original-demo action produced no measured DOM or pixel change are recorded per step (`original_effect.non_effect`, 62 step(s)) with their before/after capture in the archive; that is documentation of a no-op, not evidence of behavioural equivalence.
+- Controls whose original-demo action produced no measured DOM or pixel change are recorded per step (`original_effect.non_effect`, 86 step(s)) with their before/after capture in the archive; that is documentation of a no-op, not evidence of behavioural equivalence.
 - Canonical acceptance.cjs is unchanged; no threshold, tolerance, scenario version or exit-code condition was relaxed.
+- Files graph inspection: demo-CUdsyn6m.jsx passes the live setB state setter to the tab component; component-qs8CseUl.jsx forwards clicks through its controlled-state hook. The template card has no onClick in the original demo either. browser.cjs deliberately deletes the transient reconstructed_effect before serialization; an absent field is not a missing component handler. Independent normal-clock measurements: files-behavior-check.json.
 - Nothing here proves behaviour outside the recorded scenario (other viewports, human input timing, network or persistence).
 
 ## Per-route status
@@ -79,8 +82,8 @@ Generated from `acceptance-results.json`; report written 2026-10-21T21:10:18.821
 | agent-gallery | accepted | — |
 | agent-inbox | accepted | — |
 | agent-inbox.clean | accepted | — |
-| agent-lanes | accepted | — |
-| agent-lanes.clean | accepted | — |
+| agent-lanes | partial | interactions |
+| agent-lanes.clean | partial | interactions |
 | agent-plan | accepted | — |
 | agent-plan.clean | accepted | — |
 | agent-run | accepted | — |
@@ -101,8 +104,8 @@ Generated from `acceptance-results.json`; report written 2026-10-21T21:10:18.821
 | autonomy-dial | accepted | — |
 | autonomy-dial.clean | accepted | — |
 | billing-schedule | accepted | — |
-| billing-schedule.clean | accepted | — |
-| blur-crossfade | accepted | — |
+| billing-schedule.clean | partial | visual, dom, interactions |
+| blur-crossfade | partial | visual, dom, interactions |
 | breakdown-chart | accepted | — |
 | breakdown-chart.clean | accepted | — |
 | chat-composer | accepted | — |
@@ -132,11 +135,11 @@ Generated from `acceptance-results.json`; report written 2026-10-21T21:10:18.821
 | evals | accepted | — |
 | experiment-card | accepted | — |
 | experiment-card.clean | accepted | — |
-| files | partial | interactions |
+| files | accepted | — |
 | folder | accepted | — |
 | glass-folder | accepted | — |
-| glow-keyboard | partial | interactions |
-| gradient-floor | partial | visual, dom, interactions |
+| glow-keyboard | accepted | — |
+| gradient-floor | accepted | — |
 | gradient-text | accepted | — |
 | inline-diff | accepted | — |
 | inline-diff.clean | accepted | — |
@@ -144,7 +147,7 @@ Generated from `acceptance-results.json`; report written 2026-10-21T21:10:18.821
 | integration-picker | accepted | — |
 | integration-picker.clean | accepted | — |
 | integration-settings | accepted | — |
-| integration-settings.clean | partial | interactions |
+| integration-settings.clean | accepted | — |
 | integrations | accepted | — |
 | invoice-credit | accepted | — |
 | kpi-board | accepted | — |

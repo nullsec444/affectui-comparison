@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"><head><link rel="icon" href="logo.svg"><link rel="icon" href="logo.svg"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en"><head><link rel="icon" href="logo.svg"><link rel="icon" href="logo.svg"><link rel="icon" href="logo.svg"><link rel="icon" href="logo.svg"><link rel="icon" href="logo.svg"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>affectUI — reversed components</title><style>
 :root { color-scheme: light; }
 * { box-sizing: border-box; }
@@ -29,14 +29,14 @@ button { padding: 7px 12px; border: 1px solid #111; background: #111; color: #ff
 </style></head>
 <body>
 <header><b>affectUI comparison</b><input type="search" id="q" placeholder="filter 111 paid variants…" autofocus></header>
-<div class="wrap"><p><strong>Immediate publication: final full verification is incomplete.</strong> Recorded route results below span different harness revisions, not one completed final run. <a href="affectui-paid-rea.zip">Download reconstructed JSX and evidence (ZIP)</a>.</p><p>Paid components only. Original demo vs reconstructed replay built from 567 recovered modules. Accepted in recorded scenarios: 107/111. <a href="REPORT.md">report</a> · <a href="acceptance-results.json">evidence</a> · <a href="failure-table.json">failures</a> · <a href="PROVENANCE.json">provenance</a>. Partial items are labelled as such, not as equivalence.</p><div class="grid" id="grid"><a class="card" href="agent-chat/index.html">agent-chat<small>accepted · 37 KB jsx · 567 modules</small></a>
+<div class="wrap"><p><strong>Latest per-route results; no single full gate on the current harness.</strong> No skipped controls, relaxed thresholds or screenshot masks. <a href="affectui-paid-rea.zip">Download reconstructed JSX and evidence (ZIP)</a>.</p><p>Paid components only. Original demo vs reconstructed replay built from 567 recovered modules. Accepted in recorded scenarios: 107/111. 72 paid components / 111 variants. Accepted: 107 · Partial: 4 · Blocked: 0. <a href="REPORT.md">report</a> · <a href="acceptance-results.json">evidence</a> · <a href="failure-table.json">failures</a> · <a href="PROVENANCE.json">provenance</a>. Partial items are labelled as such, not as equivalence.</p><div class="grid" id="grid"><a class="card" href="agent-chat/index.html">agent-chat<small>accepted · 37 KB jsx · 567 modules</small></a>
 <a class="card" href="agent-cursors/index.html">agent-cursors<small>accepted · 69 KB jsx · 4 modules</small></a>
 <a class="card" href="agent-cursors.clean/index.html">agent-cursors.clean<small>accepted · 76 KB jsx · 4 modules</small></a>
 <a class="card" href="agent-gallery/index.html">agent-gallery<small>accepted · 23 KB jsx · 4 modules</small></a>
 <a class="card" href="agent-inbox/index.html">agent-inbox<small>accepted · 26 KB jsx · 4 modules</small></a>
 <a class="card" href="agent-inbox.clean/index.html">agent-inbox.clean<small>accepted · 25 KB jsx · 4 modules</small></a>
-<a class="card" href="agent-lanes/index.html">agent-lanes<small>accepted · 39 KB jsx · 4 modules</small></a>
-<a class="card" href="agent-lanes.clean/index.html">agent-lanes.clean<small>accepted · 39 KB jsx · 4 modules</small></a>
+<a class="card" href="agent-lanes/index.html">agent-lanes<small>partial · 39 KB jsx · 4 modules</small></a>
+<a class="card" href="agent-lanes.clean/index.html">agent-lanes.clean<small>partial · 39 KB jsx · 4 modules</small></a>
 <a class="card" href="agent-plan/index.html">agent-plan<small>accepted · 4 KB jsx · 5 modules</small></a>
 <a class="card" href="agent-plan.clean/index.html">agent-plan.clean<small>accepted · 40 KB jsx · 4 modules</small></a>
 <a class="card" href="agent-run/index.html">agent-run<small>accepted · 26 KB jsx · 567 modules</small></a>
@@ -57,8 +57,8 @@ button { padding: 7px 12px; border: 1px solid #111; background: #111; color: #ff
 <a class="card" href="autonomy-dial/index.html">autonomy-dial<small>accepted · 25 KB jsx · 4 modules</small></a>
 <a class="card" href="autonomy-dial.clean/index.html">autonomy-dial.clean<small>accepted · 25 KB jsx · 4 modules</small></a>
 <a class="card" href="billing-schedule/index.html">billing-schedule<small>accepted · 21 KB jsx · 4 modules</small></a>
-<a class="card" href="billing-schedule.clean/index.html">billing-schedule.clean<small>accepted · 24 KB jsx · 4 modules</small></a>
-<a class="card" href="blur-crossfade/index.html">blur-crossfade<small>accepted · 8 KB jsx · 4 modules</small></a>
+<a class="card" href="billing-schedule.clean/index.html">billing-schedule.clean<small>partial · 24 KB jsx · 4 modules</small></a>
+<a class="card" href="blur-crossfade/index.html">blur-crossfade<small>partial · 8 KB jsx · 4 modules</small></a>
 <a class="card" href="breakdown-chart/index.html">breakdown-chart<small>accepted · 2 KB jsx · 5 modules</small></a>
 <a class="card" href="breakdown-chart.clean/index.html">breakdown-chart.clean<small>accepted · 25 KB jsx · 4 modules</small></a>
 <a class="card" href="chat-composer/index.html">chat-composer<small>accepted · 0 KB jsx · 5 modules</small></a>
@@ -88,11 +88,11 @@ button { padding: 7px 12px; border: 1px solid #111; background: #111; color: #ff
 <a class="card" href="evals/index.html">evals<small>accepted · 35 KB jsx · 567 modules</small></a>
 <a class="card" href="experiment-card/index.html">experiment-card<small>accepted · 22 KB jsx · 4 modules</small></a>
 <a class="card" href="experiment-card.clean/index.html">experiment-card.clean<small>accepted · 24 KB jsx · 4 modules</small></a>
-<a class="card" href="files/index.html">files<small>partial · 9 KB jsx · 567 modules</small></a>
+<a class="card" href="files/index.html">files<small>accepted · 9 KB jsx · 567 modules</small></a>
 <a class="card" href="folder/index.html">folder<small>accepted · 10 KB jsx · 567 modules</small></a>
 <a class="card" href="glass-folder/index.html">glass-folder<small>accepted · 0 KB jsx · 567 modules</small></a>
-<a class="card" href="glow-keyboard/index.html">glow-keyboard<small>partial · 27 KB jsx · 4 modules</small></a>
-<a class="card" href="gradient-floor/index.html">gradient-floor<small>partial · 5 KB jsx · 4 modules</small></a>
+<a class="card" href="glow-keyboard/index.html">glow-keyboard<small>accepted · 27 KB jsx · 4 modules</small></a>
+<a class="card" href="gradient-floor/index.html">gradient-floor<small>accepted · 5 KB jsx · 4 modules</small></a>
 <a class="card" href="gradient-text/index.html">gradient-text<small>accepted · 4 KB jsx · 4 modules</small></a>
 <a class="card" href="inline-diff/index.html">inline-diff<small>accepted · 2 KB jsx · 5 modules</small></a>
 <a class="card" href="inline-diff.clean/index.html">inline-diff.clean<small>accepted · 28 KB jsx · 4 modules</small></a>
@@ -100,7 +100,7 @@ button { padding: 7px 12px; border: 1px solid #111; background: #111; color: #ff
 <a class="card" href="integration-picker/index.html">integration-picker<small>accepted · 28 KB jsx · 4 modules</small></a>
 <a class="card" href="integration-picker.clean/index.html">integration-picker.clean<small>accepted · 31 KB jsx · 4 modules</small></a>
 <a class="card" href="integration-settings/index.html">integration-settings<small>accepted · 21 KB jsx · 4 modules</small></a>
-<a class="card" href="integration-settings.clean/index.html">integration-settings.clean<small>partial · 24 KB jsx · 4 modules</small></a>
+<a class="card" href="integration-settings.clean/index.html">integration-settings.clean<small>accepted · 24 KB jsx · 4 modules</small></a>
 <a class="card" href="integrations/index.html">integrations<small>accepted · 34 KB jsx · 567 modules</small></a>
 <a class="card" href="invoice-credit/index.html">invoice-credit<small>accepted · 20 KB jsx · 4 modules</small></a>
 <a class="card" href="kpi-board/index.html">kpi-board<small>accepted · 31 KB jsx · 4 modules</small></a>
