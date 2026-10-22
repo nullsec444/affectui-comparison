@@ -2,7 +2,7 @@
 
 Status: PARTIAL: full behavioural equivalence is NOT established
 
-Generated from `acceptance-results.json`; report written 2026-10-22T12:20:35.560642+00:00.
+Generated from `acceptance-results.json`; report written 2026-10-22T12:25:41.994602+00:00.
 
 ## Scope
 
