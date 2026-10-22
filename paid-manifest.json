@@ -11,7 +11,7 @@
   },
   "acceptance": {
     "source": "acceptance-results.json",
-    "sha256": "e0b7b150bf4717138bfbefebcc539ca33f428000de6808f39e2009747ce56562",
+    "sha256": "1fe0dada43f3948166a862a6023bfe2bf213bc71d4aac54a74a49c833765aecd",
     "summary": {
       "catalog_distinct": 72,
       "variants": 111,
@@ -19,8 +19,8 @@
       "reachable_modules": 567,
       "recovered_modules": 567,
       "inventory_complete": true,
-      "accepted": 107,
-      "partial": 4,
+      "accepted": 111,
+      "partial": 0,
       "blocked": 0,
       "check_totals": {
         "inventory": 111,
@@ -29,9 +29,9 @@
         "build": 111,
         "hosting": 111,
         "scenario_current": 111,
-        "visual": 109,
-        "dom": 109,
-        "interactions": 107
+        "visual": 111,
+        "dom": 111,
+        "interactions": 111
       }
     },
     "structural_errors": []
@@ -197,7 +197,7 @@
       "variant": "basic",
       "route": "agent-lanes",
       "demo_chunk": "demo-CCeL1VNp.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
@@ -207,7 +207,7 @@
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
       "browser_scenario_version": 4,
@@ -220,7 +220,7 @@
       "variant": "clean",
       "route": "agent-lanes.clean",
       "demo_chunk": "demo.clean-DC3N3Pap.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
@@ -230,7 +230,7 @@
         "scenario_current": true,
         "visual": true,
         "dom": true,
-        "interactions": false
+        "interactions": true
       },
       "reachable_modules": 4,
       "browser_scenario_version": 4,
@@ -703,7 +703,7 @@
       "variant": "clean",
       "route": "billing-schedule.clean",
       "demo_chunk": "demo.clean-dYQPE1hb.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
@@ -711,9 +711,9 @@
         "build": true,
         "hosting": true,
         "scenario_current": true,
-        "visual": false,
-        "dom": false,
-        "interactions": false
+        "visual": true,
+        "dom": true,
+        "interactions": true
       },
       "reachable_modules": 4,
       "browser_scenario_version": 4,
@@ -726,7 +726,7 @@
       "variant": "basic",
       "route": "blur-crossfade",
       "demo_chunk": "demo-Ye53Zfy1.js",
-      "verification": "partial",
+      "verification": "accepted",
       "checks": {
         "inventory": true,
         "reachable_recovered": true,
@@ -734,9 +734,9 @@
         "build": true,
         "hosting": true,
         "scenario_current": true,
-        "visual": false,
-        "dom": false,
-        "interactions": false
+        "visual": true,
+        "dom": true,
+        "interactions": true
       },
       "reachable_modules": 4,
       "browser_scenario_version": 4,
