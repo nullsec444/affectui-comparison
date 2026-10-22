@@ -1,1 +1,0 @@
-import{t as e}from"./jsx-runtime-CTsRTJUX.js";import{IntegrationGrid as t}from"./component-WEwHkvy1.js";var n=e();function r(){return(0,n.jsx)(`div`,{className:`integration-grid-demo`,children:(0,n.jsx)(t,{})})}export{r as default};

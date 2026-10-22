@@ -1,9 +1,0 @@
-{
-  "format": "unknown",
-  "strategy": "structural",
-  "modules": {
-    "site-D86YA7B9.js": {"input": "[host]", "ranges": [[0,965]], "extraction": "structural"},
-    "supabase-CqDuy7ko.js": {"input": "[host]", "ranges": [[0,1749]], "extraction": "structural"},
-    "supabaseClient-MZLUyPvg.js": {"input": "[host]", "ranges": [[0,214282]], "extraction": "structural"}
-  }
-}
